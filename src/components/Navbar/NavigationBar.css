@@ -1,0 +1,65 @@
+nav.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.navContainer {
+    background-color: rgba(24, 24, 24, 0);
+    transition: background-color 0.3s ease-in-out;
+}
+.changeNavColor {
+    background-color: rgba(24, 24, 24, 1); /* Replace with the desired background color on Scroll*/
+}
+
+.hamburger {
+    display: none;
+}
+
+.navLinksCont {
+    float:right;
+}
+
+.navLinks {
+    display: flex;
+}
+
+.mobileLinksContainer {
+    display: none;
+    background-color: rgb(20, 20, 20);
+    z-index: 99;
+    position: absolute; 
+    right: 20vw;
+}
+
+@media screen and (min-width: 2400px) {
+    .navContainer > div {
+      margin: 0 calc((100vw - 1440px)/2);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .navContainer {
+        padding: 0;
+    }
+    .hamburger {
+        display: block;
+    }
+    .navLinks {
+        display: none;
+    }
+    .navLogo {
+        margin-right: 0px;
+    }
+    .mobileLinksContainer {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .mobileLinksContainer {
+        right: 5vw;
+    }
+}
