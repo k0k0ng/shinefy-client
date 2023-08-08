@@ -1,4 +1,5 @@
-import logo from "../../assets/images/logo.svg";
+import Image from 'next/image';
+import logo from "../../assets/logo.svg";
 
 const FooterPage = () => {
   return (
@@ -7,10 +8,12 @@ const FooterPage = () => {
         <div className="flex justify-center">
           <div>
             <a href="/" className="flex items-center justify-center">
-              <img
+              <Image
                 src={logo}
-                className="h-[51px] w-[52px] mr-2"
                 alt="Shine Ranker Logo"
+                width={51} // Specify the width of the image
+                height={52} // Specify the height of the image
+                className="h-[51px] w-[52px] mr-2"
               />
               <span className="text-white self-center font-semibold font-Inter text-[22px] tracking-[1.76px]">
                 SHINE RANKER

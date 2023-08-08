@@ -4,7 +4,7 @@
 .backgroundCustom {
   height: 100vh;
   min-height: 600px;
-  background-image: url("../images/Rectangle.png");
+  background-image: url("/images/Rectangle.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -1,39 +1,48 @@
+"use client";
+
 import { useState, useEffect } from "react";
-import logo from "../../assets/images/logo.svg";
+import Image from 'next/image';
+import logo from "../../assets/logo.svg";
 import "./NavigationBar.css";
 
 const NavigationBar = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
-    // Add an event listener to track scrolling and set the sticky state accordingly
-    useEffect(() => {
-      const handleScroll = () => {
-        if (window.scrollY > 0) {
-          setIsSticky(true);
-        } else {
-          setIsSticky(false);
-        }
-      };
-  
-      window.addEventListener("scroll", handleScroll);
-  
-      // Clean up the event listener on component unmount
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }, []);
+  // Add an event listener to track scrolling and set the sticky state accordingly
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     // Main Navigation
     <nav className={isSticky ? "sticky" : ""}>
-      <div className={`absolute w-full navContainer ${isSticky ? "changeNavColor": ''}`}>
+      <div
+        className={`absolute w-full navContainer ${
+          isSticky ? "changeNavColor" : ""
+        }`}
+      >
         <div className="flex flex-wrap items-center justify-between mx-[5vw] lg:mx-[20vw] py-4">
           <a href="/" className="flex items-center navLogo">
-            <img
+            <Image
               src={logo}
-              className="h-[51px] w-[52px] mr-2"
               alt="Shine Ranker Logo"
+              width={51} // Specify the width of the image
+              height={52} // Specify the height of the image
+              className="h-[51px] w-[52px] mr-2"
             />
             <span className="text-white self-center font-Inter text-[22px] tracking-[1.76px] whitespace-nowrap">
               SHINE RANKER
