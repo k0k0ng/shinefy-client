@@ -59,7 +59,7 @@ const FooterPage = () => {
             <ul className="mt-4 flex flex-col text-center md:flex-row flex-wrap gap-6 justify-center">
               <li>
                 <a
-                  href="/faq/legal/terms-of-use"
+                  href="/legal/terms-of-use"
                   className="text-white-700 transition hover:opacity-75"
                   rel="noreferrer"
                   target="_blank"
@@ -70,7 +70,7 @@ const FooterPage = () => {
 
               <li>
                 <a
-                  href="/faq/legal/refund"
+                  href="/legal/refund"
                   className="text-white-700 transition hover:opacity-75"
                   rel="noreferrer"
                   target="_blank"
@@ -81,7 +81,7 @@ const FooterPage = () => {
 
               <li>
                 <a
-                  href="/faq/legal/earnings-disclaimer"
+                  href="/legal/earnings-disclaimer"
                   className="text-white-700 transition hover:opacity-75"
                   rel="noreferrer"
                   target="_blank"
@@ -92,7 +92,7 @@ const FooterPage = () => {
 
               <li>
                 <a
-                  href="/faq/legal/facebook-disclaimer"
+                  href="/legal/facebook-disclaimer"
                   className="text-white-700 transition hover:opacity-75"
                   rel="noreferrer"
                   target="_blank"
@@ -103,7 +103,7 @@ const FooterPage = () => {
 
               <li>
                 <a
-                  href="/faq/legal/affiliate-promotions"
+                  href="/legal/affiliate-promotions"
                   className="text-white-700 transition hover:opacity-75"
                   rel="noreferrer"
                   target="_blank"

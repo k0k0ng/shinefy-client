@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from 'next/image';
 import logo from "../../assets/logo.svg";
-import "./NavigationBar.css";
+import "../../styles/NavigationBar.css";
 
 const NavigationBar = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
@@ -83,36 +83,36 @@ const NavigationBar = () => {
             className="flex items-center justify-end hidden w-full md:flex md:w-auto md:order-1 navLinksCont"
             id="navbar-sticky"
           >
-            <ul className="flex flex-col justify-end p-4 md:p-0 font-karla mt-4 md:flex-row  md:mt-0 navLinks">
-              {/* <li>
+            <ul className="flex flex-col justify-end items-center p-4 md:p-0 font-karla mt-4 md:flex-row md:mt-0 navLinks">
+              <li>
                 <a
-                  href="/"
-                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px]"
+                  href="/about"
+                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition hover:opacity-75"
                 >
                   About
                 </a>
               </li>
               <li>
                 <a
-                  href="/"
-                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px]"
+                  href="/tools"
+                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition hover:opacity-75"
                 >
                   Tools
                 </a>
               </li>
               <li>
                 <a
-                  href="/"
-                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px]"
+                  href="/pricing"
+                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition hover:opacity-75"
                 >
                   Pricing Plan
                 </a>
-              </li> */}
+              </li>
               <li>
                 <a
                   href="https://app.shineranker.com/signup_free/"
                   type="button"
-                  className="text-white h-10 bg-purp hover:bg-purple-800 font-medium rounded-lg text-sm px-10 flex justify-center items-center font-karla mr-3"
+                  className="text-white h-10 bg-purp hover:bg-purple-800 transition font-medium rounded-lg text-sm px-10 flex justify-center items-center font-karla mr-3"
                 >
                   Sign Up
                 </a>
@@ -121,7 +121,7 @@ const NavigationBar = () => {
                 <a
                   href="https://app.shineranker.com/login/"
                   type="button"
-                  className="text-white h-10 border-2 hover:bg-purple-800 hover:border-purple-800 font-medium rounded-lg text-sm px-10 flex justify-center items-center md:mr-0 font-karla "
+                  className="text-white h-10 border-2 hover:bg-purple-800 transition hover:border-purple-800 font-medium rounded-lg text-sm px-10 flex justify-center items-center md:mr-0 font-karla "
                 >
                   Log in
                 </a>
@@ -134,9 +134,9 @@ const NavigationBar = () => {
         {showMobileNav && (
           <aside className="flex justify-end mobileLinksContainer">
             <ul className=" md:p-0 font-karla md:flex-row md:mt-0 mobileNavLinks">
-              {/* <li>
+              <li>
                 <a
-                  href="/"
+                  href="/about"
                   className="text-white h-16 hover:bg-purple-800 text-sm px-10 flex justify-end items-center font-karla"
                 >
                   About
@@ -144,7 +144,7 @@ const NavigationBar = () => {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="/tools"
                   className="text-white h-16 hover:bg-purple-800 text-sm px-10 flex justify-end items-center font-karla"
                 >
                   Tools
@@ -152,12 +152,12 @@ const NavigationBar = () => {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="/pricing"
                   className="text-white h-16 hover:bg-purple-800 text-sm px-10 flex justify-end items-center font-karla"
                 >
                   Pricing Plan
                 </a>
-              </li> */}
+              </li>
               <li>
                 <a
                   href="https://app.shineranker.com/signup_free/"

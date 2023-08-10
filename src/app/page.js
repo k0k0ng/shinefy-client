@@ -1,5 +1,6 @@
-
-import "./home.css";
+import "../styles/home.css";
+// import Lottie from "react-lottie";
+// import robotRun from "../assets/robot-run.json";
 
 export default function Home() {
   return (

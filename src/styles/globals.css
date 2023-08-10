@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Inter', 'Karla';
+  scroll-behavior: smooth;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #04101f;;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* global headers */
+.global-header-background-custom {
+  height: 400px;
+  background-image: url("/images/Rectangle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  flex-shrink: 0;
+}
+
+.global-header-container-parent {
+  height: 400px;
+  margin: 0 20%;
+}
+
+.global-header-text-1 {
+  color: var(--soft-grey, #f1f1f1);
+  font-family: Karla;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.8px;
+  align-items: center;
+}
+
+.global-header-text-2 {
+  color: #54e3e6;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+}
+
+.global-header-text-3 {
+  color: var(--soft-grey, #F1F1F1);
+  text-align: center;
+  font-family: Karla;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+}
+
+
+/* global content */
+.global-content-container {
+  margin: 50px 20%;
+  min-height: calc(100vh - 300px);
+}
+
+
+@media screen and (min-width: 2400px) {
+  .global-header-container-parent {
+    margin: 0 calc((100vw - 1440px)/2);
+  }
+  .global-content-container {
+    margin: 50px calc((100vw - 1440px)/2);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .global-header-container-parent {
+    margin: 0 5%;
+  }
+  .global-header-text-1 {
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: -10px;
+  }
+  .global-header-text-2 {
+    font-size: 30px;
+    line-height: 60px;
+  }
+  .global-content-container {
+    margin: 50px 5%;
+  }
+}
