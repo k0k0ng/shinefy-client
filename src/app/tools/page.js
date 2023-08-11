@@ -105,7 +105,6 @@ export default function tools() {
 
               {/* Row 3 Content */}
               <div className="mt-40">
-
                 <div className="tools-card-1 flex flex-col-reverse lg:flex-row justify-center items-center w-full gap-20 lg:gap-10 mb-40">
                   <div className="w-full lg:w-[500px]">
                     <div>
@@ -201,7 +200,7 @@ export default function tools() {
                   </div>
                 </div>
 
-                <div className="tools-card-1 flex flex-col-reverse lg:flex-row-reverse justify-center items-center w-full gap-20 lg:gap-10 mb-40">
+                <div className="tools-card-1 flex flex-col-reverse lg:flex-row-reverse justify-center items-center w-full gap-20 lg:gap-10 mb-[500px]">
                   <div className="w-full lg:w-[500px]">
                     <div>
                       <Image
@@ -230,14 +229,22 @@ export default function tools() {
                     />
                   </div>
                 </div>
-
-
               </div>
 
               {/* Row 4 */}
-
-
-
+              <div className="flex flex-col justify-center items-center tools-pricing-card text-center w-screen absolute right-0">
+                <div className="flex flex-col justify-center items-center w-full lg:w-[600px] pr-5 pl-5">
+                  <h2 className="tools-pricing-text-1">Our Pricing Plan</h2>
+                  <h1 className="tools-pricing-text-2 pt-3 pb-3">
+                    Get access to all features and start driving traffic to your
+                    website.
+                  </h1>
+                  <p className="tools-pricing-text-3 mt-5 mb-10">
+                    Compare and choose from these packages.
+                  </p>
+                  <a href="/pricing" className="tools-pricing-button">See Pricing Plan</a>
+                </div>
+              </div>
 
             </div>
           </div>

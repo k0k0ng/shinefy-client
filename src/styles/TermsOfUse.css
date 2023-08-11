@@ -84,6 +84,7 @@
   font-weight: 700;
   line-height: 120%; /* 36px */
 }
+
 .info-text {
   color: var(--white, #fff);
   font-family: Karla;
