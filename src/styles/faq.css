@@ -267,4 +267,69 @@
   .faq-categories {
     font-size: 14px;
   }
+
+  @media (max-width: 767px) {
+    .faq-content-container {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center; /* Center content horizontally */
+    }
+    .faq-req-content {
+      margin-top: -60px;
+    }
+    .faq-title-text-1 {
+      color: var(--white, #fff);
+      font-family: Karla;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%; /* 21.6px */
+    }
+    .faq-title-text {
+      color: var(--cyan, #54e3e6);
+
+      /* Title Inner Page */
+      font-family: Montserrat;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%; /* 36px */
+    }
+    .faq-content-text {
+      color: var(--white, #fff);
+
+      font-family: Karla;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%; /* 19.2px */
+    }
+    .faq-accord-content {
+      margin-top: -20px;
+      margin-right: 55px;
+      width: 16rem;
+    }
+
+    .more-text {
+      font-size: 18px;
+      text-align: center;
+    }
+    .shine-text {
+      text-align: center;
+      margin-bottom: -20vh;
+    }
+    .faq-text-card-2 {
+      text-align: center;
+      font-family: Karla;
+      font-size: 24px;
+    }
+    .faq-legal-text {
+      margin-bottom: -60px;
+    }
+
+    .faq-text-card-2 {
+      margin-left: 20px;
+      text-align: left;
+    }
+  }
 }
