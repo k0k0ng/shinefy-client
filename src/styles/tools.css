@@ -1,0 +1,86 @@
+.tools-text-1 {
+    color: var(--white, #FFF);
+    /* H5 */
+    font-family: Karla;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 28.8px */
+}
+
+.tools-text-2 {
+    color: var(--cyan, #54E3E6);
+    /* Title Inner Page */
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 36px */
+}
+
+.tools-text-3 {
+    color: var(--white, #FFF);
+    /* Body 1 */
+    font-family: Karla;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 21.6px */
+}
+
+/* tools pricing section */
+.tools-pricing-card {
+    height: 400px;
+    background-image: url("/images/Rectangle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #04101f;
+    flex-shrink: 0;
+    transform: translate(0, -400px);
+}
+
+.tools-pricing-text-1 {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: Karla;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 28.8px */
+}
+
+.tools-pricing-text-2 {
+    color: var(--cyan, #54E3E6);
+    text-align: center;
+    /* Title Inner Page */
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 36px */
+}
+
+.tools-pricing-text-3 {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: Karla;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 24px */
+}
+
+.tools-pricing-button {
+    color: white;
+    border-radius: 5px;
+    background: var(--button-color, #8844DA);
+    display: flex;
+    width: 232px;
+    height: 53px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
