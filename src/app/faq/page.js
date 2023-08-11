@@ -111,7 +111,7 @@ const FAQ = () => {
       {/* Contents */}
       <div className="font-montserrat faq-content-container">
         {/* Content */}
-        <div className="flex">
+        <div className="flex hidden md:block">
           {/* Add your content here */}
           <div className="flex flex-col justify-center">
             <div className="font-montserrat divContainer">
@@ -135,16 +135,29 @@ const FAQ = () => {
       </div>
 
       {/* FAQ */}
-      <div className="mx-auto justify-center items-center my-20">
+      <div className="mx-auto faq-req-content justify-center items-center my-20">
         {/* FAQ content */}
-        <div className="flex justify-center gap-20 justify-center items-center divContainer">
+        <div className="flex flex-row-reverse faq-content-container  gap-20 justify-center items-center divContainer">
           {/* First Column */}
-          <div className="flex ml-10 mr-20">
-            <div className="my-5">
+          <div className="flex ml-20">
+            <div className="faq-accord-content my-5">
+              <div className="faq-accord-content" style={{ maxWidth: "602px" }}>
+                <Accordion
+                  items={items}
+                  buttonSelectedColor="#081b31"
+                  contentSelectedColor="white"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Second Column */}
+          <div className="flex">
+            <div className="faq-text-card-2">
               <div className="faq-text-card">
                 <h2 className="faq-title-text-1 ">FAQ</h2>
                 <h2 className="faq-title-text my-2 pt-2">Frequently</h2>
-                <h2 className="faq-title-text my-2 ">Asked Questions</h2>
+                <h2 className="faq-title-text my-2 ">Asked</h2>
                 <h2 className="faq-title-text my-2 ">Questions</h2>
 
                 <p className="faq-content-text " style={{ maxWidth: "300px" }}>
@@ -155,45 +168,19 @@ const FAQ = () => {
               </div>
             </div>
           </div>
-
-          {/* Second Column */}
-          <div className="flex">
-            <div className="faq-text-card-2">
-              <div className="" style={{ maxWidth: "552px" }}>
-                <Accordion
-                  items={items}
-                  buttonSelectedColor="#081b31"
-                  contentSelectedColor="white"
-                />
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
       {/* A little */}
       <div className="mx-auto justify-center items-center my-5 faq-contact-container">
         {/* A little content */}
-        <div className="flex justify-center gap-40 justify-center items-center  divContainer">
+        <div className="flex flex-row-reverse faq-content-container  justify-center gap-40 justify-center items-center  divContainer">
           {/* First Column */}
-          <div className=" ml-10">
-            <div className="ml-10">
-              <div className=" faq-text-card">
-                <h2 className="faq-title-text-1 ">A little bit more about</h2>
-                <h2 className="faq-title-text my-2 pt-2">Shine Ranker</h2>
-              </div>
-            </div>
-          </div>
-
-          {/* Second Column */}
-          <div className="">
+          <div className="ml-30">
             <div className="pb-8">
               <div className="mt-20">
-                <div className="faq-text-card-2 ">
-                  <p
-                    className="faq-title-text-1 pl-10"
-                    style={{ maxWidth: "500px" }}
-                  >
+                <div className="faq-text-card-2">
+                  <p className="faq-title-text-1" style={{ maxWidth: "500px" }}>
                     We’re on a mission to build a better future where technology
                     creates good jobs for everyone.
                   </p>
@@ -201,33 +188,25 @@ const FAQ = () => {
               </div>
             </div>
           </div>
+
+          {/* Second Column */}
+
+          <div className="w-1/2 faq-text-card">
+            <h2 className="faq-title-text-1 more-text ">
+              A little bit more about
+            </h2>
+            <h2 className="faq-title-text shine-text my-2 pt-2">
+              Shine Ranker
+            </h2>
+          </div>
         </div>
       </div>
 
       {/* Our rules */}
       <div className="mx-auto justify-center items-center my-20">
         {/* Our rules content */}
-        <div className="flex justify-center gap-20 justify-center items-center m-5 divContainer">
+        <div className="flex flex-row-reverse faq-content-container   justify-center gap-20 justify-center items-center m-5 divContainer">
           {/* First Column */}
-          <div className="pr-5">
-            <div className="mr-12 my-5">
-              <div className=" faq-text-card ">
-                <h2 className="faq-title-text-1 ">Legal</h2>
-                <h2 className="faq-title-text my-2 pt-2">Our Rules</h2>
-                <h2 className="faq-title-text  pb-4 ">& Policies</h2>
-                <p className="faq-content-text " style={{ maxWidth: "300px" }}>
-                  Our policies explain what you can and cannot do while you’re
-                  there, so everyone plays by the same rules.
-                </p>
-                <p className="faq-content-text " style={{ maxWidth: "300px" }}>
-                  Read on to find out how each of our products and policies
-                  work.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Second Column */}
           <div>
             <div className="container ">
               <div className="faq-text-card-2 my-2">
@@ -241,6 +220,25 @@ const FAQ = () => {
                 <p className="faq-content-text">Copyright</p>
                 <p className="faq-content-text">Brand Guidelines</p>
                 <p className="faq-content-text">Community Guidelines</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Second Column */}
+          <div className="pr-5">
+            <div className="mr-12 my-5">
+              <div className=" faq-text-card faq-legal-text ">
+                <h2 className="faq-title-text-1 ">Legal</h2>
+                <h2 className="faq-title-text my-2 pt-2">Our Rules</h2>
+                <h2 className="faq-title-text  pb-4 ">& Policies</h2>
+                <p className="faq-content-text " style={{ maxWidth: "300px" }}>
+                  Our policies explain what you can and cannot do while you’re
+                  there, so everyone plays by the same rules.
+                </p>
+                <p className="faq-content-text " style={{ maxWidth: "300px" }}>
+                  Read on to find out how each of our products and policies
+                  work.
+                </p>
               </div>
             </div>
           </div>
