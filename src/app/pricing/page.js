@@ -39,67 +39,67 @@ export default function pricing() {
             </div>
             <div className="pricing-price-checklist mt-10 mb-5">
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">5 Projects</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">5,000 Shine Audits</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">5,000 Keywords Research Usages</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Unlimited Traffic Checker</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Unlimited Content Editor</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Unlimited Leads</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Unlimited AI Keywords</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Unlimited AI Chat</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Project Dashboard</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Keyword Research</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Traffic Checker</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Shine Audit</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Content Editor</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Leads List & Widget</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">AI Keywords</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">AI Chat</p>
               </div>
             </div>
@@ -117,67 +117,67 @@ export default function pricing() {
             </div>
             <div className="pricing-price-checklist mt-10 mb-5">
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">5 Projects</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">5,000 Shine Audits</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">5,000 Keywords Research Usages</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Unlimited Traffic Checker</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Unlimited Content Editor</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Unlimited Leads</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Unlimited AI Keywords</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Unlimited AI Chat</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Project Dashboard</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Keyword Research</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Traffic Checker</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Shine Audit</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Content Editor</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Leads List & Widget</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">AI Keywords</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">AI Chat</p>
               </div>
             </div>
@@ -195,67 +195,67 @@ export default function pricing() {
             </div>
             <div className="pricing-price-checklist mt-10 mb-5">
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">5 Projects</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">5,000 Shine Audits</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">5,000 Keywords Research Usages</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Unlimited Traffic Checker</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Unlimited Content Editor</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Unlimited Leads</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Unlimited AI Keywords</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Unlimited AI Chat</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Project Dashboard</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Keyword Research</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Traffic Checker</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Shine Audit</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Content Editor</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">Leads List & Widget</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">AI Keywords</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i class="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-price-checklist-text">AI Chat</p>
               </div>
             </div>
