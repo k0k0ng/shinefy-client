@@ -1,8 +1,5 @@
 import Image from "next/image";
 
-import thumbnail from "/public/images/thumbnail.png";
-import playbutton from "/public/images/playButton.png";
-
 import FeaturesAndBenefits from "@/components/FeaturesAndBenefits";
 
 import "../../styles/about.css";
@@ -79,14 +76,14 @@ export default function about() {
                   >
                     <div className="relative">
                       <Image
-                        src={thumbnail}
+                        src="/images/thumbnail.png"
                         alt="Video Thumbnail"
                         width={394}
                         height={474}
                         className="mx-auto max-w-full h-auto"
                       />
                       <Image
-                        src={playbutton}
+                        src="/images/playButton.png"
                         alt="Play Button"
                         width={100}
                         height={100}
