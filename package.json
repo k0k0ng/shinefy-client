@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "heroku-postbuild": "ng build --prod",
+    "heroku-postbuild": "next build",
     "start": "next start",
     "lint": "next lint"
   },
