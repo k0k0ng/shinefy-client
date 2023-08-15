@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from 'next/image';
-import logo from "../../assets/logo.svg";
+import logo from "../../../public/assets/logo.svg";
 import "../../styles/NavigationBar.css";
 
 const NavigationBar = () => {
@@ -94,6 +94,14 @@ const NavigationBar = () => {
               </li>
               <li>
                 <a
+                  href="/faq"
+                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition hover:opacity-75"
+                >
+                  FAQ
+                </a>
+              </li>
+              <li>
+                <a
                   href="/tools"
                   className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition hover:opacity-75"
                 >
@@ -140,6 +148,14 @@ const NavigationBar = () => {
                   className="text-white h-16 hover:bg-purple-800 text-sm px-10 flex justify-end items-center font-karla"
                 >
                   About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/faq"
+                  className="text-white h-16 hover:bg-purple-800 text-sm px-10 flex justify-end items-center font-karla"
+                >
+                  FAQ
                 </a>
               </li>
               <li>

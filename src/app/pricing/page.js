@@ -1,4 +1,5 @@
 import "../../styles/pricing.css";
+import FeaturesAndBenefits from "@/components/FeaturesAndBenefits";
 
 export default function pricing() {
   return (
@@ -26,7 +27,7 @@ export default function pricing() {
       </header>
 
       {/* Contents */}
-      <div className="font-montserrat global-content-container">
+      <div className="font-montserrat global-content-container pricing-content-container">
 
 
         {/* Row 1 Contents - Price Cards */}
@@ -55,19 +56,19 @@ export default function pricing() {
                 <p className="pricing-price-checklist-text">Unlimited Traffic Checker</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
                 <p className="pricing-price-checklist-text">Unlimited Content Editor</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
                 <p className="pricing-price-checklist-text">Unlimited Leads</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
                 <p className="pricing-price-checklist-text">Unlimited AI Keywords</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
                 <p className="pricing-price-checklist-text">Unlimited AI Chat</p>
               </div>
               <div className="flex gap-2 mb-3">
@@ -87,19 +88,19 @@ export default function pricing() {
                 <p className="pricing-price-checklist-text">Shine Audit</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
                 <p className="pricing-price-checklist-text">Content Editor</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
                 <p className="pricing-price-checklist-text">Leads List & Widget</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
                 <p className="pricing-price-checklist-text">AI Keywords</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
                 <p className="pricing-price-checklist-text">AI Chat</p>
               </div>
             </div>
@@ -118,15 +119,15 @@ export default function pricing() {
             <div className="pricing-price-checklist mt-10 mb-5">
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">5 Projects</p>
+                <p className="pricing-price-checklist-text">10 Projects</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">5,000 Shine Audits</p>
+                <p className="pricing-price-checklist-text">10,000 Shine Audits</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">5,000 Keywords Research Usages</p>
+                <p className="pricing-price-checklist-text">10,000 Keywords Research Usages</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
@@ -141,11 +142,11 @@ export default function pricing() {
                 <p className="pricing-price-checklist-text">Unlimited Leads</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
                 <p className="pricing-price-checklist-text">Unlimited AI Keywords</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
                 <p className="pricing-price-checklist-text">Unlimited AI Chat</p>
               </div>
               <div className="flex gap-2 mb-3">
@@ -173,17 +174,17 @@ export default function pricing() {
                 <p className="pricing-price-checklist-text">Leads List & Widget</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
                 <p className="pricing-price-checklist-text">AI Keywords</p>
               </div>
               <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
+                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
                 <p className="pricing-price-checklist-text">AI Chat</p>
               </div>
             </div>
             <div className="pricing-price-footer flex flex-col justify-center items-center gap-5 w-full mt-10">
               <a href="/pricing" className="pricing-price-footer-button">Choose Plan</a>
-              <p className="pricing-price-footer-text">save $108.12 per year</p>
+              <p className="pricing-price-footer-text">save $204.24 per year</p>
             </div>
           </div>
 
@@ -196,15 +197,15 @@ export default function pricing() {
             <div className="pricing-price-checklist mt-10 mb-5">
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">5 Projects</p>
+                <p className="pricing-price-checklist-text">20 Projects</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">5,000 Shine Audits</p>
+                <p className="pricing-price-checklist-text">20,000 Shine Audits</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">5,000 Keywords Research Usages</p>
+                <p className="pricing-price-checklist-text">20,000 Keywords Research Usages</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
@@ -261,15 +262,34 @@ export default function pricing() {
             </div>
             <div className="pricing-price-footer flex flex-col justify-center items-center gap-5 w-full mt-10">
               <a href="/pricing" className="pricing-price-footer-button">Choose Plan</a>
-              <p className="pricing-price-footer-text">save $108.12 per year</p>
+              <p className="pricing-price-footer-text">save $420.00 per year</p>
             </div>
           </div>
         </div>
+
+      {/* Row 2 Contents - No Commitment Policy */}
+      <div className="text-center my-20 price-policy-container">
+        <div>
+          <p className="pricing-policy-text-1">At <span className="text-[#54E3E6]">Shine Ranker</span>, we follow a “No Commitment” policy.</p>
+        </div>
+        <div>
+          <p className="pricing-policy-text-1">You may cancel your subscription any time.</p>
+        </div>
+        <div>
+          <p className="pricing-policy-text-2 mt-5">Terms and Rules may apply. Read full fine print on Cancelations <a href="/legal/refund" className="text-[#54E3E6]">here</a>.</p>
+        </div>
+      </div>
 
 
 
         
       </div>
+
+      {/* Row 3 Contents - Features and Benefits */}
+      <div className="pricing-features-container">
+        <FeaturesAndBenefits/>
+      </div>
+
     </div>
   )
 }

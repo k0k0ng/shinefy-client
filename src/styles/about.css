@@ -100,12 +100,6 @@
   padding: 20px;
 }
 
-.about-contact-container {
-  background: var(--hero-background, #051525);
-  padding: 40px 320px;
-  width: 100%;
-}
-
 .about-icon {
   margin-right: 210px;
 }

@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -80,7 +81,6 @@ code {
 /* global content */
 .global-content-container {
   margin: 50px 20%;
-  min-height: calc(100vh - 300px);
 }
 
 

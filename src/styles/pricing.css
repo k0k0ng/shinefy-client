@@ -1,3 +1,7 @@
+.pricing-content-container {
+    transform: translate(0, -200px);
+}
+
 .pricing-header-background-custom {
     height: 600px;
     background-image: url("/images/Rectangle.png");
@@ -13,12 +17,9 @@
     margin: 0 20%;
 }
 
-.pricing-price-cards {
-    transform: translate(0, -200px);
-}
-
 .pricing-price-card {
     width: 330px;
+    max-width: 330px;
     height: 100%;
     flex-shrink: 0;
     padding: 30px 40px;
@@ -45,7 +46,7 @@
 .pricing-price-title-2 {
     color: var(--soft-grey, #F1F1F1);
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 36.818px;
     font-style: normal;
     font-weight: 700;
@@ -103,11 +104,47 @@
     line-height: normal;
 }
 
+.price-policy-container {
+}
+
+.pricing-policy-text-1 {
+    color: #FFF;
+    text-align: center;
+    /* Body 2 */
+    font-family: Karla;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+}
+
+.pricing-policy-text-2 {
+    color: #FFF;
+    text-align: center;
+    /* Caption */
+    font-family: Karla;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.pricing-features-container {
+    display: absolute;
+    left: 0;
+    width: 100%;
+    transform: translate(0, -200px);
+}
+
 @media screen and (max-width: 1280px) {
     .pricing-price-card {
-        width: 80%;
+        width: 100%;
+        max-width: 400px;
     }
-    .pricing-price-cards {
+    .pricing-content-container {
+        transform: translate(0, 0);
+    }
+    .pricing-features-container {
         transform: translate(0, 0);
     }
 }

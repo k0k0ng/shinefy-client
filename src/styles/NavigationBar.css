@@ -40,7 +40,7 @@ nav.sticky {
     }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1550px) {
     .navContainer {
         padding: 0;
     }
