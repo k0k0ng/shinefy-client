@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import thumbnail from "../../../public/images/thumbnail.png";
-import playbutton from "../../../public/images/playButton.png";
+import thumbnail from "/public/images/thumbnail.png";
+import playbutton from "/public/images/playButton.png";
 
 import FeaturesAndBenefits from "@/components/FeaturesAndBenefits";
 
@@ -102,7 +102,10 @@ export default function about() {
       </div>
 
       {/* Features & Benefits */}
-      <FeaturesAndBenefits />
+      <div className="mb-20">
+        <FeaturesAndBenefits />
+      </div>
+
     </div>
   );
 }
