@@ -143,7 +143,7 @@ const FacebookDisclaimer = () => {
                 </div>
                 <div>
                   <p className="legal-content-text">
-                    4. Information posted on any of Shineranker, LLC's websites
+                    4. Information posted on any of Shineranker, LLC&apos;s websites
                     or on its Facebook page is not intended to be medical advice
                     and should not be considered medical advice, nor is it
                     intended to replace consultation with a qualified physician
