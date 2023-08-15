@@ -110,8 +110,8 @@ const Refund = () => {
               <div className="legal-text-card">
                 <h2 className="legal-title-text my-5 pt-10">Introduction</h2>
                 <p className="legal-content-text">
-                  If you find that Shine Ranker isn't the perfect fit for you,
-                  don't worry. Just follow the steps below and our team will
+                  If you find that Shine Ranker isn&apos;t the perfect fit for you,
+                  don&apos;t worry. Just follow the steps below and our team will
                   help you.
                 </p>
               </div>
@@ -145,7 +145,7 @@ const Refund = () => {
                 <p className="legal-content-text">
                   We offer a 7-day money-back guarantee according to the terms
                   described herein. If you cancel your subscription within 7
-                  calendar days of placing your order, we'll refund your prepaid
+                  calendar days of placing your order, we&apos;ll refund your prepaid
                   fees upon your written request within 30 calendar days.
                 </p>
                 <p className="legal-content-text">
@@ -155,12 +155,12 @@ const Refund = () => {
                   bank fees and charges will be borne solely by you.
                 </p>
                 <p className="legal-content-text">
-                  We reserve the right to reject your refund request if it's
+                  We reserve the right to reject your refund request if it&apos;s
                   outside the refund period and terms. Please make sure to
                   manage your account subscriptions and purchases responsibly.
                   Also, keep in mind that refunds are only available for the
-                  current subscription payment on your account and don't apply
-                  to previous month's overage charges or additional costs.
+                  current subscription payment on your account and don&apos;t apply
+                  to previous month&apos;s overage charges or additional costs.
                 </p>
               </div>
 

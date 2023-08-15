@@ -78,8 +78,8 @@ const AffiliatePromotions = () => {
                 </div>
                 <div>
                   <p className="legal-content-text">
-                    3. You must NOT run "negative" PPC or iframe domain
-                    campaigns such as "Product name / author name scam" or any
+                    3. You must NOT run &quot;negative&quot; PPC or iframe domain
+                    campaigns such as &quot;Product name / author name scam&quot; or any
                     other method to attract controversial click thru rates that
                     an ordinary person would deem to portray a negative view of
                     the product. This creates a very bad image for our company
@@ -99,7 +99,7 @@ const AffiliatePromotions = () => {
                 <div>
                   <p className="legal-content-text">
                     5. You cannot earn commission on your own purchase. Any
-                    'self' purchase commission may be nullified or held back.
+                    &apos;self&apos; purchase commission may be nullified or held back.
                   </p>
                 </div>
                 <div>
@@ -112,7 +112,7 @@ const AffiliatePromotions = () => {
                 <div>
                   <p className="legal-content-text">
                     7. Affiliate payments will be set as automatic payments
-                    after 30 days of your referral's successful purchase.
+                    after 30 days of your referral&apos;s successful purchase.
                   </p>
                 </div>
                 <div>
@@ -143,8 +143,8 @@ const AffiliatePromotions = () => {
                   <p className="legal-content-text">
                     11. Affiliates CANNOT create social media pages with the
                     product name, official logo or brand name to avoid confusion
-                    and prevent abuse. Anyone found using "brand name" "website
-                    name" or "product images" on their Facebook fan page or
+                    and prevent abuse. Anyone found using &quot;brand name&quot; &quot;website
+                    name&quot; or &quot;product images&quot; on their Facebook fan page or
                     other social platform to promote the product without
                     permission will be banned immediately!
                   </p>

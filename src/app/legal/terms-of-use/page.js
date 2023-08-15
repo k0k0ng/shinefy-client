@@ -67,7 +67,7 @@ const TermsOfUse = () => {
                   You agree to indemnify Shine Ranker, LLC to the fullest extent
                   possible from any and all liabilities, costs, demands, causes
                   of action, damages, and expenses (including reasonable
-                  attorney's fees) resulting from your breach of any provisions
+                  attorney&apos;s fees) resulting from your breach of any provisions
                   in these Terms.
                 </p>
               </div>

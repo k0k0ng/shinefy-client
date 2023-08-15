@@ -18,7 +18,7 @@ export default function Home() {
     })
 
     return () => anim.destroy();
-  }, [])
+  }, [animationContainer])
 
   return (
     <main>
@@ -49,7 +49,7 @@ export default function Home() {
                         href="https://chasereiner.thrivecart.com/shine-ranker-deal"
                         className="text-white font-bold rounded button-1"
                       >
-                        Let's Get Started
+                        Let&apos;s Get Started
                         <i className="fa-solid fa-chevron-right text-white ml-2 lg:ml-14"></i>
                       </a>
                     </div>

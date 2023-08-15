@@ -57,7 +57,7 @@ const FacebookDisclaimer = () => {
                   way. FACEBOOK is a trademark of FACEBOOK, Inc.
                 </p>
                 <p className="legal-content-text">
-                  Complete details for Facebook’s legal terms are are available
+                  Complete details for Facebook&apos;s legal terms are are available
                   at: https://www.facebook.com/legal/terms
                 </p>
                 <p className="legal-content-text">
@@ -127,7 +127,7 @@ const FacebookDisclaimer = () => {
                     affiliated with the Shineranker, LLC);
                   </p>
                   <p className="legal-content-text">
-                    Comments that use foul language or "hate speech" (for
+                    Comments that use foul language or &apos;hate speech&apos; (for
                     example, including but not limited to racial, ethnic or
                     gender bashing language);
                   </p>
