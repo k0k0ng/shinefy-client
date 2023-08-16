@@ -5,7 +5,7 @@ import ToggleButton from "@/components/ToggleButton";
 
 import "../../styles/pricing.css";
 
-export default function pricing() {
+export default function Pricing() {
   const [selectedOption, setSelectedOption] = useState("monthly");
 
   const handleOptionChange = (option) => {
