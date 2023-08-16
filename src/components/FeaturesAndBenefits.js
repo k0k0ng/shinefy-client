@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-import key from "public/images/key.png";
-import chat from "public/images/chat.png";
-import support from "public/images/support.png";
-import updates from "public/images/updates.png";
-import vip from "public/images/vip.png";
-import checklist from "public/images/checklist.png";
+import key from "/public/images/key.png";
+import chat from "/public/images/chat.png";
+import support from "/public/images/support.png";
+import updates from "/public/images/updates.png";
+import vip from "/public/images/vip.png";
+import checklist from "/public/images/checklist.png";
 
 import "../styles/FeaturesAndBenefits.css";
 
