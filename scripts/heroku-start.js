@@ -1,23 +1,22 @@
-const express = require("express");
-const path = require("path");
-const app = express();
+const express = require('express');
+const next = require('next');
+const path = require('path');
+
+const dev = process.env.NODE_ENV !== 'production';
+const app = next({ dev });
+const handle = app.getRequestHandler();
+
 const port = process.env.PORT || 3000;
 
-app.use(express.json());
+app.prepare().then(() => {
+  const server = express();
 
-// Your static site folder name
-app.use(express.static(path.join(__dirname, "..", "build")));
+  server.get('*', (req, res) => {
+    return handle(req, res);
+  });
 
-// Root Redirects to the build in assets folder
-app.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname, "..", "build"));
-});
-
-// Any Page Redirects to the build in assets folder index.html that will load the react app
-app.get("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "..", "build/index.html"));
-});
-
-app.listen(port, () => {
-  console.log("Server is running on port: ", port);
+  server.listen(port, (err) => {
+    if (err) throw err;
+    console.log(`> Ready on http://localhost:${port}`);
+  });
 });

@@ -83,7 +83,7 @@ export default function about() {
                         className="mx-auto max-w-full h-auto"
                       />
                       <Image
-                        src="/images/playButton.png"
+                        src="/images/playbutton.png"
                         alt="Play Button"
                         width={100}
                         height={100}
