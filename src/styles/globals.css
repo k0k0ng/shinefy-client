@@ -24,7 +24,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #04101f;;
+  background-color: #07061C;
 }
 
 code {
@@ -36,7 +36,7 @@ code {
 /* global headers */
 .global-header-background-custom {
   height: 400px;
-  background-image: url("/images/Rectangle.png");
+  background-image: url("/images/global/Rectangle.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

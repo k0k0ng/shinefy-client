@@ -1,5 +1,5 @@
 .feature-container {
-    background: var(--hero-background, #051525);
+    background-color: #100826;
     padding: 50px calc(20% + 25px);
 }
 

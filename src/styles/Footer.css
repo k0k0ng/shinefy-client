@@ -1,0 +1,17 @@
+.footer-heading-title {
+    color: var(--white, #FFF);
+    font-family: Karla;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 21.6px */
+}
+
+.footer-tagline {
+    color: var(--white, #FFF);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 21.6px */
+}

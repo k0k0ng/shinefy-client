@@ -1,8 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from 'next/image';
-import logo from "../../../public/assets/logo.svg";
+
+const logo = "/images/global/shineAi-logo.png";
+
 import "../../styles/NavigationBar.css";
 
 const NavigationBar = () => {
@@ -37,16 +38,13 @@ const NavigationBar = () => {
       >
         <div className="flex flex-wrap items-center justify-between mx-[5vw] lg:mx-[20vw] py-4">
           <a href="/" className="flex items-center navLogo">
-            <Image
+            <img
               src={logo}
               alt="Shine Ranker Logo"
-              width={51} // Specify the width of the image
-              height={52} // Specify the height of the image
-              className="h-[51px] w-[52px] mr-2"
+              width="249px" // Specify the width of the image
+              height="62px" // Specify the height of the image
+              className="mr-2"
             />
-            <span className="text-white self-center font-Inter text-[22px] tracking-[1.76px] whitespace-nowrap">
-              SHINE RANKER
-            </span>
           </a>
 
           {/* Sign Up and Log In Buttons */}
@@ -90,14 +88,6 @@ const NavigationBar = () => {
                   className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition hover:opacity-75"
                 >
                   About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/faq"
-                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition hover:opacity-75"
-                >
-                  FAQ
                 </a>
               </li>
               <li>
@@ -148,14 +138,6 @@ const NavigationBar = () => {
                   className="text-white h-16 hover:bg-purple-800 text-sm px-10 flex justify-end items-center font-karla"
                 >
                   About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/faq"
-                  className="text-white h-16 hover:bg-purple-800 text-sm px-10 flex justify-end items-center font-karla"
-                >
-                  FAQ
                 </a>
               </li>
               <li>

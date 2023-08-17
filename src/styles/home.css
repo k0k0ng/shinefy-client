@@ -1,9 +1,7 @@
-
-
 .backgroundCustom {
   height: 100vh;
   min-height: 600px;
-  background-image: url("/images/Rectangle.png");
+  background-image: url("/images/global/Rectangle.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -16,6 +14,29 @@
   height: 100%;
   min-height: 600px;
   margin: 0 20%;
+}
+
+.home-header-minitext {
+  color: var(--tiffany-blue, #54E3E6);
+  /* H8 */
+  font-family: Karla;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 40.8px */
+}
+
+.home-header-spintext {
+  /* H1 */
+  font-family: Montserrat;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 72px */
+  background: linear-gradient(233deg, #7D24E9 0%, #A780F8 50.01%, #3DEEF2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .dashboardCard {
@@ -139,6 +160,44 @@
   }
 }
 
+@media screen and (max-width: 1700px) {
+  .home-header-minitext {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .home-header-spintext {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .fuel-text {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .online-text {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .home-header-minitext {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .home-header-spintext {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .fuel-text {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .online-text {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+
 
 @media screen and (max-width: 1024px) {
   .backgroundCustom {
@@ -150,13 +209,21 @@
   .dashboardCard {
     width: 100%;
   }
+  .home-header-minitext {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .home-header-spintext {
+    font-size: 30px;
+    line-height: 30px;
+  }
   .fuel-text {
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 30px;
+    line-height: 30px;
   }
   .online-text {
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 30px;
+    line-height: 30px;
   }
   .headerPar {
     font-size: 16px;

@@ -1,11 +1,9 @@
-import Image from "next/image";
-
-import key from "/public/images/key.png";
-import chat from "/public/images/chat.png";
-import support from "/public/images/support.png";
-import updates from "/public/images/updates.png";
-import vip from "/public/images/vip.png";
-import checklist from "/public/images/checklist.png";
+const key = "/images/features/key.png";
+const chat = "/images/features/chat.png";
+const support = "/images/features/support.png";
+const updates = "/images/features/updates.png";
+const vip = "/images/features/vip.png";
+const checklist = "/images/features/checklist.png";
 
 import "../styles/FeaturesAndBenefits.css";
 
@@ -31,11 +29,11 @@ const FeaturesAndBenefits = () => {
           {/* First Row */}
           <div className="flex flex-col justify-start items-start">
             <div className="feature-icon">
-              <Image
+              <img
                 src={key}
                 alt="Key Icon"
-                width={40}
-                height={40}
+                width="40px"
+                height="40px"
                 className="mx-auto max-w-full h-auto"
               />
             </div>
@@ -53,11 +51,11 @@ const FeaturesAndBenefits = () => {
 
           <div className="flex flex-col justify-start items-start">
             <div className="about-icon ">
-              <Image
+              <img
                 src={chat}
                 alt="Video Thumbnail"
-                width={40}
-                height={40}
+                width="40px"
+                height="40px"
                 className="mx-auto max-w-full h-auto"
               />
             </div>
@@ -75,11 +73,11 @@ const FeaturesAndBenefits = () => {
 
           <div className="flex flex-col justify-start items-start">
             <div className="about-icon">
-              <Image
+              <img
                 src={support}
                 alt="Support Icon"
-                width={40}
-                height={40}
+                width="40px"
+                height="40px"
                 className="mx-auto max-w-full h-auto"
               />
             </div>
@@ -96,11 +94,11 @@ const FeaturesAndBenefits = () => {
           {/* Second Row */}
           <div className="flex flex-col justify-start items-start">
             <div className="about-icon">
-              <Image
+              <img
                 src={updates}
                 alt="Updates Icon"
-                width={40}
-                height={40}
+                width="40px"
+                height="40px"
                 className="mx-auto max-w-full h-auto"
               />
             </div>
@@ -118,11 +116,11 @@ const FeaturesAndBenefits = () => {
 
           <div className="flex flex-col justify-start items-start">
             <div className="about-icon">
-              <Image
+              <img
                 src={vip}
                 alt="VIP Icon"
-                width={40}
-                height={40}
+                width="40px"
+                height="40px"
                 className="mx-auto max-w-full h-auto"
               />
             </div>
@@ -140,11 +138,11 @@ const FeaturesAndBenefits = () => {
 
           <div className="flex flex-col justify-start items-start">
             <div className="about-icon">
-              <Image
+              <img
                 src={checklist}
                 alt="Checklist Icon"
-                width={40}
-                height={40}
+                width="40px"
+                height="40px"
                 className="mx-auto max-w-full h-auto"
               />
             </div>

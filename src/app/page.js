@@ -30,14 +30,15 @@ export default function Home() {
               <article className="dashboardCard">
                 <div className="content-1">
                   <span className="header-text flex flex-col gap-2">
+                    <h4 className="home-header-minitext">Powerful AI Tools</h4>
                     <h2 className="text-base sm:text-xl inline-flex items-center rounded min-w-max fuel-text">
-                      Fuel your
+                    Your <span className="ml-4 home-header-spintext">Online Growth</span>
                     </h2>
-                    <h2 className="text-base sm:text-xl inline-flex items-center rounded min-w-max online-text mb-2">
-                      Online Growth
+                    <h2 className="text-base sm:text-xl inline-flex items-center rounded min-w-max fuel-text">
+                      Powered by AI Videos
                     </h2>
                   </span>
-                  <p className="text-base sm:text-lg font-light text-white header-text mb-10 lg:mb-5 headerPar">
+                  <p className="text-base sm:text-lg font-light text-white header-text mt-5 mb-10 lg:mb-5 headerPar">
                     Amet nulla ullamco laborum ea do enim nostrud laborum laborum. Minim esse consequat sit labore nulla id est proident et Lorem excepteur sint ea ex. Excepteur fugiat voluptate dolore non tempor deserunt nulla.
                   </p>
 
@@ -47,7 +48,7 @@ export default function Home() {
                       {/* Button-1 content */}
                       <a
                         href="https://chasereiner.thrivecart.com/shine-ranker-deal"
-                        className="text-white font-bold rounded button-1"
+                        className="text-white font-bold rounded button-1 w-full"
                       >
                         Let&apos;s Get Started
                         <i className="fa-solid fa-chevron-right text-white ml-2 lg:ml-14"></i>

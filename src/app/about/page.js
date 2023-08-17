@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import FeaturesAndBenefits from "@/components/FeaturesAndBenefits";
 
 import "../../styles/about.css";
@@ -40,7 +38,7 @@ export default function about() {
           </a>
           <span> {`>`} </span>
           <a href="/" className="legal-category legal-category-current">
-            Products
+            About
           </a>
         </div>
         {/* About */}
@@ -75,15 +73,15 @@ export default function about() {
                     rel="noopener noreferrer"
                   >
                     <div className="relative">
-                      <Image
-                        src="/images/thumbnail.png"
+                      <img
+                        src="/images/about/thumbnail.png"
                         alt="Video Thumbnail"
                         width={394}
                         height={474}
                         className="mx-auto max-w-full h-auto"
                       />
-                      <Image
-                        src="/images/playbutton.png"
+                      <img
+                        src="/images/about/playbutton.png"
                         alt="Play Button"
                         width={100}
                         height={100}

@@ -1,18 +1,16 @@
-import Image from "next/image";
-
 // Images
-import toolRobot from "../../../public/images/tools/tools-robot.png";
-import toolImage2Image from "../../../public/images/tools/tools-image2image.png";
-import toolText2Image from "../../../public/images/tools/tools-text2image.png";
-import toolWebscrape from "../../../public/images/tools/tools-webscrape.png";
-import toolVideo1 from "../../../public/images/tools/tools-video1.png";
-import toolVideo2 from "../../../public/images/tools/tools-video2.png";
+const toolRobot = "/images/tools/tools-robot.png";
+const toolImage2Image = "/images/tools/tools-image2image.png";
+const toolText2Image = "/images/tools/tools-text2image.png";
+const toolWebscrape = "/images/tools/tools-webscrape.png";
+const toolVideo1 = "/images/tools/tools-video1.png";
+const toolVideo2 = "/images/tools/tools-video2.png";
 
 // SVGs
-import iconWebscrape from "../../../public/svg/tools/tools-webscrape-icon.svg";
-import iconVideo from "../../../public/svg/tools/tools-video-icon.svg";
-import iconText2Image from "../../../public/svg/tools/tools-text2image-icon.svg";
-import iconImage2Image from "../../../public/svg/tools/tools-image2image-icon.svg";
+ const iconWebscrape = "/svg/tools/tools-webscrape-icon.svg";
+ const iconVideo = "/svg/tools/tools-video-icon.svg";
+ const iconText2Image = "/svg/tools/tools-text2image-icon.svg";
+ const iconImage2Image = "/svg/tools/tools-image2image-icon.svg";
 
 import "../../styles/tools.css";
 
@@ -73,7 +71,7 @@ export default function tools() {
                   </p>
                 </div>
                 <div>
-                  <Image
+                  <img
                     src={toolRobot}
                     alt="Shine Ranker Robot"
                     width={394} // Specify the width of the image
@@ -108,7 +106,7 @@ export default function tools() {
                 <div className="tools-card-1 flex flex-col-reverse lg:flex-row justify-center items-center w-full gap-20 lg:gap-10 mb-40">
                   <div className="w-full lg:w-[500px]">
                     <div>
-                      <Image
+                      <img
                         src={iconWebscrape}
                         alt="Shine Ranker Web Scraper Tool"
                         width={55} // Specify the width of the image
@@ -127,7 +125,7 @@ export default function tools() {
                     </p>
                   </div>
                   <div>
-                    <Image
+                    <img
                       src={toolWebscrape}
                       alt="Shine Ranker Web Scraper Tool"
                       width={338} // Specify the width of the image
@@ -138,7 +136,7 @@ export default function tools() {
                 <div className="tools-card-1 flex flex-col-reverse lg:flex-row-reverse justify-center items-center w-full gap-20 lg:gap-10 mb-40">
                   <div className="w-full lg:w-[500px]">
                     <div>
-                      <Image
+                      <img
                         src={iconVideo}
                         alt="Shine Ranker Web Scraper Tool"
                         width={55} // Specify the width of the image
@@ -157,12 +155,12 @@ export default function tools() {
                     </p>
                   </div>
                   <div className="flex gap-3">
-                    <Image
+                    <img
                       src={toolVideo1}
                       alt="Shine Ranker Video Generator"
-                      width={200} // Specify the width of the image
+                      width="50%" // Specify the width of the image
                     />
-                    <Image
+                    <img
                       src={toolVideo2}
                       alt="Shine Ranker Video Generator"
                       width={200} // Specify the width of the image
@@ -173,7 +171,7 @@ export default function tools() {
                 <div className="tools-card-1 flex flex-col-reverse lg:flex-row justify-center items-center w-full gap-20 lg:gap-10 mb-40">
                   <div className="w-full lg:w-[500px]">
                     <div>
-                      <Image
+                      <img
                         src={iconText2Image}
                         alt="Shine Ranker Web Scraper Tool"
                         width={55} // Specify the width of the image
@@ -192,7 +190,7 @@ export default function tools() {
                     </p>
                   </div>
                   <div>
-                    <Image
+                    <img
                       src={toolText2Image}
                       alt="Shine Ranker Text to Image"
                       width={291} // Specify the width of the image
@@ -203,7 +201,7 @@ export default function tools() {
                 <div className="tools-card-1 flex flex-col-reverse lg:flex-row-reverse justify-center items-center w-full gap-20 lg:gap-10 mb-[500px]">
                   <div className="w-full lg:w-[500px]">
                     <div>
-                      <Image
+                      <img
                         src={iconImage2Image}
                         alt="Shine Ranker Web Scraper Tool"
                         width={55} // Specify the width of the image
@@ -222,7 +220,7 @@ export default function tools() {
                     </p>
                   </div>
                   <div>
-                    <Image
+                    <img
                       src={toolImage2Image}
                       alt="Shine Ranker Image to Image"
                       width={200} // Specify the width of the image

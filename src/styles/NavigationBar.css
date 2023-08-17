@@ -11,7 +11,7 @@ nav.sticky {
     transition: background-color 0.3s ease-in-out;
 }
 .changeNavColor {
-    background-color: rgba(24, 24, 24, 1); /* Replace with the desired background color on Scroll*/
+    background-color: rgb(17, 17, 17); /* Replace with the desired background color on Scroll*/
 }
 
 .hamburger {
