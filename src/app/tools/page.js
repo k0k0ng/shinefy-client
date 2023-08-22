@@ -7,10 +7,10 @@ const toolVideo1 = "/images/tools/tools-video1.png";
 const toolVideo2 = "/images/tools/tools-video2.png";
 
 // SVGs
- const iconWebscrape = "/svg/tools/tools-webscrape-icon.svg";
- const iconVideo = "/svg/tools/tools-video-icon.svg";
- const iconText2Image = "/svg/tools/tools-text2image-icon.svg";
- const iconImage2Image = "/svg/tools/tools-image2image-icon.svg";
+const iconWebscrape = "/svg/tools/tools-webscrape-icon.svg";
+const iconVideo = "/svg/tools/tools-video-icon.svg";
+const iconText2Image = "/svg/tools/tools-text2image-icon.svg";
+const iconImage2Image = "/svg/tools/tools-image2image-icon.svg";
 
 import "../../styles/tools.css";
 
@@ -154,17 +154,21 @@ export default function tools() {
                       focus on content strategy while the AI handles the rest.
                     </p>
                   </div>
-                  <div className="flex gap-3">
-                    <img
-                      src={toolVideo1}
-                      alt="Shine Ranker Video Generator"
-                      width="50%" // Specify the width of the image
-                    />
-                    <img
-                      src={toolVideo2}
-                      alt="Shine Ranker Video Generator"
-                      width={200} // Specify the width of the image
-                    />
+                  <div className="flex flex-col gap-3 md:flex-row">
+                    <div>
+                      <img
+                        src={toolVideo1}
+                        alt="Shine Ranker Video Generator"
+                        width={200} // Specify the width of the image
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src={toolVideo2}
+                        alt="Shine Ranker Video Generator"
+                        width={200} // Specify the width of the image
+                      />
+                    </div>
                   </div>
                 </div>
 
@@ -240,10 +244,11 @@ export default function tools() {
                   <p className="tools-pricing-text-3 mt-5 mb-10">
                     Compare and choose from these packages.
                   </p>
-                  <a href="/pricing" className="tools-pricing-button">See Pricing Plan</a>
+                  <a href="/pricing" className="tools-pricing-button">
+                    See Pricing Plan
+                  </a>
                 </div>
               </div>
-
             </div>
           </div>
         </div>

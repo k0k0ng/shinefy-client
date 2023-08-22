@@ -5,11 +5,11 @@ const logo = "/images/global/shineAi-logo.png";
 const FooterPage = () => {
   return (
     <footer className="bg-footerpurp">
-      <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8 lg:text-left">
+      <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8 xl:text-left">
         <div className="flex justify-center">
-          <div className="flex flex-col lg:flex-row items-center xl:items-start gap-10">
+          <div className="flex flex-col xl:flex-row items-center xl:items-start gap-10">
             <div className="">
-              <a href="/" className="flex justify-center lg:justify-start">
+              <a href="/" className="flex justify-center xl:justify-start">
                 <img
                   src={logo}
                   alt="Shine Ranker Logo"
@@ -19,16 +19,16 @@ const FooterPage = () => {
               </a>
 
               <div className="">
-                <p className="footer-tagline mt-4 flex justify-center lg:justify-start">
+                <p className="footer-tagline mt-4 flex justify-center xl:justify-start">
                   Earn money with
                 </p>
 
-                <p className="footer-tagline mt-2 flex justify-center lg:justify-start">
+                <p className="footer-tagline mt-2 flex justify-center xl:justify-start">
                   Shine Ranker Tools
                 </p>
               </div>
 
-              <ul className="mt-8 flex justify-center lg:justify-start gap-6">
+              <ul className="mt-8 flex justify-center xl:justify-start gap-6">
                 <li>
                   <a
                     href="https://www.facebook.com/shineranker"
@@ -80,9 +80,9 @@ const FooterPage = () => {
             </div>
 
             {/* ALL FOOTER LINKS */}
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12 md:gap-10 xl:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 md:gap-10 xl:gap-8">
               {/* col 1 footer - Products*/}
-              <ul className="flex flex-col flex-wrap gap-6 text-center lg:text-left w-full">
+              <ul className="flex flex-col flex-wrap gap-6 text-center xl:text-left w-full">
                 <li>
                   <h1 className="footer-heading-title">Products</h1>
                 </li>
@@ -132,7 +132,7 @@ const FooterPage = () => {
                 </li>
               </ul>
 
-              <ul className=" flex flex-col flex-wrap gap-6 text-center lg:text-left w-full">
+              <ul className=" flex flex-col flex-wrap gap-6 text-center xl:text-left w-full">
                 <li>
                   <h1 className="footer-heading-title">Legal</h1>
                 </li>
@@ -193,7 +193,7 @@ const FooterPage = () => {
                 </li>
               </ul>
 
-              <ul className="flex flex-col flex-wrap gap-6 text-center lg:text-left w-full">
+              <ul className="flex flex-col flex-wrap gap-6 text-center xl:text-left w-full">
                 <li>
                   <h1 className="footer-heading-title">About</h1>
                 </li>
@@ -232,7 +232,7 @@ const FooterPage = () => {
                 </li>
               </ul>
 
-              <ul className="flex flex-col flex-wrap gap-6 text-center lg:text-left w-full">
+              <ul className="flex flex-col flex-wrap gap-6 text-center xl:text-left w-full">
                 <li>
                   <h1 className="footer-heading-title">Support</h1>
                 </li>

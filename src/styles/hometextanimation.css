@@ -1,0 +1,135 @@
+
+  .content {
+    height: 100%;
+    width: 50vw;
+    overflow: hidden;
+    line-height: 60px;
+  }
+  
+  .content__container {
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+  }
+  
+  
+  .content__container__text {
+    display: inline;
+
+    margin: 0;
+  }
+  
+  .content__container__list {
+    margin-top: 6px;
+    padding-left: 160px;
+    text-align: left;
+    list-style: none;
+    animation-name: change;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+  
+  .content__container__list__item {
+    line-height: 0px;
+    margin: 0;
+  }
+
+  
+  @keyframes change {
+    0%, 11%, 100% {
+      transform: translate3d(0, -25%, 0);
+    }
+    22%, 33% {
+      transform: translate3d(0, -50%, 0);
+    }
+    44%, 55% {
+      transform: translate3d(0, -75%, 0);
+    }
+    66%, 77% {
+      transform: translate3d(0, -100%, 0);
+    }
+    88%, 99% {
+      transform: translate3d(0, -25%, 0);
+    }
+    /* 83.3%, 95.96% {
+      transform: translate3d(0, -25%, 0);
+    } */
+  }
+
+  @media screen and (max-width: 1700px) {
+    .content__container__list {
+        margin-top: 6px;
+        padding-left: 120px;
+    }
+
+    @keyframes change {
+        0%, 11%, 100% {
+          transform: translate3d(0, -27%, 0);
+        }
+        22%, 33% {
+          transform: translate3d(0, -52%, 0);
+        }
+        44%, 55% {
+          transform: translate3d(0, -77%, 0);
+        }
+        66%, 77% {
+          transform: translate3d(0, -102%, 0);
+        }
+        88%, 99% {
+          transform: translate3d(0, -27%, 0);
+        }
+    }
+  }
+  
+  @media screen and (max-width: 1500px) {
+    .content {
+        width: 100%;
+      }
+    .content__container__list {
+        margin-top: 6px;
+        padding-left: 92px;
+    }
+
+    @keyframes change {
+        0%, 11%, 100% {
+          transform: translate3d(0, -30%, 0);
+        }
+        22%, 33% {
+          transform: translate3d(0, -55%, 0);
+        }
+        44%, 55% {
+          transform: translate3d(0, -80%, 0);
+        }
+        66%, 77% {
+          transform: translate3d(0, -105%, 0);
+        }
+        88%, 99% {
+          transform: translate3d(0, -30%, 0);
+        }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .content__container__list {
+        margin-top: 6px;
+        padding-left: 83px;
+    }
+
+    @keyframes change {
+        0%, 11%, 100% {
+          transform: translate3d(0, -30%, 0);
+        }
+        22%, 33% {
+          transform: translate3d(0, -55%, 0);
+        }
+        44%, 55% {
+          transform: translate3d(0, -80%, 0);
+        }
+        66%, 77% {
+          transform: translate3d(0, -105%, 0);
+        }
+        88%, 99% {
+          transform: translate3d(0, -30%, 0);
+        }
+    }
+  }

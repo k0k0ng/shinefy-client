@@ -1,9 +1,10 @@
 "use client";
 
-import "../styles/home.css";
 import lottie from "lottie-web";
-import { createRef, useEffect } from 'react';
-// import robotRun from "../assets/robot-run.json";
+import { createRef, useEffect } from "react";
+
+import "../styles/home.css";
+import "../styles/hometextanimation.css";
 
 export default function Home() {
   let animationContainer = createRef();
@@ -14,14 +15,14 @@ export default function Home() {
       rerender: "svg",
       loop: true,
       autoplay: true,
-      path: "/assets/robot-run.json"
-    })
+      path: "/assets/robot-run.json",
+    });
 
     return () => anim.destroy();
-  }, [animationContainer])
+  }, [animationContainer]);
 
   return (
-    <main>
+    <div>
       <header className="backgroundCustom font-montserrat min-h-screen flex flex-col">
         <div className="flex flex-col-reverse justify-center lg:flex-row gap-0 items-center lg:justify-center headerContainer">
           {/* Left Column */}
@@ -32,14 +33,55 @@ export default function Home() {
                   <span className="header-text flex flex-col gap-2">
                     <h4 className="home-header-minitext">Powerful AI Tools</h4>
                     <h2 className="text-base sm:text-xl inline-flex items-center rounded min-w-max fuel-text">
-                    Your <span className="ml-4 home-header-spintext">Online Growth</span>
+                      <div class="content">
+                        <div class="content__container">
+                          <p class="content__container__text">Your</p>
+
+                          <ul className="content__container__list">
+                            <li className="content__container__list__item">
+                              <span className="home-header-spintext">
+                                Online Growth
+                              </span>
+                            </li>
+                            <li className="content__container__list__item">
+                              <span className="home-header-spintext">
+                                Passive Income
+                              </span>
+                            </li>
+                            <li className="content__container__list__item">
+                              <span className="home-header-spintext">
+                                Viral Content
+                              </span>
+                            </li>
+                            <li className="content__container__list__item">
+                              <span className="home-header-spintext">
+                                Youtube Shorts
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </h2>
                     <h2 className="text-base sm:text-xl inline-flex items-center rounded min-w-max fuel-text">
                       Powered by AI Videos
                     </h2>
                   </span>
                   <p className="text-base sm:text-lg font-light text-white header-text mt-5 mb-10 lg:mb-5 headerPar">
-                    Amet nulla ullamco laborum ea do enim nostrud laborum laborum. Minim esse consequat sit labore nulla id est proident et Lorem excepteur sint ea ex. Excepteur fugiat voluptate dolore non tempor deserunt nulla.
+                    Shine Ranker is a collection of powerful AI tools that
+                    generate AI videos for passive income in just one click.
+                    Powered by
+                    <object
+                      data="/svg/home/openai-logo.svg"
+                      type="image/svg+xml"
+                      height="40"
+                      className="home-openai"
+                    >
+                      <img
+                        src="/svg/home/openai-logo.svg"
+                        alt="OpenAI Logo"
+                        height="40"
+                      />
+                    </object>
                   </p>
 
                   {/* Button  - Lets Get Started */}
@@ -69,29 +111,47 @@ export default function Home() {
 
           {/* Middle Column */}
           <div className="robotRun">
-            <div className="home-animation-container" ref={animationContainer}/>
+            <div
+              className="home-animation-container"
+              ref={animationContainer}
+            />
           </div>
         </div>
-
-        {/* Bottom Column */}
-        {/* <div className="btm-col flex justify-center mt-4 mx-auto items-center">
-          <div className="flex items-center">
-            <div className="imageContainer">
-              <img src={men} alt="Placeholder" className="men" />
-            </div>
-            <div className="textContainer px-2.5">
-              <p className="text-sm sm:text-base">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua."
-              </p>
-              <p className="textContainer-2 text-sm sm:text-base">
-                John Flemming, Co-Owner of ExampleReels
-              </p>
-            </div>
-          </div>
-        </div> */}
       </header>
 
-    </main>
-  )
+      <main>
+        {/* ROW 1 - Owner Message */}
+        {/* <article>
+          <div>
+            <img
+              src="/images/home/men.png"
+              alt="Owner Message"
+              width="190px"
+              height="190px"
+              className=""
+            />
+          </div>
+          <div>
+            <h1 className="home-owner-message">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</h1>
+            <p className="home-owner-name">John Flemming, Co-Owner of ExampleReels</p>
+          </div>
+        </article> */}
+
+        {/* ROW 2 - How to use Shine Ranker App */}
+        <section></section>
+
+        {/* ROW 3 - Our powerful tools */}
+        <section></section>
+
+        {/* ROW 4 - Our pricing plan */}
+        <section></section>
+
+        {/* ROW 5 - Our pricing plan */}
+        <section></section>
+
+        {/* ROW 6 - Limited Time Offer */}
+        <section></section>
+      </main>
+    </div>
+  );
 }
