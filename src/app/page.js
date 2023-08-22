@@ -33,9 +33,9 @@ export default function Home() {
                   <span className="header-text flex flex-col gap-2">
                     <h4 className="home-header-minitext">Powerful AI Tools</h4>
                     <h2 className="text-base sm:text-xl inline-flex items-center rounded min-w-max fuel-text">
-                      <div class="content">
-                        <div class="content__container">
-                          <p class="content__container__text">Your</p>
+                      <div className="content">
+                        <div className="content__container">
+                          <p className="content__container__text">Your</p>
 
                           <ul className="content__container__list">
                             <li className="content__container__list__item">
