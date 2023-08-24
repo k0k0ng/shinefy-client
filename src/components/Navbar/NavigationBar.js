@@ -108,7 +108,7 @@ const NavigationBar = () => {
               </li>
               <li>
                 <a
-                  href="https://app.shineranker.com/signup_free/"
+                  href="/signup"
                   type="button"
                   className="text-white h-10 bg-purp hover:bg-purple-800 transition font-medium rounded-lg text-sm px-10 flex justify-center items-center font-karla mr-3"
                 >
@@ -117,7 +117,7 @@ const NavigationBar = () => {
               </li>
               <li>
                 <a
-                  href="https://app.shineranker.com/login/"
+                  href="/login"
                   type="button"
                   className="text-white h-10 border-2 hover:bg-purple-800 transition hover:border-purple-800 font-medium rounded-lg text-sm px-10 flex justify-center items-center md:mr-0 font-karla "
                 >
@@ -158,7 +158,7 @@ const NavigationBar = () => {
               </li>
               <li>
                 <a
-                  href="https://app.shineranker.com/signup_free/"
+                  href="/signup"
                   type="button"
                   className="text-white h-16 hover:bg-purple-800 text-sm px-10 flex justify-end items-center font-karla"
                 >
@@ -167,7 +167,7 @@ const NavigationBar = () => {
               </li>
               <li>
                 <a
-                  href="https://app.shineranker.com/login/"
+                  href="/login"
                   type="button"
                   className="text-white h-16 hover:bg-purple-800 text-sm px-10 flex justify-end items-center font-karla"
                 >

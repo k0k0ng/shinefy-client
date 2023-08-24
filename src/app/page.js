@@ -119,9 +119,9 @@ export default function Home() {
         </div>
       </header>
 
-      <main>
+      <main className="global-content-container">
         {/* ROW 1 - Owner Message */}
-        {/* <article>
+        <article className="flex justify-center items-center gap-5">
           <div>
             <img
               src="/images/home/men.png"
@@ -133,9 +133,9 @@ export default function Home() {
           </div>
           <div>
             <h1 className="home-owner-message">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</h1>
-            <p className="home-owner-name">John Flemming, Co-Owner of ExampleReels</p>
+            <p className="mt-5 home-owner-name">John Flemming, Co-Owner of ExampleReels</p>
           </div>
-        </article> */}
+        </article>
 
         {/* ROW 2 - How to use Shine Ranker App */}
         <section></section>

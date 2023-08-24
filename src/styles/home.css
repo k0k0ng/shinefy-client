@@ -92,6 +92,28 @@
   z-index: 20;
 }
 
+
+/* HOME CONTENTS */
+.home-owner-message {
+  color: var(--white, #FFF);
+  font-family: Karla;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 28.8px */
+  max-width: 498px;
+}
+
+.home-owner-name {
+  color: var(--soft-grey, #F1F1F1);
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 19.2px */
+}
+
+
 @media screen and (min-width: 2400px) {
   .headerContainer {
     margin: 0 calc((100vw - 1440px)/2);
