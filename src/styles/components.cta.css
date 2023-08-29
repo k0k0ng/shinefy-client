@@ -1,0 +1,43 @@
+
+.limited-time-offer-title {
+    color: var(--white, #fff);
+    font-family: Karla;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 28.8px */
+  }
+  
+.limited-time-offer-header {
+    color: var(--cyan, #54e3e6);
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 36px */
+}
+  
+.limited-time-offer-subheader {
+    color: var(--white, #fff);
+    font-family: Karla;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 24px */
+  }
+
+.limited-time-offer-btn {
+    color: #FFF;
+    background-color: #e91c3e;
+    border-radius: 4px;
+    font-family: Karla;
+    font-size: 16px;
+    padding: 16px 0px;
+    width: 220px;
+}
+
+@media screen and (max-width: 768px) {
+    .limited-time-offer-btn {
+        width: 90%;
+    }
+}

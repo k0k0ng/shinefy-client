@@ -1,5 +1,8 @@
 import React from "react";
 // import "./home.css";
+import ContactForm from "@/components/Contacts/ContactForm";
+import ContactInfo from "@/components/Contacts/ContactInfo";
+import LimitedTimeOffer from "@/components/CTA/LimitedTimeOffer";
 
 const EarningsDisclaimer = () => {
   return (
@@ -120,7 +123,7 @@ const EarningsDisclaimer = () => {
                 </p>
               </div>
 
-              <div className="flex flex-col md:flex-row justify-center gap-5 md:gap-10 mt-10 mb-10 legal-contact-info">
+              {/* <div className="flex flex-col md:flex-row justify-center gap-5 md:gap-10 mt-10 mb-10 legal-contact-info">
                 <div className="flex justify-center">
                   <i className="fa-solid fa-phone text-[#8844DA] mr-2"></i>
                   <p>+(805) 453-3586</p>
@@ -129,11 +132,18 @@ const EarningsDisclaimer = () => {
                   <i className="fa-regular fa-envelope text-[#8844DA] mr-2"></i>
                   <p>support@shineranker.com</p>
                 </div>
-              </div>
+              </div> */}
+
             </div>
           </div>
         </div>
       </div>
+
+      <ContactForm />
+
+      <ContactInfo />
+
+      <LimitedTimeOffer />
 
       {/* Form */}
       {/* <div className="backgroundCustom-3">

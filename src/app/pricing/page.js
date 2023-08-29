@@ -2,8 +2,11 @@
 import { useState } from "react";
 import FeaturesAndBenefits from "@/components/FeaturesAndBenefits";
 import ToggleButton from "@/components/ToggleButton";
+import ContactInfo from "@/components/Contacts/ContactInfo";
+import LimitedTimeOffer from "@/components/CTA/LimitedTimeOffer";
 
 import "../../styles/pricing.css";
+import "@/styles/components.contacts.css";
 
 export default function Pricing() {
   const [selectedOption, setSelectedOption] = useState("monthly");
@@ -388,6 +391,11 @@ export default function Pricing() {
       <div className="pricing-features-container">
         <FeaturesAndBenefits />
       </div>
+
+      <ContactInfo />
+
+      <LimitedTimeOffer />
+
     </div>
   );
 }

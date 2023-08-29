@@ -12,7 +12,11 @@ const iconVideo = "/svg/tools/tools-video-icon.svg";
 const iconText2Image = "/svg/tools/tools-text2image-icon.svg";
 const iconImage2Image = "/svg/tools/tools-image2image-icon.svg";
 
+import ContactInfo from "@/components/Contacts/ContactInfo";
+import LimitedTimeOffer from "@/components/CTA/LimitedTimeOffer";
+
 import "../../styles/tools.css";
+import "@/styles/components.contacts.css";
 
 export default function tools() {
   return (
@@ -249,10 +253,18 @@ export default function tools() {
                   </a>
                 </div>
               </div>
+
+              
+
             </div>
           </div>
         </div>
       </div>
+
+      <ContactInfo />
+
+      <LimitedTimeOffer />
+
     </div>
   );
 }

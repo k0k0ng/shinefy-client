@@ -1,6 +1,11 @@
 "use client";
 import React, { useState } from "react";
+
+import ContactInfo from "@/components/Contacts/ContactInfo";
+import LimitedTimeOffer from "@/components/CTA/LimitedTimeOffer";
+
 import "../../styles/faq.css";
+import "@/styles/components.contacts.css";
 
 function Accordion({ items, buttonSelectedColor, contentSelectedColor }) {
   const [activeIndex, setActiveIndex] = useState(-1);
@@ -245,19 +250,9 @@ const FAQ = () => {
         </div>
       </div>
 
-      <div className="faq-contact-container">
-        {/* Contact info */}
-        <div className="flex flex-col md:flex-row justify-center gap-5 md:gap-10 mt-10 mb-10 faq-contact-info">
-          <div className="flex justify-center">
-            <i className="fa-solid fa-phone text-[#8844DA] mr-2"></i>
-            <p>+(805) 453-3586</p>
-          </div>
-          <div className="flex justify-center">
-            <i className="fa-regular fa-envelope text-[#8844DA] mr-2"></i>
-            <p>support@shineranker.com</p>
-          </div>
-        </div>
-      </div>
+      <ContactInfo />
+
+      <LimitedTimeOffer />
 
       {/* Form */}
       {/* <div className="backgroundCustom-3">
