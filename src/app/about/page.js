@@ -1,6 +1,9 @@
 import FeaturesAndBenefits from "@/components/FeaturesAndBenefits";
+import ContactInfo from "@/components/Contacts/ContactInfo";
+import LimitedTimeOffer from "@/components/CTA/LimitedTimeOffer";
 
 import "../../styles/about.css";
+import "@/styles/components.contacts.css";
 
 export default function about() {
   const youtubeVideoId = "PL3PXYFdlsU&t=2s";
@@ -100,6 +103,10 @@ export default function about() {
       <div className="mb-20">
         <FeaturesAndBenefits />
       </div>
+
+      <ContactInfo />
+
+      <LimitedTimeOffer />
 
     </div>
   );
