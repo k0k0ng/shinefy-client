@@ -34,6 +34,13 @@ nav.sticky {
     right: 20vw;
 }
 
+.aboutLinksContainer {
+    background-color: rgb(20, 20, 20);
+    z-index: 99;
+    position: absolute; 
+    top: 70px;
+}
+
 @media screen and (min-width: 2400px) {
     .navContainer > div {
       margin: 0 calc((100vw - 1440px)/2);

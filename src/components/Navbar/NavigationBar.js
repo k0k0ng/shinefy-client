@@ -8,6 +8,7 @@ import "../../styles/NavigationBar.css";
 
 const NavigationBar = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
+  const [showAboutNav, setShowAboutNav] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
   // Add an event listener to track scrolling and set the sticky state accordingly
@@ -54,9 +55,7 @@ const NavigationBar = () => {
               type="button"
               className="inline-flex items-center w-11 h-10 justify-center text-sm text-gray-100 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-gray-200"
               aria-controls="navbar-sticky"
-              onClick={() => {
-                setShowMobileNav(!showMobileNav);
-              }}
+              onClick={() => setShowMobileNav(!showMobileNav)}
             >
               <svg
                 className="w-5 h-5"
@@ -84,11 +83,36 @@ const NavigationBar = () => {
             <ul className="flex flex-col justify-end items-center p-4 md:p-0 font-karla mt-4 md:flex-row md:mt-0 navLinks">
               <li>
                 <a
-                  href="/about"
-                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition hover:opacity-75"
+                  href="#"
+                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition hover:opacity-75 flex justify-center items-center"
+                  onClick={() => setShowAboutNav(!showAboutNav)}
                 >
                   About
+                  <i className="fa-solid fa-chevron-right text-white fa-xs ml-1"></i>
                 </a>
+                {/* About nav */}
+                {showAboutNav && (
+                  <aside className="flex justify-end aboutLinksContainer">
+                    <ul className=" md:p-0 font-karla md:flex-row md:mt-0 aboutNavLinks">
+                      <li>
+                        <a
+                          href="/about"
+                          className="text-white h-16 hover:bg-purple-800 text-sm px-10 flex items-center font-karla flex justify-center items-center"
+                        >
+                          Shine Ranker
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/faq"
+                          className="text-white h-16 hover:bg-purple-800 text-sm px-10 flex items-center font-karla"
+                        >
+                          FAQ
+                        </a>
+                      </li>
+                    </ul>
+                  </aside>
+                )}
               </li>
               <li>
                 <a
@@ -137,7 +161,15 @@ const NavigationBar = () => {
                   href="/about"
                   className="text-white h-16 hover:bg-purple-800 text-sm px-10 flex justify-end items-center font-karla"
                 >
-                  About
+                  Shine Ranker
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/faq"
+                  className="text-white h-16 hover:bg-purple-800 text-sm px-10 flex justify-end items-center font-karla"
+                >
+                  FAQ
                 </a>
               </li>
               <li>
@@ -177,6 +209,8 @@ const NavigationBar = () => {
             </ul>
           </aside>
         )}
+
+        
       </div>
     </nav>
   );
