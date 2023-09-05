@@ -17,23 +17,52 @@
     margin: 0 20%;
 }
 
-.pricing-price-card {
+.pricing-plan-card {
     width: 330px;
     max-width: 330px;
     height: 100%;
     flex-shrink: 0;
+    margin-bottom: 2.5rem;
     padding: 30px 40px;
     border: 1px solid #ffffff56;
     border-radius: 4px;
     background: linear-gradient(138deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.04) 100%);
     backdrop-filter: blur(28px);
-}
-
-.pricing-price-title {
 
 }
 
-.pricing-price-title-1 {
+.pricing-plan-card-mobile {
+    position: relative;
+    background-color: #100826;
+    width: 330px;
+    max-width: 330px;
+    height: 100%;
+    flex-shrink: 0;
+    margin-bottom: 2.5rem;
+    padding: 30px 40px;
+    border-radius: 4px;
+    background-color: #121126;
+
+}
+
+.pricing-plan-card-mobile::after {
+    position: absolute;
+    top: -1px; 
+    bottom: -1px;
+    left: -1px; 
+    right: -1px;
+    background: linear-gradient(to top, #846AB6, #54E3E6, #846AB6);
+    content: '';
+    z-index: -1;
+    border-radius: 4px;
+    backdrop-filter: blur(28px);
+}
+
+.pricing-plan-title {
+
+}
+
+.pricing-plan-title-1 {
     color: var(--soft-grey, #F1F1F1);
     text-align: center;
     font-family: Montserrat;
@@ -43,7 +72,7 @@
     line-height: 120%; /* 21.6px */
 }
 
-.pricing-price-title-2 {
+.pricing-plan-title-2 {
     color: var(--soft-grey, #F1F1F1);
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -53,7 +82,7 @@
     line-height: 120%; /* 44.182px */
 }
 
-.pricing-price-title-3 {
+.pricing-plan-title-3 {
     color: var(--soft-grey, #F1F1F1);
     text-align: center;
     font-family: Karla;
@@ -63,11 +92,11 @@
     line-height: 120%; /* 16.8px */
 }
 
-.pricing-price-checklist {
+.pricing-plan-checklist {
 
 }
 
-.pricing-price-checklist-text {
+.pricing-plan-checklist-text {
     color: var(--white, #FFF);
     font-family: Karla;
     font-size: 14px;
@@ -76,11 +105,11 @@
     line-height: 120%; /* 16.8px */
 }
 
-.pricing-price-footer {
+.pricing-plan-footer {
 
 }
 
-.pricing-price-footer-button {
+.pricing-plan-footer-button {
     color: white;
     display: flex;
     width: 206px;
@@ -91,10 +120,15 @@
     gap: 10px;
     flex-shrink: 0;
     border-radius: 4px;
-    background: var(--purple-dark, #4F46E4);
+    background: var(--blue-violet, #8844DA);
+    transition: background-color 0.25s ease-in-out;
 }
 
-.pricing-price-footer-text {
+.pricing-plan-footer-button:hover {
+    background: var(--purple-dark, #4D2FBB);
+}
+
+.pricing-plan-footer-text {
     color: #FFF;
     text-align: center;
     font-family: Karla;
@@ -137,7 +171,8 @@
 }
 
 @media screen and (max-width: 1280px) {
-    .pricing-price-card {
+    .pricing-plan-card,
+    .pricing-plan-card-mobile {
         width: 100%;
         max-width: 400px;
     }

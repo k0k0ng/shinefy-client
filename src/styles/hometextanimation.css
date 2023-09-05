@@ -1,27 +1,24 @@
 
   .content {
-    height: 100%;
-    width: 50vw;
     overflow: hidden;
-    line-height: 60px;
+    line-height: 48px;
   }
   
   .content__container {
     position: relative;
     overflow: hidden;
-    height: 60px;
+    height: 48px;
   }
   
   
   .content__container__text {
     display: inline;
-
     margin: 0;
   }
   
   .content__container__list {
     margin-top: 6px;
-    padding-left: 160px;
+    padding-left: 132px;
     text-align: left;
     list-style: none;
     animation-name: change;
@@ -51,9 +48,6 @@
     88%, 99% {
       transform: translate3d(0, -25%, 0);
     }
-    /* 83.3%, 95.96% {
-      transform: translate3d(0, -25%, 0);
-    } */
   }
 
   @media screen and (max-width: 1700px) {
@@ -62,7 +56,7 @@
         padding-left: 120px;
     }
 
-    @keyframes change {
+    /* @keyframes change {
         0%, 11%, 100% {
           transform: translate3d(0, -27%, 0);
         }
@@ -78,10 +72,10 @@
         88%, 99% {
           transform: translate3d(0, -27%, 0);
         }
-    }
+    } */
   }
   
-  @media screen and (max-width: 1500px) {
+  @media screen and (max-width: 1440px) {
     .content {
         width: 100%;
       }
@@ -90,23 +84,23 @@
         padding-left: 92px;
     }
 
-    @keyframes change {
-        0%, 11%, 100% {
-          transform: translate3d(0, -30%, 0);
-        }
-        22%, 33% {
-          transform: translate3d(0, -55%, 0);
-        }
-        44%, 55% {
-          transform: translate3d(0, -80%, 0);
-        }
-        66%, 77% {
-          transform: translate3d(0, -105%, 0);
-        }
-        88%, 99% {
-          transform: translate3d(0, -30%, 0);
-        }
-    }
+    /* @keyframes change {
+      0%, 11%, 100% {
+        transform: translate3d(0, -30%, 0);
+      }
+      22%, 33% {
+        transform: translate3d(0, -55%, 0);
+      }
+      44%, 55% {
+        transform: translate3d(0, -80%, 0);
+      }
+      66%, 77% {
+        transform: translate3d(0, -105%, 0);
+      }
+      88%, 99% {
+        transform: translate3d(0, -30%, 0);
+      }
+    } */
   }
 
   @media screen and (max-width: 1024px) {
@@ -117,19 +111,19 @@
 
     @keyframes change {
         0%, 11%, 100% {
-          transform: translate3d(0, -30%, 0);
+          transform: translate3d(0, -30.5%, 0);
         }
         22%, 33% {
-          transform: translate3d(0, -55%, 0);
+          transform: translate3d(0, -55.5%, 0);
         }
         44%, 55% {
-          transform: translate3d(0, -80%, 0);
+          transform: translate3d(0, -80.5%, 0);
         }
         66%, 77% {
-          transform: translate3d(0, -105%, 0);
+          transform: translate3d(0, -105.5%, 0);
         }
         88%, 99% {
-          transform: translate3d(0, -30%, 0);
+          transform: translate3d(0, -30.5%, 0);
         }
     }
   }
