@@ -4,6 +4,7 @@ import lottie from "lottie-web";
 import { createRef, useEffect, useState } from "react";
 import ToggleButton from "@/components/ToggleButton";
 import LimitedTimeOffer from "@/components/CTA/LimitedTimeOffer";
+import BackToTopButton from "@/components/BackToTopButton";
 
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -1629,7 +1630,8 @@ export default function Home() {
         </div>
       </section>
 
-
+      
+      <BackToTopButton />
     </>
   );
 }

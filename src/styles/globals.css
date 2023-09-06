@@ -99,6 +99,28 @@ line-height: normal;
 letter-spacing: 2.255px;
 }
 
+
+/* *** Scroll To Top *** */
+.arrow-up-icon {
+  background-color: #ba9ae2;
+  height: 40px;
+  width: 40px;
+  transition: background-color 0.3s ease-in-out;
+
+  -webkit-mask: url(/svg/global/arrow-up-icon.svg) no-repeat center;
+  mask: url(/svg/global/arrow-up-icon.svg) no-repeat center;
+}
+
+.arrow-up-icon:hover {
+  background-color:#FFF;
+}
+
+
+
+
+
+
+
 @media screen and (min-width: 2400px) {
   .global-header-container-parent {
     margin: 0 calc((100vw - 1440px)/2);
