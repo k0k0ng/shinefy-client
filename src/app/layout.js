@@ -31,8 +31,8 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <NavigationBar />
         {children}
-        {/* <FooterPage /> */}
-        <FooterComponent />
+        <FooterPage />
+        {/* <FooterComponent /> */}
       </body>
     </html>
   )
