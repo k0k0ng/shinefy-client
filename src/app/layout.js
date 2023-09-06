@@ -3,6 +3,7 @@ import '../styles/legalpages.css';
 import { Inter } from 'next/font/google';
 import NavigationBar from "../components/Navbar/NavigationBar";
 import FooterPage from "../components/Footer/Footer";
+import FooterComponent from '@/components/Footer/FooterV2';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,7 +31,8 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <NavigationBar />
         {children}
-        <FooterPage />
+        {/* <FooterPage /> */}
+        <FooterComponent />
       </body>
     </html>
   )
