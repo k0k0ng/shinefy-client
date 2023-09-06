@@ -575,7 +575,7 @@ export default function Home() {
               Powered by AI Videos
             </h1>
             
-            <p className="mt-5 mb-8 lg:mb-14 hero-header-content">
+            <p className="max-w-[720px] mt-5 mb-8 lg:mb-14 hero-header-content">
               Shine Ranker is a collection of powerful AI tools that
               generate AI videos for passive income in just one click.
               Powered by
