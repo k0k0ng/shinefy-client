@@ -59,7 +59,6 @@ nav.sticky {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
   }
-
 @media screen and (min-width: 2400px) {
     .navContainer > div {
       margin: 0 calc((100vw - 1440px)/2);

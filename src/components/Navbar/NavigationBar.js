@@ -19,7 +19,6 @@ import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 import "../../styles/NavigationBar.css";
 
-
 const logo = "/images/global/shineAi-logo.png";
 
 const CustomAccordionSummary = styled(AccordionSummary)(({ theme }) => ({
@@ -167,6 +166,7 @@ const NavigationBar = () => {
                   expanded={expandAbout === 'about'} 
                   onChange={handleExpandAbout('about')}
                   className="accordion-item"  
+
                 >
                   <CustomAccordionSummary
                     expandIcon={<KeyboardArrowRightIcon className="text-white"/>}
