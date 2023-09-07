@@ -2,6 +2,7 @@
     --darkpurp: #19163C;
     --gray: #999;
     --lightgray: whitesmoke;
+    --lightgreen: #3DCB80;
     --majorelleblue: #4F46E4;
     --popular: #ffdd40;
     --starter: #f73859;
@@ -56,6 +57,7 @@
     + label[for="monthly"]
     ~ .highlighter {
     transform: translateX(100%);
+    background: var(--majorelleblue);
   }
   
   .switch-wrapper label {
@@ -79,6 +81,6 @@
     width: calc(50%);
     height: calc(100%);
     border-radius: 30px;
-    background: var(--majorelleblue);
-    transition: transform 0.25s ease-in-out;
+    background: var(--lightgreen);
+    transition: background-color 0.25s ease-in-out, transform 0.25s ease-in-out;
   }

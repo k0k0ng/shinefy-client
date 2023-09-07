@@ -13,7 +13,7 @@ const LimitedTimeOffer = () => {
                     and start on your journey towards a growing income using AI.
                 </p>
             </div>
-            <button className="limited-time-offer-btn">
+            <button className="px-14 limited-time-offer-btn">
                 Grab this Deal!
             </button>
         </div>

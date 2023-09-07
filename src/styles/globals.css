@@ -33,6 +33,11 @@ code {
 }
 
 
+.global-text-to-light-green {
+  color: #3DCB80;
+}
+
+
 /* global headers */
 .global-header-background-custom {
   height: 400px;
@@ -80,7 +85,7 @@ code {
 
 /* global content */
 .global-content-container {
-  margin: 50px 20%;
+  margin: 50px 18%;
 }
 
 /* sign up and log in pages */

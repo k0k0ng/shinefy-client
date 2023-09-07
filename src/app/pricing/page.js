@@ -48,316 +48,316 @@ export default function Pricing() {
       {/* Contents */}
       <div className="font-montserrat global-content-container pricing-content-container">
         {/* Row 1 Contents - Price Cards */}
-        <div className="pricing-price-cards flex flex-col xl:flex-row justify-center items-center gap-10">
-          <div className="pricing-price-card">
-            <div className="pricing-price-title">
-              <h2 className="pricing-price-title-1">Spark Basic</h2>
+        <div className="pricing-plan-cards flex flex-col xl:flex-row justify-center items-center gap-10">
+          <div className="pricing-plan-card">
+            <div className="pricing-plan-title">
+              <h2 className="pricing-plan-title-1">Spark Basic</h2>
               {selectedOption === "monthly" ? (
-                <h1 className="pricing-price-title-2 mt-5">$59</h1>
+                <h1 className="pricing-plan-title-2 mt-5">$59</h1>
               ) : (
-                <h1 className="pricing-price-title-2 mt-5">$600</h1>
+                <h1 className="pricing-plan-title-2 mt-5">$600</h1>
               )}
               {selectedOption === "monthly" ? (
-                <p className="pricing-price-title-3">per month</p>
+                <p className="pricing-plan-title-3">per month</p>
               ) : (
-                <p className="pricing-price-title-3">per year</p>
+                <p className="pricing-plan-title-3">per year</p>
               )}
             </div>
-            <div className="pricing-price-checklist mt-10 mb-5">
+            <div className="pricing-plan-checklist mt-10 mb-5">
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">5 Projects</p>
+                <p className="pricing-plan-checklist-text">5 Projects</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">
+                <p className="pricing-plan-checklist-text">
                   5,000 Shine Audits
                 </p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">
+                <p className="pricing-plan-checklist-text">
                   5,000 Keywords Research Usages
                 </p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">
+                <p className="pricing-plan-checklist-text">
                   Unlimited Traffic Checker
                 </p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-price-checklist-text">
+                <p className="pricing-plan-checklist-text">
                   Unlimited Content Editor
                 </p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-price-checklist-text">Unlimited Leads</p>
+                <p className="pricing-plan-checklist-text">Unlimited Leads</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-price-checklist-text">
+                <p className="pricing-plan-checklist-text">
                   Unlimited AI Keywords
                 </p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-price-checklist-text">
+                <p className="pricing-plan-checklist-text">
                   Unlimited AI Chat
                 </p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">
+                <p className="pricing-plan-checklist-text">
                   Project Dashboard
                 </p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">Keyword Research</p>
+                <p className="pricing-plan-checklist-text">Keyword Research</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">Traffic Checker</p>
+                <p className="pricing-plan-checklist-text">Traffic Checker</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">Shine Audit</p>
+                <p className="pricing-plan-checklist-text">Shine Audit</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-price-checklist-text">Content Editor</p>
+                <p className="pricing-plan-checklist-text">Content Editor</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-price-checklist-text">
+                <p className="pricing-plan-checklist-text">
                   Leads List & Widget
                 </p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-price-checklist-text">AI Keywords</p>
+                <p className="pricing-plan-checklist-text">AI Keywords</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-price-checklist-text">AI Chat</p>
+                <p className="pricing-plan-checklist-text">AI Chat</p>
               </div>
             </div>
-            <div className="pricing-price-footer flex flex-col justify-center items-center gap-5 w-full mt-10">
-              <a href="/pricing" className="pricing-price-footer-button">
+            <div className="pricing-plan-footer flex flex-col justify-center items-center gap-5 w-full mt-10">
+              <a href="/pricing" className="pricing-plan-footer-button">
                 Choose Plan
               </a>
-              <p className="pricing-price-footer-text">save $108.12 per year</p>
+              <p className="pricing-plan-footer-text">save $108.12 per year</p>
             </div>
           </div>
 
-          <div className="pricing-price-card">
-            <div className="pricing-price-title">
-              <h2 className="pricing-price-title-1">Flare Plus</h2>
+          <div className="pricing-plan-card">
+            <div className="pricing-plan-title">
+              <h2 className="pricing-plan-title-1">Flare Plus</h2>
               {selectedOption === "monthly" ? (
-                <h1 className="pricing-price-title-2 mt-5">$112</h1>
+                <h1 className="pricing-plan-title-2 mt-5">$112</h1>
               ) : (
-                <h1 className="pricing-price-title-2 mt-5">$1,140</h1>
+                <h1 className="pricing-plan-title-2 mt-5">$1,140</h1>
               )}
               {selectedOption === "monthly" ? (
-                <p className="pricing-price-title-3">per month</p>
+                <p className="pricing-plan-title-3">per month</p>
               ) : (
-                <p className="pricing-price-title-3">per year</p>
+                <p className="pricing-plan-title-3">per year</p>
               )}
             </div>
-            <div className="pricing-price-checklist mt-10 mb-5">
+            <div className="pricing-plan-checklist mt-10 mb-5">
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">10 Projects</p>
+                <p className="pricing-plan-checklist-text">10 Projects</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">
+                <p className="pricing-plan-checklist-text">
                   10,000 Shine Audits
                 </p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">
+                <p className="pricing-plan-checklist-text">
                   10,000 Keywords Research Usages
                 </p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">
+                <p className="pricing-plan-checklist-text">
                   Unlimited Traffic Checker
                 </p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">
+                <p className="pricing-plan-checklist-text">
                   Unlimited Content Editor
                 </p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">Unlimited Leads</p>
+                <p className="pricing-plan-checklist-text">Unlimited Leads</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-price-checklist-text">
+                <p className="pricing-plan-checklist-text">
                   Unlimited AI Keywords
                 </p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-price-checklist-text">
+                <p className="pricing-plan-checklist-text">
                   Unlimited AI Chat
                 </p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">
+                <p className="pricing-plan-checklist-text">
                   Project Dashboard
                 </p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">Keyword Research</p>
+                <p className="pricing-plan-checklist-text">Keyword Research</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">Traffic Checker</p>
+                <p className="pricing-plan-checklist-text">Traffic Checker</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">Shine Audit</p>
+                <p className="pricing-plan-checklist-text">Shine Audit</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">Content Editor</p>
+                <p className="pricing-plan-checklist-text">Content Editor</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">
+                <p className="pricing-plan-checklist-text">
                   Leads List & Widget
                 </p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-price-checklist-text">AI Keywords</p>
+                <p className="pricing-plan-checklist-text">AI Keywords</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-price-checklist-text">AI Chat</p>
+                <p className="pricing-plan-checklist-text">AI Chat</p>
               </div>
             </div>
-            <div className="pricing-price-footer flex flex-col justify-center items-center gap-5 w-full mt-10">
-              <a href="/pricing" className="pricing-price-footer-button">
+            <div className="pricing-plan-footer flex flex-col justify-center items-center gap-5 w-full mt-10">
+              <a href="/pricing" className="pricing-plan-footer-button">
                 Choose Plan
               </a>
-              <p className="pricing-price-footer-text">save $204.24 per year</p>
+              <p className="pricing-plan-footer-text">save $204.24 per year</p>
             </div>
           </div>
 
-          <div className="pricing-price-card">
-            <div className="pricing-price-title">
-              <h2 className="pricing-price-title-1">Shine Pro</h2>
+          <div className="pricing-plan-card">
+            <div className="pricing-plan-title">
+              <h2 className="pricing-plan-title-1">Shine Pro</h2>
               {selectedOption === "monthly" ? (
-                <h1 className="pricing-price-title-2 mt-5">$219</h1>
+                <h1 className="pricing-plan-title-2 mt-5">$219</h1>
               ) : (
-                <h1 className="pricing-price-title-2 mt-5">$2,208</h1>
+                <h1 className="pricing-plan-title-2 mt-5">$2,208</h1>
               )}
               {selectedOption === "monthly" ? (
-                <p className="pricing-price-title-3">per month</p>
+                <p className="pricing-plan-title-3">per month</p>
               ) : (
-                <p className="pricing-price-title-3">per year</p>
+                <p className="pricing-plan-title-3">per year</p>
               )}
             </div>
-            <div className="pricing-price-checklist mt-10 mb-5">
+            <div className="pricing-plan-checklist mt-10 mb-5">
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">20 Projects</p>
+                <p className="pricing-plan-checklist-text">20 Projects</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">
+                <p className="pricing-plan-checklist-text">
                   20,000 Shine Audits
                 </p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">
+                <p className="pricing-plan-checklist-text">
                   20,000 Keywords Research Usages
                 </p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">
+                <p className="pricing-plan-checklist-text">
                   Unlimited Traffic Checker
                 </p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">
+                <p className="pricing-plan-checklist-text">
                   Unlimited Content Editor
                 </p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">Unlimited Leads</p>
+                <p className="pricing-plan-checklist-text">Unlimited Leads</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">
+                <p className="pricing-plan-checklist-text">
                   Unlimited AI Keywords
                 </p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">
+                <p className="pricing-plan-checklist-text">
                   Unlimited AI Chat
                 </p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">
+                <p className="pricing-plan-checklist-text">
                   Project Dashboard
                 </p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">Keyword Research</p>
+                <p className="pricing-plan-checklist-text">Keyword Research</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">Traffic Checker</p>
+                <p className="pricing-plan-checklist-text">Traffic Checker</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">Shine Audit</p>
+                <p className="pricing-plan-checklist-text">Shine Audit</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">Content Editor</p>
+                <p className="pricing-plan-checklist-text">Content Editor</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">
+                <p className="pricing-plan-checklist-text">
                   Leads List & Widget
                 </p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">AI Keywords</p>
+                <p className="pricing-plan-checklist-text">AI Keywords</p>
               </div>
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-price-checklist-text">AI Chat</p>
+                <p className="pricing-plan-checklist-text">AI Chat</p>
               </div>
             </div>
-            <div className="pricing-price-footer flex flex-col justify-center items-center gap-5 w-full mt-10">
-              <a href="/pricing" className="pricing-price-footer-button">
+            <div className="pricing-plan-footer flex flex-col justify-center items-center gap-5 w-full mt-10">
+              <a href="/pricing" className="pricing-plan-footer-button">
                 Choose Plan
               </a>
-              <p className="pricing-price-footer-text">save $420.00 per year</p>
+              <p className="pricing-plan-footer-text">save $420.00 per year</p>
             </div>
           </div>
         </div>

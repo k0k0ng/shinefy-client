@@ -28,13 +28,17 @@
 
 .limited-time-offer-btn {
     color: #FFF;
-    background-color: #e91c3e;
+    background-color: #E91C3E;
     border-radius: 4px;
     font-family: Karla;
     font-size: 16px;
-    padding: 16px 0px;
-    width: 220px;
+    min-height: 50px;
+    transition: background-color 0.3s ease-in-out;
 }
+
+.limited-time-offer-btn:hover {
+    background-color:#4D2FBB;
+  }
 
 @media screen and (max-width: 768px) {
     .limited-time-offer-btn {
