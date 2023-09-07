@@ -33,10 +33,6 @@ nav.sticky {
     display: none;
 }
 
-/* .navLinksCont {
-    float:right;
-} */
-
 .navLinks {
     display: flex;
 }

@@ -35,7 +35,6 @@ const NavigationBar = () => {
   const [expandLegal, setExpandLegal] = useState(false);
 
   
-  // Add an event listener to track scrolling and set the sticky state accordingly
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
@@ -79,8 +78,8 @@ const NavigationBar = () => {
             <img
               src={logo}
               alt="Shine Ranker Logo"
-              width="249px" // Specify the width of the image
-              height="62px" // Specify the height of the image
+              width="249px"
+              height="62px"
               className="mr-2"
             />
           </a>
@@ -155,8 +154,6 @@ const NavigationBar = () => {
         >
           <Box
             role="presentation"
-            // onClick={toggleDrawer(false)}
-            // onKeyDown={toggleDrawer(false)}
             className="h-full flex flex-col justify-between font-karla pt-5 drawer-container"
           >
             <List>
