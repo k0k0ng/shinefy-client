@@ -90,8 +90,6 @@ const FooterPage = () => {
                 <a
                   href="/legal/terms-of-use"
                   className="text-white-700 transition hover:opacity-75"
-                  rel="noreferrer"
-                  target="_blank"
                 >
                   <span className="text-gray-200">Terms of Use</span>
                 </a>
@@ -101,8 +99,6 @@ const FooterPage = () => {
                 <a
                   href="/legal/refund"
                   className="text-white-700 transition hover:opacity-75"
-                  rel="noreferrer"
-                  target="_blank"
                 >
                   <span className="text-gray-200">Refund & Cancelation</span>
                 </a>
@@ -112,8 +108,6 @@ const FooterPage = () => {
                 <a
                   href="/legal/earnings-disclaimer"
                   className="text-white-700 transition hover:opacity-75"
-                  rel="noreferrer"
-                  target="_blank"
                 >
                   <span className="text-gray-200">Earnings Disclaimer</span>
                 </a>
@@ -123,8 +117,6 @@ const FooterPage = () => {
                 <a
                   href="/legal/facebook-disclaimer"
                   className="text-white-700 transition hover:opacity-75"
-                  rel="noreferrer"
-                  target="_blank"
                 >
                   <span className="text-gray-200">Facebook Disclaimer</span>
                 </a>
@@ -134,8 +126,6 @@ const FooterPage = () => {
                 <a
                   href="/legal/affiliate-promotions"
                   className="text-white-700 transition hover:opacity-75"
-                  rel="noreferrer"
-                  target="_blank"
                 >
                   <span className="text-gray-200">Affiliate Promotions</span>
                 </a>
@@ -151,8 +141,6 @@ const FooterPage = () => {
                 <a
                   href="/about"
                   className="text-white-700 transition hover:opacity-75"
-                  rel="noreferrer"
-                  target="_blank"
                 >
                   <span className="text-gray-200">Shine Ranker</span>
                 </a>
@@ -162,8 +150,6 @@ const FooterPage = () => {
                 <a
                   href="/tools"
                   className="text-white-700 transition hover:opacity-75"
-                  rel="noreferrer"
-                  target="_blank"
                 >
                   <span className="text-gray-200">Tools</span>
                 </a>
@@ -173,8 +159,6 @@ const FooterPage = () => {
                 <a
                   href="/pricing"
                   className="text-white-700 transition hover:opacity-75"
-                  rel="noreferrer"
-                  target="_blank"
                 >
                   <span className="text-gray-200">Pricing</span>
                 </a>
@@ -184,8 +168,6 @@ const FooterPage = () => {
                 <a
                   href="/faq"
                   className="text-white-700 transition hover:opacity-75"
-                  rel="noreferrer"
-                  target="_blank"
                 >
                   <span className="text-gray-200">FAQ</span>
                 </a>
@@ -219,7 +201,7 @@ const FooterPage = () => {
                 </a>
               </li>
 
-              <li>
+              <li className="hidden">
                 <a
                   href="/"
                   className="text-white-700 transition hover:opacity-75"
