@@ -14,25 +14,51 @@ nav.sticky {
     background-color: rgb(17, 17, 17); /* Replace with the desired background color on Scroll*/
 }
 
+.nav-link:hover {
+    background-color: #4D2FBB80;
+}
+
+.accordion-item {
+    color: #FFF;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+.sign-in-btn {
+    background-color: #7D35D4;
+}
+
 .hamburger {
     display: none;
 }
 
-.navLinksCont {
+/* .navLinksCont {
     float:right;
-}
+} */
 
 .navLinks {
     display: flex;
 }
 
-.mobileLinksContainer {
-    display: none;
-    background-color: rgb(20, 20, 20);
-    z-index: 99;
-    position: absolute; 
-    right: 20vw;
+.drawer-container {
+    color: #FFF;
+    min-width: 16rem;
+    max-width: 20rem;
+    height: 100%;
+    background-color: #8844da;
 }
+
+.swipeable-drawer > div {
+    border: none;
+    background-color: #8844da;
+}
+
+.accordion.expanded:before {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+  }
 
 @media screen and (min-width: 2400px) {
     .navContainer > div {

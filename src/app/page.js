@@ -518,7 +518,7 @@ export default function Home() {
       rerender: "svg",
       loop: true,
       autoplay: true,
-      path: "/assets/robot-run.json",
+      path: "/assets/hero-banner-shine-ai-flying.json",
     });
 
     return () => anim.destroy();
@@ -605,7 +605,7 @@ export default function Home() {
             </div>
           </header>
 
-          <div className="hero-animation-container">
+          <div className="mt-44 lg:mt-0 hero-animation-container">
             <div
               className="home-animation-container"
               ref={animationContainer}
