@@ -1,11 +1,11 @@
 .feature-container {
     background-color: #100826;
-    padding: 50px calc(20% + 25px);
+    padding: 50px 20%;
 }
 
 .feature-title-container {
-    width: 100%;
-    max-width: 753px;
+
+    border: 1px solid red;
 }
 
 .about-user-container {
@@ -18,7 +18,7 @@
 .features-title-1 {
     color: var(--white, #fff);
     font-family: Karla;
-    font-size: 24px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 400;
     line-height: 28.8px;
@@ -27,7 +27,7 @@
 .features-title-2 {
     color: #54e3e6;
     font-family: Montserrat;
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 36px;
 }
@@ -63,6 +63,12 @@
 }
 
 
+.grid-cards{
+    border-radius: 4px;
+    border: 1px solid #4D2FBB;
+}
+
+
 @media screen and (min-width: 2400px) {
     .feature-container {
       padding: 50px calc(((100vw - 1440px)/2) + 250px);
@@ -74,3 +80,19 @@
       padding: 50px 5%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .features-title-1 {
+        font-size: 24px;
+    }
+    .features-title-2 {
+        font-size: 30px;
+    }
+    .features-title-3 {
+        font-size: 18px;
+    }
+}
+
+
+
+

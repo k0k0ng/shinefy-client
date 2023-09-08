@@ -89,7 +89,7 @@ const NavigationBar = () => {
             className="w-full flex items-center justify-end navLinksCont"
             id="navbar-sticky"
           >
-            <ul className="flex flex-row justify-end items-center p-2 md:p-0 font-karla navLinks">
+            <ul className="flex flex-row justify-end items-center p-2 md:p-0 font-karla">
               <li className="hidden xl:flex">
                 <a
                   href="/about"

@@ -1,4 +1,5 @@
 import FeaturesAndBenefits from "@/components/FeaturesAndBenefits";
+import ContactForm from "@/components/Contacts/ContactForm";
 import ContactInfo from "@/components/Contacts/ContactInfo";
 import LimitedTimeOffer from "@/components/CTA/LimitedTimeOffer";
 
@@ -11,91 +12,69 @@ export default function about() {
   return (
     <div>
       {/* header */}
-      <header className="font-montserrat flex flex-col global-header-background-custom">
-        <div className="flex flex-col items-center justify-center global-header-container-parent">
-          <div className="flex flex-col justify-center">
-            <article>
-              <div className="legal-header-container">
-                <span className="header-text flex flex-col">
-                  <h3 className="text-base rounded min-w-max flex items-center justify-center global-header-text-1">
-                    About
-                  </h3>
-                  <h3 className="text-base rounded min-w-max mb-2 global-header-text-2">
-                    Shine Ranker
-                  </h3>
-                </span>
-                <p className="text-base font-light mb-5 text-center global-header-text-3">
-                  Last Updated 29 July, 2023
-                </p>
-              </div>
-            </article>
-          </div>
+      <header className="font-montserrat global-header-background-custom">
+        <div className="flex flex-col text-center">
+          <h1 className="mb-6 global-header-text-1">
+            About Us
+          </h1>
+          <h3 className="mb-6 global-header-text-2">
+            Shine Ranker is now shineAI.tools
+          </h3>
+          <p className="global-header-text-3">
+            Last Updated 29 July, 2023
+          </p>
         </div>
       </header>
 
       {/* Contents */}
       <div className="font-montserrat global-content-container">
-        <div className="legal-categories hidden md:inline">
-          <a href="/" className="legal-category">
-            Home
-          </a>
-          <span> {`>`} </span>
-          <a href="/" className="legal-category legal-category-current">
-            About
-          </a>
-        </div>
         {/* About */}
-        <div className="mx-auto justify-center items-center my-20">
-          {/* About content */}
-          <div className="flex flex-col-reverse md:flex-row justify-center gap-10 items-center">
+        <div className="flex flex-col flex-col-reverse lg:flex-row items-center justify-center gap-y-10 lg:gap-16 py-8 content-under-header-container">
             {/* First Column */}
-            <div className="">
+            <div className="w-full lg:w-auto px-0 md:px-5 lg:px-0">
               <div className="my-5 about-text-card">
-                <h2 className="about-title-text-1 hidden md:block">About</h2>
-                <h2 className=" about-title-text my-2 pt-2 hidden md:block">
-                  Shine Ranker
+                <h2 className="mb-5 about-title-text-1 hidden md:block">About Us</h2>
+                <h2 className="max-w-[380px] mb-6 about-title-text hidden md:block">
+                  Shine Ranker is now shineAI.tools
                 </h2>
                 <p
-                  className=" about-content-text max-w-[90vw] md:max-w-[350px] mt-10 md:mt-0"
+                  className=" about-content-text max-w-[90vw] lg:max-w-[510px]"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  cursus ante dapibus diam. Sed nisi. Praesent mauris. Fusce nec
-                  tellus sed augue semper porta.
+                  In the fast-paced world of digital marketing, search 
+                  engine optimization (SEO) remains one of the most 
+                  crucial aspects of online business success. To rise 
+                  above the compe tition and secure a dominant presence 
+                  on the web, businesses and website owners need 
+                  reliable SEO tools to optimize their content and strategy. 
+                  One such tool that has gained popularity in recent times 
+                  is the Shine Ranker SEO tool. 
                 </p>
               </div>
             </div>
 
             {/* Second Column */}
-            <div className="md:w-1/2 text-center about-thumbnail  relative">
-              <div className="faq-text-card-2">
-                <div className="text-center">
-                  {/* Using an <a> link to open the YouTube video in a new page */}
-                  <a
-                    href={`https://www.youtube.com/watch?v=${youtubeVideoId}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <div className="relative">
-                      <img
-                        src="/images/about/thumbnail.png"
-                        alt="Video Thumbnail"
-                        width={394}
-                        height={474}
-                        className="mx-auto max-w-full h-auto"
-                      />
-                      <img
-                        src="/images/about/playbutton.png"
-                        alt="Play Button"
-                        width={100}
-                        height={100}
-                        className="mx-auto max-w-full h-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 play-button-image"
-                      />
-                    </div>
-                  </a>
-                </div>
-              </div>
+            <div className="border">
+              <a
+                href={`https://www.youtube.com/watch?v=${youtubeVideoId}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/global/training-video-thumbnail.png"
+                  alt="Shine Ai Training Video thumbnail"
+                  width="540px"
+                  className="mx-auto max-w-full"
+                />
+
+                {/* <img
+                  src="/images/about/playbutton.png"
+                  alt="Play Button"
+                  width={100}
+                  height={100}
+                  className="mx-auto max-w-full h-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/4 play-button-image"
+                /> */}
+              </a>
             </div>
-          </div>
         </div>
       </div>
 
@@ -103,6 +82,8 @@ export default function about() {
       <div className="mb-20">
         <FeaturesAndBenefits />
       </div>
+
+      <ContactForm />
 
       <ContactInfo />
 

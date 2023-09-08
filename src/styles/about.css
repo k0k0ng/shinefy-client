@@ -6,7 +6,7 @@
 .about-title-text {
   color: #54e3e6;
   font-family: Montserrat;
-  font-size: 30px;
+  font-size: 34px;
   font-weight: 700;
   line-height: 36px;
 }
@@ -14,7 +14,7 @@
 .about-title-text-1 {
   color: var(--white, #fff);
   font-family: Karla;
-  font-size: 24px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 400;
   line-height: 28.8px;
@@ -47,7 +47,7 @@
 .about-content-text {
   color: #fff;
   font-family: Karla;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 21.6px */
@@ -166,7 +166,7 @@
     line-height: 60px;
   }
   .about-content-text {
-    font-size: 16px;
+    font-size: 18px;
   }
   .about-categories {
     font-size: 14px;
@@ -191,15 +191,14 @@
     margin-bottom: -5vh;
   }
   .about-content-text {
-    font-size: 18px;
-    width: 100vh;
+    /* font-size: 18px; */
   }
   .about-title-text {
-    font-size: 24px;
+    font-size: 32px;
     text-align: left;
   }
   .about-title-text-1 {
-    font-size: 20px;
+    font-size: 24px;
     text-align: left;
   }
   .about-title-text-2 {

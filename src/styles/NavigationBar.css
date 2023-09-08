@@ -33,10 +33,6 @@ nav.sticky {
     display: none;
 }
 
-.navLinks {
-    display: flex;
-}
-
 .drawer-container {
     color: #FFF;
     min-width: 16rem;
@@ -67,9 +63,6 @@ nav.sticky {
     }
     .hamburger {
         display: block;
-    }
-    .navLinks {
-        display: none;
     }
     .navLogo {
         margin-right: 0px;
