@@ -12,33 +12,33 @@ export default function about() {
   return (
     <div>
       {/* header */}
-      <header className="font-montserrat global-header-background-custom">
-        <div className="flex flex-col text-center">
-          <h1 className="mb-6 global-header-text-1">
+      <header className="global-header-background-custom">
+        <div className="flex flex-col md:items-center">
+          <h1 className="mb-6 md:text-center global-header-text-1">
             About Us
           </h1>
-          <h3 className="mb-6 global-header-text-2">
+          <h3 className="mb-6 md:text-center about-header-text-2">
             Shine Ranker is now shineAI.tools
           </h3>
-          <p className="global-header-text-3">
+          <p className="md:text-center global-header-text-3">
             Last Updated 29 July, 2023
           </p>
         </div>
       </header>
 
       {/* Contents */}
-      <div className="font-montserrat global-content-container">
+      <div className="global-content-container">
         {/* About */}
         <div className="flex flex-col flex-col-reverse lg:flex-row items-center justify-center gap-y-10 lg:gap-16 py-8 content-under-header-container">
             {/* First Column */}
             <div className="w-full lg:w-auto px-0 md:px-5 lg:px-0">
               <div className="my-5 about-text-card">
                 <h2 className="mb-5 about-title-text-1 hidden md:block">About Us</h2>
-                <h2 className="max-w-[380px] mb-6 about-title-text hidden md:block">
+                <h2 className="max-w-[380px] mb-6 about-header-text-2 hidden md:block">
                   Shine Ranker is now shineAI.tools
                 </h2>
                 <p
-                  className=" about-content-text max-w-[90vw] lg:max-w-[510px]"
+                  className="about-content-text max-w-[90vw] lg:max-w-[510px]"
                 >
                   In the fast-paced world of digital marketing, search 
                   engine optimization (SEO) remains one of the most 

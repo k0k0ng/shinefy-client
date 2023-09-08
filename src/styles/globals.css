@@ -42,7 +42,7 @@ code {
 .global-header-background-custom {
   min-height: 48rem;
   /* max-height: 80vh; */
-  padding-top: 14rem;
+  padding-top: 15.5rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -50,6 +50,8 @@ code {
   background-color: #07061c;
   background-image: url("/images/global/Rectangle.png");
   box-shadow: inset 0px -100px 100px #07061c;
+
+  /* border: 1px solid red; */
 }
 
 .global-header-container-parent {
@@ -68,7 +70,6 @@ code {
 
 .global-header-text-2 {
   color: #54e3e6;
-  text-align: center;
   font-family: Montserrat;
   font-size: 48px;
   font-weight: 700;
@@ -156,8 +157,7 @@ letter-spacing: 2.255px;
     /* margin-bottom: -10px; */
   }
   .global-header-text-2 {
-    font-size: 42px;
-    text-align: start;
+    font-size: 44px;
     max-width: 460px;
     /* line-height: 60px; */
   }
