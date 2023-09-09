@@ -17,9 +17,17 @@
     margin: 0 20%;
 }
 
+.pricing-plan-card-container {
+    border: 1px solid #07061c;
+    box-shadow: 0px -100px 100px #07061c;
+  
+    /* border: 1px solid red; */
+  }
+
 .pricing-plan-card {
-    width: 330px;
-    max-width: 330px;
+    position: relative;
+    width: 365px;
+    max-width: 365px;
     height: 100%;
     flex-shrink: 0;
     margin-bottom: 2.5rem;
@@ -28,7 +36,6 @@
     border-radius: 4px;
     background: linear-gradient(138deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.04) 100%);
     backdrop-filter: blur(28px);
-
 }
 
 .pricing-plan-card-mobile {
@@ -45,6 +52,7 @@
 
 }
 
+/* .pricing-plan-card::after, */
 .pricing-plan-card-mobile::after {
     position: absolute;
     top: -1px; 
@@ -56,10 +64,6 @@
     z-index: -1;
     border-radius: 4px;
     backdrop-filter: blur(28px);
-}
-
-.pricing-plan-title {
-
 }
 
 .pricing-plan-title-1 {

@@ -76,6 +76,15 @@ code {
   background-image: url("/images/global/background/section-bg-2.jpg"); 
 }
 
+.global-section-background-3 {
+  background-image: url("/images/global/background/pricing-section-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
+  flex-shrink: 0;
+}
+
 
 .global-section-container-under-header {
   border: 1px solid #07061c;
@@ -149,6 +158,69 @@ code {
 
 
 
+/* === Forms === */
+.global-promo-code-form {
+  border-radius: 4px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.2);
+}
+
+.global-promo-code-form input {
+  width: 310px;
+  padding: 0px 50px;
+  color: #FFF;
+  font-family: Karla;
+  font-size: 16px;
+  border: none;
+  overflow: hidden;
+  background: transparent;
+}
+
+.global-promo-code-form input::placeholder {
+  color: #FFF;
+  width: 220px;
+}
+
+/* === Buttons === */
+.global-primary-btn {
+  color: #FFF;
+  min-height: 45px;
+  border-radius: 4px;
+  font-family: Karla;
+  font-size: 16px;
+  background: #8844DA;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.global-primary-btn:hover {
+  background-color:#4D2FBB;
+}
+
+
+
+
+
+
+
+.swiper-slide {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -198,6 +270,14 @@ letter-spacing: 2.255px;
 
 
 @media screen and (max-width: 425px) {
-
+  .global-promo-code-form {
+    background: rgba(255,255,255,0);
+    gap: 8px;
+  }
+  
+  .global-promo-code-form input {
+    border-radius: 4px;
+    background: rgba(255,255,255,0.2);
+  }
   
 }
