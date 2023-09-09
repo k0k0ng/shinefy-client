@@ -1,63 +1,52 @@
 import React from "react";
-import "../../../styles/TermsOfUse.css";
 
 import ContactForm from "@/components/Contacts/ContactForm";
 import ContactInfo from "@/components/Contacts/ContactInfo";
 import LimitedTimeOffer from "@/components/CTA/LimitedTimeOffer";
 
+import "../../../styles/TermsOfUse.css";
+import "../../../styles/globals.css";
+
 const TermsOfUse = () => {
   return (
-    <div>
-      <header className="font-montserrat flex flex-col global-header-background-custom">
-        <div className="flex flex-col items-center justify-center global-header-container-parent">
-          <div className="flex flex-col justify-center">
-            <article>
-              <div className="legal-header-container">
-                <span className="header-text flex flex-col">
-                  <h3 className="text-base rounded min-w-max flex items-center justify-center global-header-text-1">
-                    Legal
-                  </h3>
-                  <h3 className="text-base rounded min-w-max mb-2 global-header-text-2">
-                    Term of Use
-                  </h3>
-                </span>
-                <p className="text-base font-light mb-5 text-center global-header-text-3">
-                  Last Updated 29 July, 2023
-                </p>
-              </div>
-            </article>
-          </div>
+    <>
+      <header className="min-h-[48rem] pt-[16rem] lg:pt-[15.5rem] px-[5%] xl:px-[18%] global-header-section-bg">
+        <div className="flex flex-col md:items-center">
+          <h1 className="mb-6 md:text-center global-header-text-1">
+            Legal
+          </h1>
+          <h3 className="mb-6 md:text-center global-header-text-2">
+            Terms of Use
+          </h3>
+          <p className="md:text-center global-header-text-3">
+            Last Updated 29 July, 2023
+          </p>
         </div>
       </header>
 
       {/* Contents */}
-      <div className="font-montserrat global-content-container">
-        <div className="flex">
-          {/* Add your content here */}
-          <div className="flex flex-col justify-center content-1">
-            <div className="font-montserrat divContainer">
-              <div className="legal-categories inline">
+      <div className="px-[5%] xl:px-[18%] global-content-container">
+        <div className="flex mt-[-9rem]">
+          <div className="flex flex-col justify-center">
+
+              <div className="mb-10 legal-categories inline">
                 <a href="/" className="legal-category">
                   Home
                 </a>
                 <span> {`>`} </span>
                 <a href="/" className="legal-category">
-                  About
-                </a>
-                <span> {`>`} </span>
-                <a href="/faq" className="legal-category">
-                  Frequently Asked Questions
+                  Legal
                 </a>
                 <span> {`>`} </span>
                 <a href="#" className="legal-category legal-category-current">
-                  Legal
+                  Terms of Use Legal
                 </a>
               </div>
-              <div className="legal-text-card">
-                <h2 className="legal-title-text my-5 pt-10">Introduction</h2>
+              <div className="mb-12">
+                <h2 className="mb-8 legal-title-text">Introduction</h2>
                 <p className="legal-content-text">
-                  Welcome to Shine Ranker, LLC, located at
-                  https://shineranker.com/. The following terms and conditions
+                  Welcome to Shine Ranker, LLC, located at 
+                  <a href="https://shineranker.com/"> https://shineranker.com/</a>. The following terms and conditions
                   govern your use of our website. By accessing this website, it
                   is assumed that you fully accept and agree to abide by all the
                   terms and conditions stated on this page. If you do not agree
@@ -65,9 +54,9 @@ const TermsOfUse = () => {
                   using Shine Ranker’s website.
                 </p>
               </div>
-              <div className="legal-text-card">
-                <h2 className="legal-title-text my-4 pt-8">Indemnification</h2>
-                <p className="legal-content-text">
+              <div className="mb-12">
+                <h5 className="mb-8 legal-title-text-2">Indemnification</h5>
+                <p className="legal-content-text-2">
                   You agree to indemnify Shine Ranker, LLC to the fullest extent
                   possible from any and all liabilities, costs, demands, causes
                   of action, damages, and expenses (including reasonable
@@ -76,20 +65,20 @@ const TermsOfUse = () => {
                 </p>
               </div>
 
-              <div className="legal-text-card">
-                <h2 className="legal-title-text my-4 pt-8">Severability</h2>
-                <p className="legal-content-text">
+              <div className="mb-12">
+                <h2 className="mb-8 legal-title-text-2">Severability</h2>
+                <p className="legal-content-text-2">
                   If any provision of these Terms is deemed invalid under
                   applicable law, such provision shall be deleted without
                   affecting the remaining provisions herein.
                 </p>
               </div>
 
-              <div className="legal-text-card">
-                <h2 className="legal-title-text my-4 pt-8">
+              <div className="mb-12">
+                <h2 className="mb-8 legal-title-text-2">
                   Variation of Terms
                 </h2>
-                <p className="legal-content-text">
+                <p className="legal-content-text-2">
                   Shine Ranker, LLC reserves the right to revise these Terms at
                   any time as it deems fit. It is your responsibility to review
                   these Terms regularly to ensure you understand all conditions
@@ -97,11 +86,11 @@ const TermsOfUse = () => {
                 </p>
               </div>
 
-              <div className="legal-text-card">
-                <h2 className="legal-title-text my-4 pt-8">
+              <div className="mb-12">
+                <h2 className="mb-8 legal-title-text-2">
                   Governing Law and Jurisdiction
                 </h2>
-                <p className="legal-content-text">
+                <p className="legal-content-text-2">
                   These Terms will be governed by and interpreted in accordance
                   with the laws of the location where the company operates. You
                   submit to the non-exclusive jurisdiction of the state and
@@ -109,7 +98,6 @@ const TermsOfUse = () => {
                   disputes.
                 </p>
               </div>
-            </div>
 
           </div>
         </div>
@@ -224,7 +212,7 @@ const TermsOfUse = () => {
           </div>
         </div>
       </div> */}
-    </div>
+    </>
   );
 };
 
