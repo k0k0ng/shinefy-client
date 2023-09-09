@@ -138,7 +138,7 @@
 
 /* *** Hero section *** */
 .hero-section {
-  height: 100vh;
+  /* height: 100vh;
   min-height: 850px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -146,7 +146,7 @@
   background-attachment: fixed;
   background-color: #07061c;
   background-image: url("/images/global/Rectangle.png");
-  box-shadow: inset 0px -100px 100px #07061c;
+  box-shadow: inset 0px -100px 100px #07061c; */
 }
 
 .hero-container {
@@ -286,7 +286,9 @@
   background-attachment: fixed;
   background-color: #07061c;
   background-image: url("/images/global/background/how-shine-ranker-bg.png");
-  box-shadow: inset 0px 100px 100px #07061c, inset 0px -100px 100px #07061c;
+  box-shadow: inset 0px 100px 100px #07061c, 
+              inset 0px -100px 100px #07061c,
+              0px -100px 100px #07061c;;
 }
 
 .how-to-use-shine-ai-container {
@@ -628,7 +630,7 @@
 
 @media screen and (max-width: 1024px) {
   .hero-section {
-    min-height: 800px;
+    /* min-height: 800px; */
   }
   .hero-container,
   .how-to-use-shine-ai-container {
@@ -785,3 +787,24 @@
     margin: 50px 0px 0px 0px;
   }
 }
+
+
+@media screen and (max-width: 370px) {
+  .hero-mini-header-text {
+    font-size: 22px;
+  }
+  .hero-header-text {
+    font-size: 26px;
+  }
+  .hero-header-gradient-text {
+    font-size: 26px;
+    line-height: 38px;
+  }
+  .hero-header-content,
+  .home-section-header-content  {
+    font-size: 15px;
+  }
+}
+
+
+

@@ -539,8 +539,8 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="hero-section">
-        <div className="flex flex-col-reverse justify-center lg:flex-row items-center lg:justify-center hero-container">
+      <section className="h-[100vh] lg:min-h-[800px] xl:min-h-[850px] px-[5%] xl:px-[18%] global-header-section-bg">
+        <div className="h-full flex flex-row items-center lg:justify-center pb-32">
           <header className="hero-header-container">
             <h2 className="mb-2 md:mb-5 hero-mini-header-text">Powerful AI Tools</h2>
             <h1 className="hero-header-text">
@@ -549,22 +549,22 @@ export default function Home() {
                   <p className="content__container__text">Your</p>
                   <ul className="content__container__list">
                     <li className="content__container__list__item">
-                      <span className="hero-header-gradient-text">
+                      <span className="whitespace-nowrap hero-header-gradient-text">
                         Online Growth
                       </span>
                     </li>
                     <li className="content__container__list__item">
-                      <span className="hero-header-gradient-text">
+                      <span className="whitespace-nowrap hero-header-gradient-text">
                         Passive Income
                       </span>
                     </li>
                     <li className="content__container__list__item">
-                      <span className="hero-header-gradient-text">
+                      <span className="whitespace-nowrap hero-header-gradient-text">
                         Viral Content
                       </span>
                     </li>
                     <li className="content__container__list__item">
-                      <span className="hero-header-gradient-text">
+                      <span className="whitespace-nowrap hero-header-gradient-text">
                         Youtube Shorts
                       </span>
                     </li>
@@ -605,7 +605,7 @@ export default function Home() {
             </div>
           </header>
 
-          <div className="mt-44 lg:mt-0 hero-animation-container">
+          <div className="hidden lg:block mt-44 lg:mt-0 hero-animation-container">
             <div
               className="home-animation-container"
               ref={animationContainer}
@@ -615,7 +615,7 @@ export default function Home() {
       </section>
 
       {/* Hero Mobile */}
-      <section className="md:hidden hero-section-mobile">
+      <section className="hidden hero-section-mobile">
         <div className="px-5 hero-container-mobile">
           <h1 className="mb-10 hero-header">
             Fuel your <br/>
@@ -641,8 +641,8 @@ export default function Home() {
       </section>
 
       {/* Founders Message */}
-      <section className="md:hidden p-5">
-        <div className="flex flex-row gap-x-5 p-5 items-center founders-message-container">
+      <section className="hidden p-5">
+        <div className="flex flex-row gap-x-5 p-5 items-center mt-[-9rem] founders-message-container">
           <img src="/images/home/dummy-profile-male.png" alt="founders profile picture" className="founders-img" />
 
           <div className="">
@@ -658,8 +658,8 @@ export default function Home() {
       </section>
 
       {/* How to use Shine Ranker App */}
-      <section className="how-to-use-shine-ai-section">
-        <div className="flex flex-col items-center gap-5 how-to-use-shine-ai-container">
+      <section className="pb-16 px-[5%] xl:px-[18%] how-to-use-shine-ai-section ">
+        <div className="flex flex-col items-center gap-5 mt-[-9rem]">
           <h3 className="w-full mb-2 md:text-center home-section-header-small">How To Use shineAi App</h3>
           <h2 className="max-w-[516px] mb-2 md:text-center home-section-header-big">
             Watch this video and Start making money online
@@ -699,7 +699,7 @@ export default function Home() {
 
 
       {/* Our Tools */}
-      <section>
+      <section className="">
         <div className="pt-10 xl:pt-20 pb-0 md:pb-10 lg:pb-0 our-tools-container">
           <div className="flex flex-col items-center px-5 md:px-0 mb-14 xl:mb-20">
             <h3 className="w-full mb-5 md:text-center home-section-header-small">Our Powerful Tools</h3>
@@ -1325,7 +1325,7 @@ export default function Home() {
 
       {/* *** Testimonials *** */}
       <section className="my-28 testimonial-section">
-        <div className="flex flex-col items-center global-content-container">
+        <div className="flex flex-col items-center mb-10">
           <h4 className="mb-5 home-section-header-small">Testimonials</h4>
           <h3 className="max-w-[220px] md:max-w-[520px] text-center mb-5 home-section-header-big">
             Hear it from Our Users
@@ -1346,19 +1346,19 @@ export default function Home() {
           breakpoints={{
             768: {
               slidesPerView: 1,
-              spaceBetween: 40,
+              spaceBetween: 5,
             },
             1024: {
               slidesPerView: 2,
-              spaceBetween: 50,
+              spaceBetween: 5,
             },
             1440: {
               slidesPerView: 3,
-              spaceBetween: 40,
+              spaceBetween: 5,
             },
             1700: {
               slidesPerView: 4,
-              spaceBetween: 25,
+              spaceBetween: 8,
             },
           }}
           modules={[Autoplay]}
@@ -1485,83 +1485,20 @@ export default function Home() {
             </div>
           </SwiperSlide>
         </Swiper>
-
-        {/* <div className="flex flex-col items-center global-content-container">
-          <p className="home-section-header-small">Testimonials</p>
-          <h3 className="home-section-header-big my-5 max-w-[688px]">
-            Hear it from our Users
-          </h3>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-y-32 md:gap-x-12 xl:gap-6 mt-28">
-            <div className="flex flex-col px-10 pb-12 text-center testimonial-card">
-              <img src="/images/home/Testimonial Heads.png" alt="tetimonial profile" height="150" className="testimonial-card-profile-img" />
-              <p className="text-white mt-5">Client’s Name</p>
-              <p className="text-white mt-1">Position of Company</p>
-              <div className="flex flex-row justify-center mt-5">
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-              </div>
-              <p className="text-white mt-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-            </div>
-            <div className="flex flex-col px-10 pb-12 text-center testimonial-card">
-              <img src="/images/home/Testimonial Heads (1).png" alt="tetimonial profile" height="150" className="testimonial-card-profile-img" />
-              <p className="text-white mt-5">Client’s Name</p>
-              <p className="text-white mt-1">Position of Company</p>
-              <div className="flex flex-row justify-center mt-5">
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star outline.svg" alt="star icon" height="24" />
-              </div>
-              <p className="text-white mt-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-            </div>
-            <div className="flex flex-col px-10 pb-12 text-center testimonial-card">
-              <img src="/images/home/Testimonial Heads (2).png" alt="tetimonial profile" height="150" className="testimonial-card-profile-img" />
-              <p className="text-white mt-5">Client’s Name</p>
-              <p className="text-white mt-1">Position of Company</p>
-              <div className="flex flex-row justify-center mt-5">
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-              </div>
-              <p className="text-white mt-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-            </div>
-            <div className="flex flex-col px-10 pb-12 text-center testimonial-card">
-              <img src="/images/home/Testimonial Heads (3).png" alt="tetimonial profile" height="150" className="testimonial-card-profile-img" />
-              <p className="text-white mt-5">Client’s Name</p>
-              <p className="text-white mt-1">Position of Company</p>
-              <div className="flex flex-row justify-center mt-5">
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-              </div>
-              <p className="text-white mt-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-            </div>
-
-          </div>
-        </div> */}
       </section>
       
 
       {/* *** Social links section *** */}
-      <section className="limited-time-offer-container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 global-content-container py-12 lg:py-18 space-x-0 lg:space-x-28 xl:space-x-6">
+      <section className="px-[5%] xl:px-[18%] limited-time-offer-container">
+        <div className="grid grid-cols-1 lg:grid-cols-2 py-12 lg:py-24 space-x-0 lg:space-x-28 xl:space-x-6">
             <div className="text-center lg:text-start mb-12 lg:mb-0 px-4 md:px-0">
-                <h2 className="mb-5 md:mb-2.5 limited-time-offer-title">Follow us on our socials</h2>
-                <h1 className="mb-5 md:mb-2.5 px-10 md:px-0  limited-time-offer-header">Let’s Get Connected!</h1>
-                <p className="mb-2.5 limited-time-offer-subheader">
+                <h2 className="mb-5 global-header-text-1">Follow us on our socials</h2>
+                <h1 className="mb-5 md:mb-4 global-header-text-2">Let’s Get Connected!</h1>
+                <p className="global-header-text-3">
                   Strong bonds make a team
                 </p>
             </div>
-            <div className="flex justify-center lg:justify-start gap-2 md:gap-5">
+            <div className="flex justify-center gap-2 md:gap-8">
               <a href="https://www.youtube.com/@Realchasereiner" target="blank" className="self-center">
                 <div className="socials-youtube"></div>
               </a>

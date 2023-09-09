@@ -1,52 +1,6 @@
 
-.about-title-text-1 {
-  color: var(--white, #fff);
-  font-family: Karla;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28.8px;
-}
-
-.about-header-text-2 {
-  color: var(--Tiffany-Blue, #7BDCDE);
-  font-family: Montserrat;
-  font-size: 34px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 120%;
-}
-
-.about-content-text {
-  color: #fff;
-  font-family: Karla;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%;
-  margin-bottom: 20px;
-}
-
-/* .play-button-image {
-  width: 100px; /* Set the desired width 
-  height: 100px; /* Set the desired height 
-  object-fit: contain; /* Maintain aspect ratio
-} */
 
 
 
-@media screen and (max-width: 1024px) {
-  .about-title-text-1 {
-    font-size: 24px;
-  }
-  
-  .about-header-text-2 {
-    font-size: 32px;
-  }
-
-  .about-content-text {
-    font-size: 18px;
-  }
-}
 
 

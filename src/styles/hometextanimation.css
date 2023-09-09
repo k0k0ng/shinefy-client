@@ -126,4 +126,28 @@
           transform: translate3d(0, -30.5%, 0);
         }
     }
+}
+
+@media screen and (max-width: 370px) {
+  .content__container__list {
+      margin-top: 6.2px;
+      padding-left: 75px;
   }
+  @keyframes change {
+      0%, 11%, 100% {
+        transform: translate3d(0, -32%, 0);
+      }
+      22%, 33% {
+        transform: translate3d(0, -57%, 0);
+      }
+      44%, 55% {
+        transform: translate3d(0, -82%, 0);
+      }
+      66%, 77% {
+        transform: translate3d(0, -107%, 0);
+      }
+      88%, 99% {
+        transform: translate3d(0, -32%, 0);
+      }
+  }
+}

@@ -49,8 +49,8 @@
     justify-self: end;
     gap: 10px;
     border-radius: 4px;
-    background: var(--blue-violet, #8844DA);
-    transition: background 0.3s ease-in-out;
+    background-color: var(--blue-violet, #8844DA);
+    transition: background-color 0.3s ease-in-out;
 }
 
 .submit-btn:hover {
@@ -81,6 +81,24 @@
 }
 
 
+@media screen and (max-width: 1024px) {
+    .contact-form-title {
+        font-size: 26px;
+    }
+    
+    .contact-form-header {
+        font-size: 30px;
+    }
+    
+    .contact-form-subheader,
+    .submit-btn {
+        font-size: 14px;
+    }
+
+    .contact-info-container {
+        font-size: 18px;
+    }
+}
 
 @media screen and (max-width: 767px) {
     .contact-form-container {
@@ -90,14 +108,4 @@
         background: var(--card, linear-gradient(138deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.04) 100%));
         backdrop-filter: blur(28px);
     }
-    
-    /* .submit-btn {
-        width: 70%;
-    } */
-
-
-    .contact-info-container {
-        font-size: 18px;
-    }
-
 }

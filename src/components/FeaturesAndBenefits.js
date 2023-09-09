@@ -11,30 +11,27 @@ const FeaturesAndBenefits = () => {
   return (
     <>
       {/* Features & Benefits */}
-      <div className="flex flex-col justify-center items-center w-full feature-container">
-        {/* First Section */}
-        <div className="w-full flex flex-col text-center justify-center items-center mb-10">
-          <h3 className="mb-5 features-title-1 ">Why Us</h3>
-          <h2 className="mb-6 features-title-2">
+      <div className="py-14 px-[5%] xl:px-[18%] global-section-background-2">
+        <div className="w-full flex flex-col relative text-center justify-center items-center mb-10">
+          <h3 className="mb-6 global-header-text-1">Why Us</h3>
+          <h2 className="mb-6 global-header-text-2">
             Why users prefer shineAI?
           </h2>
-          <p className="max-w-[650px] features-title-3">
+          <p className="max-w-[650px] global-header-text-3">
             We offer value-added services to our users that allow them to create more content and earn more as they continue using the app
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-8 md:gap-6 lg:px-20 xl:px-0 2xl:px-24 py-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 relative gap-y-8 md:gap-6 lg:px-32 xl:px-4 2xl:px-48 py-4">
           {/* First Row */}
           <div className="flex flex-col items-center md:items-start text-center md:text-start p-6 pb-10 feature-grid-cards">
-            {/* <div className="feature-icon"> */}
-              <img
-                src={key}
-                alt="Key Icon"
-                width="40px"
-                height="40px"
-                className="mb-10 feature-grid-icon"
-              />
-            {/* </div> */}
+            <img
+              src={key}
+              alt="Key Icon"
+              width="40px"
+              height="40px"
+              className="mb-10 feature-grid-icon"
+            />
             <p className="mb-10 feature-grid-title">
               Access to All Shine Ranker Features
             </p>
@@ -46,15 +43,13 @@ const FeaturesAndBenefits = () => {
           </div>
 
           <div className="flex flex-col items-center md:items-start text-center md:text-start p-6 pb-10 feature-grid-cards">
-            {/* <div className="about-icon "> */}
-              <img
-                src={chat}
-                alt="Video Thumbnail"
-                width="40px"
-                height="40px"
-                className="mb-10 feature-grid-icon"
-              />
-            {/* </div> */}
+            <img
+              src={chat}
+              alt="Video Thumbnail"
+              width="40px"
+              height="40px"
+              className="mb-10 feature-grid-icon"
+            />
             <p className="mb-10 feature-grid-title">
               Private Community Chat in Messenger
             </p>
@@ -66,15 +61,13 @@ const FeaturesAndBenefits = () => {
           </div>
 
           <div className="flex flex-col items-center md:items-start text-center md:text-start p-6 pb-10 feature-grid-cards">
-            {/* <div className="about-icon"> */}
-              <img
-                src={support}
-                alt="Support Icon"
-                width="40px"
-                height="40px"
-                className="mb-10 feature-grid-icon"
-              />
-            {/* </div> */}
+            <img
+              src={support}
+              alt="Support Icon"
+              width="40px"
+              height="40px"
+              className="mb-10 feature-grid-icon"
+            />
             <p className="mb-10 feature-grid-title">Email and Chat Support</p>
             <p
               className="feature-grid-text"
@@ -85,15 +78,13 @@ const FeaturesAndBenefits = () => {
 
           {/* Second Row */}
           <div className="flex flex-col items-center md:items-start text-center md:text-start p-6 pb-10 feature-grid-cards">
-            {/* <div className="about-icon"> */}
-              <img
-                src={updates}
-                alt="Updates Icon"
-                width="40px"
-                height="40px"
-                className="mb-10 feature-grid-icon"
-              />
-            {/* </div> */}
+            <img
+              src={updates}
+              alt="Updates Icon"
+              width="40px"
+              height="40px"
+              className="mb-10 feature-grid-icon"
+            />
             <p className="mb-10 feature-grid-title">
               Exclusive Shine Ranker Updates
             </p>
@@ -105,15 +96,13 @@ const FeaturesAndBenefits = () => {
           </div>
 
           <div className="flex flex-col items-center md:items-start text-center md:text-start p-6 pb-10 feature-grid-cards">
-            {/* <div className="about-icon"> */}
-              <img
-                src={vip}
-                alt="VIP Icon"
-                width="40px"
-                height="40px"
-                className="mb-10 feature-grid-icon"
-              />
-            {/* </div> */}
+            <img
+              src={vip}
+              alt="VIP Icon"
+              width="40px"
+              height="40px"
+              className="mb-10 feature-grid-icon"
+            />
             <p className="mb-10 feature-grid-title">
               VIP Group Perks and Privileges
             </p>
@@ -125,15 +114,13 @@ const FeaturesAndBenefits = () => {
           </div>
 
           <div className="flex flex-col items-center md:items-start text-center md:text-start p-6 pb-10 feature-grid-cards">
-            {/* <div className="about-icon"> */}
-              <img
-                src={checklist}
-                alt="Checklist Icon"
-                width="40px"
-                height="40px"
-                className="mb-10 feature-grid-icon"
-              />
-            {/* </div> */}
+            <img
+              src={checklist}
+              alt="Checklist Icon"
+              width="40px"
+              height="40px"
+              className="mb-10 feature-grid-icon"
+            />
             <p className="mb-10 feature-grid-title">
               Access to All Courses, Classes and Checklists
             </p>
