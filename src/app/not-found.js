@@ -6,6 +6,8 @@ import lottie from "lottie-web";
 
 import ErrorPagesFooter from '@/components/Footer/ErrorPagesFooter';
 
+import Custom403 from '@/components/ErrorPages/Custom403';
+
 import "../styles/home.css";
 
 export default function NotFound() {
@@ -18,16 +20,23 @@ export default function NotFound() {
       rerender: "svg",
       loop: true,
       autoplay: true,
-      path: "/assets/hero-banner-shine-ai-flying.json",
+      path: "/assets/two-palm-tree-animation.json",
     });
 
     return () => anim.destroy();
   }, [animationContainer]);
 
+  // Only used for checking Custom403 component
+  if (false) {
+    return (
+      <Custom403 />
+    )
+  }
+
   return (
     <div className='h-[100vh] lg:h-[120vh]'>
-      <div className='h-[60%] lg:h-[55%] flex flex-row justify-center px-[5%] xl:px-[15%] 2xl:px-[25%] global-bg-to-linear-gradient-purple'>
-        <div className='w-full flex flex-col items-center justify-end mb-[-25px]'>
+      <div className='h-[60%] lg:h-[55%] flex flex-row justify-center px-[5%] xl:px-[15%] 2xl:px-[20%] global-bg-to-linear-gradient-purple'>
+        <div className='w-full flex flex-col items-center justify-end mb-[-25px] 2xl:mr-[-5rem]'>
           <h1 className='global-error-text-1'>404</h1>
           <h2 className='mb-6 global-header-text-1'>Oh No! Page not found.</h2>
           <p className='text-center global-header-text-3'>The page must've gone to vacation.</p>
@@ -38,7 +47,7 @@ export default function NotFound() {
             Go Back
           </button>
         </div>
-        <div className='w-full hidden lg:flex flex-col items-center justify-end mb-[-18%]'>
+        <div className='w-full hidden lg:flex flex-col items-center justify-end mb-[-12%]'>
           <div
               className="w-full"
               ref={animationContainer}
