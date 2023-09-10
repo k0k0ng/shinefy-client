@@ -1,6 +1,7 @@
 import React from "react";
 // import "./home.css";
 
+import FooterPage from "@/components/Footer/Footer";
 import ContactForm from "@/components/Contacts/ContactForm";
 import ContactInfo from "@/components/Contacts/ContactInfo";
 import LimitedTimeOffer from "@/components/CTA/LimitedTimeOffer";
@@ -101,6 +102,7 @@ const AffiliatePromotions = () => {
 
       <LimitedTimeOffer />
       
+      <FooterPage />
     </>
   );
 };

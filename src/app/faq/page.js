@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
+import FooterPage from "@/components/Footer/Footer";
 import ContactForm from "@/components/Contacts/ContactForm";
 import ContactInfo from "@/components/Contacts/ContactInfo";
 import LimitedTimeOffer from "@/components/CTA/LimitedTimeOffer";
@@ -96,7 +97,7 @@ const FAQ = () => {
   // ];
 
   return (
-    <div>
+    <>
       <header className="min-h-[48rem] flex flex-col md:items-center pt-[16rem] lg:pt-[15.5rem] px-[5%] xl:px-[18%] global-header-section-bg">
         <h2 className="mb-6 md:text-center global-header-text-1">
           About Us
@@ -343,7 +344,10 @@ const FAQ = () => {
       <ContactInfo />
 
       <LimitedTimeOffer />
-    </div>
+
+      <FooterPage />
+
+    </>
   );
 };
 

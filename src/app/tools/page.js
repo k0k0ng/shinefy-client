@@ -3,6 +3,7 @@
 import { createRef, useEffect } from "react";
 import lottie from "lottie-web";
 
+import FooterPage from "@/components/Footer/Footer";
 import ContactInfo from "@/components/Contacts/ContactInfo";
 import LimitedTimeOffer from "@/components/CTA/LimitedTimeOffer";
 
@@ -290,6 +291,8 @@ export default function tools() {
 
       <LimitedTimeOffer />
 
+      <FooterPage />
+      
     </>
   );
 }

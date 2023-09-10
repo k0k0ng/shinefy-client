@@ -1,3 +1,6 @@
+
+import FooterPage from "@/components/Footer/Footer";
+
 import FeaturesAndBenefits from "@/components/FeaturesAndBenefits";
 import ContactForm from "@/components/Contacts/ContactForm";
 import ContactInfo from "@/components/Contacts/ContactInfo";
@@ -9,7 +12,7 @@ export default function about() {
   const youtubeVideoId = "PL3PXYFdlsU&t=2s";
 
   return (
-    <div>
+    <>
       {/* header */}
       <header className="min-h-[48rem] pt-[16rem] lg:pt-[15.5rem] px-[5%] xl:px-[18%] global-header-section-bg">
         <div className="flex flex-col md:items-center">
@@ -81,7 +84,8 @@ export default function about() {
       <ContactInfo />
 
       <LimitedTimeOffer />
-
-    </div>
+      
+      <FooterPage />
+    </>
   );
 }

@@ -51,6 +51,10 @@ code {
   background-color: #100826;
 }
 
+.global-bg-to-linear-gradient-purple {
+  background: linear-gradient(180deg, rgba(79, 70, 228, 0.50) 0%, rgba(136, 68, 218, 0.50) 100%);
+}
+
 .global-header-section-bg {
   background-repeat: no-repeat;
   background-size: cover;
@@ -206,10 +210,29 @@ code {
 
 
 
+/* === Error Page === */
+.global-error-text-1 {
+  color: var(--Tiffany-Blue, #7BDCDE);
+  font-family: Karla;
+  font-size: 200px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 200px;
+}
+
+.global-error-text-2 {
+  
+}
+
+.global-error-text-3 {
+  
+}
 
 
 
 
+
+/* === SwiperJS for Pricing Card === */
 .swiper-slide {
   display: flex !important;
   flex-direction: row !important;
@@ -265,6 +288,9 @@ letter-spacing: 2.255px;
   .global-header-text-3 {
     font-size: 18px;
   }
+  .global-error-text-1 {
+    font-size: 180px;
+  }
   .global-content-container-under-header {
     font-size: 14px;
   }
@@ -278,6 +304,9 @@ letter-spacing: 2.255px;
 
 
 @media screen and (max-width: 425px) {
+  .global-error-text-1 {
+    font-size: 140px;
+  }
   .global-promo-code-form {
     background: rgba(255,255,255,0);
     gap: 8px;

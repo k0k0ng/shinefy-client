@@ -2,6 +2,8 @@
 
 import lottie from "lottie-web";
 import { createRef, useEffect, useState } from "react";
+
+import FooterPage from "@/components/Footer/Footer";
 import ToggleButton from "@/components/ToggleButton";
 import LimitedTimeOffer from "@/components/CTA/LimitedTimeOffer";
 import BackToTopButton from "@/components/BackToTopButton";
@@ -1569,6 +1571,8 @@ export default function Home() {
 
       
       {/* <BackToTopButton /> */}
+
+      <FooterPage />
     </>
   );
 }

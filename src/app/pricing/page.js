@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+
+import FooterPage from "@/components/Footer/Footer";
 import ToggleButton from "@/components/ToggleButton";
 import ContactInfo from "@/components/Contacts/ContactInfo";
 import LimitedTimeOffer from "@/components/CTA/LimitedTimeOffer";
@@ -616,7 +618,8 @@ export default function Pricing() {
       <ContactInfo />
 
       <LimitedTimeOffer />
-
+      
+      <FooterPage />
     </>
   );
 }

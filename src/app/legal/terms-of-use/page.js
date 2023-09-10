@@ -1,5 +1,6 @@
 import React from "react";
 
+import FooterPage from "@/components/Footer/Footer";
 import ContactForm from "@/components/Contacts/ContactForm";
 import ContactInfo from "@/components/Contacts/ContactInfo";
 import LimitedTimeOffer from "@/components/CTA/LimitedTimeOffer";
@@ -109,6 +110,8 @@ const TermsOfUse = () => {
 
       <LimitedTimeOffer />
 
+      <FooterPage />
+
       {/* Form */}
       {/* <div className="backgroundCustom-3">
         <div className="mx-auto p-6 rounded-lg contact-form">
@@ -212,6 +215,8 @@ const TermsOfUse = () => {
           </div>
         </div>
       </div> */}
+
+
     </>
   );
 };

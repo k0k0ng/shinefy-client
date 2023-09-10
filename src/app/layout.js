@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
         <NavigationBar />
         {children}
         <BackToTopButton />
-        <FooterPage />
+        {/* <FooterPage /> */}
         {/* <FooterComponent /> */}
       </body>
     </html>
