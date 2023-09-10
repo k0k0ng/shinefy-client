@@ -4,11 +4,25 @@ import {useEffect, createRef} from 'react';
 import { useRouter } from 'next/navigation';
 import lottie from "lottie-web";
 
+import Error from 'next/error'
+
 import ErrorPagesFooter from '@/components/Footer/ErrorPagesFooter';
 
 import Custom403 from '@/components/ErrorPages/Custom403';
+import Custom500 from '@/components/ErrorPages/Custom500';
 
 import "../styles/home.css";
+
+export async function getServerSideProps() {
+  // Simulate a 500 internal server error
+  throw new Error("Simulated 500 Error");
+
+  // Alternatively, you can return an error response object like this:
+  // return {
+  //   props: {},
+  //   notFound: true, // This will simulate a 404 error
+  // };
+}
 
 export default function NotFound() {
   const router = useRouter();
@@ -26,10 +40,11 @@ export default function NotFound() {
     return () => anim.destroy();
   }, [animationContainer]);
 
-  // Only used for checking Custom403 component
-  if (false) {
+  // Only used for checking Custom Error page component
+  if (true) {
     return (
-      <Custom403 />
+      <Custom500 />
+      // <Error statusCode={500} />
     )
   }
 

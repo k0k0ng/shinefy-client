@@ -6,7 +6,6 @@ import { createRef, useEffect, useState } from "react";
 import FooterPage from "@/components/Footer/Footer";
 import ToggleButton from "@/components/ToggleButton";
 import LimitedTimeOffer from "@/components/CTA/LimitedTimeOffer";
-import BackToTopButton from "@/components/BackToTopButton";
 
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -731,6 +730,7 @@ export default function Home() {
                 </p>
                 <input
                   type="text"
+                  name="user_email"
                   placeholder="Your Email"
                   className="mb-4 home-input-center-placeholder"
                 />
@@ -1314,6 +1314,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row subscribe-for-freebies-form">
             <input
               type="text"
+              name="promo_code"
               placeholder="enter your promo code here"
               className="h-14"
             />
@@ -1542,11 +1543,13 @@ export default function Home() {
               <form className="">
                 <input
                   type="text"
+                  name="user_email"
                   placeholder="Your Email"
                   className="w-full mb-3 home-input-left-placeholder"
                 />
                 <input
                   type="password"
+                  name="user_password"
                   placeholder="Your Password"
                   className="w-full mb-3 home-input-left-placeholder"
                 />
@@ -1568,9 +1571,6 @@ export default function Home() {
 
         </div>
       </section>
-
-      
-      {/* <BackToTopButton /> */}
 
       <FooterPage />
     </>
