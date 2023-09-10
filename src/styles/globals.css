@@ -43,6 +43,10 @@ code {
   background-color: #4d2fbb;
 }
 
+.global-bg-to-dark-purple {
+  background-color: #100826;
+}
+
 .global-header-section-bg {
   background-repeat: no-repeat;
   background-size: cover;
