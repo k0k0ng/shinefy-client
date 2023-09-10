@@ -51,7 +51,7 @@ const Refund = () => {
               <div className="mb-16">
                 <h2 className="mb-8 legal-title-text">Introduction</h2>
                 <p className="legal-content-text">
-                  If you find that <a href="https://shineranker.com/">Shine Ranker</a> isn't the perfect fit for you, don't worry. 
+                  If you find that <a href="https://shineranker.com/" rel="noreferrer" target="_blank">Shine Ranker</a> isn't the perfect fit for you, don't worry. 
                   <br />
                   Just follow the steps below and our team will help you.
                 </p>

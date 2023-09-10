@@ -41,7 +41,7 @@ const EarningsDisclaimer = () => {
               <div className="mb-16">
                 <h2 className="mb-8 legal-title-text">Earnings Disclaimer</h2>
                 <p className="legal-content-text">
-                  By accessing and using <a href="https://shineranker.com/"> Shine Ranker</a> (https://www.shineranker.com/) and the information provided therein, you acknowledge 
+                  By accessing and using <a href="https://shineranker.com/" rel="noreferrer" target="_blank"> Shine Ranker</a> (https://www.shineranker.com/) and the information provided therein, you acknowledge 
                   and agree to this Earnings Disclaimer.
                   <br/><br/>
                   Transparency and honesty are fundamental principles at Shine Ranker. As such, we want to disclose that certain products and 

@@ -46,7 +46,7 @@ const TermsOfUse = () => {
                 <h2 className="mb-8 legal-title-text">Introduction</h2>
                 <p className="legal-content-text">
                   Welcome to Shine Ranker, LLC, located at 
-                  <a href="https://shineranker.com/"> https://shineranker.com/</a>. The following terms and conditions
+                  <a href="https://shineranker.com/" rel="noreferrer" target="_blank"> https://shineranker.com/</a>. The following terms and conditions
                   govern your use of our website. By accessing this website, it
                   is assumed that you fully accept and agree to abide by all the
                   terms and conditions stated on this page. If you do not agree
