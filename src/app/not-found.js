@@ -10,6 +10,7 @@ import ErrorPagesFooter from '@/components/Footer/ErrorPagesFooter';
 
 import Custom403 from '@/components/ErrorPages/Custom403';
 import Custom500 from '@/components/ErrorPages/Custom500';
+import UnderMaintenance from '@/components/ErrorPages/UnderMaintenance';
 
 import "../styles/home.css";
 
@@ -41,9 +42,9 @@ export default function NotFound() {
   }, [animationContainer]);
 
   // Only used for checking Custom Error page component
-  if (true) {
+  if (false) {
     return (
-      <Custom500 />
+      <UnderMaintenance />
       // <Error statusCode={500} />
     )
   }

@@ -221,12 +221,15 @@ code {
 }
 
 .global-error-text-2 {
-  
+  color: var(--Tiffany-Blue, #7BDCDE);
+  text-align: center;
+  font-family: Karla;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 120px */
 }
 
-.global-error-text-3 {
-  
-}
 
 
 
