@@ -31,7 +31,7 @@ const Refund = () => {
         </div>
       </header>
 
-      <div className="px-[5%] xl:px-[18%] global-content-container">
+      <div className="px-[5%] xl:px-[18%]">
         <div className="flex mt-[-9rem]">
           <div className="flex flex-col justify-center">
 
