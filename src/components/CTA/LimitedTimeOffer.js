@@ -13,9 +13,13 @@ const LimitedTimeOffer = () => {
                     and start on your journey towards a growing income using AI.
                 </p>
             </div>
-            <button className="px-14 limited-time-offer-btn">
+            <a
+                href="https://chasereiner.thrivecart.com/shine-ranker-deal"
+                rel="noreferrer"
+                target="_blank"
+                className="flex items-center justify-center px-14 limited-time-offer-btn">
                 Grab this Deal!
-            </button>
+            </a>
         </div>
     </div>
   )
