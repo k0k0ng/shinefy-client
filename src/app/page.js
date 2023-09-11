@@ -17,7 +17,6 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { styled } from '@mui/material/styles';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -528,6 +527,7 @@ const CustomTooltip = styled(({ className, ...props }) => (
 export default function Home() {
   let animationContainer = createRef();
   const [selectedOption, setSelectedOption] = useState("monthly");
+  const [selectedCreamOfCropCategory, setSelectedCreamOfCropCategory] = useState("Motivational");
 
   useEffect(() => {
     const anim = lottie.loadAnimation({
@@ -552,6 +552,10 @@ export default function Home() {
   const handleLogin = () => {
     console.log("Login ...")
   }
+
+  const handleChangeCreamOfCropCategory = (event) => {
+    setSelectedCreamOfCropCategory(event.target.value);
+  };
 
   return (
     <>
@@ -1195,12 +1199,323 @@ export default function Home() {
       
       
       {/* Cream of the Crop */}
-      <section>
-        <h4>The Cream of the Crop</h4>
-        <h3>Captivating Videos & Pictorgraphy</h3>
-        <p>Our tools create seamless videos and timings that binds your content and make it viral on any platform.</p>
+      <section className="py-20 px-[10%] 2xl:px-[20%]">
+        <h4 className="mb-6 text-center global-header-text-1">The Cream of the Crop</h4>
+        <h3 className="mb-6 text-center global-header-text-2">Captivating Videos & Pictorgraphy</h3>
+        <p className="mb-12 text-center global-header-text-3">Our tools create seamless videos and timings that binds your content and make it viral on any platform.</p>
+        
+        <div className="max-w-[700px] flex flex-row flex-wrap justify-center gap-3 mx-auto mb-12">
+          <button 
+            value="Motivational"
+            onClick={handleChangeCreamOfCropCategory}        
+            className={`whitespace-nowrap p-4 text-white rounded global-outlined-btn-2 ${selectedCreamOfCropCategory=="Motivational" ? "active-radio" : ""}`} 
+          >
+              Motivational
+          </button>
+          <button 
+            value="TikTok"
+            onClick={handleChangeCreamOfCropCategory}        
+            className={`whitespace-nowrap p-4 text-white rounded global-outlined-btn-2 ${selectedCreamOfCropCategory=="TikTok" ? "active-radio" : ""}`} 
+          >
+              TikTok
+          </button>
+          <button 
+            value="YouTube Shorts"
+            onClick={handleChangeCreamOfCropCategory}        
+            className={`whitespace-nowrap p-4 text-white rounded global-outlined-btn-2 ${selectedCreamOfCropCategory=="YouTube Shorts" ? "active-radio" : ""}`} 
+          >
+              YouTube Shorts
+          </button>
+          <button 
+            value="Storytelling"
+            onClick={handleChangeCreamOfCropCategory}        
+            className={`whitespace-nowrap p-4 text-white rounded global-outlined-btn-2 ${selectedCreamOfCropCategory=="Storytelling" ? "active-radio" : ""}`} 
+          >
+              Storytelling
+          </button>
+          <button 
+            value="Trivia"
+            onClick={handleChangeCreamOfCropCategory}        
+            className={`whitespace-nowrap p-4 text-white rounded global-outlined-btn-2 ${selectedCreamOfCropCategory=="Trivia" ? "active-radio" : ""}`} 
+          >
+              Trivia
+          </button>
+          <button 
+            value="Viral Videos"
+            onClick={handleChangeCreamOfCropCategory}        
+            className={`whitespace-nowrap p-4 text-white rounded global-outlined-btn-2 ${selectedCreamOfCropCategory=="Viral Videos" ? "active-radio" : ""}`} 
+          >
+              Viral Videos
+          </button>
+          <button 
+            value="Affiliate"
+            onClick={handleChangeCreamOfCropCategory}        
+            className={`whitespace-nowrap p-4 text-white rounded global-outlined-btn-2 ${selectedCreamOfCropCategory=="Affiliate" ? "active-radio" : ""}`} 
+          >
+              Affiliate
+          </button>
+          <button 
+            value="Instastories"
+            onClick={handleChangeCreamOfCropCategory}        
+            className={`whitespace-nowrap p-4 text-white rounded global-outlined-btn-2 ${selectedCreamOfCropCategory=="Instastories" ? "active-radio" : ""}`} 
+          >
+              Instastories
+          </button>
+          <button 
+            value="Promotional"
+            onClick={handleChangeCreamOfCropCategory}        
+            className={`whitespace-nowrap p-4 text-white rounded global-outlined-btn-2 ${selectedCreamOfCropCategory=="Promotional" ? "active-radio" : ""}`} 
+          >
+              Promotional
+          </button>
+          <button 
+            value="Informational"
+            onClick={handleChangeCreamOfCropCategory}        
+            className={`whitespace-nowrap p-4 text-white rounded global-outlined-btn-2 ${selectedCreamOfCropCategory=="Informational" ? "active-radio" : ""}`} 
+          >
+              Informational
+          </button>
+        </div>
+
+        <Swiper
+          pagination={{
+            clickable: true,
+          }}
+          loop={true}
+          breakpoints={{
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 4,
+            },
+            1440: {
+              slidesPerView: 6,
+              spaceBetween: 2,
+            },
+            1700: {
+              slidesPerView: 6,
+              spaceBetween: 2,
+            },
+          }}
+          className=""
+        >
+          <SwiperSlide>
+            <div className="flex flex-col items-center ">
+              <img
+                src="/images/home/CreamOfCrop/Top5hacksADHD.png"
+                alt="Shine Ai Training Video thumbnail"
+                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+              />
+              <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+                Motivational
+              </button>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex flex-col items-center ">
+              <img
+                src="/images/home/CreamOfCrop/Marie Curie.png"
+                alt="Shine Ai Training Video thumbnail"
+                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+              />
+              <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+                Information
+              </button>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex flex-col items-center ">
+              <img
+                src="/images/home/CreamOfCrop/ShineRanker.png"
+                alt="Shine Ai Training Video thumbnail"
+                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+              />
+              <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+                Promotional
+              </button>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex flex-col items-center ">
+              <img
+                src="/images/home/CreamOfCrop/Samuel.png"
+                alt="Shine Ai Training Video thumbnail"
+                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+              />
+              <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+                Storytelling
+              </button>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex flex-col items-center ">
+              <img
+                src="/images/home/CreamOfCrop/Why Indonesians dont speak dutch.png"
+                alt="Shine Ai Training Video thumbnail"
+                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+              />
+              <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+                Trivia
+              </button>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex flex-col items-center ">
+              <img
+                src="/images/home/CreamOfCrop/uranium.png"
+                alt="Shine Ai Training Video thumbnail"
+                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+              />
+              <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+                Recent Viral
+              </button>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex flex-col items-center ">
+              <img
+                src="/images/home/CreamOfCrop/Top5hacksADHD.png"
+                alt="Shine Ai Training Video thumbnail"
+                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+              />
+              <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+                Motivational
+              </button>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex flex-col items-center ">
+              <img
+                src="/images/home/CreamOfCrop/Marie Curie.png"
+                alt="Shine Ai Training Video thumbnail"
+                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+              />
+              <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+                Information
+              </button>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex flex-col items-center ">
+              <img
+                src="/images/home/CreamOfCrop/ShineRanker.png"
+                alt="Shine Ai Training Video thumbnail"
+                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+              />
+              <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+                Promotional
+              </button>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex flex-col items-center ">
+              <img
+                src="/images/home/CreamOfCrop/Samuel.png"
+                alt="Shine Ai Training Video thumbnail"
+                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+              />
+              <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+                Storytelling
+              </button>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex flex-col items-center ">
+              <img
+                src="/images/home/CreamOfCrop/Why Indonesians dont speak dutch.png"
+                alt="Shine Ai Training Video thumbnail"
+                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+              />
+              <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+                Trivia
+              </button>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex flex-col items-center ">
+              <img
+                src="/images/home/CreamOfCrop/uranium.png"
+                alt="Shine Ai Training Video thumbnail"
+                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+              />
+              <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+                Recent Viral
+              </button>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+
+        {/* <div className="flex flex-row flex-wrap justify-center gap-2">
+          <div className="flex flex-col items-center">
+            <img
+              src="/images/home/CreamOfCrop/Top5hacksADHD.png"
+              alt="Shine Ai Training Video thumbnail"
+              className="min-h-[300px] min-w-[170px] mb-4 rounded"
+            />
+            <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+              Motivational
+            </button>
+          </div>
+          <div className="flex flex-col items-center">
+            <img
+              src="/images/home/CreamOfCrop/Marie Curie.png"
+              alt="Shine Ai Training Video thumbnail"
+              className="min-h-[300px] min-w-[170px] mb-4 rounded"
+            />
+            <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+              Information
+            </button>
+          </div>
+          <div className="flex flex-col items-center">
+            <img
+              src="/images/home/CreamOfCrop/ShineRanker.png"
+              alt="Shine Ai Training Video thumbnail"
+              className="min-h-[300px] min-w-[170px] mb-4 rounded"
+            />
+            <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+              Promotional
+            </button>
+          </div>
+          <div className="flex flex-col items-center">
+            <img
+              src="/images/home/CreamOfCrop/Samuel.png"
+              alt="Shine Ai Training Video thumbnail"
+              className="min-h-[300px] min-w-[170px] mb-4 rounded"
+            />
+            <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+              Storytelling
+            </button>
+          </div>
+          <div className="flex flex-col items-center">
+            <img
+              src="/images/home/CreamOfCrop/Why Indonesians dont speak dutch.png"
+              alt="Shine Ai Training Video thumbnail"
+              className="min-h-[300px] min-w-[170px] mb-4 rounded"
+            />
+            <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+              Trivia
+            </button>
+          </div>
+          <div className="flex flex-col items-center">
+            <img
+              src="/images/home/CreamOfCrop/uranium.png"
+              alt="Shine Ai Training Video thumbnail"
+              className="min-h-[300px] min-w-[170px] mb-4 rounded"
+            />
+            <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+              Recent Viral
+            </button>
+          </div>
+        </div> */}
 
       </section>
+
+
+
+
 
 
       {/* Stunning Image Outputs */}

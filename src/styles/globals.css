@@ -233,6 +233,49 @@ code {
 }
 
 
+.global-outlined-btn-1 {
+  color: #F1F1F1;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: 1px solid transparent;
+}
+.global-outlined-btn-1:hover {
+  color: #4D2FBB;
+  border: 1px solid #4D2FBB;
+}
+
+.global-outlined-btn-2 {
+  color: #F1F1F1;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: 1px solid #F1F1F1;
+}
+.global-outlined-btn-2:hover {
+  color: #4D2FBB;
+  border: 1px solid #4D2FBB;
+}
+
+.global-outlined-btn-2.active-radio {
+  color: #F1F1F1;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: 1px solid #8844DA;
+  background-color: #8844DA;
+}
+.global-outlined-btn-2.active-radio:hover {
+  border: 1px solid #4D2FBB;
+  background-color: #4D2FBB;
+}
+
 
 /* === Error Page === */
 .global-error-text-1 {
