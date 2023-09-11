@@ -90,7 +90,7 @@ const NavigationBar = () => {
             id="navbar-sticky"
           >
             <ul className="flex flex-row justify-end items-center p-2 md:p-0 font-karla">
-              <li className="hidden xl:flex">
+              <li className="hidden 2xl:flex">
                 <a
                   href="/about"
                   className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition hover:opacity-75"
@@ -98,7 +98,7 @@ const NavigationBar = () => {
                   About
                 </a>
               </li>
-              <li className="hidden xl:flex">
+              <li className="hidden 2xl:flex">
                 <a
                   href="/tools"
                   className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition hover:opacity-75"
@@ -106,7 +106,7 @@ const NavigationBar = () => {
                   Tools
                 </a>
               </li>
-              <li className="hidden xl:flex">
+              <li className="hidden 2xl:flex">
                 <a
                   href="/pricing"
                   className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition hover:opacity-75"
@@ -114,10 +114,20 @@ const NavigationBar = () => {
                   Pricing Plan
                 </a>
               </li>
+              <li className="hidden 2xl:flex">
+                <a
+                  href="/blogs"
+                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition hover:opacity-75"
+                >
+                  Blogs
+                </a>
+              </li>
               <li className="hidden md:flex">
                 <a
-                  href="/signup"
+                  href="https://app.shineranker.com/signup_free/"
                   type="button"
+                  rel="noreferrer"
+                  target="_blank"
                   className="text-white h-10 bg-purp hover:bg-purple-800 transition font-medium rounded-lg text-sm px-10 flex justify-center items-center font-karla mr-3"
                 >
                   Sign Up
@@ -125,8 +135,10 @@ const NavigationBar = () => {
               </li>
               <li className="hidden md:flex">
                 <a
-                  href="/login"
+                  href="https://app.shineranker.com/"
                   type="button"
+                  rel="noreferrer"
+                  target="_blank"
                   className="text-white h-10 border-2 hover:bg-purple-800 transition hover:border-purple-800 font-medium rounded-lg text-sm px-10 flex justify-center items-center md:mr-0 font-karla "
                 >
                   Log in
@@ -134,7 +146,7 @@ const NavigationBar = () => {
               </li>
 
               <li>
-                <Button onClick={toggleDrawer(true)} className="flex xl:hidden">
+                <Button onClick={toggleDrawer(true)} className="flex 2xl:hidden">
                   <MenuIcon className="text-white" />
                 </Button>
               </li>
@@ -150,7 +162,7 @@ const NavigationBar = () => {
           variant="persistent"
           onClose={toggleDrawer(false)}
           onOpen={toggleDrawer(true)}
-          className="flex xl:hidden swipeable-drawer"
+          className="flex 2xl:hidden swipeable-drawer"
         >
           <Box
             role="presentation"
@@ -255,16 +267,35 @@ const NavigationBar = () => {
                   Pricing Plan
                 </a>
               </ListItem>
+
+              <ListItem className="h-14 py-1">
+                <a
+                  href="/blogs"
+                  className="w-full h-full flex items-center text-start pl-4 rounded-md nav-link"
+                >
+                  Blogs
+                </a>
+              </ListItem>
             </List>
             
             <List className="flex flex-col px-5 pb-8 gap-y-5">
                 <ListItem className="flex md:hidden h-14 p-0 rounded border">
-                  <a href="/signup" className="w-full h-full flex items-center pl-5 rounded nav-link">
+                  <a 
+                    href="https://app.shineranker.com/signup_free/"
+                    rel="noreferrer"
+                    target="_blank"
+                    className="w-full h-full flex items-center pl-5 rounded nav-link"
+                  >
                     Sign up
                   </a>
                 </ListItem>
                 <ListItem className="flex md:hidden h-14 p-0 rounded border">
-                  <a href="/login" className="w-full h-full flex items-center pl-5 rounded nav-link">
+                  <a 
+                    href="https://app.shineranker.com/"
+                    rel="noreferrer"
+                    target="_blank" 
+                    className="w-full h-full flex items-center pl-5 rounded nav-link"
+                  >
                     Log in
                   </a>
                 </ListItem>

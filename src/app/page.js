@@ -14,11 +14,15 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
+import { styled } from '@mui/material/styles';
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
+
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 
 
 // CSS Imports
@@ -508,6 +512,18 @@ const PricingPlansMobile = (selectedOption) => {
 }
 
 
+const CustomTooltip = styled(({ className, ...props }) => (
+  <Tooltip {...props} classes={{ popper: className }} />
+))(({ theme }) => ({
+  [`& .${tooltipClasses.tooltip}`]: {
+    backgroundColor: "rgba(20, 22, 56, 0.95)",
+    color: '#F1F1F1',
+    maxWidth: 340,
+    fontSize: theme.typography.pxToRem(13),
+    padding: '20px 20px 20px 30px',
+  },
+}));
+
 
 export default function Home() {
   let animationContainer = createRef();
@@ -598,6 +614,8 @@ export default function Home() {
             <div className="flex lg:block">
               <a
                 href="https://chasereiner.thrivecart.com/shine-ranker-deal"
+                rel="noreferrer"
+                target="_blank"
                 className="w-full text-center lg:text-start lg:px-5 py-4 mt-5 home-primary-btn"
               >
                 Let&apos;s Get Started
@@ -1174,6 +1192,117 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+      
+      {/* Cream of the Crop */}
+      <section>
+        <h4>The Cream of the Crop</h4>
+        <h3>Captivating Videos & Pictorgraphy</h3>
+        <p>Our tools create seamless videos and timings that binds your content and make it viral on any platform.</p>
+
+      </section>
+
+
+      {/* Stunning Image Outputs */}
+      <section className="flex flex-col lg:flex-row py-20 px-[10%] xl:px-[20%] gap-x-20 xl:gap-x-28">
+        <div className="w-full lg:w-[50%] flex flex-col py-2 mb-12 lg:mb-0 items-center">
+          <h3 className="mb-6 text-center global-header-text-2">Stunning Image Outputs</h3>
+          <p className="max-w-[400px] text-center mb-10 lg:mb-20 global-header-text-3">Our image prompt results are astounding and seamless. No need further editing.</p>
+          <div className="grid grid-cols-3 gap-3">
+            <img
+              src="/images/global/SampleImages/penguins.png"
+              alt="Shine Ai Training Video thumbnail"
+              width="138px"
+              className="max-h-[110px] md:max-h-[150px] lg:max-h-[100px] 2xl:max-h-[150px] stunning-images-grid-img border"
+            />
+            <img
+              src="/images/global/SampleImages/deer.jpg"
+              alt="Shine Ai Training Video thumbnail"
+              width="138px"
+              className="max-h-[110px] md:max-h-[150px] lg:max-h-[100px] 2xl:max-h-[150px] stunning-images-grid-img border"
+            />
+            <img
+              src="/images/global/SampleImages/cat.jpg"
+              alt="Shine Ai Training Video thumbnail"
+              width="138px"
+              className="max-h-[110px] md:max-h-[150px] lg:max-h-[100px] 2xl:max-h-[150px] stunning-images-grid-img border"
+            />
+            <img
+              src="/images/global/SampleImages/eagle.jpg"
+              alt="Shine Ai Training Video thumbnail"
+              width="138px"
+              className="max-h-[110px] md:max-h-[150px] lg:max-h-[100px] 2xl:max-h-[150px] stunning-images-grid-img border"
+            />
+            <img
+              src="/images/global/SampleImages/piglet.png"
+              alt="Shine Ai Training Video thumbnail"
+              width="138px"
+              className="max-h-[110px] md:max-h-[150px] lg:max-h-[100px] 2xl:max-h-[150px] stunning-images-grid-img border"
+            />
+            <img
+              src="/images/global/SampleImages/panda.png"
+              alt="Shine Ai Training Video thumbnail"
+              width="138px"
+              className="max-h-[110px] md:max-h-[150px] lg:max-h-[100px] 2xl:max-h-[150px] stunning-images-grid-img border"
+            />
+          </div>
+        </div>
+        <div className="w-full lg:max-w-[50%] 2xl:max-w-[37%] flex flex-col items-center justify-center py-12 px-8 rounded-md global-bg-to-dark-purple">
+          <h3 className="mb-10 text-center font-bold text-[24px] global-text-to-light-blue">Try it yourself!</h3>
+          <p className="mb-14 text-center global-header-text-3">Type your desired images for your upcoming videos.</p>
+          <CustomTooltip
+            placement="top-start"
+            title={
+              <>
+                <p className="mb-5 global-text-to-light-blue">Our tools work best for video narration and promoting products</p>
+
+                <ul className="mb-4 ml-2">
+                  <li className="global-tooltip-li-1">
+                    Short form videos from keywords
+                  </li>
+                  <li className="global-tooltip-li-1">
+                    Videos using your voice as narrator
+                  </li>
+                  <li className="global-tooltip-li-1">
+                    Educational videos using AI images
+                  </li>
+                  <li className="global-tooltip-li-1">
+                    Generate stories and videos using AI
+                  </li>
+                  <li className="global-tooltip-li-1">
+                    Motivational videos for viral content
+                  </li>
+                  <li className="global-tooltip-li-1">
+                    Product and Service reviews
+                  </li>
+                </ul>
+
+                <ul className="ml-2">
+                  <li className="global-tooltip-li-2">
+                    Music videos
+                  </li>
+                  <li className="global-tooltip-li-2">
+                    Long format videos
+                  </li>
+                </ul>
+
+              </>
+            }
+          >
+            <input type="text" className="w-full h-[50px] mb-2 text-center stunning-images-input" placeholder="type an idea here"/>
+          </CustomTooltip>
+          
+          <a 
+            href="https://chasereiner.thrivecart.com/shine-ranker-deal"
+            rel="noreferrer"
+            target="_blank" 
+            className="w-full h-[50px] flex justify-center items-center global-primary-btn"
+          >
+            Generate Your Videos
+          </a>
+        </div>
+      </section>
+
 
 
       {/* Our Amazing Features */}
@@ -1286,9 +1415,14 @@ export default function Home() {
                   earnings as they embarked on this new journey
                   using Shine Ranker
                 </p>
-                <button className="w-10/12 md:w-6/12 lg:w-auto px-6 home-primary-btn">
+                <a
+                  href="https://chasereiner.thrivecart.com/shine-ranker-deal"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="w-10/12 md:w-6/12 lg:w-auto flex items-center px-6 home-primary-btn"
+                >
                   Start Creating Today
-                </button>
+                </a>
               </div>
 
               {/* {CredibilitySectionGrid(true)} */}
@@ -1395,7 +1529,7 @@ export default function Home() {
                     <img src="/svg/home/star.svg" alt="star icon" height="24" />
                     <img src="/svg/home/star.svg" alt="star icon" height="24" />
                     <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star outline.svg" alt="outlined star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
                 </div>
                 <p className="text-white mt-5">
                   "JUST CHECKED MY FACEBOOK ANALYTICS THE PAST 28 DAYS AND GOT 16K VIEWS!!!"
@@ -1463,7 +1597,7 @@ export default function Home() {
                     <img src="/svg/home/star.svg" alt="star icon" height="24" />
                     <img src="/svg/home/star.svg" alt="star icon" height="24" />
                     <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star outline.svg" alt="outlined star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
                 </div>
                 <p className="text-white mt-5">
                   "I USED IT FOR A CLIENT TODAY AND I CLOSE AT $100K A YEAR!"
@@ -1578,12 +1712,25 @@ export default function Home() {
                   className="w-full mb-3 home-input-left-placeholder"
                 />
                 <div className="flex flex-col lg:flex-row mb-3 gap-4">
-                  <a href="/signup" className="w-full text-center py-3 home-primary-btn">
+                  <a 
+                    href="https://app.shineranker.com/signup_free/"
+                    rel="noreferrer"
+                    target="_blank" 
+                    className="w-full text-center py-3 home-primary-btn"
+                  >
                     Create an account
                   </a>
-                  <button type="button" onClick={handleLogin} className="px-4 whitespace-nowrap home-outlined-btn">
+                  {/* <button type="button" onClick={handleLogin} className="px-4 whitespace-nowrap home-outlined-btn">
                     Log in
-                  </button>
+                  </button> */}
+                  <a 
+                    href="https://app.shineranker.com/"
+                    rel="noreferrer"
+                    target="_blank"
+                    className="px-4 flex items-center whitespace-nowrap home-outlined-btn"
+                  >
+                    Log in
+                  </a>
                 </div>
                 <a href="/pricing" className="hidden md:inline home-link">
                   Pricing Plan

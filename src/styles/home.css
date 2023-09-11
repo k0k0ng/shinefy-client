@@ -360,6 +360,58 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* *** Stunning Image Output *** */
+.stunning-images-grid-img {
+  object-fit: cover;
+  opacity: 0.8;
+}
+.stunning-images-grid-img:hover {
+  opacity: 1;
+  /* box-shadow: 0px 0px 10px #8844DA; */
+}
+
+.stunning-images-input {
+  color: #F1F1F1;
+  text-align: center;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #141638;
+  border-color: #141638;
+  border-radius: 4px;
+}
+
+.stunning-images-input::placeholder {
+  color: #8844DA;
+  text-align: center;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.stunning-images-input:focus {
+  border-color: #8844DA;
+}
+
+
+
+
 /* *** Amazing Features *** */
 .amazing-features-container {
   margin: 0px 20%;
@@ -491,25 +543,12 @@
   align-self: center;
 }
 
-
-
-
 .testimonial-side-shadow-left {
-  /* box-shadow: 100px 0px 100px #07061c; */
   background-image: linear-gradient(270deg, transparent, #07061c, #07061c);
 }
 .testimonial-side-shadow-right {
-  /* background-color: #07061c; */
   background-image: linear-gradient(90deg, transparent, #07061c, #07061c);
 }
-
-
-
-
-
-
-
-
 /* =========================== */
 
 
