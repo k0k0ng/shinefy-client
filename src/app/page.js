@@ -1327,7 +1327,7 @@ export default function Home() {
 
 
       {/* *** Testimonials *** */}
-      <section className="my-28 testimonial-section">
+      <section className="my-28 px-[10%] xl:px-[19%] testimonial-section">
         <div className="flex flex-col items-center mb-10">
           <h4 className="mb-5 home-section-header-small">Testimonials</h4>
           <h3 className="max-w-[220px] md:max-w-[520px] text-center mb-5 home-section-header-big">
@@ -1335,159 +1335,183 @@ export default function Home() {
           </h3>
         </div>
 
-        <Swiper
-          // slidesPerView={4}
-          // spaceBetween={10}
-          pagination={{
-            clickable: true,
-          }}
-          loop={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          breakpoints={{
-            768: {
-              slidesPerView: 1,
-              spaceBetween: 5,
-            },
-            1024: {
-              slidesPerView: 2,
-              spaceBetween: 5,
-            },
-            1440: {
-              slidesPerView: 3,
-              spaceBetween: 5,
-            },
-            1700: {
-              slidesPerView: 4,
-              spaceBetween: 8,
-            },
-          }}
-          modules={[Autoplay]}
-          className="testimonial-carousel-container"
-        >
-          <SwiperSlide>
-            <div className="flex flex-col px-10 pb-12 text-center testimonial-card">
-              <img src="/images/home/Testimonial Heads.png" alt="tetimonial male profile" height="150" className="testimonial-card-profile-img" />
-              <p className="text-white mt-5">Client’s Name</p>
-              <p className="text-white mt-1">Position of Company</p>
-              <div className="flex flex-row justify-center mt-5">
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
+        <div className="relative">
+          <Swiper
+            // slidesPerView={4}
+            // spaceBetween={10}
+            pagination={{
+              clickable: true,
+            }}
+            loop={true}
+            autoplay={{
+              delay: 3500,
+              disableOnInteraction: false,
+            }}
+            breakpoints={{
+              768: {
+                slidesPerView: 1,
+                spaceBetween: 50,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+              },
+              1440: {
+                slidesPerView: 3,
+                spaceBetween: 5,
+              },
+              1700: {
+                slidesPerView: 4,
+                spaceBetween: 8,
+              },
+            }}
+            modules={[Autoplay]}
+            className="testimonial-carousel-container z-30"
+          >
+            <SwiperSlide>
+              <div className="w-[80%] md:w-[60%] lg:w-auto flex flex-col px-10 pb-12 text-center testimonial-card">
+                <img src="/images/home/TestimonialHeads/Testimonial Head 1.png" alt="tetimonial male profile" height="150" className="testimonial-card-profile-img" />
+                <p className="text-white mt-5">VincentK</p>
+                <p className="text-white mt-1">Content Creator</p>
+                <div className="flex flex-row justify-center mt-5">
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                </div>
+                <p className="text-white mt-5">
+                  "One of the biggest barriers was content creation. This tool is amazing brother. I’m genuinely thrilled to help market it."
+                </p>
               </div>
-              <p className="text-white mt-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex flex-col px-10 pb-12 text-center testimonial-card">
-              <img src="/images/home/Testimonial Heads (1).png" alt="tetimonial female profile" height="150" className="testimonial-card-profile-img" />
-              <p className="text-white mt-5">Client’s Name</p>
-              <p className="text-white mt-1">Position of Company</p>
-              <div className="flex flex-row justify-center mt-5">
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star outline.svg" alt="outlined star icon" height="24" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="w-[80%] md:w-[60%] lg:w-auto flex flex-col px-10 pb-12 text-center testimonial-card">
+                <img src="/images/home/TestimonialHeads/Testimonial Head 2.png" alt="tetimonial female profile" height="150" className="testimonial-card-profile-img" />
+                <p className="text-white mt-5">Alchemist</p>
+                <p className="text-white mt-1">Reels Creator</p>
+                <div className="flex flex-row justify-center mt-5">
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star outline.svg" alt="outlined star icon" height="24" />
+                </div>
+                <p className="text-white mt-5">
+                  "JUST CHECKED MY FACEBOOK ANALYTICS THE PAST 28 DAYS AND GOT 16K VIEWS!!!"
+                </p>
               </div>
-              <p className="text-white mt-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex flex-col px-10 pb-12 text-center testimonial-card">
-              <img src="/images/home/Testimonial Heads (2).png" alt="tetimonial female profile" height="150" className="testimonial-card-profile-img" />
-              <p className="text-white mt-5">Client’s Name</p>
-              <p className="text-white mt-1">Position of Company</p>
-              <div className="flex flex-row justify-center mt-5">
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="w-[80%] md:w-[60%] lg:w-auto flex flex-col px-10 pb-12 text-center testimonial-card">
+                <img src="/images/home/TestimonialHeads/Testimonial Head 3.png" alt="tetimonial female profile" height="150" className="testimonial-card-profile-img" />
+                <p className="text-white mt-5">Chance Reynolds</p>
+                <p className="text-white mt-1">Reels Creator</p>
+                <div className="flex flex-row justify-center mt-5">
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                </div>
+                <p className="text-white mt-5">
+                  "It’s a totally faceless way to make amazing videos. I’m using them to sell affiliate physical products on TikTok, and they’re working!"
+                </p>
               </div>
-              <p className="text-white mt-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex flex-col px-10 pb-12 text-center testimonial-card">
-              <img src="/images/home/Testimonial Heads (3).png" alt="tetimonial male profile" height="150" className="testimonial-card-profile-img" />
-              <p className="text-white mt-5">Client’s Name</p>
-              <p className="text-white mt-1">Position of Company</p>
-              <div className="flex flex-row justify-center mt-5">
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="w-[80%] md:w-[60%] lg:w-auto flex flex-col px-10 pb-12 text-center testimonial-card">
+                <img src="/images/home/TestimonialHeads/Testimonial Head 4.png" alt="tetimonial male profile" height="150" className="testimonial-card-profile-img" />
+                <p className="text-white mt-5">Easy Internet Mktng</p>
+                <p className="text-white mt-1">Reels Creator</p>
+                <div className="flex flex-row justify-center mt-5">
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                </div>
+                <p className="text-white mt-5">
+                  "I MADE TWO SALES ON THE FIRST OF THIS MONTH AND ANOTHER ONE THIS MORNING."
+                </p>
               </div>
-              <p className="text-white mt-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex flex-col px-10 pb-12 text-center testimonial-card">
-              <img src="/images/home/Testimonial Heads.png" alt="tetimonial male profile" height="150" className="testimonial-card-profile-img" />
-              <p className="text-white mt-5">Client’s Name</p>
-              <p className="text-white mt-1">Position of Company</p>
-              <div className="flex flex-row justify-center mt-5">
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="w-[80%] md:w-[60%] lg:w-auto flex flex-col px-10 pb-12 text-center testimonial-card">
+                <img src="/images/home/TestimonialHeads/Testimonial Head 5.png" alt="tetimonial male profile" height="150" className="testimonial-card-profile-img" />
+                <p className="text-white mt-5">ComedyMarketer</p>
+                <p className="text-white mt-1">Youtube Shorts Creator</p>
+                <div className="flex flex-row justify-center mt-5">
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                </div>
+                <p className="text-white mt-5">
+                  "I HAD THE TRIAL OF SHINE RANKER YESTERDAY AND LOVE IT, I'M BLOWN AWAY BY THE QUALITY."
+                </p>
               </div>
-              <p className="text-white mt-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex flex-col px-10 pb-12 text-center testimonial-card">
-              <img src="/images/home/Testimonial Heads (1).png" alt="tetimonial female profile" height="150" className="testimonial-card-profile-img" />
-              <p className="text-white mt-5">Client’s Name</p>
-              <p className="text-white mt-1">Position of Company</p>
-              <div className="flex flex-row justify-center mt-5">
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star outline.svg" alt="outlined star icon" height="24" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="w-[80%] md:w-[60%] lg:w-auto flex flex-col px-10 pb-12 text-center testimonial-card">
+                <img src="/images/home/TestimonialHeads/Testimonial Head 6.png" alt="tetimonial female profile" height="150" className="testimonial-card-profile-img" />
+                <p className="text-white mt-5">Tommy Seilheimer</p>
+                <p className="text-white mt-1">Content Creator & Manager</p>
+                <div className="flex flex-row justify-center mt-5">
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star outline.svg" alt="outlined star icon" height="24" />
+                </div>
+                <p className="text-white mt-5">
+                  "I USED IT FOR A CLIENT TODAY AND I CLOSE AT $100K A YEAR!"
+                </p>
               </div>
-              <p className="text-white mt-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex flex-col px-10 pb-12 text-center testimonial-card">
-              <img src="/images/home/Testimonial Heads (2).png" alt="tetimonial female profile" height="150" className="testimonial-card-profile-img" />
-              <p className="text-white mt-5">Client’s Name</p>
-              <p className="text-white mt-1">Position of Company</p>
-              <div className="flex flex-row justify-center mt-5">
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="w-[80%] md:w-[60%] lg:w-auto flex flex-col px-10 pb-12 text-center testimonial-card">
+                <img src="/images/home/TestimonialHeads/Testimonial Head 7.png" alt="tetimonial female profile" height="150" className="testimonial-card-profile-img" />
+                <p className="text-white mt-5">Lisa Phillips</p>
+                <p className="text-white mt-1">TikTok Video Creator</p>
+                <div className="flex flex-row justify-center mt-5">
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                </div>
+                <p className="text-white mt-5">
+                  "I POSTED MY FIRST FEW VIDEOS MADE WITH SHINE RANKER. ONE OF THEM GOT 843 VIEWS!!"
+                </p>
               </div>
-              <p className="text-white mt-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex flex-col px-10 pb-12 text-center testimonial-card">
-              <img src="/images/home/Testimonial Heads (3).png" alt="tetimonial male profile" height="150" className="testimonial-card-profile-img" />
-              <p className="text-white mt-5">Client’s Name</p>
-              <p className="text-white mt-1">Position of Company</p>
-              <div className="flex flex-row justify-center mt-5">
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                  <img src="/svg/home/star.svg" alt="star icon" height="24" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="w-[80%] md:w-[60%] lg:w-auto flex flex-col px-10 pb-12 text-center testimonial-card">
+                <img src="/images/home/TestimonialHeads/Testimonial Head 8.png" alt="tetimonial male profile" height="150" className="testimonial-card-profile-img" />
+                <p className="text-white mt-5">Anthony Kell</p>
+                <p className="text-white mt-1">Content Creator & Manager</p>
+                <div className="flex flex-row justify-center mt-5">
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                </div>
+                <p className="text-white mt-5">
+                  "Gosh, it used to take me a couple of hours to create something like this. I’m totally stoked now."
+                </p>
               </div>
-              <p className="text-white mt-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-            </div>
-          </SwiperSlide>
-        </Swiper>
+            </SwiperSlide>
+          </Swiper>
+          <div className="w-full h-full top-0 left-0 absolute flex justify-between">
+            <div className="w-[10%] z-40 testimonial-side-shadow-left"></div>
+            <div className="w-[10%] z-40 testimonial-side-shadow-right"></div>
+          </div>
+        </div>
+
+
       </section>
       
 
