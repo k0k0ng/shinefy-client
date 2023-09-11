@@ -22,14 +22,21 @@ export default function UnderMaintenance() {
       <div className='flex flex-row items-end h-[40%] lg:h-[50%] global-bg-to-dark-purple'>
         <ErrorPagesFooter />
       </div>
-      <div className='h-[60vh] lg:h-[90vh] w-full flex flex-row mt-[10vh] border absolute top-0 left-0'>
-        <div className='h-full w-[65%] border'></div>
-        <div className='h-full w-[35%] flex flex-row items-end pb-[8rem] border'>
+      <div className='h-[60vh] lg:h-[90vh] w-full hidden lg:flex flex-row mt-[10vh] absolute top-0 left-0'>
+        <div className='h-full w-[70%] 2xl:w-[65%] flex flex-row items-end'>
+          <img
+            src="/images/ErrorPage/electrical-cord-icon.png"
+            alt="earth globe icon"
+            // width="170px"
+            className="mb-10"
+          />
+        </div>
+        <div className='h-full w-[30%] 2lx:w-[35%] flex flex-row items-end pb-[8rem]'>
           <img
             src="/svg/ErrorPage/electrical-inlit-icon.svg"
             alt="earth globe icon"
-            width="170px"
-            className="md:mb-5"
+            // width="170px"
+            className="md:mb-5 max-w-[110px] xl:max-w-[150px] 2xl:max-w-auto lg:ml-16 2xl:ml-0 "
           />
         </div>
       </div>

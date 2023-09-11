@@ -294,6 +294,11 @@ letter-spacing: 2.255px;
   .global-error-text-1 {
     font-size: 180px;
   }
+  .global-error-text-2 {
+    font-size: 80px;
+    line-height: 80px; /* 120px */
+  }
+  
   .global-content-container-under-header {
     font-size: 14px;
   }
@@ -309,6 +314,10 @@ letter-spacing: 2.255px;
 @media screen and (max-width: 425px) {
   .global-error-text-1 {
     font-size: 140px;
+  }
+  .global-error-text-2 {
+    font-size: 60px;
+    line-height: 60px; /* 120px */
   }
   .global-promo-code-form {
     background: rgba(255,255,255,0);
