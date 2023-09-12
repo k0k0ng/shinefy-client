@@ -19,12 +19,27 @@ nav.sticky {
     background-color: #4D2FBB80;
 }
 
+
 .accordion-item {
     color: #FFF;
     background-color: transparent;
     box-shadow: none;
     border: none;
 }
+
+.zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz > div > ul {
+    padding: 0px;
+    background-color: #8844DA;
+    border: none;
+}
+.zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz > div > ul > li {
+    padding: 0px;
+}
+
+.desktop-legals-sub-menu{
+    /* border: 1px solid red; */
+}
+
 
 .sign-in-btn {
     background-color: #7D35D4;

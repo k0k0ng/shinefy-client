@@ -30,6 +30,12 @@ const CustomAccordionSummary = styled(AccordionSummary)(({ theme }) => ({
   },
 }));
 
+const CustomButton = styled(Button)(({ theme }) => ({
+  textTransform: 'none',
+  fontFamily: 'Karla',
+  fontSize: '16px'
+}));
+
 
 const NavigationBar = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -113,16 +119,17 @@ const NavigationBar = () => {
                   About
                 </a> */}
 
-                <Button
+                <CustomButton
                   id="basic-button"
                   aria-controls={openDesktopAboutSubMenu ? 'basic-menu' : undefined}
                   aria-haspopup="true"
                   aria-expanded={openDesktopAboutSubMenu ? 'true' : undefined}
                   onClick={handleOpenDesktopAbout}
+                  style={{ backgroundColor: 'transparent' }}
                   className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition opacity-75 hover:opacity-100"
                 >
                   About
-                </Button>
+                </CustomButton>
                 <Menu
                   id="basic-menu"
                   anchorEl={openAboutSubMenu}
@@ -131,65 +138,74 @@ const NavigationBar = () => {
                   MenuListProps={{
                     'aria-labelledby': 'basic-button',
                   }}
+                  className="mt-2 zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
                 >
-                  <MenuItem onClick={handleCloseDesktopAbout} className="global-bg-to-purple" >
+                  <MenuItem onClick={handleCloseDesktopAbout} className="text-white" >
                     <a
                       href="/about"
-                      // className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition opacity-75 hover:opacity-100"
+                      className="w-full h-full py-3 pl-5"
                     >
                       ShineAi
                     </a>
                   </MenuItem>
-                  <MenuItem onClick={handleCloseDesktopAbout} className="global-bg-to-purple" >FAQs</MenuItem>
-                  <MenuItem className="global-bg-to-purple">
+                  <MenuItem onClick={handleCloseDesktopAbout} className="text-white" >
+                    <a
+                      href="/faq"
+                      className="w-full h-full py-3 pl-5"
+                    >
+                      FAQs
+                    </a>
+                  </MenuItem>
+                  <MenuItem className="p-0 py-3 desktop-legals-sub-menu">
                     <Accordion 
-                          expanded={expandLegal === 'legals'} 
-                          onChange={handleExpandLegal('legals')}
-                          className="accordion-item global-bg-to-purple"  
-                        >
-                          <CustomAccordionSummary
-                            expandIcon={<KeyboardArrowRightIcon className="text-white"/>}
-                            aria-controls="legals-bh-content"
-                            id="legals-bh-header"
-                          >
-                            <p>
-                              Legals
-                            </p>
-                          </CustomAccordionSummary>
-                          <AccordionDetails className="p-0 pl-2">
-                            <List className="">
-                              <ListItem className="h-14 py-1 px-0">
-                                <a href="/legal/terms-of-use" className="w-full h-full flex items-center text-start px-5 rounded-md nav-link">
-                                  Term of Use
-                                </a>
-                              </ListItem>
+                      expanded={expandLegal === 'legals'} 
+                      onChange={handleExpandLegal('legals')}
+                      className="w-full shadow-none rounded-none bg-[transparent]"  
+                    >
+                      <CustomAccordionSummary
+                        expandIcon={<KeyboardArrowRightIcon className="text-white"/>}
+                        aria-controls="legals-bh-content"
+                        id="legals-bh-header"
+                        className="text-white"
+                      >
+                        <p>
+                          Legals
+                        </p>
+                      </CustomAccordionSummary>
+                      <AccordionDetails className="p-0 pl-2">
+                        <List className="">
+                          <ListItem className="h-14 py-1 px-0">
+                            <a href="/legal/terms-of-use" className="w-full h-full flex items-center text-start text-white px-5 rounded nav-link">
+                              Term of Use
+                            </a>
+                          </ListItem>
 
-                              <ListItem className="h-14 py-1 px-0">
-                                <a href="/legal/refund" className="w-full h-full flex items-center text-start px-5 rounded-md nav-link">
-                                  Refund and Cancelation
-                                </a>
-                              </ListItem>
+                          <ListItem className="h-14 py-1 px-0">
+                            <a href="/legal/refund" className="w-full h-full flex items-center text-start text-white px-5 rounded nav-link">
+                              Refund and Cancelation
+                            </a>
+                          </ListItem>
 
-                              <ListItem className="h-14 py-1 px-0">
-                                <a href="/legal/earnings-disclaimer" className="w-full h-full flex items-center text-start px-5 rounded-md nav-link">
-                                  Earnings Disclaimer
-                                </a>
-                              </ListItem>
+                          <ListItem className="h-14 py-1 px-0">
+                            <a href="/legal/earnings-disclaimer" className="w-full h-full flex items-center text-start text-white px-5 rounded nav-link">
+                              Earnings Disclaimer
+                            </a>
+                          </ListItem>
 
-                              <ListItem className="h-14 py-1 px-0">
-                                <a href="/legal/affiliate-promotions" className="w-full h-full flex items-center text-start px-5 rounded-md nav-link">
-                                  Affiliations Promotions
-                                </a>
-                              </ListItem>
+                          <ListItem className="h-14 py-1 px-0">
+                            <a href="/legal/affiliate-promotions" className="w-full h-full flex items-center text-start text-white px-5 rounded nav-link">
+                              Affiliations Promotions
+                            </a>
+                          </ListItem>
 
-                              <ListItem className="h-14 py-1 px-0">
-                                <a href="/legal/facebook-disclaimer" className="w-full h-full flex items-center text-start px-5 rounded-md nav-link">
-                                  Facebook Disclaimer
-                                </a>
-                              </ListItem>
-                            </List>
-                          </AccordionDetails>
-                        </Accordion>
+                          <ListItem className="h-14 py-1 px-0">
+                            <a href="/legal/facebook-disclaimer" className="w-full h-full flex items-center text-start text-white px-5 rounded nav-link">
+                              Facebook Disclaimer
+                            </a>
+                          </ListItem>
+                        </List>
+                      </AccordionDetails>
+                    </Accordion>
                   </MenuItem>
                 </Menu>
               </li>
