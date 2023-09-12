@@ -1528,7 +1528,7 @@ export default function Home() {
               className="max-h-[110px] md:max-h-[150px] lg:max-h-[100px] 2xl:max-h-[150px] stunning-images-grid-img border"
             />
             <img
-              src="/images/global/SampleImages/deer.jpg"
+              src="/images/global/SampleImages/deer-2.png"
               alt="deer image"
               width="138px"
               className="max-h-[110px] md:max-h-[150px] lg:max-h-[100px] 2xl:max-h-[150px] stunning-images-grid-img border"
