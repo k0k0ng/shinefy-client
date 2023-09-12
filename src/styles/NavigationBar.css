@@ -60,8 +60,10 @@ nav.sticky {
     background-color: transparent;
 }
 .desktop-legals-sub-menu-accordion-summary {
+    background-color: transparent;
+}
+.desktop-legals-sub-menu-accordion-summary-text {
     color: #F1F1F1;
-    /* border: 1px solid red; */
 }
 .desktop-legals-sub-menu-accordion-link {
     width: 100%;

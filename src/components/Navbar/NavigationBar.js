@@ -168,11 +168,11 @@ const NavigationBar = () => {
                         id="legals-bh-header"
                         className="desktop-legals-sub-menu-accordion-summary"
                       >
-                        <p>
+                        <p className="desktop-legals-sub-menu-accordion-summary-text">
                           Legals
                         </p>
                       </CustomAccordionSummary>
-                      <AccordionDetails className="p-0 pl-2">
+                      <AccordionDetails className="p-0 pl-2 desktop-legals-sub-menu-accordion-summary">
                         <List className="">
                           <ListItem className="h-14 py-1 px-0">
                             <a href="/legal/terms-of-use" className="desktop-legals-sub-menu-accordion-link">
