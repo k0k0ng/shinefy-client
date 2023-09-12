@@ -31,11 +31,15 @@ const CustomAccordionSummary = styled(AccordionSummary)(({ theme }) => ({
 }));
 
 const CustomButton = styled(Button)(({ theme }) => ({
+  '$hover': {
+  },
   textTransform: 'none',
   fontFamily: 'Karla',
-  fontSize: '16px'
+  fontSize: '16px',
+  padding: '0.25rem 2rem 0.25rem 0.5rem',
+  marginRight: '1rem',
+  color: '#F1F1F1',
 }));
-
 
 const NavigationBar = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -112,12 +116,6 @@ const NavigationBar = () => {
           >
             <ul className="flex flex-row justify-end items-center p-2 md:p-0 font-karla">
               <li className="hidden 2xl:flex">
-                {/* <a
-                  href="/about"
-                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition opacity-75 hover:opacity-100"
-                >
-                  About
-                </a> */}
 
                 <CustomButton
                   id="basic-button"
@@ -125,8 +123,10 @@ const NavigationBar = () => {
                   aria-haspopup="true"
                   aria-expanded={openDesktopAboutSubMenu ? 'true' : undefined}
                   onClick={handleOpenDesktopAbout}
-                  style={{ backgroundColor: 'transparent' }}
-                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition opacity-75 hover:opacity-100"
+                  style={{ 
+                    backgroundColor: 'transparent',
+                  }}
+                  className="opacity-75 hover:opacity-100"
                 >
                   About
                 </CustomButton>
@@ -138,29 +138,29 @@ const NavigationBar = () => {
                   MenuListProps={{
                     'aria-labelledby': 'basic-button',
                   }}
-                  className="mt-2 zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+                  className="desktop-about-sub-menu"
                 >
-                  <MenuItem onClick={handleCloseDesktopAbout} className="text-white" >
+                  <MenuItem onClick={handleCloseDesktopAbout} >
                     <a
                       href="/about"
-                      className="w-full h-full py-3 pl-5"
+                      className="desktop-about-sub-menu-links"
                     >
                       ShineAi
                     </a>
                   </MenuItem>
-                  <MenuItem onClick={handleCloseDesktopAbout} className="text-white" >
+                  <MenuItem onClick={handleCloseDesktopAbout} >
                     <a
                       href="/faq"
-                      className="w-full h-full py-3 pl-5"
+                      className="desktop-about-sub-menu-links"
                     >
                       FAQs
                     </a>
                   </MenuItem>
-                  <MenuItem className="p-0 py-3 desktop-legals-sub-menu">
+                  <MenuItem className="desktop-legals-sub-menu">
                     <Accordion 
                       expanded={expandLegal === 'legals'} 
                       onChange={handleExpandLegal('legals')}
-                      className="w-full shadow-none rounded-none bg-[transparent]"  
+                      className="desktop-legals-sub-menu-accordion"  
                     >
                       <CustomAccordionSummary
                         expandIcon={<KeyboardArrowRightIcon className="text-white"/>}

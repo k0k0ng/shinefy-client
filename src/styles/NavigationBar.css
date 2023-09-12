@@ -19,6 +19,10 @@ nav.sticky {
     background-color: #4D2FBB80;
 }
 
+.desktop-about-menu{
+    background-color: transparent !important;
+}
+
 
 .accordion-item {
     color: #FFF;
@@ -27,19 +31,34 @@ nav.sticky {
     border: none;
 }
 
-.zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz > div > ul {
+.desktop-about-sub-menu > div > ul {
     padding: 0px;
     background-color: #8844DA;
     border: none;
 }
-.zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz > div > ul > li {
+
+.desktop-about-sub-menu > div > ul > li {
     padding: 0px;
 }
 
-.desktop-legals-sub-menu{
-    /* border: 1px solid red; */
+.desktop-about-sub-menu-links {
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    padding: 12px 20px;
 }
 
+.desktop-legals-sub-menu{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.desktop-legals-sub-menu-accordion {
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0px;
+    background-color: transparent;
+}
 
 .sign-in-btn {
     background-color: #7D35D4;
