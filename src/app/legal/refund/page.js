@@ -52,7 +52,7 @@ const Refund = () => {
               <div className="mb-16">
                 <h2 className="mb-8 legal-title-text">Introduction</h2>
                 <p className="legal-content-text">
-                  If you find that <a href="https://shineranker.com/" rel="noreferrer" target="_blank">Shine Ranker</a> isn't the perfect fit for you, don't worry. 
+                  If you find that <a href="https://shineranker.com/" rel="noreferrer" target="_blank">Shine Ranker</a> isn&apos;t the perfect fit for you, don&apos;t worry. 
                   <br />
                   Just follow the steps below and our team will help you.
                 </p>
@@ -72,13 +72,13 @@ const Refund = () => {
                       id="panel1a-header"
                       className="p-6 question"
                     >
-                      <p>Cancel Subscription purchased on Shine Ranker's website</p>
+                      <p>Cancel Subscription purchased on Shine Ranker&apos;s website</p>
                     </AccordionSummary>
                       <hr className="ml-[1.75%] jus max-w-[95%]"/>
                     <AccordionDetails className="pt-6 pb-10">
                       
                       <p className="max-w-[96%] global-header-text-3">
-                        Log in to your Shine Ranker accounts and click on Settings, then click on the "cancel subscription" button.
+                        Log in to your Shine Ranker accounts and click on Settings, then click on the 	&quot;cancel subscription&quot; button.
                       </p>
                     </AccordionDetails>
                   </Accordion>
@@ -99,7 +99,7 @@ const Refund = () => {
                       <hr className="ml-[1.75%] jus max-w-[95%]"/>
                     <AccordionDetails className="pt-6 pb-10">
                       <p className="max-w-[96%] global-header-text-3">
-                        Log in to your Shine Ranker accounts and click on Settings, then click on the "cancel subscription" button.
+                        Log in to your Shine Ranker accounts and click on Settings, then click on the 	&quot;cancel subscription&quot; button.
                       </p>
                     </AccordionDetails>
                   </Accordion>
@@ -120,7 +120,7 @@ const Refund = () => {
                       <hr className="ml-[1.75%] jus max-w-[95%]"/>
                     <AccordionDetails className="pt-6 pb-10">
                       <p className="max-w-[96%] global-header-text-3">
-                        Log in to your Shine Ranker accounts and click on Settings, then click on the "cancel subscription" button.
+                        Log in to your Shine Ranker accounts and click on Settings, then click on the 	&quot;cancel subscription&quot; button.
                       </p>
                     </AccordionDetails>
                   </Accordion>
@@ -136,14 +136,14 @@ const Refund = () => {
                 <h2 className="mb-8 legal-title-text-2">Refund Requests</h2>
                 <p className="legal-content-text-2">
                   We offer a 7-day money-back guarantee according to the terms described herein. If you cancel your subscription within 7 calendar 
-                  days of placing your order, we'll refund your prepaid fees upon your written request within 30 calendar days. 
+                  days of placing your order, we&apos;ll refund your prepaid fees upon your written request within 30 calendar days. 
                   <br/><br/>
                   The refund will be processed through the same method as the original payment. It may take 5 to 10 business days for a refund to 
                   reflect on your bank statement. Please note that any bank fees and charges will be borne solely by you.
                   <br/><br/>
-                  We reserve the right to reject your refund request if it's outside the refund period and terms. Please make sure to manage your 
+                  We reserve the right to reject your refund request if it&apos;s outside the refund period and terms. Please make sure to manage your 
                   account subscriptions and purchases responsibly. Also, keep in mind that refunds are only available for the current subscription 
-                  payment on your account and don't apply to previous month's overage charges or additional costs.
+                  payment on your account and don&apos;t apply to previous month&apos;s overage charges or additional costs.
                 </p>
               </div>
 

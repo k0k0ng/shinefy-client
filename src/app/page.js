@@ -638,14 +638,14 @@ export default function Home() {
       </section>
 
       {/* Hero Mobile */}
-      <section className="hidden hero-section-mobile">
+      {/* <section className="hidden hero-section-mobile">
         <div className="px-5 hero-container-mobile">
           <h1 className="mb-10 hero-header">
             Fuel your <br/>
             <span className="hero-header-accent">Online Growth</span>
           </h1>
           <p className="mb-16 hero-content">
-            Unleash the power of SEO to skyrocket your website's visibility, drive massive organic traffic, and dominate the search engine rankings.
+            Unleash the power of SEO to skyrocket your website&apos;s visibility, drive massive organic traffic, and dominate the search engine rankings.
           </p>
           <div className="flex flex-col lg:flex-row mb-3 gap-4">
             <div className="flex lg:block">
@@ -661,10 +661,10 @@ export default function Home() {
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Founders Message */}
-      <section className="hidden p-5">
+      {/* <section className="hidden p-5">
         <div className="flex flex-row gap-x-5 p-5 items-center mt-[-9rem] founders-message-container">
           <img src="/images/home/dummy-profile-male.png" alt="founders profile picture" className="founders-img" />
 
@@ -678,7 +678,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* How to use Shine Ranker App */}
       <section className="pb-16 px-[5%] xl:px-[18%] how-to-use-shine-ai-section ">
@@ -1830,7 +1830,7 @@ export default function Home() {
                     <img src="/svg/home/star.svg" alt="star icon" height="24" />
                 </div>
                 <p className="text-white mt-5">
-                  "One of the biggest barriers was content creation. This tool is amazing brother. I’m genuinely thrilled to help market it."
+                  	&quot;One of the biggest barriers was content creation. This tool is amazing brother. I’m genuinely thrilled to help market it.&quot;
                 </p>
               </div>
             </SwiperSlide>
@@ -1847,7 +1847,7 @@ export default function Home() {
                     <img src="/svg/home/star.svg" alt="star icon" height="24" />
                 </div>
                 <p className="text-white mt-5">
-                  "JUST CHECKED MY FACEBOOK ANALYTICS THE PAST 28 DAYS AND GOT 16K VIEWS!!!"
+                  &quot;JUST CHECKED MY FACEBOOK ANALYTICS THE PAST 28 DAYS AND GOT 16K VIEWS!!!&quot;
                 </p>
               </div>
             </SwiperSlide>
@@ -1864,7 +1864,7 @@ export default function Home() {
                     <img src="/svg/home/star.svg" alt="star icon" height="24" />
                 </div>
                 <p className="text-white mt-5">
-                  "It’s a totally faceless way to make amazing videos. I’m using them to sell affiliate physical products on TikTok, and they’re working!"
+                  &quot;It’s a totally faceless way to make amazing videos. I’m using them to sell affiliate physical products on TikTok, and they’re working!&quot;
                 </p>
               </div>
             </SwiperSlide>
@@ -1881,7 +1881,7 @@ export default function Home() {
                     <img src="/svg/home/star.svg" alt="star icon" height="24" />
                 </div>
                 <p className="text-white mt-5">
-                  "I MADE TWO SALES ON THE FIRST OF THIS MONTH AND ANOTHER ONE THIS MORNING."
+                  &quot;I MADE TWO SALES ON THE FIRST OF THIS MONTH AND ANOTHER ONE THIS MORNING.&quot;
                 </p>
               </div>
             </SwiperSlide>
@@ -1898,7 +1898,7 @@ export default function Home() {
                     <img src="/svg/home/star.svg" alt="star icon" height="24" />
                 </div>
                 <p className="text-white mt-5">
-                  "I HAD THE TRIAL OF SHINE RANKER YESTERDAY AND LOVE IT, I'M BLOWN AWAY BY THE QUALITY."
+                  &quot;I HAD THE TRIAL OF SHINE RANKER YESTERDAY AND LOVE IT, I&apos;M BLOWN AWAY BY THE QUALITY.&quot;
                 </p>
               </div>
             </SwiperSlide>
@@ -1915,7 +1915,7 @@ export default function Home() {
                     <img src="/svg/home/star.svg" alt="star icon" height="24" />
                 </div>
                 <p className="text-white mt-5">
-                  "I USED IT FOR A CLIENT TODAY AND I CLOSE AT $100K A YEAR!"
+                  &quot;I USED IT FOR A CLIENT TODAY AND I CLOSE AT $100K A YEAR!&quot;
                 </p>
               </div>
             </SwiperSlide>
@@ -1932,7 +1932,7 @@ export default function Home() {
                     <img src="/svg/home/star.svg" alt="star icon" height="24" />
                 </div>
                 <p className="text-white mt-5">
-                  "I POSTED MY FIRST FEW VIDEOS MADE WITH SHINE RANKER. ONE OF THEM GOT 843 VIEWS!!"
+                  &quot;I POSTED MY FIRST FEW VIDEOS MADE WITH SHINE RANKER. ONE OF THEM GOT 843 VIEWS!!&quot;
                 </p>
               </div>
             </SwiperSlide>
@@ -1949,7 +1949,7 @@ export default function Home() {
                     <img src="/svg/home/star.svg" alt="star icon" height="24" />
                 </div>
                 <p className="text-white mt-5">
-                  "Gosh, it used to take me a couple of hours to create something like this. I’m totally stoked now."
+                  &quot;Gosh, it used to take me a couple of hours to create something like this. I’m totally stoked now.&quot;
                 </p>
               </div>
             </SwiperSlide>

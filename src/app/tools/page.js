@@ -10,7 +10,7 @@ import LimitedTimeOffer from "@/components/CTA/LimitedTimeOffer";
 import "../../styles/tools.css";
 import "@/styles/components.contacts.css";
 
-export default function tools() {
+const tools = () => {
   let animationContainer = createRef();
 
   useEffect(() => {
@@ -296,3 +296,6 @@ export default function tools() {
     </>
   );
 }
+
+
+export default tools;

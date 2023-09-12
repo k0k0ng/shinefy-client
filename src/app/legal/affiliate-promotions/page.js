@@ -58,7 +58,7 @@ const AffiliatePromotions = () => {
                   <br/><br/>
                   2. You cannot buy solo ads, use safe lists, use spam or anything similar.
                   <br/><br/>
-                  3. You must NOT run "negative" PPC or iframe domain campaigns such as "Product name / author name scam" or any 
+                  3. You must NOT run &quot;negative&quot; PPC or iframe domain campaigns such as &quot;Product name / author name scam&quot; or any 
                   other method to attract controversial click thru rates that an ordinary person would deem to portray a negative view of 
                   the product. This creates a very bad image for our company and the individuals featured in the products and you will be 
                   terminated from the program instantly.
@@ -67,11 +67,11 @@ const AffiliatePromotions = () => {
                   e-mails and website campaigns and not the direct affiliate link you will receive. This increases conversions for both of us. 
                   (But ultimately the choice is up to you)
                   <br/><br/>
-                  5. You cannot earn commission on your own purchase. Any 'self' purchase commission may be nullified or held back.
+                  5. You cannot earn commission on your own purchase. Any &apos;self&apos; purchase commission may be nullified or held back.
                   <br/><br/>
                   6. iframes, review sites and cloaked domains are permitted as long as they do not contain offensive or negative domain URLs.
                   <br/><br/>
-                  7. Affiliate payments will be set as automatic payments after 30 days of your referral's successful purchase.
+                  7. Affiliate payments will be set as automatic payments after 30 days of your referral&apos;s successful purchase.
                   <br/><br/>
                   8. Please describe briefly how you will be promoting and any links to your own websites.
                   <br/><br/>
@@ -84,7 +84,7 @@ const AffiliatePromotions = () => {
                   grey-hat/black-hat marketing practices to drive sales or for any other reason.
                   <br/><br/>
                   11. Affiliates CANNOT create social media pages with the product name, official logo or brand name to avoid confusion and 
-                  prevent abuse. Anyone found using "brand name" "website name" or "product images" on their Facebook fan page or other 
+                  prevent abuse. Anyone found using &quot;brand name&quot; &quot;website name&quot; or &quot;product images&quot; on their Facebook fan page or other 
                   social platform to promote the product without permission will be banned immediately!
                   <br/><br/>
                   12. You may not give cash rebates as it may increase refund rates.

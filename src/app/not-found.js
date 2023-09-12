@@ -55,7 +55,7 @@ export default function NotFound() {
         <div className='w-full flex flex-col items-center justify-end mb-[-25px] 2xl:mr-[-5rem]'>
           <h1 className='global-error-text-1'>404</h1>
           <h2 className='mb-6 global-header-text-1'>Oh No! Page not found.</h2>
-          <p className='text-center global-header-text-3'>The page must've gone to vacation.</p>
+          <p className='text-center global-header-text-3'>The page must&apos;ve gone to vacation.</p>
           <button
             onClick={() => router.back()}
             className="text-center px-12 py-4 mt-5 home-primary-btn"

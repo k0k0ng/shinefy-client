@@ -181,21 +181,21 @@ const FAQ = () => {
                 <li className="mb-6">
                   <p className="max-w-[96%] global-header-text-3">
                     <span className="text-violet-500 font-bold">Traffic Checker: </span>
-                    Get insights into your website's traffic and understand where your visitors are coming from.
+                    Get insights into your website&apos;s traffic and understand where your visitors are coming from.
                   </p>
                 </li>
 
                 <li className="mb-6">
                   <p className="max-w-[96%] global-header-text-3">
                     <span className="text-violet-500 font-bold">SEO Audit: </span>
-                    With just a click, receive a detailed analysis of your website's SEO health, highlight areas of improvement.
+                    With just a click, receive a detailed analysis of your website&apos;s SEO health, highlight areas of improvement.
                   </p>
                 </li>
 
                 <li className="mb-6">
                   <p className="max-w-[96%] global-header-text-3">
                     <span className="text-violet-500 font-bold">Keyword Research Tools: </span>
-                    Dive into high-traffic, low-compertition keywords that can elevate your website's search engine ranking.
+                    Dive into high-traffic, low-compertition keywords that can elevate your website&apos;s search engine ranking.
                   </p>
                 </li>
               </ul>
@@ -225,7 +225,7 @@ const FAQ = () => {
               <p className="max-w-[96%] global-header-text-3">
                 Most affordable plan is $59 per month with access to all features and tools within 30 days. Plan is auto-renewed 
                 until subscription is canceled by the user. User can switch from initial paid subscription to another subscription, but 
-                will forfeit the former's inclusions. See full details of Pricing Plan <a href="/pricing">here</a>.
+                will forfeit the former&apos;s inclusions. See full details of Pricing Plan <a href="/pricing">here</a>.
               </p>
             </AccordionDetails>
           </Accordion>
@@ -249,7 +249,7 @@ const FAQ = () => {
                 Comprehensive SEO Tool, AI Driven Data, User-friendly interface, Time saving and Scalable solutions.
                 <br/>
                 <br/>
-                Shine Ranker's AI-driven data provides users with accurate and up-to-date information, ensuring they make well-informed SEO strategy decisions
+                Shine Ranker&apos;s AI-driven data provides users with accurate and up-to-date information, ensuring they make well-informed SEO strategy decisions
               </p>
             </AccordionDetails>
           </Accordion>
