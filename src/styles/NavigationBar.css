@@ -57,10 +57,10 @@ nav.sticky {
     width: 100%;
     box-shadow: none;
     border-radius: 0px;
-    background-color: transparent;
+    background-color: transparent !important;
 }
 .desktop-legals-sub-menu-accordion-summary {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 .desktop-legals-sub-menu-accordion-summary-text {
     color: #F1F1F1;
