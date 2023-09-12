@@ -145,8 +145,8 @@ const NavigationBar = () => {
                 </a>
               </li>
 
-              <li>
-                <Button onClick={toggleDrawer(true)} className="flex 2xl:hidden">
+              <li className="flex 2xl:hidden">
+                <Button onClick={toggleDrawer(true)}>
                   <MenuIcon className="text-white" />
                 </Button>
               </li>
