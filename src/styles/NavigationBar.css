@@ -59,6 +59,27 @@ nav.sticky {
     border-radius: 0px;
     background-color: transparent;
 }
+.desktop-legals-sub-menu-accordion-summary {
+    color: #F1F1F1;
+    /* border: 1px solid red; */
+}
+.desktop-legals-sub-menu-accordion-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    color: #F1F1F1;
+    padding: 0px 20px;
+    border-radius: 4px;
+
+    box-shadow: none;
+    border-radius: 0px;
+    background-color: transparent;
+}
+.desktop-legals-sub-menu-accordion-link:hover {
+    background-color: #4D2FBB80;
+}
 
 .sign-in-btn {
     background-color: #7D35D4;

@@ -166,7 +166,7 @@ const NavigationBar = () => {
                         expandIcon={<KeyboardArrowRightIcon className="text-white"/>}
                         aria-controls="legals-bh-content"
                         id="legals-bh-header"
-                        className="text-white"
+                        className="desktop-legals-sub-menu-accordion-summary"
                       >
                         <p>
                           Legals
@@ -175,31 +175,31 @@ const NavigationBar = () => {
                       <AccordionDetails className="p-0 pl-2">
                         <List className="">
                           <ListItem className="h-14 py-1 px-0">
-                            <a href="/legal/terms-of-use" className="w-full h-full flex items-center text-start text-white px-5 rounded nav-link">
+                            <a href="/legal/terms-of-use" className="desktop-legals-sub-menu-accordion-link">
                               Term of Use
                             </a>
                           </ListItem>
 
                           <ListItem className="h-14 py-1 px-0">
-                            <a href="/legal/refund" className="w-full h-full flex items-center text-start text-white px-5 rounded nav-link">
+                            <a href="/legal/refund" className="desktop-legals-sub-menu-accordion-link">
                               Refund and Cancelation
                             </a>
                           </ListItem>
 
                           <ListItem className="h-14 py-1 px-0">
-                            <a href="/legal/earnings-disclaimer" className="w-full h-full flex items-center text-start text-white px-5 rounded nav-link">
+                            <a href="/legal/earnings-disclaimer" className="desktop-legals-sub-menu-accordion-link">
                               Earnings Disclaimer
                             </a>
                           </ListItem>
 
                           <ListItem className="h-14 py-1 px-0">
-                            <a href="/legal/affiliate-promotions" className="w-full h-full flex items-center text-start text-white px-5 rounded nav-link">
+                            <a href="/legal/affiliate-promotions" className="desktop-legals-sub-menu-accordion-link">
                               Affiliations Promotions
                             </a>
                           </ListItem>
 
                           <ListItem className="h-14 py-1 px-0">
-                            <a href="/legal/facebook-disclaimer" className="w-full h-full flex items-center text-start text-white px-5 rounded nav-link">
+                            <a href="/legal/facebook-disclaimer" className="desktop-legals-sub-menu-accordion-link">
                               Facebook Disclaimer
                             </a>
                           </ListItem>
