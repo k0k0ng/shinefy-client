@@ -597,7 +597,7 @@ export default function Home() {
               Powered by AI Videos
             </h1>
             
-            <p className="max-w-[720px] mt-5 mb-8 lg:mb-14 hero-header-content">
+            <p className="max-w-[680px] mt-5 mb-8 lg:mb-14 hero-header-content">
               Shine Ranker is a collection of powerful AI tools that
               generate AI videos for passive income in just one click.
               Powered by
@@ -615,15 +615,20 @@ export default function Home() {
               </object>
             </p>
 
-            <div className="flex lg:block">
+            <div className="flex flex-col md:flex-row">
+              <input
+                type="text"
+                name="promo_code"
+                placeholder="type an idea here"
+                className="h-14 w-full md:w-[65%] 2xl:w-[55%] text-center mb-2 md:mb-0 md:mr-[-2rem] pl-4 pr-[3rem] global-input-1"                
+              />
               <a
                 href="https://chasereiner.thrivecart.com/shine-ranker-deal"
                 rel="noreferrer"
                 target="_blank"
-                className="w-full text-center lg:text-start lg:px-5 py-4 mt-5 home-primary-btn"
+                className="flex items-center justify-center px-8 home-primary-btn"
               >
-                Let&apos;s Get Started
-                <i className="fa-solid fa-chevron-right text-white ml-2 lg:ml-14"></i>
+                Generate Your Videos
               </a>
             </div>
           </header>
@@ -690,16 +695,28 @@ export default function Home() {
           <p className="max-w-[516px] md:text-center home-section-header-content ">
             Watch the free training video and start earning money today even if you are not an expert
           </p>
-          <img
-            src="/images/global/training-video.png"
-            alt="Shine Ai Training Video thumbnail"
-            width="480px"
-            height="270px"
-            className="my-8 home-training-image"
-          />
-          <button className="w-full md:w-72 mb-5 px-6 home-secondary-btn">
-            Generate Your Videos Today
-          </button>
+          <a
+            href={`https://www.youtube.com/watch?v=PL3PXYFdlsU&t=2s`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/images/global/training-video.png"
+              alt="Shine Ai Training Video thumbnail"
+              width="480px"
+              height="270px"
+              className="my-8 home-training-image"
+            />
+          </a>
+          
+          <a
+              href="https://chasereiner.thrivecart.com/shine-ranker-deal"
+              rel="noreferrer"
+              target="_blank"
+              className="w-full md:w-72 flex items-center justify-center mb-5 px-6 home-secondary-btn"
+            >
+              Generate Your Videos Today
+          </a>
           <div className="flex gap-x-4 sm:gap-x-10">
             <img
               src="/images/home/secure-home.png"
@@ -1201,7 +1218,7 @@ export default function Home() {
       {/* Cream of the Crop */}
       <section className="py-20 px-[10%] 2xl:px-[20%]">
         <h4 className="mb-6 text-center global-header-text-1">The Cream of the Crop</h4>
-        <h3 className="mb-6 text-center global-header-text-2">Captivating Videos & Pictorgraphy</h3>
+        <h3 className="mb-6 text-center global-header-text-2">Captivating Videos & Pictography</h3>
         <p className="mb-12 text-center global-header-text-3">Our tools create seamless videos and timings that binds your content and make it viral on any platform.</p>
         
         <div className="max-w-[700px] flex flex-row flex-wrap justify-center gap-3 mx-auto mb-12">
@@ -1623,10 +1640,10 @@ export default function Home() {
           <div className="flex flex-col items-center">
             <h3 className="w-full mb-5 md:text-center home-section-header-small">Amazing Features</h3>
             <h2 className="max-w-[516px] mb-5 md:text-center home-section-header-big">
-              Great savings when you get Shine Ranker PRO Today!
+              Some of the Best Perks only here at Shine Ranker
             </h2>
             <p className="w-full md:max-w-[516px] md:text-center home-section-header-content">
-              Get a <span className="global-text-to-light-green">total value of $2147</span> for only <span className="global-text-to-light-green">$219</span>
+              To get your content creation and channel growing, we have created these pillars for you!
             </p>
           </div>
 

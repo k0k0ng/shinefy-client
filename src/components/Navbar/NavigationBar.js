@@ -13,6 +13,9 @@ import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+
 import MenuIcon from '@mui/icons-material/Menu';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
@@ -34,7 +37,9 @@ const NavigationBar = () => {
   const [expandAbout, setExpandAbout] = useState(false);
   const [expandLegal, setExpandLegal] = useState(false);
 
-  
+  const [openAboutSubMenu, setOpenAboutSubMenu] = useState(null);
+
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
@@ -53,7 +58,7 @@ const NavigationBar = () => {
     }
   };
 
-  
+
   const toggleDrawer = (open) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return;
@@ -61,6 +66,16 @@ const NavigationBar = () => {
 
     setOpenDrawer(open);
   };
+
+  const openDesktopAboutSubMenu = Boolean(openAboutSubMenu);
+
+  const handleOpenDesktopAbout = (event) => {
+    setOpenAboutSubMenu(event.currentTarget);
+  };
+  const handleCloseDesktopAbout = () => {
+    setOpenAboutSubMenu(null);
+  };
+
 
   const handleExpandAbout = (panel) => (event, isExpanded) => {
     setExpandAbout(isExpanded ? panel : false);
@@ -72,7 +87,7 @@ const NavigationBar = () => {
 
   return (
     <nav className={isSticky ? "sticky" : ""}>
-      <div className={`absolute w-full navContainer ${isSticky ? "changeNavColor" : ""}`} >
+      <div className={`absolute w-full 2xl:w-[99vw] navContainer ${isSticky ? "changeNavColor" : ""}`} >
         <div className="flex flex-row items-center justify-between mx-[5vw] lg:mx-[10vw] xl:mx-[20vw] py-4">
           <a href="/" className="flex items-center navLogo">
             <img
@@ -91,17 +106,97 @@ const NavigationBar = () => {
           >
             <ul className="flex flex-row justify-end items-center p-2 md:p-0 font-karla">
               <li className="hidden 2xl:flex">
-                <a
+                {/* <a
                   href="/about"
-                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition hover:opacity-75"
+                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition opacity-75 hover:opacity-100"
                 >
                   About
-                </a>
+                </a> */}
+
+                <Button
+                  id="basic-button"
+                  aria-controls={openDesktopAboutSubMenu ? 'basic-menu' : undefined}
+                  aria-haspopup="true"
+                  aria-expanded={openDesktopAboutSubMenu ? 'true' : undefined}
+                  onClick={handleOpenDesktopAbout}
+                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition opacity-75 hover:opacity-100"
+                >
+                  About
+                </Button>
+                <Menu
+                  id="basic-menu"
+                  anchorEl={openAboutSubMenu}
+                  open={openDesktopAboutSubMenu}
+                  onClose={handleCloseDesktopAbout}
+                  MenuListProps={{
+                    'aria-labelledby': 'basic-button',
+                  }}
+                >
+                  <MenuItem onClick={handleCloseDesktopAbout} className="global-bg-to-purple" >
+                    <a
+                      href="/about"
+                      // className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition opacity-75 hover:opacity-100"
+                    >
+                      ShineAi
+                    </a>
+                  </MenuItem>
+                  <MenuItem onClick={handleCloseDesktopAbout} className="global-bg-to-purple" >FAQs</MenuItem>
+                  <MenuItem className="global-bg-to-purple">
+                    <Accordion 
+                          expanded={expandLegal === 'legals'} 
+                          onChange={handleExpandLegal('legals')}
+                          className="accordion-item global-bg-to-purple"  
+                        >
+                          <CustomAccordionSummary
+                            expandIcon={<KeyboardArrowRightIcon className="text-white"/>}
+                            aria-controls="legals-bh-content"
+                            id="legals-bh-header"
+                          >
+                            <p>
+                              Legals
+                            </p>
+                          </CustomAccordionSummary>
+                          <AccordionDetails className="p-0 pl-2">
+                            <List className="">
+                              <ListItem className="h-14 py-1 px-0">
+                                <a href="/legal/terms-of-use" className="w-full h-full flex items-center text-start px-5 rounded-md nav-link">
+                                  Term of Use
+                                </a>
+                              </ListItem>
+
+                              <ListItem className="h-14 py-1 px-0">
+                                <a href="/legal/refund" className="w-full h-full flex items-center text-start px-5 rounded-md nav-link">
+                                  Refund and Cancelation
+                                </a>
+                              </ListItem>
+
+                              <ListItem className="h-14 py-1 px-0">
+                                <a href="/legal/earnings-disclaimer" className="w-full h-full flex items-center text-start px-5 rounded-md nav-link">
+                                  Earnings Disclaimer
+                                </a>
+                              </ListItem>
+
+                              <ListItem className="h-14 py-1 px-0">
+                                <a href="/legal/affiliate-promotions" className="w-full h-full flex items-center text-start px-5 rounded-md nav-link">
+                                  Affiliations Promotions
+                                </a>
+                              </ListItem>
+
+                              <ListItem className="h-14 py-1 px-0">
+                                <a href="/legal/facebook-disclaimer" className="w-full h-full flex items-center text-start px-5 rounded-md nav-link">
+                                  Facebook Disclaimer
+                                </a>
+                              </ListItem>
+                            </List>
+                          </AccordionDetails>
+                        </Accordion>
+                  </MenuItem>
+                </Menu>
               </li>
               <li className="hidden 2xl:flex">
                 <a
                   href="/tools"
-                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition hover:opacity-75"
+                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition opacity-75 hover:opacity-100"
                 >
                   Tools
                 </a>
@@ -109,7 +204,7 @@ const NavigationBar = () => {
               <li className="hidden 2xl:flex">
                 <a
                   href="/pricing"
-                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition hover:opacity-75"
+                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition opacity-75 hover:opacity-100"
                 >
                   Pricing Plan
                 </a>
@@ -117,9 +212,17 @@ const NavigationBar = () => {
               <li className="hidden 2xl:flex">
                 <a
                   href="/blogs"
-                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition hover:opacity-75"
+                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition opacity-75 hover:opacity-100"
                 >
                   Blogs
+                </a>
+              </li>
+              <li className="hidden 2xl:flex">
+                <a
+                  href="/"
+                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition opacity-75 hover:opacity-100"
+                >
+                  Book A Call
                 </a>
               </li>
               <li className="hidden md:flex">

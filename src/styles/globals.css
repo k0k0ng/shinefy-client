@@ -195,6 +195,26 @@ code {
 
 
 /* === Forms === */
+
+.global-input-1 {
+  color: #F1F1F1;
+  border-radius: 4px;
+  font-family: Karla;
+  background: #141638;
+  border: 1px solid #141638;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.global-input-1::placeholder {
+  font-family: Karla;
+  color: #8844DA;
+}
+.global-input-1:focus{
+  border: 1px solid #141638 !important;
+}
+  
+
 .global-promo-code-form {
   border-radius: 4px;
   overflow: hidden;

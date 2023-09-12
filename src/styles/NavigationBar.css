@@ -11,7 +11,8 @@ nav.sticky {
     transition: background-color 0.3s ease-in-out;
 }
 .changeNavColor {
-    background-color: rgb(17, 17, 17); /* Replace with the desired background color on Scroll*/
+    /* background-color: rgb(17, 17, 17); */
+    background-color: rgba(79, 70, 228, 1);
 }
 
 .nav-link:hover {
