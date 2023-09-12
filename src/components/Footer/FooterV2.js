@@ -1,6 +1,7 @@
-import "../../styles/Footer.css";
 
-const logo = "/images/global/shineAi-logo-white.png";
+import Image from "next/image";
+
+import "../../styles/Footer.css";
 
 const FooterComponent = () => {
   return (
@@ -12,11 +13,11 @@ const FooterComponent = () => {
         
         <div className="mb-8">
           <a href="/" className="flex justify-center xl:justify-start">
-            <img
-              src={logo}
+            <Image
+              src="/images/global/shineAi-logo-white.png"
               alt="Shine Ranker Logo"
-              width="270px" // Specify the width of the image
-              height="64px" // Specify the height of the image
+              width={270}
+              height={64}
             />
           </a>
         </div>

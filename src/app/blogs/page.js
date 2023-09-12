@@ -1,7 +1,7 @@
 
 import NotFound from "../not-found"
 
-export default function page() {
+export default function Blogs() {
 
 
   if(true) {

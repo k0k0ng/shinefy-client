@@ -1,6 +1,8 @@
 
 import FooterPage from "@/components/Footer/Footer";
 
+import Image from "next/image";
+
 import FeaturesAndBenefits from "@/components/FeaturesAndBenefits";
 import ContactForm from "@/components/Contacts/ContactForm";
 import ContactInfo from "@/components/Contacts/ContactInfo";
@@ -8,7 +10,7 @@ import LimitedTimeOffer from "@/components/CTA/LimitedTimeOffer";
 
 import "@/styles/components.contacts.css";
 
-export default function about() {
+export default function About() {
   const youtubeVideoId = "PL3PXYFdlsU&t=2s";
 
   return (
@@ -57,10 +59,11 @@ export default function about() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
+              <Image
                 src="/images/global/training-video-thumbnail.png"
                 alt="Shine Ai Training Video thumbnail"
-                width="540px"
+                width={576}
+                height={365}
                 className="mx-auto max-w-full"
               />
 

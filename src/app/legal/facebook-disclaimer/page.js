@@ -95,17 +95,17 @@ const FacebookDisclaimer = () => {
                   2. Off-topic and redundant comments (this includes promotion or solicitation of events, groups, pages, Websites, organizations, 
                   products and programs not related to or affiliated with the Shineranker, LLC);
                   <br/><br/>
-                  Comments that use foul language or "hate speech" (for example, including but not limited to racial, ethnic or gender bashing language);
+                  Comments that use foul language or &quot;hate speech&quot; (for example, including but not limited to racial, ethnic or gender bashing language);
                   <br/><br/>
                   3. Personal attacks or defamatory statements or comments (i.e., making negative personal or untrue comments about a participant), 
                   instead of just criticizing his/her posting, opinion or comments; and Comments that violate the privacy of any individual;
                   <br/><br/>
-                  4. Information posted on any of Shineranker, LLC's websites or on its Facebook page is not intended to be medical advice and should not be considered medical advice, nor is it intended to replace consultation with a qualified physician or other health care provider.
+                  4. Information posted on any of Shineranker, LLC&apos;s websites or on its Facebook page is not intended to be medical advice and should not be considered medical advice, nor is it intended to replace consultation with a qualified physician or other health care provider.
                 </p>
               </div>
 
               <p className="mb-20 md:mb-0 legal-content-text-2">
-                By submitting content to any of Shine Ranker, LLC's social media sites, you understand and acknowledge that this information is available to the 
+                By submitting content to any of Shine Ranker, LLC&apos;s social media sites, you understand and acknowledge that this information is available to the 
                 public, and that Shine Ranker, LLC may use this information for internal and external promotional purposes and fundraising purposes.
                 <br/><br/>
                 Please note that other participants may use your posted information beyond the control of Shine Ranker, LLC. If you do not wish to have the information 

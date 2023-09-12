@@ -1,7 +1,8 @@
 "use client";
 
-import lottie from "lottie-web";
 import { createRef, useEffect, useState } from "react";
+import Image from "next/image";
+import lottie from "lottie-web";
 
 import FooterPage from "@/components/Footer/Footer";
 import ToggleButton from "@/components/ToggleButton";
@@ -35,10 +36,11 @@ const CredibilitySectionGrid = (ismobile) => {
     // <div className={`grid grid-cols-1 md:grid-cols-2 lg:gap-y-16 gap-y-20 lg:gap-x-12 xl:gap-20 items-center ${ismobile ? "credibility-grid-mobile" : "credibility-grid"}`}>
     <div className={`grid grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-20 lg:gap-x-12 xl:gap-20 items-center`}>
       <div className={`flex flex-col text-center ${!ismobile ? "credibility-grid-cad-accent" : ""}`}>
-        <img
+        <Image
           src="/svg/home/ai-face.svg"
           alt="ai face icon"
-          height="80px"
+          width={78}
+          height={80}
           className="self-center mb-8"
         />
         <h1 className="our-tools-right-content-title py-5 mb-4">
@@ -49,10 +51,11 @@ const CredibilitySectionGrid = (ismobile) => {
         </p>
       </div>
       <div className="flex flex-col text-center">
-        <img
+        <Image
           src="/svg/home/profile.svg"
           alt="default profile avatar icon"
-          height="80px"
+          width={78}
+          height={80}
           className="self-center mb-8"
         />
         <h1 className="our-tools-right-content-title py-5 mb-4">
@@ -63,10 +66,11 @@ const CredibilitySectionGrid = (ismobile) => {
         </p>
       </div>
       <div className={`flex flex-col text-center ${!ismobile ? "credibility-grid-cad-accent" : ""}`}>
-        <img
+        <Image
           src="/svg/home/bot.svg"
           alt="Shine AI robot head icon"
-          height="80px"
+          width={78}
+          height={80}
           className="self-center mb-8"
         />
         <h1 className="our-tools-right-content-title py-5 mb-4">
@@ -77,10 +81,11 @@ const CredibilitySectionGrid = (ismobile) => {
         </p>
       </div>
       <div className="flex flex-col text-center">
-        <img
+        <Image
           src="/svg/home/ellipsis.svg"
           alt="ellipsis icon"
-          height="80px"
+          width={78}
+          height={80}
           className="self-center mb-8"
         />
         <h1 className="our-tools-right-content-title py-5 mb-4">
@@ -607,10 +612,11 @@ export default function Home() {
                 height="40"
                 className="hero-header-openAI-logo"
               >
-                <img
+                <Image
                   src="/svg/home/openai-logo.svg"
                   alt="OpenAI Logo"
-                  height="40"
+                  width={114}
+                  height={28}
                 />
               </object>
             </p>
@@ -690,30 +696,36 @@ export default function Home() {
           <p className="max-w-[516px] md:text-center home-section-header-content ">
             Watch the free training video and start earning money today even if you are not an expert
           </p>
-          <img
+          <Image
             src="/images/global/training-video.png"
             alt="Shine Ai Training Video thumbnail"
-            width="480px"
-            height="270px"
+            width={480}
+            height={270}
             className="my-8 home-training-image"
           />
           <button className="w-full md:w-72 mb-5 px-6 home-secondary-btn">
             Generate Your Videos Today
           </button>
           <div className="flex gap-x-4 sm:gap-x-10">
-            <img
+            <Image
               src="/images/home/secure-home.png"
               alt="Secure SSL Encryption badge"
+              width={111}
+              height={28}
               className="how-to-use-shine-ai-badge"
             />
-            <img
+            <Image
               src="/images/home/trusted-home.png"
               alt="Trusted Seller badge"
+              width={111}
+              height={28}
               className="how-to-use-shine-ai-badge"
             />
-            <img
+            <Image
               src="/images/home/refund-home.png"
               alt="Full Refund Guarantee badge"
+              width={111}
+              height={28}
               className="how-to-use-shine-ai-badge"
             />
           </div>
@@ -736,9 +748,11 @@ export default function Home() {
 
           <div className="flex flex-col flex-col-reverse lg:flex-row justify-center lg:gap-16">
             <div className="flex flex-col">
-              <img
+              <Image
                 src="/images/home/bouncing-robot-head.png"
                 alt="Shine Ai Bouncing Robot Head"
+                width={480}
+                height={210}
                 className="z-10 self-center lg:ml-6 our-tools-left-content-ai-image"
               />
               <div className="flex flex-col items-center md:items-start 2xl:ml-12 pt-44 lg:pt-60 pb-14 md:pb-10 px-5 md:px-10 our-tools-left-content-card">
@@ -768,10 +782,11 @@ export default function Home() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-5 md:gap-y-20 lg:gap-y-10 md:gap-x-12 px-5 md:px-0 lg:pt-24 pb-24 lg:pb-8 items-center">
               <div className="flex flex-col p-8 md:p-0 our-tools-grid-item">
-                  <img
+                  <Image
                     src="/svg/tools/globe.svg"
                     alt="earth globe icon"
-                    width="40px"
+                    width={40}
+                    height={40}
                     className="md:mb-5"
                   />
                   <h4 className="py-5 max-w-[180px] md:max-w-[120px] our-tools-right-content-title">
@@ -783,10 +798,11 @@ export default function Home() {
                   </p>
               </div>
               <div className="flex flex-col p-8 md:p-0 our-tools-grid-item">
-                  <img
+                  <Image
                     src="/svg/tools/video-generator.svg"
                     alt="multiple video icon"
-                    width="40px"
+                    width={40}
+                    height={40}
                     className="md:mb-5"
                   />
                   <h4 className="py-5 max-w-[200px] md:max-w-[120px] our-tools-right-content-title">
@@ -798,10 +814,11 @@ export default function Home() {
                   </p>
               </div>
               <div className="flex flex-col p-8 md:p-0 our-tools-grid-item">
-                  <img
+                  <Image
                     src="/svg/tools/monitor.svg"
                     alt="monitor icon"
-                    width="40px"
+                    width={40}
+                    height={40}
                     className="md:mb-5"
                   />
                   <h4 className="py-5 our-tools-right-content-title">
@@ -813,10 +830,11 @@ export default function Home() {
                   </p>
               </div>
               <div className="flex flex-col p-8 md:p-0 our-tools-grid-item">
-                  <img
+                  <Image
                     src="/svg/tools/ai-face.svg"
                     alt="ai face icon"
-                    width="40px"
+                    width={40}
+                    height={40}
                     className="md:mb-5"
                   />
                   <h4 className="py-5 our-tools-right-content-title">
@@ -1304,9 +1322,11 @@ export default function Home() {
         >
           <SwiperSlide>
             <div className="flex flex-col items-center ">
-              <img
+              <Image
                 src="/images/home/CreamOfCrop/Top5hacksADHD.png"
-                alt="Shine Ai Training Video thumbnail"
+                alt="Top5hacksADHD Video thumbnail"
+                width={180}
+                height={300}
                 className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
               />
               <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
@@ -1316,9 +1336,11 @@ export default function Home() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-col items-center ">
-              <img
+              <Image
                 src="/images/home/CreamOfCrop/Marie Curie.png"
-                alt="Shine Ai Training Video thumbnail"
+                alt="Marie Curie Video thumbnail"
+                width={180}
+                height={300}
                 className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
               />
               <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
@@ -1328,9 +1350,11 @@ export default function Home() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-col items-center ">
-              <img
+              <Image
                 src="/images/home/CreamOfCrop/ShineRanker.png"
-                alt="Shine Ai Training Video thumbnail"
+                alt="ShineRanker Video thumbnail"
+                width={180}
+                height={300}
                 className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
               />
               <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
@@ -1340,9 +1364,11 @@ export default function Home() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-col items-center ">
-              <img
+              <Image
                 src="/images/home/CreamOfCrop/Samuel.png"
-                alt="Shine Ai Training Video thumbnail"
+                alt="Samuel Video thumbnail"
+                width={180}
+                height={300}
                 className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
               />
               <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
@@ -1352,9 +1378,11 @@ export default function Home() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-col items-center ">
-              <img
+              <Image
                 src="/images/home/CreamOfCrop/Why Indonesians dont speak dutch.png"
-                alt="Shine Ai Training Video thumbnail"
+                alt="Why Indonesians dont speak dutch Video thumbnail"
+                width={180}
+                height={300}
                 className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
               />
               <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
@@ -1364,9 +1392,11 @@ export default function Home() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-col items-center ">
-              <img
+              <Image
                 src="/images/home/CreamOfCrop/uranium.png"
-                alt="Shine Ai Training Video thumbnail"
+                alt="uranium Video thumbnail"
+                width={180}
+                height={300}
                 className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
               />
               <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
@@ -1376,9 +1406,11 @@ export default function Home() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-col items-center ">
-              <img
+              <Image
                 src="/images/home/CreamOfCrop/Top5hacksADHD.png"
-                alt="Shine Ai Training Video thumbnail"
+                alt="Top5hacksADHD Video thumbnail"
+                width={180}
+                height={300}
                 className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
               />
               <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
@@ -1388,9 +1420,11 @@ export default function Home() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-col items-center ">
-              <img
+              <Image
                 src="/images/home/CreamOfCrop/Marie Curie.png"
-                alt="Shine Ai Training Video thumbnail"
+                alt="Marie Curie Video thumbnail"
+                width={180}
+                height={300}
                 className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
               />
               <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
@@ -1400,9 +1434,11 @@ export default function Home() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-col items-center ">
-              <img
+              <Image
                 src="/images/home/CreamOfCrop/ShineRanker.png"
-                alt="Shine Ai Training Video thumbnail"
+                alt="ShineRanker Video thumbnail"
+                width={180}
+                height={300}
                 className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
               />
               <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
@@ -1412,9 +1448,11 @@ export default function Home() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-col items-center ">
-              <img
+              <Image
                 src="/images/home/CreamOfCrop/Samuel.png"
-                alt="Shine Ai Training Video thumbnail"
+                alt="Samuel Video thumbnail"
+                width={180}
+                height={300}
                 className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
               />
               <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
@@ -1424,9 +1462,11 @@ export default function Home() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-col items-center ">
-              <img
+              <Image
                 src="/images/home/CreamOfCrop/Why Indonesians dont speak dutch.png"
-                alt="Shine Ai Training Video thumbnail"
+                alt="Why Indonesians dont speak dutch Video thumbnail"
+                width={180}
+                height={300}
                 className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
               />
               <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
@@ -1436,9 +1476,11 @@ export default function Home() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-col items-center ">
-              <img
+              <Image
                 src="/images/home/CreamOfCrop/uranium.png"
-                alt="Shine Ai Training Video thumbnail"
+                alt="uranium Video thumbnail"
+                width={180}
+                height={300}
                 className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
               />
               <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
@@ -1514,50 +1556,52 @@ export default function Home() {
       </section>
 
 
-
-
-
-
       {/* Stunning Image Outputs */}
       <section className="flex flex-col lg:flex-row py-20 px-[10%] xl:px-[20%] gap-x-20 xl:gap-x-28">
         <div className="w-full lg:w-[50%] flex flex-col py-2 mb-12 lg:mb-0 items-center">
           <h3 className="mb-6 text-center global-header-text-2">Stunning Image Outputs</h3>
           <p className="max-w-[400px] text-center mb-10 lg:mb-20 global-header-text-3">Our image prompt results are astounding and seamless. No need further editing.</p>
           <div className="grid grid-cols-3 gap-3">
-            <img
+            <Image
               src="/images/global/SampleImages/penguins.png"
-              alt="Shine Ai Training Video thumbnail"
-              width="138px"
+              alt="penguins image"
+              width={138}
+              height={150}
               className="max-h-[110px] md:max-h-[150px] lg:max-h-[100px] 2xl:max-h-[150px] stunning-images-grid-img border"
             />
-            <img
+            <Image
               src="/images/global/SampleImages/deer.jpg"
-              alt="Shine Ai Training Video thumbnail"
-              width="138px"
+              alt="deer image"
+              width={138}
+              height={150}
               className="max-h-[110px] md:max-h-[150px] lg:max-h-[100px] 2xl:max-h-[150px] stunning-images-grid-img border"
             />
-            <img
+            <Image
               src="/images/global/SampleImages/cat.jpg"
-              alt="Shine Ai Training Video thumbnail"
-              width="138px"
+              alt="cat image"
+              width={138}
+              height={150}
               className="max-h-[110px] md:max-h-[150px] lg:max-h-[100px] 2xl:max-h-[150px] stunning-images-grid-img border"
             />
-            <img
+            <Image
               src="/images/global/SampleImages/eagle.jpg"
-              alt="Shine Ai Training Video thumbnail"
-              width="138px"
+              alt="eagle image"
+              width={138}
+              height={150}
               className="max-h-[110px] md:max-h-[150px] lg:max-h-[100px] 2xl:max-h-[150px] stunning-images-grid-img border"
             />
-            <img
+            <Image
               src="/images/global/SampleImages/piglet.png"
-              alt="Shine Ai Training Video thumbnail"
-              width="138px"
+              alt="piglet image"
+              width={138}
+              height={150}
               className="max-h-[110px] md:max-h-[150px] lg:max-h-[100px] 2xl:max-h-[150px] stunning-images-grid-img border"
             />
-            <img
+            <Image
               src="/images/global/SampleImages/panda.png"
-              alt="Shine Ai Training Video thumbnail"
-              width="138px"
+              alt="panda image"
+              width={138}
+              height={150}
               className="max-h-[110px] md:max-h-[150px] lg:max-h-[100px] 2xl:max-h-[150px] stunning-images-grid-img border"
             />
           </div>
@@ -1635,9 +1679,11 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 lg:gap-y-12 mt-16">  
             <div className="flex flex-col text-center amazing-features-grid-card">
-              <img
+              <Image
                 src="/svg/home/key.svg"
                 alt="key Icon"
+                width={40}
+                height={40}
                 className="self-center"
               />
               <h4 className="mt-12 card-title">
@@ -1646,9 +1692,11 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col text-center amazing-features-grid-card">
-              <img
+              <Image
                 src="/svg/home/chat.svg"
                 alt="Chat Icon"
+                width={40}
+                height={40}
                 className="self-center"
               />
               <h4 className="mt-12 card-title">
@@ -1657,9 +1705,11 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col text-center amazing-features-grid-card">
-              <img
+              <Image
                 src="/svg/home/support.svg"
                 alt="chat support Icon"
+                width={40}
+                height={40}
                 className="self-center"
               />
               <h4 className="mt-12 card-title">
@@ -1668,9 +1718,11 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col text-center amazing-features-grid-card">
-              <img
+              <Image
                 src="/svg/home/update.svg"
                 alt="recycle Icon"
+                width={40}
+                height={40}
                 className="self-center"
               />
               <h4 className="mt-12 card-title">
@@ -1679,9 +1731,11 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col text-center amazing-features-grid-card">
-              <img
+              <Image
                 src="/svg/home/vip.svg"
                 alt="crown Icon"
+                width={40}
+                height={40}
                 className="self-center"
               />
               <h4 className="mt-12 card-title">
@@ -1690,9 +1744,11 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col text-center amazing-features-grid-card">
-              <img
+              <Image
                 src="/svg/home/book.svg"
                 alt="open book Icon"
+                width={40}
+                height={40}
                 className="self-center"
               />
               <h4 className="mt-12 card-title">
@@ -1819,15 +1875,21 @@ export default function Home() {
           >
             <SwiperSlide>
               <div className="w-[80%] md:w-[60%] lg:w-auto flex flex-col px-10 pb-12 text-center testimonial-card">
-                <img src="/images/home/TestimonialHeads/Testimonial Head 1.png" alt="tetimonial male profile" height="150" className="testimonial-card-profile-img" />
+                <Image
+                  src="/images/home/TestimonialHeads/Testimonial Head 1.png" 
+                  alt="tetimonial 1 profile"
+                  width={150}
+                  height={150}
+                  className="testimonial-card-profile-img"
+                />
                 <p className="text-white mt-5">VincentK</p>
                 <p className="text-white mt-1">Content Creator</p>
                 <div className="flex flex-row justify-center mt-5">
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
                 </div>
                 <p className="text-white mt-5">
                   	&quot;One of the biggest barriers was content creation. This tool is amazing brother. I’m genuinely thrilled to help market it.&quot;
@@ -1836,15 +1898,21 @@ export default function Home() {
             </SwiperSlide>
             <SwiperSlide>
               <div className="w-[80%] md:w-[60%] lg:w-auto flex flex-col px-10 pb-12 text-center testimonial-card">
-                <img src="/images/home/TestimonialHeads/Testimonial Head 2.png" alt="tetimonial female profile" height="150" className="testimonial-card-profile-img" />
+                <Image
+                  src="/images/home/TestimonialHeads/Testimonial Head 2.png" 
+                  alt="tetimonial 2 profile"
+                  width={150}
+                  height={150}
+                  className="testimonial-card-profile-img"
+                />
                 <p className="text-white mt-5">Alchemist</p>
                 <p className="text-white mt-1">Reels Creator</p>
                 <div className="flex flex-row justify-center mt-5">
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
                 </div>
                 <p className="text-white mt-5">
                   &quot;JUST CHECKED MY FACEBOOK ANALYTICS THE PAST 28 DAYS AND GOT 16K VIEWS!!!&quot;
@@ -1853,15 +1921,21 @@ export default function Home() {
             </SwiperSlide>
             <SwiperSlide>
               <div className="w-[80%] md:w-[60%] lg:w-auto flex flex-col px-10 pb-12 text-center testimonial-card">
-                <img src="/images/home/TestimonialHeads/Testimonial Head 3.png" alt="tetimonial female profile" height="150" className="testimonial-card-profile-img" />
+                <Image
+                  src="/images/home/TestimonialHeads/Testimonial Head 3.png" 
+                  alt="tetimonial 3 profile"
+                  width={150}
+                  height={150}
+                  className="testimonial-card-profile-img"
+                />
                 <p className="text-white mt-5">Chance Reynolds</p>
                 <p className="text-white mt-1">Reels Creator</p>
                 <div className="flex flex-row justify-center mt-5">
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
                 </div>
                 <p className="text-white mt-5">
                   &quot;It’s a totally faceless way to make amazing videos. I’m using them to sell affiliate physical products on TikTok, and they’re working!&quot;
@@ -1870,15 +1944,21 @@ export default function Home() {
             </SwiperSlide>
             <SwiperSlide>
               <div className="w-[80%] md:w-[60%] lg:w-auto flex flex-col px-10 pb-12 text-center testimonial-card">
-                <img src="/images/home/TestimonialHeads/Testimonial Head 4.png" alt="tetimonial male profile" height="150" className="testimonial-card-profile-img" />
+                <Image
+                  src="/images/home/TestimonialHeads/Testimonial Head 4.png" 
+                  alt="tetimonial 4 profile"
+                  width={150}
+                  height={150}
+                  className="testimonial-card-profile-img"
+                />
                 <p className="text-white mt-5">Easy Internet Mktng</p>
                 <p className="text-white mt-1">Reels Creator</p>
                 <div className="flex flex-row justify-center mt-5">
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
                 </div>
                 <p className="text-white mt-5">
                   &quot;I MADE TWO SALES ON THE FIRST OF THIS MONTH AND ANOTHER ONE THIS MORNING.&quot;
@@ -1887,15 +1967,21 @@ export default function Home() {
             </SwiperSlide>
             <SwiperSlide>
               <div className="w-[80%] md:w-[60%] lg:w-auto flex flex-col px-10 pb-12 text-center testimonial-card">
-                <img src="/images/home/TestimonialHeads/Testimonial Head 5.png" alt="tetimonial male profile" height="150" className="testimonial-card-profile-img" />
+                <Image
+                  src="/images/home/TestimonialHeads/Testimonial Head 5.png" 
+                  alt="tetimonial 5 profile"
+                  width={150}
+                  height={150}
+                  className="testimonial-card-profile-img"
+                />
                 <p className="text-white mt-5">ComedyMarketer</p>
                 <p className="text-white mt-1">Youtube Shorts Creator</p>
                 <div className="flex flex-row justify-center mt-5">
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
                 </div>
                 <p className="text-white mt-5">
                   &quot;I HAD THE TRIAL OF SHINE RANKER YESTERDAY AND LOVE IT, I&apos;M BLOWN AWAY BY THE QUALITY.&quot;
@@ -1904,15 +1990,21 @@ export default function Home() {
             </SwiperSlide>
             <SwiperSlide>
               <div className="w-[80%] md:w-[60%] lg:w-auto flex flex-col px-10 pb-12 text-center testimonial-card">
-                <img src="/images/home/TestimonialHeads/Testimonial Head 6.png" alt="tetimonial female profile" height="150" className="testimonial-card-profile-img" />
+                <Image
+                  src="/images/home/TestimonialHeads/Testimonial Head 6.png" 
+                  alt="tetimonial 6 profile"
+                  width={150}
+                  height={150}
+                  className="testimonial-card-profile-img"
+                />
                 <p className="text-white mt-5">Tommy Seilheimer</p>
                 <p className="text-white mt-1">Content Creator & Manager</p>
                 <div className="flex flex-row justify-center mt-5">
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
                 </div>
                 <p className="text-white mt-5">
                   &quot;I USED IT FOR A CLIENT TODAY AND I CLOSE AT $100K A YEAR!&quot;
@@ -1921,15 +2013,21 @@ export default function Home() {
             </SwiperSlide>
             <SwiperSlide>
               <div className="w-[80%] md:w-[60%] lg:w-auto flex flex-col px-10 pb-12 text-center testimonial-card">
-                <img src="/images/home/TestimonialHeads/Testimonial Head 7.png" alt="tetimonial female profile" height="150" className="testimonial-card-profile-img" />
+                <Image
+                  src="/images/home/TestimonialHeads/Testimonial Head 7.png" 
+                  alt="tetimonial 7 profile"
+                  width={150}
+                  height={150}
+                  className="testimonial-card-profile-img"
+                />
                 <p className="text-white mt-5">Lisa Phillips</p>
                 <p className="text-white mt-1">TikTok Video Creator</p>
                 <div className="flex flex-row justify-center mt-5">
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
                 </div>
                 <p className="text-white mt-5">
                   &quot;I POSTED MY FIRST FEW VIDEOS MADE WITH SHINE RANKER. ONE OF THEM GOT 843 VIEWS!!&quot;
@@ -1938,15 +2036,21 @@ export default function Home() {
             </SwiperSlide>
             <SwiperSlide>
               <div className="w-[80%] md:w-[60%] lg:w-auto flex flex-col px-10 pb-12 text-center testimonial-card">
-                <img src="/images/home/TestimonialHeads/Testimonial Head 8.png" alt="tetimonial male profile" height="150" className="testimonial-card-profile-img" />
+                <Image
+                  src="/images/home/TestimonialHeads/Testimonial Head 8.png" 
+                  alt="tetimonial 8 profile"
+                  width={150}
+                  height={150}
+                  className="testimonial-card-profile-img"
+                />
                 <p className="text-white mt-5">Anthony Kell</p>
                 <p className="text-white mt-1">Content Creator & Manager</p>
                 <div className="flex flex-row justify-center mt-5">
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
-                    <img src="/svg/home/star.svg" alt="star icon" height="24" />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
+                  <Image src="/svg/home/star.svg" alt="star icon" width={25} height={25} />
                 </div>
                 <p className="text-white mt-5">
                   &quot;Gosh, it used to take me a couple of hours to create something like this. I’m totally stoked now.&quot;
@@ -2000,9 +2104,14 @@ export default function Home() {
 
       {/* *** Join Us section *** */}
       <section className="join-us-section-container">
-        <div className="grid lg:grid-cols-2 join-us-content-container">
-
-          <img src="/images/home/shine-ai-robot.png" alt="shine ai robot running" height="250" className="self-center" />
+        <div className="flex flex-row justify-center join-us-content-container">
+          <Image
+            src="/images/home/join-us-image.png"
+            alt="shine ai robot running"
+            width={550}
+            height={550}
+            className="hidden lg:block self-center mr-[-5rem]"
+          />
           
           <div className="flex items-center">
             <div className="p-8 pb-12 md:pb-10 join-us-right-container w-full lg:w-96">
@@ -2042,7 +2151,7 @@ export default function Home() {
                     href="https://app.shineranker.com/"
                     rel="noreferrer"
                     target="_blank"
-                    className="px-4 flex items-center whitespace-nowrap home-outlined-btn"
+                    className="px-4 flex items-center justify-center whitespace-nowrap home-outlined-btn"
                   >
                     Log in
                   </a>
