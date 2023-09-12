@@ -1,8 +1,6 @@
 
 import FooterPage from "@/components/Footer/Footer";
 
-import Image from "next/image";
-
 import FeaturesAndBenefits from "@/components/FeaturesAndBenefits";
 import ContactForm from "@/components/Contacts/ContactForm";
 import ContactInfo from "@/components/Contacts/ContactInfo";
@@ -59,11 +57,10 @@ export default function About() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image
+              <img
                 src="/images/global/training-video-thumbnail.png"
                 alt="Shine Ai Training Video thumbnail"
-                width={576}
-                height={365}
+                width="540px"
                 className="mx-auto max-w-full"
               />
 

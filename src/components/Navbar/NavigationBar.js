@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 
 import { styled } from '@mui/material/styles';
 
@@ -19,6 +18,8 @@ import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArro
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 import "../../styles/NavigationBar.css";
+
+const logo = "/images/global/shineAi-logo.png";
 
 const CustomAccordionSummary = styled(AccordionSummary)(({ theme }) => ({
   '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
@@ -74,11 +75,11 @@ const NavigationBar = () => {
       <div className={`absolute w-full navContainer ${isSticky ? "changeNavColor" : ""}`} >
         <div className="flex flex-row items-center justify-between mx-[5vw] lg:mx-[10vw] xl:mx-[20vw] py-4">
           <a href="/" className="flex items-center navLogo">
-            <Image
-              src="/images/global/shineAi-logo.png"
+            <img
+              src={logo}
               alt="Shine Ranker Logo"
-              width={249}
-              height={62}
+              width="249px"
+              height="62px"
               className="mr-2"
             />
           </a>

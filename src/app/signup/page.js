@@ -1,6 +1,3 @@
-
-import Image from "next/image";
-
 import "../../styles/signup.css";
 
 const Signup = () => {
@@ -8,11 +5,11 @@ const Signup = () => {
     <div className="flex flex-col justify-center items-center gap-4 signup-container">
       <div className="flex justify-center items-center gap-2">
         <div>
-          <Image
+          <img
             src="/images/global/shineranker-logo-colored.png"
             alt="Shine Ranker Logo"
-            width={62}
-            height={62}
+            width="62px"
+            height="62px"
             className="global-shineranker-image"
           />
         </div>

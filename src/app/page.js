@@ -1515,9 +1515,6 @@ export default function Home() {
 
 
 
-
-
-
       {/* Stunning Image Outputs */}
       <section className="flex flex-col lg:flex-row py-20 px-[10%] xl:px-[20%] gap-x-20 xl:gap-x-28">
         <div className="w-full lg:w-[50%] flex flex-col py-2 mb-12 lg:mb-0 items-center">
@@ -1526,37 +1523,37 @@ export default function Home() {
           <div className="grid grid-cols-3 gap-3">
             <img
               src="/images/global/SampleImages/penguins.png"
-              alt="Shine Ai Training Video thumbnail"
+              alt="penguins image"
               width="138px"
               className="max-h-[110px] md:max-h-[150px] lg:max-h-[100px] 2xl:max-h-[150px] stunning-images-grid-img border"
             />
             <img
               src="/images/global/SampleImages/deer.jpg"
-              alt="Shine Ai Training Video thumbnail"
+              alt="deer image"
               width="138px"
               className="max-h-[110px] md:max-h-[150px] lg:max-h-[100px] 2xl:max-h-[150px] stunning-images-grid-img border"
             />
             <img
               src="/images/global/SampleImages/cat.jpg"
-              alt="Shine Ai Training Video thumbnail"
+              alt="cat image"
               width="138px"
               className="max-h-[110px] md:max-h-[150px] lg:max-h-[100px] 2xl:max-h-[150px] stunning-images-grid-img border"
             />
             <img
               src="/images/global/SampleImages/eagle.jpg"
-              alt="Shine Ai Training Video thumbnail"
+              alt="eagle image"
               width="138px"
               className="max-h-[110px] md:max-h-[150px] lg:max-h-[100px] 2xl:max-h-[150px] stunning-images-grid-img border"
             />
             <img
               src="/images/global/SampleImages/piglet.png"
-              alt="Shine Ai Training Video thumbnail"
+              alt="piglet image"
               width="138px"
               className="max-h-[110px] md:max-h-[150px] lg:max-h-[100px] 2xl:max-h-[150px] stunning-images-grid-img border"
             />
             <img
               src="/images/global/SampleImages/panda.png"
-              alt="Shine Ai Training Video thumbnail"
+              alt="panda image"
               width="138px"
               className="max-h-[110px] md:max-h-[150px] lg:max-h-[100px] 2xl:max-h-[150px] stunning-images-grid-img border"
             />
@@ -1819,7 +1816,7 @@ export default function Home() {
           >
             <SwiperSlide>
               <div className="w-[80%] md:w-[60%] lg:w-auto flex flex-col px-10 pb-12 text-center testimonial-card">
-                <img src="/images/home/TestimonialHeads/Testimonial Head 1.png" alt="tetimonial male profile" height="150" className="testimonial-card-profile-img" />
+                <img src="/images/home/TestimonialHeads/Testimonial Head 1.png" alt="tetimonial 1 profile" height="150" className="testimonial-card-profile-img" />
                 <p className="text-white mt-5">VincentK</p>
                 <p className="text-white mt-1">Content Creator</p>
                 <div className="flex flex-row justify-center mt-5">
@@ -1836,7 +1833,7 @@ export default function Home() {
             </SwiperSlide>
             <SwiperSlide>
               <div className="w-[80%] md:w-[60%] lg:w-auto flex flex-col px-10 pb-12 text-center testimonial-card">
-                <img src="/images/home/TestimonialHeads/Testimonial Head 2.png" alt="tetimonial female profile" height="150" className="testimonial-card-profile-img" />
+                <img src="/images/home/TestimonialHeads/Testimonial Head 2.png" alt="tetimonial 2 profile" height="150" className="testimonial-card-profile-img" />
                 <p className="text-white mt-5">Alchemist</p>
                 <p className="text-white mt-1">Reels Creator</p>
                 <div className="flex flex-row justify-center mt-5">
@@ -1853,7 +1850,7 @@ export default function Home() {
             </SwiperSlide>
             <SwiperSlide>
               <div className="w-[80%] md:w-[60%] lg:w-auto flex flex-col px-10 pb-12 text-center testimonial-card">
-                <img src="/images/home/TestimonialHeads/Testimonial Head 3.png" alt="tetimonial female profile" height="150" className="testimonial-card-profile-img" />
+                <img src="/images/home/TestimonialHeads/Testimonial Head 3.png" alt="tetimonial 3 profile" height="150" className="testimonial-card-profile-img" />
                 <p className="text-white mt-5">Chance Reynolds</p>
                 <p className="text-white mt-1">Reels Creator</p>
                 <div className="flex flex-row justify-center mt-5">
@@ -1870,7 +1867,7 @@ export default function Home() {
             </SwiperSlide>
             <SwiperSlide>
               <div className="w-[80%] md:w-[60%] lg:w-auto flex flex-col px-10 pb-12 text-center testimonial-card">
-                <img src="/images/home/TestimonialHeads/Testimonial Head 4.png" alt="tetimonial male profile" height="150" className="testimonial-card-profile-img" />
+                <img src="/images/home/TestimonialHeads/Testimonial Head 4.png" alt="tetimonial 4 profile" height="150" className="testimonial-card-profile-img" />
                 <p className="text-white mt-5">Easy Internet Mktng</p>
                 <p className="text-white mt-1">Reels Creator</p>
                 <div className="flex flex-row justify-center mt-5">
@@ -1887,7 +1884,7 @@ export default function Home() {
             </SwiperSlide>
             <SwiperSlide>
               <div className="w-[80%] md:w-[60%] lg:w-auto flex flex-col px-10 pb-12 text-center testimonial-card">
-                <img src="/images/home/TestimonialHeads/Testimonial Head 5.png" alt="tetimonial male profile" height="150" className="testimonial-card-profile-img" />
+                <img src="/images/home/TestimonialHeads/Testimonial Head 5.png" alt="tetimonial 5 profile" height="150" className="testimonial-card-profile-img" />
                 <p className="text-white mt-5">ComedyMarketer</p>
                 <p className="text-white mt-1">Youtube Shorts Creator</p>
                 <div className="flex flex-row justify-center mt-5">
@@ -1904,7 +1901,7 @@ export default function Home() {
             </SwiperSlide>
             <SwiperSlide>
               <div className="w-[80%] md:w-[60%] lg:w-auto flex flex-col px-10 pb-12 text-center testimonial-card">
-                <img src="/images/home/TestimonialHeads/Testimonial Head 6.png" alt="tetimonial female profile" height="150" className="testimonial-card-profile-img" />
+                <img src="/images/home/TestimonialHeads/Testimonial Head 6.png" alt="tetimonial 6 profile" height="150" className="testimonial-card-profile-img" />
                 <p className="text-white mt-5">Tommy Seilheimer</p>
                 <p className="text-white mt-1">Content Creator & Manager</p>
                 <div className="flex flex-row justify-center mt-5">
@@ -1921,7 +1918,7 @@ export default function Home() {
             </SwiperSlide>
             <SwiperSlide>
               <div className="w-[80%] md:w-[60%] lg:w-auto flex flex-col px-10 pb-12 text-center testimonial-card">
-                <img src="/images/home/TestimonialHeads/Testimonial Head 7.png" alt="tetimonial female profile" height="150" className="testimonial-card-profile-img" />
+                <img src="/images/home/TestimonialHeads/Testimonial Head 7.png" alt="tetimonial 7 profile" height="150" className="testimonial-card-profile-img" />
                 <p className="text-white mt-5">Lisa Phillips</p>
                 <p className="text-white mt-1">TikTok Video Creator</p>
                 <div className="flex flex-row justify-center mt-5">
@@ -1938,7 +1935,7 @@ export default function Home() {
             </SwiperSlide>
             <SwiperSlide>
               <div className="w-[80%] md:w-[60%] lg:w-auto flex flex-col px-10 pb-12 text-center testimonial-card">
-                <img src="/images/home/TestimonialHeads/Testimonial Head 8.png" alt="tetimonial male profile" height="150" className="testimonial-card-profile-img" />
+                <img src="/images/home/TestimonialHeads/Testimonial Head 8.png" alt="tetimonial 8 profile" height="150" className="testimonial-card-profile-img" />
                 <p className="text-white mt-5">Anthony Kell</p>
                 <p className="text-white mt-1">Content Creator & Manager</p>
                 <div className="flex flex-row justify-center mt-5">
@@ -2003,7 +2000,7 @@ export default function Home() {
         <div className="flex flex-row justify-center join-us-content-container">
           <img
             src="/images/home/join-us-image.png"
-            alt="shine ai robot running"
+            alt="shineAi robot saying Create powerful content"
             width={550}
             height={550}
             className="hidden lg:block self-center mr-[-5rem]"

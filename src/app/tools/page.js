@@ -1,7 +1,6 @@
 "use client";
 
 import React, { createRef, useEffect } from "react";
-import Image from "next/image";
 import lottie from "lottie-web";
 
 import FooterPage from "@/components/Footer/Footer";
@@ -105,11 +104,10 @@ export default function Tools() {
           <div className="w-full flex flex-col lg:flex-row justify-evenly items-center gap-20 lg:gap-10">
             <div className="">
               <div>
-                <Image
+                <img
                   src="/svg/tools/globe.svg"
                   alt="earth globe icon"
-                  width={40}
-                  height={40}
+                  width="40px"
                   className="mb-6"
                 />
               </div>
@@ -121,11 +119,9 @@ export default function Tools() {
               </p>
             </div>
             <div className="flex justify-center">
-              <Image
+              <img
                 src="/images/tools/tools-webscrape.png"
                 alt="Shine Ranker Web Scraper Tool"
-                width={338}
-                height={302}
                 className="tools-img-shadow w-[95%] md:w-[500px] lg:w-[338px]"
               />
             </div>
@@ -134,29 +130,24 @@ export default function Tools() {
           <div className="w-full flex flex-col flex-col-reverse lg:flex-row justify-evenly items-center gap-20">
             <div className="flex flex-row gap-x-2">
               <div className="flex flex-row justify-center gap-2">
-                <Image
+                <img
                   src="/images/tools/portrait-video-thumbnail-1.png"
                   alt="Shine Ranker Video Generator"
-                  width={172}
-                  height={306}
                   className="w-[48%] md:w-[252px] lg:w-[172px] rounded tools-img-shadow"
                 />
-                <Image
+                <img
                   src="/images/tools/portrait-video-thumbnail-2.png"
                   alt="Shine Ranker Video Generator"
-                  width={172}
-                  height={306}
                   className="w-[48%] md:w-[252px] lg:w-[172px] rounded tools-img-shadow"
                 />
               </div>
             </div>
             <div className="">
               <div>
-                <Image
+                <img
                   src="/svg/tools/video-generator.svg"
                   alt="multiple video icon"
-                  width={40}
-                  height={40}
+                  width="40px"
                   className="mb-6"
                 />
               </div>
@@ -172,11 +163,10 @@ export default function Tools() {
           <div className="w-full flex flex-col lg:flex-row justify-evenly items-center gap-20 lg:gap-10">
             <div className="">
               <div>
-                <Image
+                <img
                   src="/svg/tools/monitor.svg"
                   alt="monitor icon"
-                  width={40}
-                  height={40}
+                  width="40px"
                   className="mb-6"
                 />
               </div>
@@ -188,39 +178,29 @@ export default function Tools() {
               </p>
             </div>
             <div className="w-[90%] lg:w-auto flex flex-row justify-evenly lg:justify-start gap-2">
-              <Image
+              <img
                 src="/images/tools/text-to-image-1.png"
                 alt="Shine Ranker Text to Image"
-                width={70}
-                height={70}
                 className="w-[20%] md:w-[100px] lg:w-[70px] rounded tools-img-shadow"
               />
-              <Image
+              <img
                 src="/images/tools/text-to-image-2.png"
                 alt="Shine Ranker Text to Image"
-                width={70}
-                height={70}
                 className="w-[20%] md:w-[100px] lg:w-[70px] rounded tools-img-shadow"
               />
-              <Image
+              <img
                 src="/images/tools/text-to-image-3.png"
                 alt="Shine Ranker Text to Image"
-                width={70}
-                height={70}
                 className="w-[20%] md:w-[100px] lg:w-[70px] rounded tools-img-shadow"
               />
-              <Image
+              <img
                 src="/images/tools/text-to-image-4.png"
                 alt="Shine Ranker Text to Image"
-                width={70}
-                height={70}
                 className="w-[20%] md:w-[100px] lg:w-[70px] rounded tools-img-shadow"
               />
-              <Image
+              <img
                 src="/images/tools/text-to-image-5.png"
                 alt="Shine Ranker Text to Image"
-                width={70}
-                height={70}
                 className="w-[20%] md:w-[100px] lg:w-[70px] rounded tools-img-shadow"
               />
             </div>
@@ -228,21 +208,18 @@ export default function Tools() {
 
           <div className="w-full flex flex-col flex-col-reverse lg:flex-row justify-evenly items-center gap-20 lg:gap-10">
             <div className="flex justify-center">
-              <Image
+              <img
                 src="/images/tools/spider-man.jpg"
                 alt="Shine Ranker Web Scraper Tool"
-                width={410}
-                height={210}
                 className="w-[90%] md:w-[500px] lg:w-[410px] rounded tools-img-shadow"
               />
             </div>
             <div className="">
               <div>
-                <Image
+                <img
                   src="/svg/tools/ai-face.svg"
                   alt="ai face icon"
-                  width={40}
-                  height={40}
+                  width="40px"
                   className="mb-6"
                 />
               </div>

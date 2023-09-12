@@ -1,7 +1,6 @@
-
-import Image from "next/image";
-
 import "../../styles/Footer.css";
+
+const logo = "/svg/global/footer-logo-svg.svg";
 
 const FooterPage = () => {
   return (
@@ -10,12 +9,11 @@ const FooterPage = () => {
         <div className="flex flex-col xl:flex-row items-center xl:items-start justify-center gap-10 px-8 md:px-20">
           <div className="mb-6">
             <a href="/" className="flex justify-center xl:justify-start">
-              <Image
-                src="/svg/global/footer-logo-svg.svg"
+              <img
+                src={logo}
                 alt="Shine Ranker Logo"
-                width={249}
-                height={62}
-                className="mr-2"
+                width="249px"
+                height="62px"
               />
             </a>
 

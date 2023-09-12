@@ -1,5 +1,9 @@
-
-import Image from "next/image";
+const key = "/images/features/key.png";
+const chat = "/images/features/chat.png";
+const support = "/images/features/support.png";
+const updates = "/images/features/updates.png";
+const vip = "/images/features/vip.png";
+const checklist = "/images/features/checklist.png";
 
 import "../styles/FeaturesAndBenefits.css";
 
@@ -21,11 +25,11 @@ const FeaturesAndBenefits = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 relative gap-y-8 md:gap-6 lg:px-32 xl:px-4 2xl:px-48 py-4">
           {/* First Row */}
           <div className="flex flex-col items-center md:items-start text-center md:text-start p-6 pb-10 feature-grid-cards">
-            <Image
-              src="/images/features/key.png"
+            <img
+              src={key}
               alt="Key Icon"
-              width={40}
-              height={40}
+              width="40px"
+              height="40px"
               className="mb-10 feature-grid-icon"
             />
             <p className="mb-10 feature-grid-title">
@@ -39,11 +43,11 @@ const FeaturesAndBenefits = () => {
           </div>
 
           <div className="flex flex-col items-center md:items-start text-center md:text-start p-6 pb-10 feature-grid-cards">
-            <Image
-              src="/images/features/chat.png"
-              alt="chat Icon"
-              width={40}
-              height={40}
+            <img
+              src={chat}
+              alt="Video Thumbnail"
+              width="40px"
+              height="40px"
               className="mb-10 feature-grid-icon"
             />
             <p className="mb-10 feature-grid-title">
@@ -57,11 +61,11 @@ const FeaturesAndBenefits = () => {
           </div>
 
           <div className="flex flex-col items-center md:items-start text-center md:text-start p-6 pb-10 feature-grid-cards">
-            <Image
-              src="/images/features/support.png"
-              alt="support Icon"
-              width={40}
-              height={40}
+            <img
+              src={support}
+              alt="Support Icon"
+              width="40px"
+              height="40px"
               className="mb-10 feature-grid-icon"
             />
             <p className="mb-10 feature-grid-title">Email and Chat Support</p>
@@ -74,11 +78,11 @@ const FeaturesAndBenefits = () => {
 
           {/* Second Row */}
           <div className="flex flex-col items-center md:items-start text-center md:text-start p-6 pb-10 feature-grid-cards">
-            <Image
-              src="/images/features/updates.png"
-              alt="update Icon"
-              width={40}
-              height={40}
+            <img
+              src={updates}
+              alt="Updates Icon"
+              width="40px"
+              height="40px"
               className="mb-10 feature-grid-icon"
             />
             <p className="mb-10 feature-grid-title">
@@ -92,11 +96,11 @@ const FeaturesAndBenefits = () => {
           </div>
 
           <div className="flex flex-col items-center md:items-start text-center md:text-start p-6 pb-10 feature-grid-cards">
-            <Image
-              src="/images/features/vip.png"
+            <img
+              src={vip}
               alt="VIP Icon"
-              width={40}
-              height={40}
+              width="40px"
+              height="40px"
               className="mb-10 feature-grid-icon"
             />
             <p className="mb-10 feature-grid-title">
@@ -110,11 +114,11 @@ const FeaturesAndBenefits = () => {
           </div>
 
           <div className="flex flex-col items-center md:items-start text-center md:text-start p-6 pb-10 feature-grid-cards">
-            <Image
-              src="/images/features/checklist.png"
+            <img
+              src={checklist}
               alt="Checklist Icon"
-              width={40}
-              height={40}
+              width="40px"
+              height="40px"
               className="mb-10 feature-grid-icon"
             />
             <p className="mb-10 feature-grid-title">
