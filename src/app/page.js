@@ -30,6 +30,12 @@ import "../styles/home.css";
 import "../styles/hometextanimation.css";
 import "../styles/pricing.css";
 
+import testImg from "/public/images/global/training-video.png";
+import secureHome from "/public/images/home/secure-home.png";
+import trustedHome from "/public/images/home/trusted-home.png";
+import refundHome from "/public/images/home/refund-home.png";
+
+
 
 const CredibilitySectionGrid = (ismobile) => {
   return (
@@ -697,7 +703,7 @@ export default function Home() {
             Watch the free training video and start earning money today even if you are not an expert
           </p>
           <Image
-            src="/images/global/training-video.png"
+            src={testImg}
             alt="Shine Ai Training Video thumbnail"
             width={480}
             height={270}
@@ -708,21 +714,21 @@ export default function Home() {
           </button>
           <div className="flex gap-x-4 sm:gap-x-10">
             <Image
-              src="/images/home/secure-home.png"
+              src={secureHome}
               alt="Secure SSL Encryption badge"
               width={111}
               height={28}
               className="how-to-use-shine-ai-badge"
             />
             <Image
-              src="/images/home/trusted-home.png"
+              src={trustedHome}
               alt="Trusted Seller badge"
               width={111}
               height={28}
               className="how-to-use-shine-ai-badge"
             />
             <Image
-              src="/images/home/refund-home.png"
+              src={refundHome}
               alt="Full Refund Guarantee badge"
               width={111}
               height={28}
