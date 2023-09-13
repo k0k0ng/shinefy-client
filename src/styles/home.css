@@ -853,7 +853,7 @@
 }
 
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 375px) {
   .hero-mini-header-text {
     font-size: 22px;
   }
@@ -867,6 +867,10 @@
   .hero-header-content,
   .home-section-header-content  {
     font-size: 15px;
+  }
+
+  .stunning-images-grid-img {
+    max-height: 80px;
   }
 }
 
