@@ -143,16 +143,6 @@ nav.sticky {
 }
 
 
-.swipeable-drawer-sign-up-btn {
-    display: none;
-    height: 3.5rem;
-    padding: 0%;
-    border: 1px solid #F1F1F1;
-    border-radius: 4px;
-    /* flex md:hidden h-14 p-0 rounded border */
-}
-
-
 @media screen and (min-width: 2400px) {
     .navContainer > div {
       margin: 0 calc((100vw - 1440px)/2);
@@ -179,12 +169,5 @@ nav.sticky {
         right: 5vw;
     }
 }
-
-@media screen and (max-width: 425px) {
-    .swipeable-drawer-sign-up-btn {
-        display: flex;
-    }
-}
-
 
 

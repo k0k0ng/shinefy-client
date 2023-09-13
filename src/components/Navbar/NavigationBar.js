@@ -403,7 +403,7 @@ const NavigationBar = () => {
             </List>
             
             <div className="flex flex-col px-5 pb-8 gap-y-5">
-                <div className="swipeable-drawer-sign-up-btn">
+                <div className="flex md:hidden h-14 p-0 rounded border">
                   <a 
                     href="https://app.shineranker.com/signup_free/"
                     rel="noreferrer"
