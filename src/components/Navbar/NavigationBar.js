@@ -144,39 +144,39 @@ const NavigationBar = () => {
                   }}
                   className="desktop-about-sub-menu"
                 >
-                  <MenuItem onClick={handleCloseDesktopAbout} className="desktop-legals-sub-menu" >
+                  <MenuItem onClick={handleCloseDesktopAbout} className="desktop-about-sub-menu-items" >
                     <a
                       href="/about"
-                      className="desktop-about-sub-menu-links"
+                      className="sub-menu-link"
                     >
                       ShineAi
                     </a>
                   </MenuItem>
-                  <MenuItem onClick={handleCloseDesktopAbout} className="desktop-legals-sub-menu" >
+                  <MenuItem onClick={handleCloseDesktopAbout} className="desktop-about-sub-menu-items" >
                     <a
                       href="/faq"
-                      className="desktop-about-sub-menu-links"
+                      className="sub-menu-link"
                     >
                       FAQs
                     </a>
                   </MenuItem>
-                  <MenuItem className="desktop-legals-sub-menu">
+                  <MenuItem className="desktop-about-sub-menu-items">
                     <Accordion 
                       expanded={expandLegal === 'legals'} 
                       onChange={handleExpandLegal('legals')}
-                      className="accordion-nav-link"  
+                      className="top-nav-accordion-link"  
                     >
                       <CustomAccordionSummary
                         expandIcon={<KeyboardArrowRightIcon />}
                         aria-controls="legals-bh-content"
                         id="legals-bh-header"
-                        className="desktop-about-sub-menu-links"
+                        className="sub-menu-link"
                       >
-                        <p className="desktop-legals-sub-menu-accordion-summary-text">
+                        <p className="top-nav-accordion">
                           Legals
                         </p>
                       </CustomAccordionSummary>
-                      <AccordionDetails className="desktop-legals-sub-menu-accordion-summary">
+                      <AccordionDetails className="top-nav-accordion-details">
                         <List className="">
                           <ListItem className="h-14 py-1 px-0">
                             <a href="/legal/terms-of-use" className="desktop-legals-sub-menu-accordion-link">
@@ -297,19 +297,19 @@ const NavigationBar = () => {
                 <Accordion 
                   expanded={expandAbout === 'about'} 
                   onChange={handleExpandAbout('about')}
-                  className="accordion-nav-link"  
+                  className="top-nav-accordion-link"  
                 >
                   <CustomAccordionSummary
                     expandIcon={<KeyboardArrowRightIcon />}
                     aria-controls="about-bh-content"
                     id="about-bh-header"
-                    className="desktop-about-sub-menu-links"
+                    className="sub-menu-link"
                   >
-                    <p className="desktop-legals-sub-menu-accordion-summary-text">
+                    <p className="top-nav-accordion">
                       About
                     </p>
                   </CustomAccordionSummary>
-                  <AccordionDetails className="desktop-legals-sub-menu-accordion-summary">
+                  <AccordionDetails className="top-nav-accordion-details">
                     <List className="">
                       <ListItem className="mobile-accordion-link-container">
                         <a href="/about" className="mobile-accordion-link">
@@ -327,7 +327,7 @@ const NavigationBar = () => {
                         <Accordion 
                           expanded={expandLegal === 'legals'} 
                           onChange={handleExpandLegal('legals')}
-                          className="accordion-nav-link"  
+                          className="top-nav-accordion-link"  
                         >
                           <CustomAccordionSummary
                             expandIcon={<KeyboardArrowRightIcon className="text-white"/>}
@@ -335,11 +335,11 @@ const NavigationBar = () => {
                             id="legals-bh-header"
                             className="mobile-legals-accordion-link"
                           >
-                            <p className="desktop-legals-sub-menu-accordion-summary-text">
+                            <p className="top-nav-accordion">
                               Legals
                             </p>
                           </CustomAccordionSummary>
-                          <AccordionDetails className="desktop-legals-sub-menu-accordion-summary">
+                          <AccordionDetails className="top-nav-accordion-details">
                             <List className="">
                               <ListItem className="mobile-accordion-link-container">
                                 <a href="/legal/terms-of-use" className="mobile-accordion-link">
@@ -380,24 +380,33 @@ const NavigationBar = () => {
                 </Accordion>
               </ListItem>
 
-              <ListItem className="desktop-about-sub-menu-links">
-                <a href="/tools" className="w-full h-full flex items-center text-start pl-4 rounded-md nav-link">
+              <ListItem className="mobile-sub-menu-link">
+                <a href="/tools" className="mobile-accordion-link">
                   Tools
                 </a>
               </ListItem>
 
-              <ListItem className="desktop-about-sub-menu-links">
-                <a href="/pricing" className="w-full h-full flex items-center text-start pl-4 rounded-md nav-link">
+              <ListItem className="mobile-sub-menu-link">
+                <a href="/pricing" className="mobile-accordion-link">
                   Pricing Plan
                 </a>
               </ListItem>
 
-              <ListItem className="desktop-about-sub-menu-links">
+              <ListItem className="mobile-sub-menu-link">
                 <a
                   href="/blogs"
-                  className="w-full h-full flex items-center text-start pl-4 rounded-md nav-link"
+                  className="mobile-accordion-link"
                 >
                   Blogs
+                </a>
+              </ListItem>
+
+              <ListItem className="mobile-sub-menu-link">
+                <a
+                  href="/"
+                  className="mobile-accordion-link"
+                >
+                  Book a Call
                 </a>
               </ListItem>
             </List>
@@ -408,7 +417,7 @@ const NavigationBar = () => {
                     href="https://app.shineranker.com/signup_free/"
                     rel="noreferrer"
                     target="_blank"
-                    className="w-full h-full flex items-center pl-5 rounded nav-link"
+                    className="mobile-accordion-link"
                   >
                     Sign up
                   </a>
@@ -418,7 +427,7 @@ const NavigationBar = () => {
                     href="https://app.shineranker.com/"
                     rel="noreferrer"
                     target="_blank" 
-                    className="w-full h-full flex items-center pl-5 rounded nav-link"
+                    className="mobile-accordion-link"
                   >
                     Log in
                   </a>
