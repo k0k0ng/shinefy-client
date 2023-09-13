@@ -174,7 +174,7 @@ const NavigationBar = () => {
                         id="legals-bh-header"
                         className="desktop-legals-sub-menu-accordion-summary"
                       >
-                        <p className="desktop-legals-sub-menu-accordion-summary-text">
+                        <p className="pl-6 desktop-legals-sub-menu-accordion-summary-text">
                           Legals
                         </p>
                       </CustomAccordionSummary>
