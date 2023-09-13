@@ -66,7 +66,7 @@ nav.sticky {
     background-color: transparent !important;
 }
 .desktop-legals-sub-menu-accordion-summary-text {
-    padding-left: 1.35rem;
+    /* padding-left: 1.35rem; */
     color: #F1F1F1;
 }
 .desktop-legals-sub-menu-accordion-summary-icon {
