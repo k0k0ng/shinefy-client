@@ -28,6 +28,10 @@ const CustomAccordionSummary = styled(AccordionSummary)(({ theme }) => ({
   '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
     transform: 'rotate(90deg)',
   },
+  '& .MuiAccordionSummary-expandIconWrapper': {
+    color: '#F1F1F1',
+    padding: '20px'
+  },
 }));
 
 const CustomButton = styled(Button)(({ theme }) => ({
@@ -163,7 +167,9 @@ const NavigationBar = () => {
                       className="desktop-legals-sub-menu-accordion"  
                     >
                       <CustomAccordionSummary
-                        expandIcon={<KeyboardArrowRightIcon className="text-white"/>}
+                        expandIcon={<KeyboardArrowRightIcon 
+                          // className="desktop-legals-sub-menu-accordion-summary-icon"
+                          />}
                         aria-controls="legals-bh-content"
                         id="legals-bh-header"
                         className="desktop-legals-sub-menu-accordion-summary"
@@ -172,7 +178,7 @@ const NavigationBar = () => {
                           Legals
                         </p>
                       </CustomAccordionSummary>
-                      <AccordionDetails className="p-0 pl-2 desktop-legals-sub-menu-accordion-summary">
+                      <AccordionDetails className="desktop-legals-sub-menu-accordion-summary">
                         <List className="">
                           <ListItem className="h-14 py-1 px-0">
                             <a href="/legal/terms-of-use" className="desktop-legals-sub-menu-accordion-link">
