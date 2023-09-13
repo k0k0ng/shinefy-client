@@ -70,7 +70,7 @@ nav.sticky {
 .desktop-legals-sub-menu-accordion {
     /* width: 100%; */
     box-shadow: none !important;
-    border-radius: 0px;
+    border-radius: 4px !important;
     background-color: transparent !important;
 }
 .desktop-legals-sub-menu-accordion-summary {
