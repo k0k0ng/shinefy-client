@@ -164,7 +164,7 @@ const NavigationBar = () => {
                     <Accordion 
                       expanded={expandLegal === 'legals'} 
                       onChange={handleExpandLegal('legals')}
-                      className="desktop-legals-sub-menu-accordion"  
+                      className="accordion-nav-link"  
                     >
                       <CustomAccordionSummary
                         expandIcon={<KeyboardArrowRightIcon />}
@@ -297,7 +297,7 @@ const NavigationBar = () => {
                 <Accordion 
                   expanded={expandAbout === 'about'} 
                   onChange={handleExpandAbout('about')}
-                  className="accordion-item desktop-legals-sub-menu-accordion"  
+                  className="accordion-nav-link"  
                 >
                   <CustomAccordionSummary
                     expandIcon={<KeyboardArrowRightIcon />}
@@ -311,29 +311,29 @@ const NavigationBar = () => {
                   </CustomAccordionSummary>
                   <AccordionDetails className="desktop-legals-sub-menu-accordion-summary">
                     <List className="">
-                      <ListItem>
-                        <a href="/about" className="nav-link">
+                      <ListItem className="p-0">
+                        <a href="/about" className="mobile-nav-link">
                           shineAi.tools
                         </a>
                       </ListItem>
 
-                      <ListItem>
-                        <a href="/faq" className="nav-link">
+                      <ListItem className="p-0">
+                        <a href="/faq" className="mobile-nav-link">
                           FAQs
                         </a>
                       </ListItem>
 
-                      <ListItem className="min-h-14 py-1 px-0">
+                      <ListItem className="p-0">
                         <Accordion 
                           expanded={expandLegal === 'legals'} 
                           onChange={handleExpandLegal('legals')}
-                          className="accordion-item desktop-legals-sub-menu-accordion"  
+                          className="accordion-nav-link"  
                         >
                           <CustomAccordionSummary
                             expandIcon={<KeyboardArrowRightIcon className="text-white"/>}
                             aria-controls="legals-bh-content"
                             id="legals-bh-header"
-                            className="desktop-about-sub-menu-links"
+                            className="mobile-legals-accordion-link"
                           >
                             <p className="desktop-legals-sub-menu-accordion-summary-text">
                               Legals
