@@ -66,7 +66,9 @@ nav.sticky {
     background-color: transparent !important;
 }
 .desktop-legals-sub-menu-accordion-summary-text {
+    /* Changed padding-left to 0.5 Heroku version */
     /* padding-left: 1.35rem; */
+    padding-left: 0.5rem;
     color: #F1F1F1;
 }
 .desktop-legals-sub-menu-accordion-summary-icon {
