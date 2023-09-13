@@ -129,7 +129,7 @@ nav.sticky {
     align-items: center;
     text-align: start;
     color: #F1F1F1;
-    padding: 0px 1rem 0px 1rem;
+    /* padding: 0px 1rem 0px 1rem; */
     border-radius: 4px;
 
     box-shadow: none;

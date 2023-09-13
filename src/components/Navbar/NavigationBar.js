@@ -311,13 +311,13 @@ const NavigationBar = () => {
                   </CustomAccordionSummary>
                   <AccordionDetails className="desktop-legals-sub-menu-accordion-summary">
                     <List className="">
-                      <ListItem className="h-14 py-1 px-0">
+                      <ListItem>
                         <a href="/about" className="nav-link">
                           shineAi.tools
                         </a>
                       </ListItem>
 
-                      <ListItem className="h-14 py-1 px-0">
+                      <ListItem>
                         <a href="/faq" className="nav-link">
                           FAQs
                         </a>
@@ -327,45 +327,46 @@ const NavigationBar = () => {
                         <Accordion 
                           expanded={expandLegal === 'legals'} 
                           onChange={handleExpandLegal('legals')}
-                          className="accordion-item"  
+                          className="accordion-item desktop-legals-sub-menu-accordion"  
                         >
                           <CustomAccordionSummary
                             expandIcon={<KeyboardArrowRightIcon className="text-white"/>}
                             aria-controls="legals-bh-content"
                             id="legals-bh-header"
+                            className="desktop-about-sub-menu-links"
                           >
-                            <p>
+                            <p className="desktop-legals-sub-menu-accordion-summary-text">
                               Legals
                             </p>
                           </CustomAccordionSummary>
-                          <AccordionDetails className="p-0 pl-2">
+                          <AccordionDetails className="desktop-legals-sub-menu-accordion-summary">
                             <List className="">
-                              <ListItem className="h-14 py-1 px-0">
-                                <a href="/legal/terms-of-use" className="w-full h-full flex items-center text-start px-5 rounded-md nav-link">
+                              <ListItem>
+                                <a href="/legal/terms-of-use" className="nav-link">
                                   Term of Use
                                 </a>
                               </ListItem>
 
-                              <ListItem className="h-14 py-1 px-0">
-                                <a href="/legal/refund" className="w-full h-full flex items-center text-start px-5 rounded-md nav-link">
+                              <ListItem>
+                                <a href="/legal/refund" className="nav-link">
                                   Refund and Cancelation
                                 </a>
                               </ListItem>
 
-                              <ListItem className="h-14 py-1 px-0">
-                                <a href="/legal/earnings-disclaimer" className="w-full h-full flex items-center text-start px-5 rounded-md nav-link">
+                              <ListItem>
+                                <a href="/legal/earnings-disclaimer" className="nav-link">
                                   Earnings Disclaimer
                                 </a>
                               </ListItem>
 
-                              <ListItem className="h-14 py-1 px-0">
-                                <a href="/legal/affiliate-promotions" className="w-full h-full flex items-center text-start px-5 rounded-md nav-link">
+                              <ListItem>
+                                <a href="/legal/affiliate-promotions" className="nav-link">
                                   Affiliations Promotions
                                 </a>
                               </ListItem>
 
-                              <ListItem className="h-14 py-1 px-0">
-                                <a href="/legal/facebook-disclaimer" className="w-full h-full flex items-center text-start px-5 rounded-md nav-link">
+                              <ListItem>
+                                <a href="/legal/facebook-disclaimer" className="nav-link">
                                   Facebook Disclaimer
                                 </a>
                               </ListItem>
@@ -379,19 +380,19 @@ const NavigationBar = () => {
                 </Accordion>
               </ListItem>
 
-              <ListItem className="h-14 py-1">
+              <ListItem className="desktop-about-sub-menu-links">
                 <a href="/tools" className="w-full h-full flex items-center text-start pl-4 rounded-md nav-link">
                   Tools
                 </a>
               </ListItem>
 
-              <ListItem className="h-14 py-1">
+              <ListItem className="desktop-about-sub-menu-links">
                 <a href="/pricing" className="w-full h-full flex items-center text-start pl-4 rounded-md nav-link">
                   Pricing Plan
                 </a>
               </ListItem>
 
-              <ListItem className="h-14 py-1">
+              <ListItem className="desktop-about-sub-menu-links">
                 <a
                   href="/blogs"
                   className="w-full h-full flex items-center text-start pl-4 rounded-md nav-link"
