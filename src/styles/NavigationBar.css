@@ -15,34 +15,29 @@ nav.sticky {
     background-color: rgba(79, 70, 228, 1);
 }
 
-.nav-link:hover {
-    background-color: #4D2FBB80;
-}
+
+
+
+
 
 .desktop-about-menu{
     background-color: transparent !important;
 }
-
-
 .accordion-item {
     color: #FFF;
     background-color: transparent;
     box-shadow: none;
     border: none;
 }
-
 .desktop-about-sub-menu > div > ul {
-    /* padding: 0px; */
     padding-top: 1.25rem;
     padding-top: 1.25rem;
     background-color: #8844DA;
     border: none;
 }
-
 .desktop-about-sub-menu > div > ul > li {
     padding: 0px;
 }
-
 .desktop-about-sub-menu-links {
     color: #f1f1f1;
     width: 100%;
@@ -53,18 +48,15 @@ nav.sticky {
 .desktop-about-sub-menu-links:hover {
     background-color: #4D2FBB80;
 }
-
 .desktop-legals-sub-menu{
     padding-left: 24px !important;
     padding-right: 24px !important;
-    /* border: 1px solid red; */
 }
 .desktop-legals-sub-menu:hover{
     background-color: transparent !important;
 }
 
 .desktop-legals-sub-menu-accordion {
-    /* width: 100%; */
     box-shadow: none !important;
     border-radius: 4px !important;
     background-color: transparent !important;
@@ -76,9 +68,6 @@ nav.sticky {
     background-color: transparent !important;
 }
 .desktop-legals-sub-menu-accordion-summary-text {
-    /* Changed padding-left to 0.5 Heroku version */
-    /* padding-left: 1.35rem; */
-    /* padding-left: 0.5rem; */
     color: #F1F1F1;
 }
 .desktop-legals-sub-menu-accordion-summary-icon {
@@ -102,6 +91,8 @@ nav.sticky {
 .desktop-legals-sub-menu-accordion-link:hover {
     background-color: #4D2FBB80;
 }
+
+
 
 .sign-in-btn {
     background-color: #7D35D4;
@@ -129,6 +120,26 @@ nav.sticky {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
   }
+
+
+.nav-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    color: #F1F1F1;
+    padding: 0px 1rem 0px 1rem;
+    border-radius: 4px;
+
+    box-shadow: none;
+    border-radius: 4px;
+    background-color: transparent;
+}
+.nav-link:hover {
+    background-color: #4D2FBB80;
+}
+
 @media screen and (min-width: 2400px) {
     .navContainer > div {
       margin: 0 calc((100vw - 1440px)/2);

@@ -167,9 +167,7 @@ const NavigationBar = () => {
                       className="desktop-legals-sub-menu-accordion"  
                     >
                       <CustomAccordionSummary
-                        expandIcon={<KeyboardArrowRightIcon 
-                          // className="desktop-legals-sub-menu-accordion-summary-icon"
-                          />}
+                        expandIcon={<KeyboardArrowRightIcon />}
                         aria-controls="legals-bh-content"
                         id="legals-bh-header"
                         className="desktop-about-sub-menu-links"
@@ -299,28 +297,28 @@ const NavigationBar = () => {
                 <Accordion 
                   expanded={expandAbout === 'about'} 
                   onChange={handleExpandAbout('about')}
-                  className="accordion-item"  
-
+                  className="accordion-item desktop-legals-sub-menu-accordion"  
                 >
                   <CustomAccordionSummary
-                    expandIcon={<KeyboardArrowRightIcon className="text-white"/>}
+                    expandIcon={<KeyboardArrowRightIcon />}
                     aria-controls="about-bh-content"
                     id="about-bh-header"
+                    className="desktop-about-sub-menu-links"
                   >
-                    <p>
+                    <p className="desktop-legals-sub-menu-accordion-summary-text">
                       About
                     </p>
                   </CustomAccordionSummary>
-                  <AccordionDetails className="p-0 pl-2">
+                  <AccordionDetails className="desktop-legals-sub-menu-accordion-summary">
                     <List className="">
                       <ListItem className="h-14 py-1 px-0">
-                        <a href="/about" className="w-full h-full flex items-center text-start pl-4 rounded-md nav-link">
+                        <a href="/about" className="nav-link">
                           shineAi.tools
                         </a>
                       </ListItem>
 
                       <ListItem className="h-14 py-1 px-0">
-                        <a href="/faq" className="w-full h-full flex items-center text-start pl-4 rounded-md nav-link">
+                        <a href="/faq" className="nav-link">
                           FAQs
                         </a>
                       </ListItem>
