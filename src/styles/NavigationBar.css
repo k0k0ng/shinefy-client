@@ -25,6 +25,14 @@ nav.sticky {
     display: none;
 }
 
+.top-nav-accordion {
+    color: #F1F1F1;
+    font-family: Karla;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 .top-nav-accordion-link {
     background-color: transparent !important;
@@ -34,6 +42,11 @@ nav.sticky {
 
 .top-nav-accordion-summary-text {
     color: #F1F1F1;
+    font-family: Karla;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .top-nav-accordion-details {
@@ -50,6 +63,11 @@ nav.sticky {
     color: #f1f1f1;
     width: 100%;
     max-height: 50px;
+    font-family: Karla;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     padding: 12px 20px !important;
     border-radius: 4px !important;
 }
@@ -100,6 +118,11 @@ nav.sticky {
     align-items: center;
     text-align: start;
     color: #F1F1F1;
+    font-family: Karla;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     padding: 0px 1rem 0px 1rem;
     border-radius: 4px;
 
