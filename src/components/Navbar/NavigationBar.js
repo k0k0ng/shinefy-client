@@ -311,19 +311,19 @@ const NavigationBar = () => {
                   </CustomAccordionSummary>
                   <AccordionDetails className="desktop-legals-sub-menu-accordion-summary">
                     <List className="">
-                      <ListItem className="p-0">
-                        <a href="/about" className="mobile-nav-link">
+                      <ListItem className="mobile-accordion-link-container">
+                        <a href="/about" className="mobile-accordion-link">
                           shineAi.tools
                         </a>
                       </ListItem>
 
-                      <ListItem className="p-0">
-                        <a href="/faq" className="mobile-nav-link">
+                      <ListItem className="mobile-accordion-link-container">
+                        <a href="/faq" className="mobile-accordion-link">
                           FAQs
                         </a>
                       </ListItem>
 
-                      <ListItem className="p-0">
+                      <ListItem className="mobile-accordion-link-container">
                         <Accordion 
                           expanded={expandLegal === 'legals'} 
                           onChange={handleExpandLegal('legals')}
@@ -341,32 +341,32 @@ const NavigationBar = () => {
                           </CustomAccordionSummary>
                           <AccordionDetails className="desktop-legals-sub-menu-accordion-summary">
                             <List className="">
-                              <ListItem>
-                                <a href="/legal/terms-of-use" className="nav-link">
+                              <ListItem className="mobile-accordion-link-container">
+                                <a href="/legal/terms-of-use" className="mobile-accordion-link">
                                   Term of Use
                                 </a>
                               </ListItem>
 
-                              <ListItem>
-                                <a href="/legal/refund" className="nav-link">
+                              <ListItem className="mobile-accordion-link-container">
+                                <a href="/legal/refund" className="mobile-accordion-link">
                                   Refund and Cancelation
                                 </a>
                               </ListItem>
 
-                              <ListItem>
-                                <a href="/legal/earnings-disclaimer" className="nav-link">
+                              <ListItem className="mobile-accordion-link-container">
+                                <a href="/legal/earnings-disclaimer" className="mobile-accordion-link">
                                   Earnings Disclaimer
                                 </a>
                               </ListItem>
 
-                              <ListItem>
-                                <a href="/legal/affiliate-promotions" className="nav-link">
+                              <ListItem className="mobile-accordion-link-container">
+                                <a href="/legal/affiliate-promotions" className="mobile-accordion-link">
                                   Affiliations Promotions
                                 </a>
                               </ListItem>
 
-                              <ListItem>
-                                <a href="/legal/facebook-disclaimer" className="nav-link">
+                              <ListItem className="mobile-accordion-link-container">
+                                <a href="/legal/facebook-disclaimer" className="mobile-accordion-link">
                                   Facebook Disclaimer
                                 </a>
                               </ListItem>
