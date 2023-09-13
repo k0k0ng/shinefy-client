@@ -47,12 +47,8 @@ nav.sticky {
     color: #f1f1f1;
     width: 100%;
     max-height: 50px;
-    padding: 12px 20px;
-
-    border-radius: 4px;
-    /* padding: 12px 1.35rem; */
-
-    /* border: 1px solid red; */
+    padding: 12px 20px !important;
+    border-radius: 4px !important;
 }
 .desktop-about-sub-menu-links:hover {
     background-color: #4D2FBB80;
@@ -96,7 +92,7 @@ nav.sticky {
     align-items: center;
     text-align: start;
     color: #F1F1F1;
-    padding: 0px 3rem 0px 2.5rem;
+    padding: 0px 1rem 0px 1rem;
     border-radius: 4px;
 
     box-shadow: none;
