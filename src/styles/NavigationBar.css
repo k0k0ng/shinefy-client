@@ -68,12 +68,13 @@ nav.sticky {
 
 .desktop-legals-sub-menu-accordion {
     /* width: 100%; */
-    box-shadow: none;
+    box-shadow: none !important;
     border-radius: 0px;
     background-color: transparent !important;
 }
 .desktop-legals-sub-menu-accordion-summary {
     padding: 0px; 
+    box-shadow: none !important;
     background-color: transparent !important;
 }
 .desktop-legals-sub-menu-accordion-summary-text {
