@@ -402,8 +402,8 @@ const NavigationBar = () => {
               </ListItem>
             </List>
             
-            <List className="flex flex-col px-5 pb-8 gap-y-5">
-                <ListItem className="swipeable-drawer-sign-up-btn">
+            <div className="flex flex-col px-5 pb-8 gap-y-5">
+                <div className="swipeable-drawer-sign-up-btn">
                   <a 
                     href="https://app.shineranker.com/signup_free/"
                     rel="noreferrer"
@@ -412,8 +412,8 @@ const NavigationBar = () => {
                   >
                     Sign up
                   </a>
-                </ListItem>
-                <ListItem className="flex md:hidden h-14 p-0 rounded border">
+                </div>
+                <div className="flex md:hidden h-14 p-0 rounded border">
                   <a 
                     href="https://app.shineranker.com/"
                     rel="noreferrer"
@@ -422,15 +422,14 @@ const NavigationBar = () => {
                   >
                     Log in
                   </a>
-                </ListItem>
+                </div>
 
-                <ListItem onClick={toggleDrawer(false)} className="justify-center mt-2 h-14">
+                <div onClick={toggleDrawer(false)} className="flex flex-row items-center justify-center mt-2 h-14">
                   <button className="rounded-full p-2 pl-2.5 border border-2">
                     <KeyboardDoubleArrowRightIcon />
                   </button>
-                </ListItem>
-
-            </List>
+                </div>
+            </div>
           </Box>
         </SwipeableDrawer>
         
