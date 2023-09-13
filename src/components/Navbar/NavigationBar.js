@@ -144,7 +144,7 @@ const NavigationBar = () => {
                   }}
                   className="desktop-about-sub-menu"
                 >
-                  <MenuItem onClick={handleCloseDesktopAbout} >
+                  <MenuItem onClick={handleCloseDesktopAbout} className="desktop-legals-sub-menu" >
                     <a
                       href="/about"
                       className="desktop-about-sub-menu-links"
@@ -152,7 +152,7 @@ const NavigationBar = () => {
                       ShineAi
                     </a>
                   </MenuItem>
-                  <MenuItem onClick={handleCloseDesktopAbout} >
+                  <MenuItem onClick={handleCloseDesktopAbout} className="desktop-legals-sub-menu" >
                     <a
                       href="/faq"
                       className="desktop-about-sub-menu-links"
@@ -172,9 +172,9 @@ const NavigationBar = () => {
                           />}
                         aria-controls="legals-bh-content"
                         id="legals-bh-header"
-                        className="desktop-legals-sub-menu-accordion-summary"
+                        className="desktop-about-sub-menu-links"
                       >
-                        <p className="pl-6 desktop-legals-sub-menu-accordion-summary-text">
+                        <p>
                           Legals
                         </p>
                       </CustomAccordionSummary>
