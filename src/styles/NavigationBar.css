@@ -34,6 +34,7 @@ nav.sticky {
 .desktop-about-sub-menu > div > ul {
     /* padding: 0px; */
     padding-top: 1.25rem;
+    padding-top: 1.25rem;
     background-color: #8844DA;
     border: none;
 }
@@ -63,7 +64,7 @@ nav.sticky {
     /* border: 1px solid red; */
 }
 .desktop-legals-sub-menu:hover{
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 .desktop-legals-sub-menu-accordion {
