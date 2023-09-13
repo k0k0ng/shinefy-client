@@ -526,11 +526,14 @@ const CustomTooltip = styled(({ className, ...props }) => (
 
 export default function Home() {
   let animationContainer = createRef();
+  let ourToolsAnimationContainer = createRef();
+  let footerAnimationContainer = createRef();
+
   const [selectedOption, setSelectedOption] = useState("monthly");
   const [selectedCreamOfCropCategory, setSelectedCreamOfCropCategory] = useState("Motivational");
 
   useEffect(() => {
-    const anim = lottie.loadAnimation({
+    const heroAnimation = lottie.loadAnimation({
       container: animationContainer.current,
       rerender: "svg",
       loop: true,
@@ -538,7 +541,27 @@ export default function Home() {
       path: "/assets/hero-banner-shine-ai-flying.json",
     });
 
-    return () => anim.destroy();
+    const ourToolsAnimation = lottie.loadAnimation({
+      container: ourToolsAnimationContainer.current,
+      rerender: "svg",
+      loop: true,
+      autoplay: true,
+      path: "/assets/shine-ai-robot-head.json",
+    });
+
+    const footerAnimation = lottie.loadAnimation({
+      container: footerAnimationContainer.current,
+      rerender: "svg",
+      loop: true,
+      autoplay: true,
+      path: "/assets/shine-ai-robot-with-dialog.json",
+    });
+
+    return () => {
+      heroAnimation.destroy();
+      ourToolsAnimation.destroy();
+      footerAnimation.destroy();
+    };
   }, [animationContainer]);
 
   const handleOptionChange = (option) => {
@@ -753,10 +776,9 @@ export default function Home() {
 
           <div className="flex flex-col flex-col-reverse lg:flex-row justify-center lg:gap-16">
             <div className="flex flex-col">
-              <img
-                src="/images/home/bouncing-robot-head.png"
-                alt="Shine Ai Bouncing Robot Head"
-                className="z-10 self-center lg:ml-6 our-tools-left-content-ai-image"
+              <div
+                className="mr-[-3rem]"
+                ref={ourToolsAnimationContainer}
               />
               <div className="flex flex-col items-center md:items-start 2xl:ml-12 pt-44 lg:pt-60 pb-14 md:pb-10 px-5 md:px-10 our-tools-left-content-card">
                 <p className="w-full mb-5 text-center md:text-start home-card-header-small">Quality creations for content</p>
@@ -2015,15 +2037,12 @@ export default function Home() {
       {/* *** Join Us section *** */}
       <section className="join-us-section-container">
         <div className="flex flex-row justify-center join-us-content-container">
-          <img
-            src="/images/home/join-us-image.png"
-            alt="shineAi robot saying Create powerful content"
-            width={550}
-            height={550}
-            className="hidden lg:block self-center mr-[-5rem]"
+          <div
+            className="max-w-[550px] hidden lg:block self-center mr-[-6rem] z-10"
+            ref={footerAnimationContainer}
           />
-          
-          <div className="flex items-center">
+
+          <div className="flex items-center z-20">
             <div className="p-8 pb-12 md:pb-10 join-us-right-container w-full lg:w-96">
               <p className="mb-5 home-card-header-small">Join us today!</p>
               <h3 className="mb-5 home-section-header-big">
