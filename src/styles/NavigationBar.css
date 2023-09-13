@@ -76,6 +76,7 @@ nav.sticky {
 .desktop-legals-sub-menu-accordion-summary {
     padding: 0px; 
     box-shadow: none !important;
+    border-radius: 4px !important;
     background-color: transparent !important;
 }
 .desktop-legals-sub-menu-accordion-summary-text {
