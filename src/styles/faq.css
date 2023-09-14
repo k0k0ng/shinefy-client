@@ -9,6 +9,13 @@
   background-color: #100826 !important;
   padding-left: 20px !important;
   border-radius: 25px !important;
+
+  margin-bottom: 0.75rem !important;
+}
+
+.faq-accordion-details {
+  padding-top: 1.5rem !important;
+  padding-bottom: 2.5rem !important;
 }
 
 .faq-accordion .question {

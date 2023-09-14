@@ -54,7 +54,7 @@ const FAQ = () => {
 
         {/* First Column */}
         <div className="flex flex-col lg:p-8 mt-8 md:mt-14">
-          <Accordion className="mb-3 faq-accordion">
+          <Accordion className="faq-accordion">
             <AccordionSummary
               expandIcon={
                 <div className="expand-icon-container">
@@ -68,7 +68,7 @@ const FAQ = () => {
               <p>What is Shine Ranker?</p>
             </AccordionSummary>
               <hr className="ml-[1.75%] jus max-w-[95%]"/>
-            <AccordionDetails className="pt-6 pb-10">
+            <AccordionDetails className="faq-accordion-details">
               
               <p className="max-w-[96%] global-header-text-3">
                 Shine Ranker is an AI-driven tool designed to boost SEO efforts, aiding businessesm, marketers, and website owners in improving online
@@ -82,7 +82,7 @@ const FAQ = () => {
           </Accordion>
 
 
-          <Accordion className="mb-3 faq-accordion">
+          <Accordion className="faq-accordion">
             <AccordionSummary
               expandIcon={
                 <div className="expand-icon-container">
@@ -96,7 +96,7 @@ const FAQ = () => {
               <p>What are the features of shineAi Tools?</p>
             </AccordionSummary>
               <hr className="ml-[1.75%] jus max-w-[95%]"/>
-            <AccordionDetails className="pt-6 pb-10">
+            <AccordionDetails className="faq-accordion-details">
               <ul className="max-w-[96%] ml-7 mb-6 faq-ul">
                 <li className="mb-6">
                   <p className="max-w-[96%] global-header-text-3">
@@ -127,7 +127,7 @@ const FAQ = () => {
             </AccordionDetails>
           </Accordion>
 
-          <Accordion className="mb-3 faq-accordion">
+          <Accordion className="faq-accordion">
             <AccordionSummary
               expandIcon={
                 <div className="expand-icon-container">
@@ -141,7 +141,7 @@ const FAQ = () => {
               <p>How much does shineAi cost?</p>
             </AccordionSummary>
               <hr className="ml-[1.75%] jus max-w-[95%]"/>
-            <AccordionDetails className="pt-6 pb-10">
+            <AccordionDetails className="faq-accordion-details">
               <p className="max-w-[96%] global-header-text-3">
                 Most affordable plan is $59 per month with access to all features and tools within 30 days. Plan is auto-renewed 
                 until subscription is canceled by the user. User can switch from initial paid subscription to another subscription, but 
@@ -150,7 +150,7 @@ const FAQ = () => {
             </AccordionDetails>
           </Accordion>
           
-          <Accordion className="mb-3 faq-accordion">
+          <Accordion className="faq-accordion">
             <AccordionSummary
               expandIcon={
                 <div className="expand-icon-container">
@@ -164,7 +164,7 @@ const FAQ = () => {
               <p>What are the benefits of shineAi</p>
             </AccordionSummary>
               <hr className="ml-[1.75%] jus max-w-[95%]"/>
-            <AccordionDetails className="pt-6 pb-10">
+            <AccordionDetails className="faq-accordion-details">
               <p className="max-w-[96%] global-header-text-3">
                 Comprehensive SEO Tool, AI Driven Data, User-friendly interface, Time saving and Scalable solutions.
                 <br/>
@@ -174,7 +174,7 @@ const FAQ = () => {
             </AccordionDetails>
           </Accordion>
 
-          <Accordion className="mb-3 faq-accordion">
+          <Accordion className="faq-accordion">
             <AccordionSummary
               expandIcon={
                 <div className="expand-icon-container">
@@ -188,7 +188,7 @@ const FAQ = () => {
               <p>How to create a shine Ai account?</p>
             </AccordionSummary>
               <hr className="ml-[1.75%] jus max-w-[95%]"/>
-            <AccordionDetails className="pt-6 pb-10">
+            <AccordionDetails className="faq-accordion-details">
               <p className="max-w-[96%] global-header-text-3">
                 Go to the top menu of this page and click <span className="global-text-to-light-green">Sign Up</span> to register for a free trial, or simple click <a href="/signup">this link</a>.
               </p>
@@ -196,7 +196,7 @@ const FAQ = () => {
           </Accordion>
           
 
-          <Accordion className="mb-3 faq-accordion">
+          <Accordion className="faq-accordion">
             <AccordionSummary
               expandIcon={
                 <div className="expand-icon-container">
@@ -210,7 +210,7 @@ const FAQ = () => {
               <p>How to use shineAi?</p>
             </AccordionSummary>
               <hr className="ml-[1.75%] jus max-w-[95%]"/>
-            <AccordionDetails className="pt-6 pb-10">
+            <AccordionDetails className="faq-accordion-details">
               <p className="max-w-[96%] global-header-text-3">
                 After creating an account. Log in using your registered email and password. Familiarize yourself with the dashboard. On the left 
                 panel, Go to AI Tools, to see all featured tools to create your AI content.
@@ -218,7 +218,7 @@ const FAQ = () => {
             </AccordionDetails>
           </Accordion>
 
-          <Accordion className="mb-3 faq-accordion">
+          <Accordion className="faq-accordion">
             <AccordionSummary
               expandIcon={
                 <div className="expand-icon-container">
@@ -232,7 +232,7 @@ const FAQ = () => {
               <p>Is there a free trial for shineAi?</p>
             </AccordionSummary>
               <hr className="ml-[1.75%] jus max-w-[95%]"/>
-            <AccordionDetails className="pt-6 pb-10">
+            <AccordionDetails className="faq-accordion-details">
               <p className="max-w-[96%] global-header-text-3">
                 Yes, Shine Ranker offers a free plan with limited access to its features, which is ideal for testing the new tool 
                 before committing to a paid plan.
