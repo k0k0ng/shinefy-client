@@ -1,3 +1,13 @@
+
+.footer-tagline {
+    color: var(--white, #FFF);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 21.6px */
+}
+
 .footer-heading-title {
     color: var(--white, #FFF);
     font-family: Karla;
@@ -7,34 +17,16 @@
     line-height: 120%; /* 21.6px */
 }
 
-.footer-tagline {
-    color: var(--white, #FFF);
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%; /* 21.6px */
-}
-
-.footer-legal-link {
-    color: rgba(255, 255, 255, 0.60);
-    font-family: Karla;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.footer-divider {
-    border-top: 1px solid rgba(255, 255, 255, 0.60);
-    width: 100%;
-}
-
-.footer-copyright {
-    color: #FFF;
+.footer-links-text {
+    color: var(--Almost-White, #FFF);
     font-family: Karla;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 120%;
+
+    opacity: 0.8;
+}
+.footer-links-text:hover {
+    opacity: 1;
 }

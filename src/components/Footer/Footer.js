@@ -1,214 +1,206 @@
 import "../../styles/Footer.css";
+import SocialLinksButtons from "../SocialLinksButtons";
 
-const logo = "/svg/global/footer-logo-svg.svg";
+const logo = "/svg/global/footer-shinefy-logo-2.svg";
 
 const FooterPage = () => {
   return (
-    <footer className="bg-[#4D2FBB]">
-      <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8 xl:text-left">
-        <div className="flex flex-col xl:flex-row items-center xl:items-start justify-center gap-10 px-8 md:px-20">
+    <footer className="px-[5%] lg:px-[10%] xl:px-[15%] 2xl:px-[20%] bg-[#4D2FBB] ">
+      <div className="py-16 xl:py-[5.6rem]">
+        <div className="flex flex-col xl:flex-row items-center xl:items-start justify-center gap-10 2xl:px-20">
           <div className="mb-6">
-            <a href="/" className="flex justify-center xl:justify-start">
+            <a href="/" className="flex justify-center xl:justify-start mb-6">
               <img
-                src={logo}
+                src="/images/global/footer-shinefy-logo.png"
                 alt="Shine Ranker Logo"
-                width="249px"
-                height="62px"
+                width="270px"
+                height="63px"
               />
             </a>
 
-            <div className="">
-              <p className="footer-tagline mt-4 flex justify-center xl:justify-start">
-                Earn money with
-              </p>
+            <p className="flex justify-center xl:justify-start mb-4 pl-2 footer-tagline">
+              Earn money with Shinefy Tools
+            </p>
 
-              <p className="footer-tagline mt-2 flex justify-center xl:justify-start">
-                Shine Ranker Tools
-              </p>
+            <div className="flex justify-center pl-2 gap-2 md:gap-3">
+              <SocialLinksButtons />
             </div>
 
-            <ul className="mt-8 flex justify-center xl:justify-start gap-6">
-              <li>
-                <a
-                  href="https://www.facebook.com/shineranker"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="text-white-700 transition hover:opacity-75"
-                >
-                  <span className="sr-only">Facebook</span>
-                  <i className="fa-brands fa-facebook fa-2xl text-white"></i>
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="https://www.instagram.com/shineranker/"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="text-white-700 transition hover:opacity-75"
-                >
-                  <span className="sr-only">Instagram</span>
-                  <i className="fa-brands fa-instagram fa-2xl text-white"></i>
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="https://discord.gg/BnfsXW2Jma"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="text-white-700 transition hover:opacity-75"
-                >
-                  <span className="sr-only">Discord</span>
-                  <i className="fa-brands fa-discord fa-2xl text-white"></i>
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="https://www.youtube.com/@shinerankerofficial"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="text-white-700 transition hover:opacity-75"
-                >
-                  <span className="sr-only">Youtube</span>
-                  <i className="fa-brands fa-youtube fa-2xl text-white"></i>
-                </a>
-              </li>
-            </ul>
           </div>
 
           {/* ALL FOOTER LINKS */}
-          <div className="w-full xl:w-4/5 flex flex-col md:flex-row justify-evenly gap-16 md:gap-10 xl:gap-8">
+          <div className="w-full xl:w-4/5 flex flex-col md:flex-row justify-evenly pt-2 gap-10">
 
-            <ul className="flex flex-col flex-wrap gap-6 text-center xl:text-left">
-              <li>
+            <ul className="flex flex-col text-center md:text-left">
+              <li className="mb-4">
+                <p className="footer-heading-title">Product</p>
+              </li>
+
+              <li className="mb-1">
+                <a
+                  href="/tools"
+                  className="footer-links-text"
+                >
+                  Website Scraper Tool
+                </a>
+              </li>
+
+              <li className="mb-1">
+                <a
+                  href="/tools"
+                  className="footer-links-text"
+                >
+                  Video Generation Tool
+                </a>
+              </li>
+
+              <li className="mb-1">
+                <a
+                  href="/tools"
+                  className="footer-links-text"
+                >
+                  AI Text to Image Tool
+                </a>
+              </li>
+
+              <li className="mb-1">
+                <a
+                  href="/tools"
+                  className="footer-links-text"
+                >
+                  AI Image to Image Tool
+                </a>
+              </li>
+            </ul>
+
+            <ul className="flex flex-col flex-wrap text-center md:text-left">
+              <li className="mb-4">
                 <h1 className="footer-heading-title">Legal</h1>
               </li>
 
-              <li>
+              <li className="mb-1">
                 <a
                   href="/legal/terms-of-use"
-                  className="text-white-700 transition hover:opacity-75"
+                  className="footer-links-text"
                 >
-                  <span className="text-gray-200">Terms of Use</span>
+                  Terms of Use
                 </a>
               </li>
 
-              <li>
+              <li className="mb-1">
                 <a
                   href="/legal/refund"
-                  className="text-white-700 transition hover:opacity-75"
+                  className="footer-links-text"
                 >
-                  <span className="text-gray-200">Refund & Cancelation</span>
+                  Refund & Cancelation
                 </a>
               </li>
 
-              <li>
+              <li className="mb-1">
                 <a
                   href="/legal/earnings-disclaimer"
-                  className="text-white-700 transition hover:opacity-75"
+                  className="footer-links-text"
                 >
-                  <span className="text-gray-200">Earnings Disclaimer</span>
+                  Earnings Disclaimer
                 </a>
               </li>
 
-              <li>
+              <li className="mb-1">
                 <a
                   href="/legal/facebook-disclaimer"
-                  className="text-white-700 transition hover:opacity-75"
+                  className="footer-links-text"
                 >
-                  <span className="text-gray-200">Facebook Disclaimer</span>
+                  Facebook Disclaimer
                 </a>
               </li>
 
-              <li>
+              <li className="mb-1">
                 <a
                   href="/legal/affiliate-promotions"
-                  className="text-white-700 transition hover:opacity-75"
+                  className="footer-links-text"
                 >
-                  <span className="text-gray-200">Affiliate Promotions</span>
+                  Affiliate Promotions
                 </a>
               </li>
             </ul>
 
-            <ul className="flex flex-col flex-wrap gap-6 text-center xl:text-left">
-              <li>
+            <ul className="flex flex-col flex-wrap text-center md:text-left">
+              <li className="mb-4">
                 <h1 className="footer-heading-title">About</h1>
               </li>
 
-              <li>
+              <li className="mb-1">
                 <a
                   href="/about"
-                  className="text-white-700 transition hover:opacity-75"
+                  className="footer-links-text"
                 >
-                  <span className="text-gray-200">Shine Ranker</span>
+                  Shinefy
                 </a>
               </li>
 
-              <li>
-                <a
-                  href="/tools"
-                  className="text-white-700 transition hover:opacity-75"
-                >
-                  <span className="text-gray-200">Tools</span>
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="/pricing"
-                  className="text-white-700 transition hover:opacity-75"
-                >
-                  <span className="text-gray-200">Pricing</span>
-                </a>
-              </li>
-
-              <li>
+              <li className="mb-1">
                 <a
                   href="/faq"
-                  className="text-white-700 transition hover:opacity-75"
+                  className="footer-links-text"
                 >
-                  <span className="text-gray-200">FAQ</span>
+                  FAQ
                 </a>
               </li>
+
+              <li className="mb-1">
+                <a
+                  href="/tools"
+                  className="footer-links-text"
+                >
+                  Tools
+                </a>
+              </li>
+
+              <li className="mb-1">
+                <a
+                  href="/pricing"
+                  className="footer-links-text"
+                >
+                  Pricing
+                </a>
+              </li>            
             </ul>
 
-            <ul className="flex flex-col flex-wrap gap-6 text-center xl:text-left">
-              <li>
+            <ul className="flex flex-col flex-wrap text-center md:text-left">
+              <li className="mb-4">
                 <h1 className="footer-heading-title">Support</h1>
               </li>
 
-              <li>
+              <li className="mb-1">
                 <a
                   href="https://discord.gg/BnfsXW2Jma"
-                  className="text-white-700 transition hover:opacity-75"
+                  className="footer-links-text"
                   rel="noreferrer"
                   target="_blank"
                 >
-                  <span className="text-gray-200">Discord Community</span>
+                  Discord Community
                 </a>
               </li>
 
-              <li>
+              <li className="mb-1">
                 <a
                   href="https://www.facebook.com/shineranker"
-                  className="text-white-700 transition hover:opacity-75"
+                  className="footer-links-text"
                   rel="noreferrer"
                   target="_blank"
                 >
-                  <span className="text-gray-200">Facebook Community</span>
+                  Facebook Community
                 </a>
               </li>
 
-              <li className="hidden">
+              <li className="">
                 <a
                   href="/"
-                  className="text-white-700 transition hover:opacity-75"
+                  className="footer-links-text"
                   rel="noreferrer"
                   target="_blank"
                 >
-                  <span className="text-gray-200">Contact Us</span>
+                  Contact Us
                 </a>
               </li>
             </ul>

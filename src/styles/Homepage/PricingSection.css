@@ -1,6 +1,4 @@
 
-
-/* *** Pricing Plan *** */
 .pricing-plan-header-bg {
   background-image: url("/images/global/background/pricing-section-bg.png");
   background-repeat: no-repeat;
@@ -20,7 +18,6 @@
   background-color: #121126;
   transition: box-shadow 0.3s;
 }
-
 
 .unactive-pricing-plan-cards-container:hover {
   box-shadow: 0px 0px 20px #8844da;
@@ -67,7 +64,6 @@
   line-height: 120%;
 }
 
-
 .active-pricing-plan-cards-container .pricing-plan-card-btn,
 .unactive-pricing-plan-cards-container .pricing-plan-card-btn {
   color: #FFF;
@@ -87,9 +83,6 @@
   background-color:#4D2FBB;
 }
 
-
-
-
 @media screen and (max-width: 425px) {
   .pricing-plan-third-card-container {
     position: relative;
@@ -108,5 +101,3 @@
     border-radius: 6px;
   }
 }
-
-/* ========================= */

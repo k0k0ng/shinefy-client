@@ -28,6 +28,7 @@ import { Autoplay } from 'swiper/modules';
 import "../styles/home.css";
 import "../styles/hometextanimation.css";
 import "../styles/pricing.css";
+import SocialLinksButtons from "@/components/SocialLinksButtons";
 
 
 const CredibilitySectionGrid = (ismobile) => {
@@ -1958,25 +1959,8 @@ export default function Home() {
                   Strong bonds make a team
                 </p>
             </div>
-            <div className="flex justify-center gap-2 md:gap-8">
-              <a href="https://www.youtube.com/@Realchasereiner" target="blank" className="self-center">
-                <div className="socials-youtube"></div>
-              </a>
-              <a href="" target="blank" className="self-center">
-                <div className="socials-tiktok"></div>
-              </a>
-              <a href="https://www.facebook.com/shineranker" target="blank" className="self-center">
-                <div className="socials-facebook"></div>
-              </a>
-              <a href="https://www.instagram.com/shineranker/" target="blank" className="self-center">
-                <div className="socials-instagram"></div>
-              </a>
-              <a href="https://discord.gg/RZFNgnYa" target="blank" className="self-center">
-                <div className="socials-discord"></div>
-              </a>
-              <a href="https://twitter.com/ShineRanker" target="blank" className="self-center">
-                <div className="socials-x1"></div>
-              </a>
+            <div className="flex justify-center gap-2 md:gap-6 xl:gap-8">
+              <SocialLinksButtons />
           </div>
         </div>
       </section>
