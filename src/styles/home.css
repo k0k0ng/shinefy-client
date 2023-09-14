@@ -137,18 +137,6 @@
 
 
 /* *** Hero section *** */
-.hero-section {
-  /* height: 100vh;
-  min-height: 850px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-color: #07061c;
-  background-image: url("/images/global/Rectangle.png");
-  box-shadow: inset 0px -100px 100px #07061c; */
-}
-
 .hero-container {
   height: 100%;
   margin: 0 20%;
@@ -296,10 +284,6 @@
   margin: 0 20%;
 }
 
-.how-to-use-shine-ai-badge {
-  /* width:111px;
-  height:28px; */
-}
 /* ================= */
 
 
@@ -683,9 +667,6 @@
 
 
 @media screen and (max-width: 1024px) {
-  .hero-section {
-    /* min-height: 800px; */
-  }
   .hero-container,
   .how-to-use-shine-ai-container {
     margin: 0 10%;
@@ -732,10 +713,6 @@
 
   .credibility-header-content {
     text-align: start;
-  }
-
-  .testimonial-carousel-container {
-    /* margin: 0px 5%; */
   }
 
   .join-us-content-container {
