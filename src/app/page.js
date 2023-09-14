@@ -7,6 +7,8 @@ import FooterPage from "@/components/Footer/Footer";
 import ToggleButton from "@/components/ToggleButton";
 import LimitedTimeOffer from "@/components/CTA/LimitedTimeOffer";
 
+import PricingSection from "@/components/HomepageSections/PricingSection";
+
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -95,7 +97,7 @@ const CredibilitySectionGrid = (ismobile) => {
 }
 
 
-const PricingPlansMobile = (selectedOption) => {
+const PricingPlansMobile = (selectedPricingPlan) => {
   const [expanded, setExpanded] = useState(false);
 
   const handleOpenClosePricingPlan = (panel) => (event, isExpanded) => {
@@ -109,12 +111,12 @@ const PricingPlansMobile = (selectedOption) => {
       <div className="pricing-plan-card-mobile">
         <div className="mb-6 pricing-plan-title">
           <h2 className="mb-8 pricing-plan-title-1">Spark Basic</h2>
-          {selectedOption === "monthly" ? (
+          {selectedPricingPlan === "monthly" ? (
             <h1 className="pricing-plan-title-2 mt-5">$59</h1>
           ) : (
             <h1 className="pricing-plan-title-2 mt-5">$600</h1>
           )}
-          {selectedOption === "monthly" ? (
+          {selectedPricingPlan === "monthly" ? (
             <p className="pricing-plan-title-3">per month</p>
           ) : (
             <p className="pricing-plan-title-3">per year</p>
@@ -241,12 +243,12 @@ const PricingPlansMobile = (selectedOption) => {
       <div className="pricing-plan-card-mobile">
         <div className="mb-6 pricing-plan-title">
           <h2 className="mb-8 pricing-plan-title-1">Flare Plus</h2>
-          {selectedOption === "monthly" ? (
+          {selectedPricingPlan === "monthly" ? (
             <h1 className="pricing-plan-title-2 mt-5">$112</h1>
           ) : (
             <h1 className="pricing-plan-title-2 mt-5">$1,140</h1>
           )}
-          {selectedOption === "monthly" ? (
+          {selectedPricingPlan === "monthly" ? (
             <p className="pricing-plan-title-3">per month</p>
           ) : (
             <p className="pricing-plan-title-3">per year</p>
@@ -375,12 +377,12 @@ const PricingPlansMobile = (selectedOption) => {
       <div className="pricing-plan-card-mobile">
         <div className="mb-6 pricing-plan-title">
           <h2 className="mb-8 pricing-plan-title-1">Shine Pro</h2>
-          {selectedOption === "monthly" ? (
+          {selectedPricingPlan === "monthly" ? (
             <h1 className="pricing-plan-title-2 mt-5">$219</h1>
           ) : (
             <h1 className="pricing-plan-title-2 mt-5">$2,208</h1>
           )}
-          {selectedOption === "monthly" ? (
+          {selectedPricingPlan === "monthly" ? (
             <p className="pricing-plan-title-3">per month</p>
           ) : (
             <p className="pricing-plan-title-3">per year</p>
@@ -529,7 +531,7 @@ export default function Home() {
   let ourToolsAnimationContainer = createRef();
   let footerAnimationContainer = createRef();
 
-  const [selectedOption, setSelectedOption] = useState("monthly");
+  
   const [selectedCreamOfCropCategory, setSelectedCreamOfCropCategory] = useState("Motivational");
 
   useEffect(() => {
@@ -564,21 +566,13 @@ export default function Home() {
     };
   }, [animationContainer]);
 
-  const handleOptionChange = (option) => {
-    setSelectedOption(option);
-  };
+  
 
-  const toPricingPage = () => {
-    console.log("To pricing page...")
-  }
-
-  const handleLogin = () => {
-    console.log("Login ...")
-  }
 
   const handleChangeCreamOfCropCategory = (event) => {
     setSelectedCreamOfCropCategory(event.target.value);
   };
+
 
   return (
     <>
@@ -777,7 +771,7 @@ export default function Home() {
           <div className="flex flex-col flex-col-reverse lg:flex-row justify-center lg:gap-16">
             <div className="flex flex-col">
               <div
-                className="mr-[-3rem]"
+                className="2xl:mr-[-3rem]"
                 ref={ourToolsAnimationContainer}
               />
               <div className="flex flex-col items-center md:items-start 2xl:ml-12 pt-44 lg:pt-60 pb-14 md:pb-10 px-5 md:px-10 our-tools-left-content-card">
@@ -872,9 +866,16 @@ export default function Home() {
         </div>
       </section>
         
+      
 
-      {/* Our pricing plan */}
-      <section>
+      {/* Pricing Plan V2 */}
+      <PricingSection />
+
+
+
+
+      {/* Our pricing plan V1 */}
+      {/* <section>
         <div className="pricing-plan-header-bg">
           <div className="flex flex-col items-center pt-16 lg:pt-48 pb-0 xl:pb-24 pricing-plan-header-container">
             <h3 className="mb-5 home-section-header-small">Our Pricing Plan</h3>
@@ -888,25 +889,25 @@ export default function Home() {
             </p>
             <div className="flex justify-center align-center mt-10 mb-0 xl:mb-10">
               <ToggleButton
-                selectedOption={selectedOption}
+                selectedPricingPlan={selectedPricingPlan}
                 onOptionChange={handleOptionChange}
               />
             </div>
           </div>
         </div>
 
-        {PricingPlansMobile(selectedOption)}
+        {PricingPlansMobile(selectedPricingPlan)}
 
         <div className="hidden xl:flex flex-col xl:flex-row justify-center items-center gap-10 pricing-plan-cards-container">
           <div className="pricing-plan-card">
             <div className="pricing-plan-title">
               <h2 className="mb-8 pricing-plan-title-1">Spark Basic</h2>
-              {selectedOption === "monthly" ? (
+              {selectedPricingPlan === "monthly" ? (
                 <h1 className="pricing-plan-title-2 mt-5">$59</h1>
               ) : (
                 <h1 className="pricing-plan-title-2 mt-5">$600</h1>
               )}
-              {selectedOption === "monthly" ? (
+              {selectedPricingPlan === "monthly" ? (
                 <p className="pricing-plan-title-3">per month</p>
               ) : (
                 <p className="pricing-plan-title-3">per year</p>
@@ -917,6 +918,8 @@ export default function Home() {
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-plan-checklist-text">5 Projects</p>
               </div>
+
+
               <div className="flex gap-2 mb-3">
                 <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
                 <p className="pricing-plan-checklist-text">
@@ -1013,12 +1016,12 @@ export default function Home() {
           <div className="pricing-plan-card">
             <div className="pricing-plan-title">
               <h2 className="mb-8 pricing-plan-title-1">Flare Plus</h2>
-              {selectedOption === "monthly" ? (
+              {selectedPricingPlan === "monthly" ? (
                 <h1 className="pricing-plan-title-2 mt-5">$112</h1>
               ) : (
                 <h1 className="pricing-plan-title-2 mt-5">$1,140</h1>
               )}
-              {selectedOption === "monthly" ? (
+              {selectedPricingPlan === "monthly" ? (
                 <p className="pricing-plan-title-3">per month</p>
               ) : (
                 <p className="pricing-plan-title-3">per year</p>
@@ -1125,12 +1128,12 @@ export default function Home() {
           <div className="pricing-plan-card">
             <div className="pricing-plan-title">
               <h2 className="mb-8 pricing-plan-title-1">Shine Pro</h2>
-              {selectedOption === "monthly" ? (
+              {selectedPricingPlan === "monthly" ? (
                 <h1 className="pricing-plan-title-2 mt-5">$219</h1>
               ) : (
                 <h1 className="pricing-plan-title-2 mt-5">$2,208</h1>
               )}
-              {selectedOption === "monthly" ? (
+              {selectedPricingPlan === "monthly" ? (
                 <p className="pricing-plan-title-3">per month</p>
               ) : (
                 <p className="pricing-plan-title-3">per year</p>
@@ -1234,7 +1237,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       
       
       {/* Cream of the Crop */}

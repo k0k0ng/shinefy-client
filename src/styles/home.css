@@ -343,20 +343,7 @@
 
 
 
-/* *** Pricing Plan *** */
-.pricing-plan-header-bg {
-  background-image: url("/images/global/background/pricing-section-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-  background-attachment: fixed;
-  flex-shrink: 0;
-}
 
-.pricing-plan-cards-container {
-  margin: -75px 20% 0 20%;
-}
-/* ========================= */
 
 
 
