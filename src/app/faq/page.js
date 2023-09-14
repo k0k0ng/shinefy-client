@@ -13,89 +13,9 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import "../../styles/faq.css";
 import "@/styles/components.contacts.css";
 
-// function Accordion({ items, buttonSelectedColor, contentSelectedColor }) {
-//   const [activeIndex, setActiveIndex] = useState(-1);
-//   const handleClick = (index) => {
-//     setActiveIndex(index === activeIndex ? -1 : index);
-//   };
-
-//   return (
-//     <div className="accordion">
-//       {items.map((item, index) => (
-//         <div key={item.title} className="accordion-item">
-//           <button
-//             className={`accordion-button-2 ${
-//               index === activeIndex ? "active" : ""
-//             }`}
-//             style={{
-//               backgroundColor: index === activeIndex ? buttonSelectedColor : "",
-//             }}
-//             onClick={() => handleClick(index)}
-//           >
-//             <span className="accordion-title">{item.title}</span>
-//             <span className="accordion-icon">
-//               {index === activeIndex ? (
-//                 <i className="fa-solid fa-minus"></i>
-//               ) : (
-//                 <i className="fa-solid fa-plus"></i>
-//               )}
-//             </span>
-//           </button>
-//           {index === activeIndex && (
-//             <p
-//               className="accordion-content"
-//               style={{ color: contentSelectedColor }}
-//             >
-//               {item.content}
-//             </p>
-//           )}
-//         </div>
-//       ))}
-//     </div>
-//   );
-// }
-
-
 
 const FAQ = () => {
-  // const items = [
-  //   {
-  //     title: "How to use the Web Scraper Tool?",
-  //     content:
-  //       "Our Web Scraper Tool extracts data from websites based on user-provided keywords. It provides up to 200 results and allows you to download data as spreadsheet files.",
-  //   },
-  //   {
-  //     title: "How to use the Video Generation Tool?",
-  //     content:
-  //       "Log in to your Shine Ranker accounts and click on Settings, then click on the cancel subscription button.",
-  //   },
-  //   {
-  //     title: "How to use the AI Text to Image Tool?",
-  //     content:
-  //       "Log in to your Shine Ranker accounts and click on Settings, then click on the cancel subscription button.",
-  //   },
-  //   {
-  //     title: "How to use the AI Image to Image Tool?",
-  //     content:
-  //       "Log in to your Shine Ranker accounts and click on Settings, then click on the cancel subscription button.",
-  //   },
-  //   {
-  //     title: "How to Create a Shine Ranker Account?",
-  //     content:
-  //       "Log in to your Shine Ranker accounts and click on Settings, then click on the cancel subscription button.",
-  //   },
-  //   {
-  //     title: "Question Number 6",
-  //     content:
-  //       "Log in to your Shine Ranker accounts and click on Settings, then click on the cancel subscription button.",
-  //   },
-  //   {
-  //     title: "Question Number 7",
-  //     content:
-  //       "Log in to your Shine Ranker accounts and click on Settings, then click on the cancel subscription button.",
-  //   },
-  // ];
-
+  
   return (
     <>
       <header className="min-h-[48rem] flex flex-col md:items-center pt-[16rem] lg:pt-[15.5rem] px-[5%] xl:px-[18%] global-header-section-bg">
@@ -319,8 +239,6 @@ const FAQ = () => {
               </p>
             </AccordionDetails>
           </Accordion>
-
-
         </div>
 
         <div className="flex flex-col md:flex-row md:items-center md:justify-evenly pt-14 gap-10">
