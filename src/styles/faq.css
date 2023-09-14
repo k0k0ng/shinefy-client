@@ -25,6 +25,8 @@
   font-style: normal !important;
   font-weight: 700 !important;
   line-height: 120% !important;
+
+  padding: 2.5rem !important;
 }
 
 .faq-accordion .question:hover .expand-icon-container {

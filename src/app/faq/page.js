@@ -63,7 +63,7 @@ const FAQ = () => {
               }
               aria-controls="panel1a-content"
               id="panel1a-header"
-              className="p-6 question"
+              className="question"
             >
               <p>What is Shine Ranker?</p>
             </AccordionSummary>
@@ -91,7 +91,7 @@ const FAQ = () => {
               }
               aria-controls="panel1a-content"
               id="panel1a-header"
-              className="p-6 question"
+              className="question"
             >
               <p>What are the features of shineAi Tools?</p>
             </AccordionSummary>
@@ -136,7 +136,7 @@ const FAQ = () => {
               }
               aria-controls="panel1a-content"
               id="panel1a-header"
-              className="p-6 question"
+              className="question"
             >
               <p>How much does shineAi cost?</p>
             </AccordionSummary>
@@ -159,7 +159,7 @@ const FAQ = () => {
               }
               aria-controls="panel1a-content"
               id="panel1a-header"
-              className="p-6 question"
+              className="question"
             >
               <p>What are the benefits of shineAi</p>
             </AccordionSummary>
@@ -183,7 +183,7 @@ const FAQ = () => {
               }
               aria-controls="panel1a-content"
               id="panel1a-header"
-              className="p-6 question"
+              className="question"
             >
               <p>How to create a shine Ai account?</p>
             </AccordionSummary>
@@ -205,7 +205,7 @@ const FAQ = () => {
               }
               aria-controls="panel1a-content"
               id="panel1a-header"
-              className="p-6 question"
+              className="question"
             >
               <p>How to use shineAi?</p>
             </AccordionSummary>
@@ -227,7 +227,7 @@ const FAQ = () => {
               }
               aria-controls="panel1a-content"
               id="panel1a-header"
-              className="p-6 question"
+              className="question"
             >
               <p>Is there a free trial for shineAi?</p>
             </AccordionSummary>
