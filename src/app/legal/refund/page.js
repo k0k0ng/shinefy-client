@@ -61,7 +61,7 @@ const Refund = () => {
                 <h5 className="mb-20 legal-title-text-2">Cancelation Requests</h5>
 
                 <div className="mb-20">
-                  <Accordion className="mb-6 faq-accordion">
+                  <Accordion className="faq-accordion">
                     <AccordionSummary
                       expandIcon={
                         <div className="expand-icon-container">
@@ -75,7 +75,7 @@ const Refund = () => {
                       <p>Cancel Subscription purchased on Shine Ranker&apos;s website</p>
                     </AccordionSummary>
                       <hr className="ml-[1.75%] jus max-w-[95%]"/>
-                    <AccordionDetails className="pt-6 pb-10">
+                    <AccordionDetails className="faq-accordion-details">
                       
                       <p className="max-w-[96%] global-header-text-3">
                         Log in to your Shine Ranker accounts and click on Settings, then click on the 	&quot;cancel subscription&quot; button.
@@ -83,7 +83,7 @@ const Refund = () => {
                     </AccordionDetails>
                   </Accordion>
 
-                  <Accordion className="mb-6 faq-accordion">
+                  <Accordion className="faq-accordion">
                     <AccordionSummary
                       expandIcon={
                         <div className="expand-icon-container">
@@ -97,14 +97,14 @@ const Refund = () => {
                       <p>Cancel Subscription purchased on ThriveCart pages</p>
                     </AccordionSummary>
                       <hr className="ml-[1.75%] jus max-w-[95%]"/>
-                    <AccordionDetails className="pt-6 pb-10">
+                    <AccordionDetails className="faq-accordion-details">
                       <p className="max-w-[96%] global-header-text-3">
                         Log in to your Shine Ranker accounts and click on Settings, then click on the 	&quot;cancel subscription&quot; button.
                       </p>
                     </AccordionDetails>
                   </Accordion>
 
-                  <Accordion className="mb-6 faq-accordion">
+                  <Accordion className="faq-accordion">
                     <AccordionSummary
                       expandIcon={
                         <div className="expand-icon-container">
@@ -118,7 +118,7 @@ const Refund = () => {
                       <p>Cancel via Shine Ranker support</p>
                     </AccordionSummary>
                       <hr className="ml-[1.75%] jus max-w-[95%]"/>
-                    <AccordionDetails className="pt-6 pb-10">
+                    <AccordionDetails className="faq-accordion-details">
                       <p className="max-w-[96%] global-header-text-3">
                         Log in to your Shine Ranker accounts and click on Settings, then click on the 	&quot;cancel subscription&quot; button.
                       </p>
