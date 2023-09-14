@@ -8,6 +8,7 @@ import ToggleButton from "@/components/ToggleButton";
 import LimitedTimeOffer from "@/components/CTA/LimitedTimeOffer";
 
 import PricingSection from "@/components/HomepageSections/PricingSection";
+import TextfieldTooltip from "@/components/TextfieldTooltip";
 
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -15,9 +16,6 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-
-import { styled } from '@mui/material/styles';
-import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -513,17 +511,7 @@ const PricingPlansMobile = (selectedPricingPlan) => {
 }
 
 
-const CustomTooltip = styled(({ className, ...props }) => (
-  <Tooltip {...props} classes={{ popper: className }} />
-))(({ theme }) => ({
-  [`& .${tooltipClasses.tooltip}`]: {
-    backgroundColor: "rgba(20, 22, 56, 0.95)",
-    color: '#F1F1F1',
-    maxWidth: 340,
-    fontSize: theme.typography.pxToRem(13),
-    padding: '20px 20px 20px 30px',
-  },
-}));
+
 
 
 export default function Home() {
@@ -531,7 +519,6 @@ export default function Home() {
   let ourToolsAnimationContainer = createRef();
   let footerAnimationContainer = createRef();
 
-  
   const [selectedCreamOfCropCategory, setSelectedCreamOfCropCategory] = useState("Motivational");
 
   useEffect(() => {
@@ -567,8 +554,6 @@ export default function Home() {
   }, [animationContainer]);
 
   
-
-
   const handleChangeCreamOfCropCategory = (event) => {
     setSelectedCreamOfCropCategory(event.target.value);
   };
@@ -633,12 +618,13 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col md:flex-row">
-              <input
+              {/* <input
                 type="text"
                 name="promo_code"
                 placeholder="type an idea here"
                 className="h-14 w-full md:w-[65%] 2xl:w-[55%] text-center mb-2 md:mb-0 md:mr-[-2rem] pl-4 pr-[3rem] global-input-1"                
-              />
+              /> */}
+              <TextfieldTooltip inputClassName="h-14 w-full md:w-[65%] 2xl:w-[55%] text-center mb-2 md:mb-0 md:mr-[-2rem] pl-4 pr-[3rem] global-input-1" />
               <a
                 href="https://chasereiner.thrivecart.com/shine-ranker-deal"
                 rel="noreferrer"
@@ -870,8 +856,6 @@ export default function Home() {
 
       {/* Pricing Plan V2 */}
       <PricingSection />
-
-
 
 
       {/* Our pricing plan V1 */}
@@ -1604,47 +1588,8 @@ export default function Home() {
         <div className="w-full lg:max-w-[50%] 2xl:max-w-[37%] flex flex-col items-center justify-center py-12 px-8 rounded-md global-bg-to-dark-purple">
           <h3 className="mb-10 text-center font-bold text-[24px] global-text-to-light-blue">Try it yourself!</h3>
           <p className="mb-14 text-center global-header-text-3">Type your desired images for your upcoming videos.</p>
-          <CustomTooltip
-            placement="top-start"
-            title={
-              <>
-                <p className="mb-5 global-text-to-light-blue">Our tools work best for video narration and promoting products</p>
 
-                <ul className="mb-4 ml-2">
-                  <li className="global-tooltip-li-1">
-                    Short form videos from keywords
-                  </li>
-                  <li className="global-tooltip-li-1">
-                    Videos using your voice as narrator
-                  </li>
-                  <li className="global-tooltip-li-1">
-                    Educational videos using AI images
-                  </li>
-                  <li className="global-tooltip-li-1">
-                    Generate stories and videos using AI
-                  </li>
-                  <li className="global-tooltip-li-1">
-                    Motivational videos for viral content
-                  </li>
-                  <li className="global-tooltip-li-1">
-                    Product and Service reviews
-                  </li>
-                </ul>
-
-                <ul className="ml-2">
-                  <li className="global-tooltip-li-2">
-                    Music videos
-                  </li>
-                  <li className="global-tooltip-li-2">
-                    Long format videos
-                  </li>
-                </ul>
-
-              </>
-            }
-          >
-            <input type="text" className="w-full h-[50px] mb-2 text-center stunning-images-input" placeholder="type an idea here"/>
-          </CustomTooltip>
+          <TextfieldTooltip inputClassName="w-full h-[50px] mb-2 text-center stunning-images-input" />
           
           <a 
             href="https://chasereiner.thrivecart.com/shine-ranker-deal"
