@@ -14,12 +14,12 @@ export default function PricingSection() {
     <section>
       <div className="px-[5%] md:px-[10%] lg:px-[20%] pricing-plan-header-bg">
         <div className="flex flex-col items-center pt-16 lg:pt-48 pb-14">
-          <h3 className="mb-6 home-section-header-small">Our Pricing Plan</h3>
-          <h2 className="max-w-[920px] mb-6 text-center home-section-header-big">
+          <h3 className="mb-6 global-header-text-1">Our Pricing Plan</h3>
+          <h2 className="max-w-[920px] mb-6 text-center pricing-plan-custom-header-1">
             Get access to all features of these Powerful AI Tools and be
             ready to skyrocket your online growth
           </h2>
-          <p className="max-w-[410px] mb-5 text-center home-section-header-content">
+          <p className="max-w-[410px] mb-5 text-center global-header-text-3">
             Simplify your data collection process with our efficient and
             user-friendly tool.
           </p>
@@ -180,7 +180,7 @@ export default function PricingSection() {
                 href="https://chasereiner.thrivecart.com/shine-ranker-deal"
                 rel="noreferrer"
                 target="_blank"
-                className="w-full flex items-center justify-center whitespace-nowrap px-6 pricing-plan-card-btn"
+                className="w-full flex items-center justify-center whitespace-nowrap py-4 px-5 pricing-plan-card-btn"
               >
                 Choose Plan
               </a>
@@ -205,7 +205,7 @@ export default function PricingSection() {
                 href="https://chasereiner.thrivecart.com/shine-ranker-deal"
                 rel="noreferrer"
                 target="_blank"
-                className="w-full flex items-center justify-center whitespace-nowrap px-6 pricing-plan-card-btn"
+                className="w-full flex items-center justify-center whitespace-nowrap py-4 px-5 pricing-plan-card-btn"
               >
                 Choose Plan
               </a>
@@ -223,14 +223,12 @@ export default function PricingSection() {
                 href="https://chasereiner.thrivecart.com/shine-ranker-deal"
                 rel="noreferrer"
                 target="_blank"
-                className="w-10/12 md:w-6/12 lg:w-auto flex justify-center items-center px-5 home-primary-btn"
+                className="w-10/12 md:w-6/12 lg:w-auto flex justify-center items-center py-4 px-5 home-primary-btn"
               >
                 Book a Discovery Call
               </a>
           </div>
         </div>
-        
-
       </div>
     </section>
   )

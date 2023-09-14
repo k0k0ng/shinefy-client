@@ -40,6 +40,7 @@ const CustomButton = styled(Button)(({ theme }) => ({
   textTransform: 'none',
   fontFamily: 'Karla',
   fontSize: '16px',
+  fontWeight: '400',
   padding: '0.25rem 2rem 0.25rem 0.5rem',
   marginRight: '1rem',
   color: '#F1F1F1',
@@ -102,13 +103,13 @@ const NavigationBar = () => {
   return (
     <nav className={isSticky ? "sticky" : ""}>
       <div className={`absolute w-full 2xl:w-[99vw] navContainer ${isSticky ? "changeNavColor" : ""}`} >
-        <div className="flex flex-row items-center justify-between mx-[5vw] lg:mx-[10vw] xl:mx-[20vw] py-4">
+        <div className="flex flex-row items-center justify-between mx-[5vw] lg:mx-[5%] xl:mx-[15%] 2xl:mx-[20%] py-4">
           <a href="/" className="flex items-center navLogo">
             <img
               src={logo}
               alt="Shine Ranker Logo"
-              width="249px"
-              height="62px"
+              width="270px"
+              height="63px"
               className="mr-2"
             />
           </a>
@@ -119,7 +120,7 @@ const NavigationBar = () => {
             id="navbar-sticky"
           >
             <ul className="flex flex-row justify-end items-center p-2 md:p-0 font-karla">
-              <li className="hidden 2xl:flex">
+              <li className="hidden xl:flex">
 
                 <CustomButton
                   id="basic-button"
@@ -213,34 +214,34 @@ const NavigationBar = () => {
                   </MenuItem>
                 </Menu>
               </li>
-              <li className="hidden 2xl:flex">
+              <li className="hidden xl:flex">
                 <a
                   href="/tools"
-                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition opacity-75 hover:opacity-100"
+                  className="block py-2 pl-3 pr-4 text-white font-normal rounded md:p-0 mr-[44px] transition opacity-75 hover:opacity-100"
                 >
                   Tools
                 </a>
               </li>
-              <li className="hidden 2xl:flex">
+              <li className="hidden xl:flex">
                 <a
                   href="/pricing"
-                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition opacity-75 hover:opacity-100"
+                  className="block py-2 pl-3 pr-4 text-white font-normal rounded md:p-0 mr-[44px] transition opacity-75 hover:opacity-100"
                 >
                   Pricing Plan
                 </a>
               </li>
-              <li className="hidden 2xl:flex">
+              <li className="hidden xl:flex">
                 <a
                   href="/blogs"
-                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition opacity-75 hover:opacity-100"
+                  className="block py-2 pl-3 pr-4 text-white font-normal rounded md:p-0 mr-[44px] transition opacity-75 hover:opacity-100"
                 >
                   Blogs
                 </a>
               </li>
-              <li className="hidden 2xl:flex">
+              <li className="hidden xl:flex">
                 <a
                   href="/"
-                  className="block py-2 pl-3 pr-4 text-white rounded md:p-0 mr-[44px] transition opacity-75 hover:opacity-100"
+                  className="block py-2 pl-3 pr-4 text-white font-normal rounded md:p-0 mr-[44px] transition opacity-75 hover:opacity-100"
                 >
                   Book A Call
                 </a>
@@ -251,9 +252,9 @@ const NavigationBar = () => {
                   type="button"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-white h-10 bg-purp hover:bg-purple-800 transition font-medium rounded-lg text-sm px-10 flex justify-center items-center font-karla mr-3"
+                  className="flex justify-center items-center font-karla text-white text-base font-normal bg-[#8844DA] hover:bg-[#4D2FBB] transition rounded mr-3 py-4 px-5"
                 >
-                  Sign Up
+                  Sign up
                 </a>
               </li>
               <li className="hidden md:flex">
@@ -262,13 +263,13 @@ const NavigationBar = () => {
                   type="button"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-white h-10 border-2 hover:bg-purple-800 transition hover:border-purple-800 font-medium rounded-lg text-sm px-10 flex justify-center items-center md:mr-0 font-karla "
+                  className="flex justify-center items-center font-karla text-white text-base font-normal border rounded py-4 px-5 "
                 >
                   Log in
                 </a>
               </li>
 
-              <li className="flex 2xl:hidden">
+              <li className="flex xl:hidden">
                 <Button onClick={toggleDrawer(true)}>
                   <MenuIcon className="text-white" />
                 </Button>

@@ -4,18 +4,10 @@ import { createRef, useEffect, useState } from "react";
 import lottie from "lottie-web";
 
 import FooterPage from "@/components/Footer/Footer";
-import ToggleButton from "@/components/ToggleButton";
 import LimitedTimeOffer from "@/components/CTA/LimitedTimeOffer";
 
 import PricingSection from "@/components/HomepageSections/PricingSection";
 import TextfieldTooltip from "@/components/TextfieldTooltip";
-
-import Accordion from '@mui/material/Accordion';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -33,18 +25,18 @@ import SocialLinksButtons from "@/components/SocialLinksButtons";
 
 const CredibilitySectionGrid = (ismobile) => {
   return (
-    // <div className={`grid grid-cols-1 md:grid-cols-2 lg:gap-y-16 gap-y-20 lg:gap-x-12 xl:gap-20 items-center ${ismobile ? "credibility-grid-mobile" : "credibility-grid"}`}>
     <div className={`grid grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-20 lg:gap-x-12 xl:gap-20 items-center`}>
-      <div className={`flex flex-col text-center ${!ismobile ? "credibility-grid-cad-accent" : ""}`}>
+      <div className={`flex flex-col text-center ${!ismobile ? "credibility-grid-card-accent" : ""}`}>
         <img
           src="/svg/home/ai-face.svg"
           alt="ai face icon"
-          height="80px"
+          width="66px"
+          height="68px"
           className="self-center mb-8"
         />
-        <h1 className="our-tools-right-content-title py-5 mb-4">
+        <p className="our-tools-right-content-title py-5 mb-4">
           125,879
-        </h1>
+        </p>
         <p className="our-tools-right-content-text">
           AI Videos Created
         </p>
@@ -53,26 +45,28 @@ const CredibilitySectionGrid = (ismobile) => {
         <img
           src="/svg/home/profile.svg"
           alt="default profile avatar icon"
-          height="80px"
+          width="63px"
+          height="63px"
           className="self-center mb-8"
         />
-        <h1 className="our-tools-right-content-title py-5 mb-4">
+        <p className="our-tools-right-content-title py-5 mb-4">
           13,988
-        </h1>
+        </p>
         <p className="our-tools-right-content-text">
           Sign Ups
         </p>
       </div>
-      <div className={`flex flex-col text-center ${!ismobile ? "credibility-grid-cad-accent" : ""}`}>
+      <div className={`flex flex-col text-center ${!ismobile ? "credibility-grid-card-accent" : ""}`}>
         <img
           src="/svg/home/bot.svg"
           alt="Shine AI robot head icon"
-          height="80px"
+          width="80px"
+          height="57px"
           className="self-center mb-8"
         />
-        <h1 className="our-tools-right-content-title py-5 mb-4">
+        <p className="our-tools-right-content-title py-5 mb-4">
           12,678
-        </h1>
+        </p>
         <p className="our-tools-right-content-text">
           Happy Clients
         </p>
@@ -81,12 +75,13 @@ const CredibilitySectionGrid = (ismobile) => {
         <img
           src="/svg/home/ellipsis.svg"
           alt="ellipsis icon"
-          height="80px"
+          width="61px"
+          height="61px"
           className="self-center mb-8"
         />
-        <h1 className="our-tools-right-content-title py-5 mb-4">
+        <p className="our-tools-right-content-title py-5 mb-4">
           272,532
-        </h1>
+        </p>
         <p className="our-tools-right-content-text">
           Ideas Created
         </p>
@@ -94,425 +89,6 @@ const CredibilitySectionGrid = (ismobile) => {
     </div>
   )
 }
-
-
-const PricingPlansMobile = (selectedPricingPlan) => {
-  const [expanded, setExpanded] = useState(false);
-
-  const handleOpenClosePricingPlan = (panel) => (event, isExpanded) => {
-    setExpanded(isExpanded ? panel : false);
-  };
-
-
-  return (
-    <div className="flex xl:hidden flex-col justify-center items-center pricing-plan-cards-container">
-
-      <div className="pricing-plan-card-mobile">
-        <div className="mb-6 pricing-plan-title">
-          <h2 className="mb-8 pricing-plan-title-1">Spark Basic</h2>
-          {selectedPricingPlan === "monthly" ? (
-            <h1 className="pricing-plan-title-2 mt-5">$59</h1>
-          ) : (
-            <h1 className="pricing-plan-title-2 mt-5">$600</h1>
-          )}
-          {selectedPricingPlan === "monthly" ? (
-            <p className="pricing-plan-title-3">per month</p>
-          ) : (
-            <p className="pricing-plan-title-3">per year</p>
-          )}
-        </div>
-        
-        <Accordion 
-          expanded={expanded === 'spark-basic'} 
-          onChange={handleOpenClosePricingPlan('spark-basic')} 
-          sx={{bgcolor:"transparent", boxShadow:0}}
-        >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon sx={{color:"#FFF"}} />}
-            aria-controls="spark-basic-bh-content"
-            id="spark-basic-bh-header"
-            sx={{ flexDirection: "column" }}
-          >
-            <Typography sx={{color:"#FFF"}}>
-              See Inclusions
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <div className="pricing-plan-checklist mt-10 mb-5">
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">5 Projects</p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  5,000 Shine Audits
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  5,000 Keywords Research Usages
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Unlimited Traffic Checker
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Unlimited Content Editor
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Unlimited Leads
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Unlimited AI Keywords
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Unlimited AI Chat
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Project Dashboard
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Keyword Research
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Traffic Checker
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">Shine Audit</p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-plan-checklist-text">Content Editor</p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Leads List & Widget
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-plan-checklist-text">AI Keywords</p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-plan-checklist-text">AI Chat</p>
-              </div>
-            </div>
-            
-          </AccordionDetails>
-        </Accordion>
-        <div className="pricing-plan-footer flex flex-col justify-center items-center gap-5 w-full mt-10">
-          <a href="/pricing" className="pricing-plan-footer-button">
-            Choose Plan
-          </a>
-          <p className="pricing-plan-footer-text">
-            save $108.12 per year
-          </p>
-        </div>
-      </div>
-
-      <div className="pricing-plan-card-mobile">
-        <div className="mb-6 pricing-plan-title">
-          <h2 className="mb-8 pricing-plan-title-1">Flare Plus</h2>
-          {selectedPricingPlan === "monthly" ? (
-            <h1 className="pricing-plan-title-2 mt-5">$112</h1>
-          ) : (
-            <h1 className="pricing-plan-title-2 mt-5">$1,140</h1>
-          )}
-          {selectedPricingPlan === "monthly" ? (
-            <p className="pricing-plan-title-3">per month</p>
-          ) : (
-            <p className="pricing-plan-title-3">per year</p>
-          )}
-        </div>
-        
-        <Accordion 
-          expanded={expanded === 'flare-plus'} 
-          onChange={handleOpenClosePricingPlan('flare-plus')} 
-          sx={{bgcolor:"transparent", boxShadow:0}}
-        >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon sx={{color:"#FFF"}} />}
-            aria-controls="flare-plus-bh-content"
-            id="flare-plus-bh-header"
-            sx={{ flexDirection: "column" }}
-          >
-            <Typography sx={{color:"#FFF"}}>
-              See Inclusions
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            
-            <div className="pricing-plan-checklist mt-10 mb-5">
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">10 Projects</p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  10,000 Shine Audits
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  10,000 Keywords Research Usages
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Unlimited Traffic Checker
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Unlimited Content Editor
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Unlimited Leads
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Unlimited AI Keywords
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Unlimited AI Chat
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Project Dashboard
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Keyword Research
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Traffic Checker
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">Shine Audit</p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">Content Editor</p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Leads List & Widget
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-plan-checklist-text">AI Keywords</p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-plan-checklist-text">AI Chat</p>
-              </div>
-            </div>
-              
-          </AccordionDetails>
-        </Accordion>
-
-        <div className="pricing-plan-footer flex flex-col justify-center items-center gap-5 w-full mt-10">
-          <a href="/pricing" className="pricing-plan-footer-button">
-            Choose Plan
-          </a>
-          <p className="pricing-plan-footer-text">
-            save $204.24 per year
-          </p>
-        </div>
-      </div>
-      
-      <div className="pricing-plan-card-mobile">
-        <div className="mb-6 pricing-plan-title">
-          <h2 className="mb-8 pricing-plan-title-1">Shine Pro</h2>
-          {selectedPricingPlan === "monthly" ? (
-            <h1 className="pricing-plan-title-2 mt-5">$219</h1>
-          ) : (
-            <h1 className="pricing-plan-title-2 mt-5">$2,208</h1>
-          )}
-          {selectedPricingPlan === "monthly" ? (
-            <p className="pricing-plan-title-3">per month</p>
-          ) : (
-            <p className="pricing-plan-title-3">per year</p>
-          )}
-        </div>
-        
-        <Accordion 
-          expanded={expanded === 'shine-pro'} 
-          onChange={handleOpenClosePricingPlan('shine-pro')} 
-          sx={{bgcolor:"transparent", boxShadow:0}}
-        >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon sx={{color:"#FFF"}} />}
-            aria-controls="shine-pro-bh-content"
-            id="shine-pro-bh-header"
-            sx={{ flexDirection: "column" }}
-          >
-            <Typography sx={{color:"#FFF"}}>
-              See Inclusions
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            
-              <div className="pricing-plan-checklist mt-10 mb-5">
-                <div className="flex gap-2 mb-3">
-                  <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                  <p className="pricing-plan-checklist-text">20 Projects</p>
-                </div>
-                <div className="flex gap-2 mb-3">
-                  <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                  <p className="pricing-plan-checklist-text">
-                    20,000 Shine Audits
-                  </p>
-                </div>
-                <div className="flex gap-2 mb-3">
-                  <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                  <p className="pricing-plan-checklist-text">
-                    20,000 Keywords Research Usages
-                  </p>
-                </div>
-                <div className="flex gap-2 mb-3">
-                  <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                  <p className="pricing-plan-checklist-text">
-                    Unlimited Traffic Checker
-                  </p>
-                </div>
-                <div className="flex gap-2 mb-3">
-                  <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                  <p className="pricing-plan-checklist-text">
-                    Unlimited Content Editor
-                  </p>
-                </div>
-                <div className="flex gap-2 mb-3">
-                  <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                  <p className="pricing-plan-checklist-text">
-                    Unlimited Leads
-                  </p>
-                </div>
-                <div className="flex gap-2 mb-3">
-                  <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                  <p className="pricing-plan-checklist-text">
-                    Unlimited AI Keywords
-                  </p>
-                </div>
-                <div className="flex gap-2 mb-3">
-                  <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                  <p className="pricing-plan-checklist-text">
-                    Unlimited AI Chat
-                  </p>
-                </div>
-                <div className="flex gap-2 mb-3">
-                  <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                  <p className="pricing-plan-checklist-text">
-                    Project Dashboard
-                  </p>
-                </div>
-                <div className="flex gap-2 mb-3">
-                  <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                  <p className="pricing-plan-checklist-text">
-                    Keyword Research
-                  </p>
-                </div>
-                <div className="flex gap-2 mb-3">
-                  <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                  <p className="pricing-plan-checklist-text">
-                    Traffic Checker
-                  </p>
-                </div>
-                <div className="flex gap-2 mb-3">
-                  <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                  <p className="pricing-plan-checklist-text">Shine Audit</p>
-                </div>
-                <div className="flex gap-2 mb-3">
-                  <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                  <p className="pricing-plan-checklist-text">Content Editor</p>
-                </div>
-                <div className="flex gap-2 mb-3">
-                  <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                  <p className="pricing-plan-checklist-text">
-                    Leads List & Widget
-                  </p>
-                </div>
-                <div className="flex gap-2 mb-3">
-                  <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                  <p className="pricing-plan-checklist-text">AI Keywords</p>
-                </div>
-                <div className="flex gap-2 mb-3">
-                  <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                  <p className="pricing-plan-checklist-text">AI Chat</p>
-                </div>
-              </div>
-              
-          </AccordionDetails>
-        </Accordion>
-
-        <div className="pricing-plan-footer flex flex-col justify-center items-center gap-5 w-full mt-10">
-          <a href="/pricing" className="pricing-plan-footer-button">
-            Choose Plan
-          </a>
-          <p className="pricing-plan-footer-text">
-            save $420.00 per year
-          </p>
-        </div>
-      </div>
-
-    </div>
-  );
-}
-
-
-
 
 
 export default function Home() {
@@ -646,57 +222,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Hero Mobile */}
-      {/* <section className="hidden hero-section-mobile">
-        <div className="px-5 hero-container-mobile">
-          <h1 className="mb-10 hero-header">
-            Fuel your <br/>
-            <span className="hero-header-accent">Online Growth</span>
-          </h1>
-          <p className="mb-16 hero-content">
-            Unleash the power of SEO to skyrocket your website&apos;s visibility, drive massive organic traffic, and dominate the search engine rankings.
-          </p>
-          <div className="flex flex-col lg:flex-row mb-3 gap-4">
-            <div className="flex lg:block">
-              <a
-                href="https://chasereiner.thrivecart.com/shine-ranker-deal"
-                className="w-full text-center lg:text-start lg:px-5 py-3 mt-5 home-primary-btn"
-              >
-                Let&apos;s Get Started
-              </a>
-            </div>
-            <button onClick={toPricingPage} className="px-4 whitespace-nowrap home-outlined-btn">
-              Pricing Plan
-            </button>
-          </div>
-        </div>
-      </section> */}
-
-      {/* Founders Message */}
-      {/* <section className="hidden p-5">
-        <div className="flex flex-row gap-x-5 p-5 items-center mt-[-9rem] founders-message-container">
-          <img src="/images/home/dummy-profile-male.png" alt="founders profile picture" className="founders-img" />
-
-          <div className="">
-            <p className="mb-2 text-content">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            </p>
-            <p className="text-content">
-              John Flemming, <br/>
-              Co-Owner of ExampleReels
-            </p>
-          </div>
-        </div>
-      </section> */}
 
       {/* How to use Shine Ranker App */}
       <section className="pb-16 px-[5%] xl:px-[18%] how-to-use-shine-ai-section ">
         <div className="flex flex-col items-center gap-5 mt-[-9rem]">
-          <h3 className="w-full mb-2 md:text-center home-section-header-small">How To Use shineAi App</h3>
-          <h2 className="max-w-[516px] mb-2 md:text-center home-section-header-big">
+          <h3 className="w-full mb-2 md:text-center global-header-text-1">How To Use shineAi App</h3>
+          <h2 className="max-w-[516px] mb-2 md:text-center global-header-text-2">
             Watch this video and Start making money online
           </h2>
-          <p className="max-w-[516px] md:text-center home-section-header-content ">
+          <p className="max-w-[516px] md:text-center global-header-text-3">
             Watch the free training video and start earning money today even if you are not an expert
           </p>
           <a
@@ -717,7 +251,7 @@ export default function Home() {
               href="https://chasereiner.thrivecart.com/shine-ranker-deal"
               rel="noreferrer"
               target="_blank"
-              className="w-full md:w-72 flex items-center justify-center mb-5 px-6 home-secondary-btn"
+              className="w-full md:w-auto flex items-center justify-center mb-5 py-4 px-5 home-secondary-btn"
             >
               Generate Your Videos Today
           </a>
@@ -746,9 +280,9 @@ export default function Home() {
       <section className="">
         <div className="pt-10 xl:pt-20 pb-0 md:pb-10 lg:pb-0 our-tools-container">
           <div className="flex flex-col items-center px-5 md:px-0 mb-14 xl:mb-20">
-            <h3 className="w-full mb-5 md:text-center home-section-header-small">Our Powerful Tools</h3>
-            <h2 className="mb-5 md:text-center home-section-header-big">Boost Your Online Growth</h2>
-            <p className="md:text-center max-w-[516px] home-section-header-content">
+            <h3 className="w-full mb-5 md:text-center global-header-text-1">Our Powerful Tools</h3>
+            <h2 className="mb-5 md:text-center global-header-text-2">Boost Your Online Growth</h2>
+            <p className="md:text-center max-w-[516px] global-header-text-3">
               These tools are fool-proof easy-to-use and navigate that even
               first time users can start creating tons of video content and
               earn in a matter of minutes.
@@ -763,7 +297,7 @@ export default function Home() {
               />
               <div className="flex flex-col items-center md:items-start 2xl:ml-12 pt-44 lg:pt-60 pb-14 md:pb-10 px-5 md:px-10 our-tools-left-content-card">
                 <p className="w-full mb-5 text-center md:text-start home-card-header-small">Quality creations for content</p>
-                <h1 className="mb-5 text-center md:text-start home-section-header-big">
+                <h1 className="mb-5 text-center md:text-start global-header-text-2">
                   Start propelling your growth today.
                 </h1>
                 <p className="mb-5 text-center md:text-start home-card-header-content">
@@ -854,377 +388,10 @@ export default function Home() {
       </section>
         
       
-
       {/* Pricing Plan V2 */}
       <PricingSection />
 
 
-      {/* Our pricing plan V1 */}
-      {/* <section>
-        <div className="pricing-plan-header-bg">
-          <div className="flex flex-col items-center pt-16 lg:pt-48 pb-0 xl:pb-24 pricing-plan-header-container">
-            <h3 className="mb-5 home-section-header-small">Our Pricing Plan</h3>
-            <h2 className="max-w-[620px] mb-5 text-center home-section-header-big">
-              Get access to all features of these Powerful AI Tools and be
-              ready to skyrocket your online growth
-            </h2>
-            <p className="max-w-[410px] mb-5 text-center home-section-header-content">
-              Simplify your data collection process with our efficient and
-              user-friendly tool.
-            </p>
-            <div className="flex justify-center align-center mt-10 mb-0 xl:mb-10">
-              <ToggleButton
-                selectedPricingPlan={selectedPricingPlan}
-                onOptionChange={handleOptionChange}
-              />
-            </div>
-          </div>
-        </div>
-
-        {PricingPlansMobile(selectedPricingPlan)}
-
-        <div className="hidden xl:flex flex-col xl:flex-row justify-center items-center gap-10 pricing-plan-cards-container">
-          <div className="pricing-plan-card">
-            <div className="pricing-plan-title">
-              <h2 className="mb-8 pricing-plan-title-1">Spark Basic</h2>
-              {selectedPricingPlan === "monthly" ? (
-                <h1 className="pricing-plan-title-2 mt-5">$59</h1>
-              ) : (
-                <h1 className="pricing-plan-title-2 mt-5">$600</h1>
-              )}
-              {selectedPricingPlan === "monthly" ? (
-                <p className="pricing-plan-title-3">per month</p>
-              ) : (
-                <p className="pricing-plan-title-3">per year</p>
-              )}
-            </div>
-            <div className="pricing-plan-checklist mt-10 mb-5">
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">5 Projects</p>
-              </div>
-
-
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  5,000 Shine Audits
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  5,000 Keywords Research Usages
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Unlimited Traffic Checker
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Unlimited Content Editor
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Unlimited Leads
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Unlimited AI Keywords
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Unlimited AI Chat
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Project Dashboard
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Keyword Research
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Traffic Checker
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">Shine Audit</p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-plan-checklist-text">Content Editor</p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Leads List & Widget
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-plan-checklist-text">AI Keywords</p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-plan-checklist-text">AI Chat</p>
-              </div>
-            </div>
-            <div className="pricing-plan-footer flex flex-col justify-center items-center gap-5 w-full mt-10">
-              <a href="/pricing" className="pricing-plan-footer-button">
-                Choose Plan
-              </a>
-              <p className="pricing-plan-footer-text">
-                save $108.12 per year
-              </p>
-            </div>
-          </div>
-
-          <div className="pricing-plan-card">
-            <div className="pricing-plan-title">
-              <h2 className="mb-8 pricing-plan-title-1">Flare Plus</h2>
-              {selectedPricingPlan === "monthly" ? (
-                <h1 className="pricing-plan-title-2 mt-5">$112</h1>
-              ) : (
-                <h1 className="pricing-plan-title-2 mt-5">$1,140</h1>
-              )}
-              {selectedPricingPlan === "monthly" ? (
-                <p className="pricing-plan-title-3">per month</p>
-              ) : (
-                <p className="pricing-plan-title-3">per year</p>
-              )}
-            </div>
-            <div className="pricing-plan-checklist mt-10 mb-5">
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">10 Projects</p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  10,000 Shine Audits
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  10,000 Keywords Research Usages
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Unlimited Traffic Checker
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Unlimited Content Editor
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Unlimited Leads
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Unlimited AI Keywords
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Unlimited AI Chat
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Project Dashboard
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Keyword Research
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Traffic Checker
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">Shine Audit</p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">Content Editor</p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Leads List & Widget
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-plan-checklist-text">AI Keywords</p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#AEAEAE]"></i>
-                <p className="pricing-plan-checklist-text">AI Chat</p>
-              </div>
-            </div>
-            <div className="pricing-plan-footer flex flex-col justify-center items-center gap-5 w-full mt-10">
-              <a href="/pricing" className="pricing-plan-footer-button">
-                Choose Plan
-              </a>
-              <p className="pricing-plan-footer-text">
-                save $204.24 per year
-              </p>
-            </div>
-          </div>
-
-          <div className="pricing-plan-card">
-            <div className="pricing-plan-title">
-              <h2 className="mb-8 pricing-plan-title-1">Shine Pro</h2>
-              {selectedPricingPlan === "monthly" ? (
-                <h1 className="pricing-plan-title-2 mt-5">$219</h1>
-              ) : (
-                <h1 className="pricing-plan-title-2 mt-5">$2,208</h1>
-              )}
-              {selectedPricingPlan === "monthly" ? (
-                <p className="pricing-plan-title-3">per month</p>
-              ) : (
-                <p className="pricing-plan-title-3">per year</p>
-              )}
-            </div>
-            <div className="pricing-plan-checklist mt-10 mb-5">
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">20 Projects</p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  20,000 Shine Audits
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  20,000 Keywords Research Usages
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Unlimited Traffic Checker
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Unlimited Content Editor
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Unlimited Leads
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Unlimited AI Keywords
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Unlimited AI Chat
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Project Dashboard
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Keyword Research
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Traffic Checker
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">Shine Audit</p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">Content Editor</p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">
-                  Leads List & Widget
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">AI Keywords</p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <i className="fa-solid fa-circle-check text-[#3DCB80]"></i>
-                <p className="pricing-plan-checklist-text">AI Chat</p>
-              </div>
-            </div>
-            <div className="pricing-plan-footer flex flex-col justify-center items-center gap-5 w-full mt-10">
-              <a href="/pricing" className="pricing-plan-footer-button">
-                Choose Plan
-              </a>
-              <p className="pricing-plan-footer-text">
-                save $420.00 per year
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      
-      
       {/* Cream of the Crop */}
       <section className="py-20 px-[10%] 2xl:px-[20%]">
         <h4 className="mb-6 text-center global-header-text-1">The Cream of the Crop</h4>
@@ -1606,81 +773,81 @@ export default function Home() {
 
 
       {/* Our Amazing Features */}
-      <section>
-        <div className="py-24 amazing-features-container">
+      <section className="px-[5%] md:px-[10%] 2xl:px-[20%]">
+        <div className="pt-36 pb-24">
           <div className="flex flex-col items-center">
-            <h3 className="w-full mb-5 md:text-center home-section-header-small">Amazing Features</h3>
-            <h2 className="max-w-[516px] mb-5 md:text-center home-section-header-big">
+            <h3 className="w-full mb-5 md:text-center global-header-text-1">Amazing Features</h3>
+            <h2 className="max-w-[516px] mb-5 md:text-center global-header-text-2">
               Some of the Best Perks only here at Shine Ranker
             </h2>
-            <p className="w-full md:max-w-[516px] md:text-center home-section-header-content">
+            <p className="w-full md:max-w-[516px] md:text-center global-header-text-3">
               To get your content creation and channel growing, we have created these pillars for you!
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 lg:gap-y-12 mt-16">  
-            <div className="flex flex-col text-center amazing-features-grid-card">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 mt-16">  
+            <div className="flex flex-col items-center text-center amazing-features-grid-card">
               <img
                 src="/svg/home/key.svg"
                 alt="key Icon"
                 className="self-center"
               />
-              <h4 className="mt-12 card-title">
-                Access to all Shine Ranker Features
+              <h4 className="max-w-[220px] mt-12 card-title">
+                Access to all Shine Features
               </h4>
             </div>
 
-            <div className="flex flex-col text-center amazing-features-grid-card">
+            <div className="flex flex-col items-center text-center amazing-features-grid-card">
               <img
                 src="/svg/home/chat.svg"
                 alt="Chat Icon"
                 className="self-center"
               />
-              <h4 className="mt-12 card-title">
+              <h4 className="max-w-[350px] mt-12 card-title">
                 Private Community chat in Messenger
               </h4>
             </div>
 
-            <div className="flex flex-col text-center amazing-features-grid-card">
+            <div className="flex flex-col items-center text-center amazing-features-grid-card">
               <img
                 src="/svg/home/support.svg"
                 alt="chat support Icon"
                 className="self-center"
               />
-              <h4 className="mt-12 card-title">
+              <h4 className="max-w-[220px] mt-12 card-title">
                 Email and Chat Support
               </h4>
             </div>
 
-            <div className="flex flex-col text-center amazing-features-grid-card">
+            <div className="flex flex-col items-center text-center amazing-features-grid-card">
               <img
                 src="/svg/home/update.svg"
                 alt="recycle Icon"
                 className="self-center"
               />
-              <h4 className="mt-12 card-title">
-                Shine Ranker Updates
+              <h4 className="max-w-[220px] mt-12 card-title">
+                Exclusive Shinefy Updates
               </h4>
             </div>
 
-            <div className="flex flex-col text-center amazing-features-grid-card">
+            <div className="flex flex-col items-center text-center amazing-features-grid-card">
               <img
                 src="/svg/home/vip.svg"
                 alt="crown Icon"
                 className="self-center"
               />
               <h4 className="mt-12 card-title">
-                VIP Group <br /> Perks & Privileges
+                VIP Group <br/> Perks & Privileges
               </h4>
             </div>
 
-            <div className="flex flex-col text-center amazing-features-grid-card">
+            <div className="flex flex-col items-center text-center amazing-features-grid-card">
               <img
                 src="/svg/home/book.svg"
                 alt="open book Icon"
                 className="self-center"
               />
-              <h4 className="mt-12 card-title">
+              <h4 className="max-w-[220px] mt-12 card-title">
                 Email and Chat Support
               </h4>
             </div>
@@ -1705,11 +872,11 @@ export default function Home() {
           <div className="lg:py-10 credibility-right-container">
             <div className="credibility-right-content-container">
               <div className="flex flex-col items-center text-center lg:items-start lg:text-start credibility-right-content-header">
-                <h4 className="mb-4 xl:mb-10 home-section-header-content">Credibility</h4>
-                <h3 className="max-w-[320px] mb-4 xl:mb-10 home-section-header-big">
+                <h4 className="mb-4 xl:mb-10 global-header-text-3">Credibility</h4>
+                <h3 className="max-w-[320px] mb-4 xl:mb-10 global-header-text-2">
                   Our Numbers Walk the Talk
                 </h3>
-                <p className="max-w-[460px] mb-8 xl:mb-8 home-section-header-content">
+                <p className="max-w-[460px] mb-8 xl:mb-8 global-header-text-3">
                   A number of users have witnessed massive
                   changes in their following, engagements and
                   earnings as they embarked on this new journey
@@ -1735,13 +902,13 @@ export default function Home() {
 
 
       {/* *** Subscribe for Freebies *** */}
-      <section className="my-28 subscribe-for-freebies-section">
-        <div className="flex flex-col items-center">
-          <h4 className="mb-5 text-center home-section-header-small">Subscribe for Awesome Freebies</h4>
-          <h3 className="max-w-[546px] mb-5 text-center home-section-header-big">
+      <section className="px-[5%] md:px-[10%] 2xl:px-[20%] awesome-freebies-custom-bg">
+        <div className="h-full flex flex-col items-center pt-96 pb-80 justify-center border">
+          <h4 className="mb-5 text-center global-header-text-1">Subscribe for Awesome Freebies</h4>
+          <h3 className="max-w-[546px] mb-5 text-center global-header-text-2">
             Get the latest updates on the use of AI Tools in business
           </h3>
-          <p className="mb-7 home-section-header-content">
+          <p className="mb-7 global-header-text-3">
             A Limited-Time Offer
           </p>
           
@@ -1750,9 +917,9 @@ export default function Home() {
               type="text"
               name="promo_code"
               placeholder="enter your promo code here"
-              className="h-14"
+              className="min-w-[320px]"
             />
-            <button className="px-8 home-primary-btn">
+            <button className="py-4 px-5 home-primary-btn">
               Sign Up
             </button>
           </div>
@@ -1763,8 +930,8 @@ export default function Home() {
       {/* *** Testimonials *** */}
       <section className="my-28 px-[10%] xl:px-[19%] testimonial-section">
         <div className="flex flex-col items-center mb-10">
-          <h4 className="mb-5 home-section-header-small">Testimonials</h4>
-          <h3 className="max-w-[220px] md:max-w-[520px] text-center mb-5 home-section-header-big">
+          <h4 className="mb-5 global-header-text-1">Testimonials</h4>
+          <h3 className="max-w-[220px] md:max-w-[520px] text-center mb-5 global-header-text-2">
             Hear it from Our Users
           </h3>
         </div>
@@ -1977,7 +1144,7 @@ export default function Home() {
           <div className="flex items-center z-20">
             <div className="p-8 pb-12 md:pb-10 join-us-right-container w-full lg:w-96">
               <p className="mb-5 home-card-header-small">Join us today!</p>
-              <h3 className="mb-5 home-section-header-big">
+              <h3 className="mb-5 global-header-text-2">
                 Start Creating <br/>
                 binge-worthy <br />
                 AI reels

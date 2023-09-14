@@ -1,11 +1,21 @@
 
 .pricing-plan-header-bg {
-  background-image: url("/images/global/background/pricing-section-bg.png");
+  background-image: url("/images/global/background/pricing-plan-custom-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
   background-attachment: fixed;
   flex-shrink: 0;
+}
+
+.pricing-plan-custom-header-1 {
+  color: var(--Tiffany-Blue, #7BDCDE);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
 }
 
 .active-pricing-plan-cards-container {
