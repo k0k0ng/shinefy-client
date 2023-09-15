@@ -22,7 +22,7 @@ import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 import "../../styles/NavigationBar.css";
 
-const logo = "/images/global/shineAi-logo.png";
+const logo = "/images/global/ShineFy Logo.png";
 
 const CustomAccordionSummary = styled(AccordionSummary)(({ theme }) => ({
   '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {

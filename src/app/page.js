@@ -43,7 +43,7 @@ export default function Home() {
       rerender: "svg",
       loop: true,
       autoplay: true,
-      path: "/assets/hero-banner-shine-ai-flying.json",
+      path: "/assets/shinefy-flying-robot.json",
     });
 
     const ourToolsAnimation = lottie.loadAnimation({
@@ -59,7 +59,7 @@ export default function Home() {
       rerender: "svg",
       loop: true,
       autoplay: true,
-      path: "/assets/shine-ai-robot-with-dialog.json",
+      path: "/assets/shinefy-robot-join-us-section.json",
     });
 
     return () => {
@@ -78,8 +78,8 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="h-[100vh] lg:min-h-[800px] xl:min-h-[850px] px-[5%] xl:px-[18%] hero-custom-bg">
-        <div className="h-full flex flex-row items-center lg:justify-center pb-32">
+      <section className="h-[100vh] lg:min-h-[800px] xl:min-h-[850px] px-[5%] xl:px-[20%] hero-custom-bg">
+        <div className="h-full flex flex-row items-center lg:justify-between pb-32 2xl:px-5">
           <header className="hero-header-container">
             <h2 className="mb-2 md:mb-5 hero-mini-header-text">Powerful AI Tools</h2>
             <h1 className="hero-header-text">
@@ -154,7 +154,8 @@ export default function Home() {
 
           <div className="hidden lg:block mt-44 lg:mt-0 hero-animation-container">
             <div
-              className="home-animation-container"
+              className=""
+              style={{height:"440px", width:"380px"}}
               ref={animationContainer}
             />
           </div>
@@ -1235,7 +1236,7 @@ export default function Home() {
       <section className="pt-32 pb-20 join-us-section-container z-10">
         <div className="flex flex-row justify-center join-us-content-container">
           <div
-            className="max-w-[440px] hidden lg:block self-center mr-[-6rem] z-10"
+            className="hidden lg:block self-center mt-[-2rem] mr-[-5rem] z-10"
             ref={footerAnimationContainer}
           />
 

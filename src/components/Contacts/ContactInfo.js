@@ -12,11 +12,11 @@ const ContactInfo = () => {
         </a>
         
         <a
-            href="mailto:support@shineranker.com"
+            href="mailto:support@shinefy.com"
             className="flex justify-center items-center contact-info-link"
         >
             <i className="fa-regular fa-envelope text-[#8844DA] text-3xl mr-8"></i>
-            <p>support@shineranker.com</p>
+            <p>support@shinefy.com</p>
         </a>
     </div>
   )
