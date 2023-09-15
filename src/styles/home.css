@@ -231,6 +231,15 @@
 
 
 
+.cream-of-crop-custom-text {
+  color: #F1F1F1;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 
 
 /* *** Stunning Image Output *** */
@@ -297,9 +306,13 @@
 
 
 /* *** Limited Time Offer *** */
-.limited-time-offer-container {
+/* .limited-time-offer-container {
   background-color: #100826;
   border: 1px solid #100826;
+} */
+
+.limited-time-offer-container {
+  background-image: linear-gradient(#100826, #07061c);
 }
 /* ========================== */
 

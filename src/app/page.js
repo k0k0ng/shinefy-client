@@ -442,7 +442,7 @@ export default function Home() {
                 alt="Top5hacksADHD Video thumbnail"
                 className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
               />
-              <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+              <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
                 Motivational
               </button>
             </div>
@@ -454,7 +454,7 @@ export default function Home() {
                 alt="Marie Curie Video thumbnail"
                 className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
               />
-              <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+              <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
                 Information
               </button>
             </div>
@@ -466,7 +466,7 @@ export default function Home() {
                 alt="ShineRanker Video thumbnail"
                 className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
               />
-              <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+              <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
                 Promotional
               </button>
             </div>
@@ -478,7 +478,7 @@ export default function Home() {
                 alt="Samuel Video thumbnail"
                 className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
               />
-              <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+              <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
                 Storytelling
               </button>
             </div>
@@ -490,7 +490,7 @@ export default function Home() {
                 alt="Why Indonesians dont speak dutch Video thumbnail"
                 className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
               />
-              <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+              <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
                 Trivia
               </button>
             </div>
@@ -502,7 +502,7 @@ export default function Home() {
                 alt="uranium Video thumbnail"
                 className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
               />
-              <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+              <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
                 Recent Viral
               </button>
             </div>
@@ -514,7 +514,7 @@ export default function Home() {
                 alt="Top5hacksADHD Video thumbnail"
                 className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
               />
-              <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+              <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
                 Motivational
               </button>
             </div>
@@ -526,7 +526,7 @@ export default function Home() {
                 alt="Marie Curie Video thumbnail"
                 className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
               />
-              <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+              <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
                 Information
               </button>
             </div>
@@ -538,7 +538,7 @@ export default function Home() {
                 alt="ShineRanker Video thumbnail"
                 className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
               />
-              <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+              <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
                 Promotional
               </button>
             </div>
@@ -550,7 +550,7 @@ export default function Home() {
                 alt="Samuel Video thumbnail"
                 className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
               />
-              <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+              <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
                 Storytelling
               </button>
             </div>
@@ -562,7 +562,7 @@ export default function Home() {
                 alt="Why Indonesians dont speak dutch Video thumbnail"
                 className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
               />
-              <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+              <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
                 Trivia
               </button>
             </div>
@@ -574,7 +574,7 @@ export default function Home() {
                 alt="uranium Video thumbnail"
                 className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
               />
-              <button className="py-2 px-8 rounded text-white global-outlined-btn-1">
+              <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
                 Recent Viral
               </button>
             </div>
@@ -797,7 +797,7 @@ export default function Home() {
 
 
       {/* *** Limited Time Offer section *** */}
-      <section className="limited-time-offer-container">
+      <section className="pt-8 lg:pt-14 limited-time-offer-container">
         <LimitedTimeOffer />
       </section>
 
