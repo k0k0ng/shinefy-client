@@ -917,7 +917,7 @@ export default function Home() {
               type="text"
               name="promo_code"
               placeholder="enter your promo code here"
-              className="min-h-[50px] md:min-w-[320px]"
+              className="min-h-[50px] min-w-[280px] lg:min-w-[320px]"
             />
             <a
               href="https://app.shineranker.com/signup_free/"
@@ -937,7 +937,7 @@ export default function Home() {
               alt="Shine Ai Training Video thumbnail"
               // width="334px"
               // height="218px"
-              className="absolute top-[8rem] lg:top-[11rem] left-[-12rem] lg:left-[4rem]"
+              className="absolute top-[8rem] lg:top-[11rem] left-[-12rem] lg:left-[-6rem] xl:left-[0rem] 2xl:left-[4rem]"
             />
 
             <img
@@ -945,7 +945,7 @@ export default function Home() {
               alt="Shine Ai Training Video thumbnail"
               // width="18px"
               // height="18px"
-              className="absolute top-[3rem] lg:top-[5rem] right-[6rem] lg:right-[21.5rem]"
+              className="absolute top-[3rem] lg:top-[6rem] right-[6rem] lg:right-[14rem] xl:right-[21.5rem]"
             />
 
             <img
@@ -953,7 +953,7 @@ export default function Home() {
               alt="Shine Ai Training Video thumbnail"
               // width="334px"
               // height="218px"
-              className="absolute top-[3rem] right-[-8rem] lg:right-[7rem]"
+              className="absolute top-[4rem] right-[-8rem] lg:right-[-2rem] xl:right-[7rem]"
             />
 
             <img
@@ -961,7 +961,7 @@ export default function Home() {
               alt="Shine Ai Training Video thumbnail"
               // width="334px"
               // height="218px"
-              className="absolute top-[26rem] right-[2rem] lg:right-[7rem]"
+              className="absolute top-[26rem] right-[2rem] xl:right-[7.5rem]"
             />
 
             <img
@@ -969,7 +969,7 @@ export default function Home() {
               alt="Shine Ai Training Video thumbnail"
               // width="334px"
               // height="218px"
-              className="absolute bottom-[6rem] left-[49.5%]"
+              className="absolute bottom-[6.5rem] left-[49.5%]"
             />
         </div>
       </section>

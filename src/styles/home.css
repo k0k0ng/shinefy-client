@@ -356,7 +356,7 @@
   font-weight: 400;
   line-height: normal;
   border: none;
-  background: #323546;
+  background-color: #383959;
 }
 
 .subscribe-for-freebies-form input::placeholder{
@@ -628,7 +628,7 @@
   }
   
   .subscribe-for-freebies-form input{
-    padding: 0px 30px;
+    padding: 0px 10px;
     border: none;
     border-radius: 4px;
   }
