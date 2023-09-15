@@ -462,6 +462,10 @@
 
 
 /* *** Social Links *** */
+.social-links-container {
+  background-image: linear-gradient(#07061c, #100826);
+}
+
 .socials-youtube {
   -webkit-mask: url(/svg/home/socials/youtube-icon.svg) no-repeat center;
   mask: url(/svg/home/socials/youtube-icon.svg) no-repeat center;
@@ -519,11 +523,12 @@
 /* *** Join Us *** */
 .join-us-section-container {
   border: 1px solid #100826;
-  background-image: url("/images/global/background/join-us-shine-robot-bg.png");
+  background-image: url("/images/global/background/join-us-custom-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
+  box-shadow: inset 0px 100px 100px #100826;
 }
 
 .join-us-content-container{
@@ -531,7 +536,8 @@
 }
 
 .join-us-right-container {
-  background-color: #07061C;
+  /* background-color: #07061C; */
+  background-color: rgba(16, 8, 38, 0.80);
   border-radius: 4px;
 }
 /* =========================== */

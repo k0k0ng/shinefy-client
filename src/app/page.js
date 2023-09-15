@@ -1215,7 +1215,7 @@ export default function Home() {
       
 
       {/* *** Social links section *** */}
-      <section className="px-[5%] xl:px-[18%] limited-time-offer-container">
+      <section className="px-[5%] xl:px-[18%] social-links-container z-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 py-12 lg:py-24 space-x-0 lg:space-x-28 xl:space-x-6">
             <div className="text-center lg:text-start mb-12 lg:mb-0 px-4 md:px-0">
                 <h2 className="mb-5 global-header-text-1">Follow us on our socials</h2>
@@ -1232,15 +1232,15 @@ export default function Home() {
       
 
       {/* *** Join Us section *** */}
-      <section className="join-us-section-container">
+      <section className="pt-32 pb-20 join-us-section-container z-10">
         <div className="flex flex-row justify-center join-us-content-container">
           <div
-            className="max-w-[550px] hidden lg:block self-center mr-[-6rem] z-10"
+            className="max-w-[440px] hidden lg:block self-center mr-[-6rem] z-10"
             ref={footerAnimationContainer}
           />
 
-          <div className="flex items-center z-20">
-            <div className="p-8 pb-12 md:pb-10 join-us-right-container w-full lg:w-96">
+          <div className="flex items-center px-4 md:px-0 z-20">
+            <div className="w-full lg:max-w-[370px] pt-6 pb-8 px-10 join-us-right-container">
               <p className="mb-5 home-card-header-small">Join us today!</p>
               <h3 className="mb-5 global-header-text-2">
                 Start Creating <br/>
@@ -1277,12 +1277,12 @@ export default function Home() {
                     href="https://app.shineranker.com/"
                     rel="noreferrer"
                     target="_blank"
-                    className="px-4 flex items-center whitespace-nowrap home-outlined-btn"
+                    className="px-4 flex justify-center items-center whitespace-nowrap home-outlined-btn"
                   >
                     Log in
                   </a>
                 </div>
-                <a href="/pricing" className="hidden md:inline home-link">
+                <a href="/pricing" className="home-link">
                   Pricing Plan
                   <i className="fa-solid fa-chevron-right text-white ml-3 mt-1"></i>
                 </a>
