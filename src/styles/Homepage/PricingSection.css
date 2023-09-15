@@ -21,12 +21,13 @@
 .active-pricing-plan-cards-container {
   position: relative;
   background-color: #8844DA;
+  transition: background-color 0.3s;
 }
 
 .unactive-pricing-plan-cards-container {
   position: relative;
   background-color: #121126;
-  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, background-color 0.3s;
 }
 
 .unactive-pricing-plan-cards-container:hover {

@@ -902,10 +902,10 @@ export default function Home() {
 
 
       {/* *** Subscribe for Freebies *** */}
-      <section className="px-[5%] md:px-[10%] 2xl:px-[20%] awesome-freebies-custom-bg">
-        <div className="h-full flex flex-col items-center pt-96 pb-80 justify-center border">
-          <h4 className="mb-5 text-center global-header-text-1">Subscribe for Awesome Freebies</h4>
-          <h3 className="max-w-[546px] mb-5 text-center global-header-text-2">
+      <section className="relative awesome-freebies-custom-bg">
+        <div className="relative h-full flex flex-col items-center mx-[5%] md:mx-[10%] 2xl:mx-[20%] pt-96 pb-80 justify-center z-20">
+          <h4 className="mb-8 text-center global-header-text-1">Subscribe for Awesome Freebies</h4>
+          <h3 className="max-w-[546px] mb-8 text-center global-header-text-2">
             Get the latest updates on the use of AI Tools in business
           </h3>
           <p className="mb-7 global-header-text-3">
@@ -917,12 +917,60 @@ export default function Home() {
               type="text"
               name="promo_code"
               placeholder="enter your promo code here"
-              className="min-w-[320px]"
+              className="min-h-[50px] md:min-w-[320px]"
             />
-            <button className="py-4 px-5 home-primary-btn">
+            <a
+              href="https://app.shineranker.com/signup_free/"
+              type="button"
+              rel="noreferrer"
+              target="_blank"
+              className="flex justify-center py-4 px-5 home-primary-btn"
+            >
               Sign Up
-            </button>
+            </a>
           </div>
+        </div>
+
+        <div className="absolute h-full w-full xl:w-[90%] 2xl:w-[70%] top-0 xl:mx-[5%] 2xl:mx-[15%] overflow-hidden z-10">
+            <img
+              src="/images/home/Planets/Purple Saturn.png"
+              alt="Shine Ai Training Video thumbnail"
+              // width="334px"
+              // height="218px"
+              className="absolute top-[8rem] lg:top-[11rem] left-[-12rem] lg:left-[4rem]"
+            />
+
+            <img
+              src="/images/home/Planets/Purple Drwaf Planet.png"
+              alt="Shine Ai Training Video thumbnail"
+              // width="18px"
+              // height="18px"
+              className="absolute top-[3rem] lg:top-[5rem] right-[6rem] lg:right-[21.5rem]"
+            />
+
+            <img
+              src="/images/home/Planets/Pink Moon.png"
+              alt="Shine Ai Training Video thumbnail"
+              // width="334px"
+              // height="218px"
+              className="absolute top-[3rem] right-[-8rem] lg:right-[7rem]"
+            />
+
+            <img
+              src="/images/home/Planets/Chrome Moon.png"
+              alt="Shine Ai Training Video thumbnail"
+              // width="334px"
+              // height="218px"
+              className="absolute top-[26rem] right-[2rem] lg:right-[7rem]"
+            />
+
+            <img
+              src="/images/home/Planets/Purple Moon.png"
+              alt="Shine Ai Training Video thumbnail"
+              // width="334px"
+              // height="218px"
+              className="absolute bottom-[6rem] left-[49.5%]"
+            />
         </div>
       </section>
 
