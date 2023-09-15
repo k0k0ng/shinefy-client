@@ -78,7 +78,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="h-[100vh] lg:min-h-[800px] xl:min-h-[850px] px-[5%] xl:px-[18%] global-header-section-bg">
+      <section className="h-[100vh] lg:min-h-[800px] xl:min-h-[850px] px-[5%] xl:px-[18%] hero-custom-bg">
         <div className="h-full flex flex-row items-center lg:justify-center pb-32">
           <header className="hero-header-container">
             <h2 className="mb-2 md:mb-5 hero-mini-header-text">Powerful AI Tools</h2>
@@ -115,8 +115,8 @@ export default function Home() {
               Powered by AI Videos
             </h1>
             
-            <p className="max-w-[680px] mt-5 mb-8 lg:mb-14 hero-header-content">
-              Shine Ranker is a collection of powerful AI tools that
+            <p className="max-w-[620px] mt-5 mb-8 lg:mb-14 hero-header-content">
+              shineAi is a collection of powerful AI tools that
               generate AI videos for passive income in just one click.
               Powered by
               <object
@@ -145,7 +145,7 @@ export default function Home() {
                 href="https://chasereiner.thrivecart.com/shine-ranker-deal"
                 rel="noreferrer"
                 target="_blank"
-                className="flex items-center justify-center px-8 home-primary-btn"
+                className="flex items-center justify-center py-4 px-5 home-primary-btn"
               >
                 Generate Your Videos
               </a>
@@ -163,7 +163,7 @@ export default function Home() {
 
 
       {/* How to use Shine Ranker App */}
-      <section className="pb-16 px-[5%] xl:px-[18%] how-to-use-shine-ai-section ">
+      <section className="pt-14 pb-16 px-[5%] xl:px-[18%] how-to-use-shine-ai-section ">
         <div className="flex flex-col items-center gap-5 mt-[-9rem]">
           <h3 className="w-full mb-2 md:text-center global-header-text-1">How To Use shineAi App</h3>
           <h2 className="max-w-[516px] mb-2 md:text-center global-header-text-2">

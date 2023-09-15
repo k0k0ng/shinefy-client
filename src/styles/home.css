@@ -1,8 +1,6 @@
 
 /* *** Home common components *** */
 
-
-
 .home-card-header-small {
   color: #F1F1F1;
   font-family: Karla;
@@ -114,7 +112,17 @@
 
 
 /* *** Hero section *** */
+.hero-custom-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+  background-color: #07061c;
+  background-image: url("/images/global/background/Hero Banner Background.png");
+  box-shadow: inset 0px -100px 100px #07061c;
 
+  /* border: 1px solid red; */
+}
 
 .hero-header-container {
   min-width: 605px;
@@ -176,7 +184,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-color: #07061c;
   background-image: url("/images/global/background/how-shine-ranker-bg.png");
   box-shadow: inset 0px 100px 100px #07061c, 
