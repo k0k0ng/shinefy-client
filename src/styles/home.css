@@ -274,7 +274,7 @@
 
 .amazing-features-grid-card:hover{
   border: 1px solid #8844DA;
-  box-shadow: 0px 0px 20px #8844da;;
+  box-shadow: 0px 0px 20px #8844da;
 }
 
 .amazing-features-grid-card .card-title{
@@ -299,33 +299,71 @@
 
 
 /* *** Credibility *** */
-.credibility-grid {
-  display: grid;
+.credibility-grid-card {
+  position: relative;
+  cursor: pointer;
+  background-color: #07061c;
+  border-radius: 4px;
 }
 
-.credibility-grid-card-accent {
-  background-color: none;
+.credibility-grid-card:hover {
+  background-color: #100826;
 }
+.credibility-grid-card:hover::after {
+  position: absolute;
+  top: -1px; 
+  bottom: -1px;
+  left: -1px; 
+  right: -1px;
+  box-shadow: 0px 0px 20px #8844da;
+  background: linear-gradient(to top, #846AB6, #54E3E6, #846AB6);
+  content: '';
+  border-radius: 4px;
+  z-index: -1;
+}
+
 
 .credibility-right-container {
   width: 50%;
 }
 
 .credibility-right-content-container {
+  position: relative;
   width: 100%;
-  padding: 3.5rem;
-  background-image: url("/images/global/background/credibility-section-bg.png");
+  padding: 3rem;
+  background-image: url("/images/global/background/credibility-custom-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-color: #04101f;
   flex-shrink: 0;
+}
+
+.credibility-right-content-container::after {
+  position: absolute;
+  top: -1px; 
+  bottom: -1px;
+  left: -1px; 
+  right: -1px;
+  background: linear-gradient(to top, #846AB6, #54E3E6, #846AB6);
+  content: '';
+  z-index: -1;
 }
 
 .credibility-right-content-header {
   width: 100%;
 }
+
+.credibility-custom-header {
+  color: var(--Tiffany-Blue, #7BDCDE);
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 38.4px */
+}
+
 /* =================== */
 
 
@@ -590,15 +628,13 @@
     background-color: #010035;
   }
 
-  .credibility-grid {
-    display: none;
-  }
+
   .credibility-right-container {
     width: 100%;
   }
   .credibility-right-content-container {
     width: 100%;
-    padding: 10rem 3.5rem;
+    padding: 10rem 2rem;
   }
 }
 

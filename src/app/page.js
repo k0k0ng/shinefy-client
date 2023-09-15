@@ -23,72 +23,11 @@ import "../styles/pricing.css";
 import SocialLinksButtons from "@/components/SocialLinksButtons";
 
 
-const CredibilitySectionGrid = (ismobile) => {
-  return (
-    <div className={`grid grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-20 lg:gap-x-12 xl:gap-20 items-center`}>
-      <div className={`flex flex-col text-center ${!ismobile ? "credibility-grid-card-accent" : ""}`}>
-        <img
-          src="/svg/home/ai-face.svg"
-          alt="ai face icon"
-          width="66px"
-          height="68px"
-          className="self-center mb-8"
-        />
-        <p className="our-tools-right-content-title py-5 mb-4">
-          125,879
-        </p>
-        <p className="our-tools-right-content-text">
-          AI Videos Created
-        </p>
-      </div>
-      <div className="flex flex-col text-center">
-        <img
-          src="/svg/home/profile.svg"
-          alt="default profile avatar icon"
-          width="63px"
-          height="63px"
-          className="self-center mb-8"
-        />
-        <p className="our-tools-right-content-title py-5 mb-4">
-          13,988
-        </p>
-        <p className="our-tools-right-content-text">
-          Sign Ups
-        </p>
-      </div>
-      <div className={`flex flex-col text-center ${!ismobile ? "credibility-grid-card-accent" : ""}`}>
-        <img
-          src="/svg/home/bot.svg"
-          alt="Shine AI robot head icon"
-          width="80px"
-          height="57px"
-          className="self-center mb-8"
-        />
-        <p className="our-tools-right-content-title py-5 mb-4">
-          12,678
-        </p>
-        <p className="our-tools-right-content-text">
-          Happy Clients
-        </p>
-      </div>
-      <div className="flex flex-col text-center">
-        <img
-          src="/svg/home/ellipsis.svg"
-          alt="ellipsis icon"
-          width="61px"
-          height="61px"
-          className="self-center mb-8"
-        />
-        <p className="our-tools-right-content-title py-5 mb-4">
-          272,532
-        </p>
-        <p className="our-tools-right-content-text">
-          Ideas Created
-        </p>
-      </div>
-    </div>
-  )
-}
+// const CredibilitySectionGrid = (ismobile) => {
+//   return (
+    
+//   )
+// }
 
 
 export default function Home() {
@@ -865,31 +804,142 @@ export default function Home() {
 
       {/* *** Credibility *** */}
       <section>
-        <div className="flex flex-col lg:flex-row flex-col-reverse gap-y-12 mt-0 lg:my-14 gap-x-4 lg:gap-x-10 xl:gap-x-16 justify-end">
+        <div className="flex flex-col lg:flex-row flex-col-reverse gap-y-12 gap-x-4 lg:gap-x-10 xl:gap-x-16 mt-0 lg:my-14 py-28 justify-end overflow-hidden">
           
-          {CredibilitySectionGrid(false)}
+          {/* {CredibilitySectionGrid(false)} */}
 
-          <div className="lg:py-10 credibility-right-container">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center lg:mr-[-2rem] px-16 lg:pr-0 lg:pl-6">
+            <div className="flex flex-col text-center pt-8 pb-6 px-8 rounded credibility-grid-card">
+              <img
+                src="/svg/home/ai-face.svg"
+                alt="ai face icon"
+                width="66px"
+                height="68px"
+                className="self-center mb-8"
+              />
+              <p className="our-tools-right-content-title py-5 mb-2">
+                28,853
+              </p>
+              <p className="whitespace-nowrap our-tools-right-content-text">
+                AI Videos Created
+              </p>
+            </div>
+            <div className="flex flex-col text-center pt-8 pb-6 px-8 rounded credibility-grid-card">
+              <img
+                src="/svg/home/profile.svg"
+                alt="default profile avatar icon"
+                width="63px"
+                height="63px"
+                className="self-center mb-8"
+              />
+              <p className="our-tools-right-content-title py-5 mb-2">
+                103,041
+              </p>
+              <p className="our-tools-right-content-text">
+                Sign Ups
+              </p>
+            </div>
+            <div className="flex flex-col text-center pt-8 pb-6 px-8 rounded credibility-grid-card">
+              <img
+                src="/svg/home/bot.svg"
+                alt="Shine AI robot head icon"
+                width="80px"
+                height="57px"
+                className="self-center mb-8"
+              />
+              <p className="our-tools-right-content-title py-5 mb-2">
+                14,873
+              </p>
+              <p className="our-tools-right-content-text">
+                Happy Clients
+              </p>
+            </div>
+            <div className="flex flex-col text-center pt-8 pb-6 px-8 rounded credibility-grid-card">
+              <img
+                src="/svg/home/ellipsis.svg"
+                alt="ellipsis icon"
+                width="61px"
+                height="61px"
+                className="self-center mb-8"
+              />
+              <p className="our-tools-right-content-title py-5 mb-2">
+                28,853
+              </p>
+              <p className="our-tools-right-content-text">
+                Ideas Created
+              </p>
+            </div>
+          </div>
+
+          <div className="pb-24 lg:py-10 lg:pl-20 credibility-right-container">
             <div className="credibility-right-content-container">
-              <div className="flex flex-col items-center text-center lg:items-start lg:text-start credibility-right-content-header">
-                <h4 className="mb-4 xl:mb-10 global-header-text-3">Credibility</h4>
-                <h3 className="max-w-[320px] mb-4 xl:mb-10 global-header-text-2">
+              <div className="relative flex flex-col items-center text-center lg:items-start lg:text-start z-20 credibility-right-content-header">
+                <h4 className="mb-4 xl:mb-12 global-header-text-3">Credibility</h4>
+                <h3 className="max-w-[320px] mb-6 credibility-custom-header">
                   Our Numbers Walk the Talk
                 </h3>
-                <p className="max-w-[460px] mb-8 xl:mb-8 global-header-text-3">
-                  A number of users have witnessed massive
-                  changes in their following, engagements and
-                  earnings as they embarked on this new journey
-                  using Shine Ranker
+                <p className="max-w-[360px] mb-5 xl:mb-6 global-header-text-3">
+                  A number of users have witnessed massive changes in their following, engagements and earnings as they embarked on this new journey using Shinefy tools.
                 </p>
                 <a
                   href="https://chasereiner.thrivecart.com/shine-ranker-deal"
                   rel="noreferrer"
                   target="_blank"
-                  className="w-10/12 md:w-6/12 lg:w-auto flex items-center px-6 home-primary-btn"
+                  className="w-10/12 md:w-6/12 lg:w-auto flex justify-center items-center mb-2 py-4 px-5 home-primary-btn"
                 >
                   Start Creating Today
                 </a>
+              </div>
+
+              <div className="absolute top-0 left-0 h-full w-full z-10 ">
+                <img
+                  src="/images/home/Planets/Pink Moon.png"
+                  alt="Shine Ai Training Video thumbnail"
+                  width="136px"
+                  height="138px"
+                  className="absolute top-[-3.7rem] left-[-3.8rem]"
+                />
+
+                <img
+                  src="/images/home/Planets/Chrome Moon 2.png"
+                  alt="Shine Ai Training Video thumbnail"
+                  // width="136px"
+                  // height="138px"
+                  className="absolute top-[-1rem] left-[5rem]"
+                />
+
+                <img
+                  src="/images/home/Planets/Purple Saturn 2.png"
+                  alt="Shine Ai Training Video thumbnail"
+                  // width="334px"
+                  // height="218px"
+                  className="absolute top-[7.5rem] left-[20rem] md:left-[38rem] lg:left-[25.5rem]"
+                />
+
+                <img
+                  src="/images/home/Planets/Purple Drwaf Planet.png"
+                  alt="Shine Ai Training Video thumbnail"
+                  width="65px"
+                  height="65px"
+                  className="absolute bottom-[-1rem] left-[2.5rem]"
+                />
+
+                <img
+                  src="/images/home/Planets/Purple Moon 2.png"
+                  alt="Shine Ai Training Video thumbnail"
+                  // width="334px"
+                  // height="218px"
+                  className="absolute bottom-[-7rem] left-[17.5rem]"
+                />
+
+                <img
+                  src="/images/home/Planets/Purple Drwaf Planet.png"
+                  alt="Shine Ai Training Video thumbnail"
+                  width="65px"
+                  height="65px"
+                  className="absolute bottom-[-7rem] left-[30rem]"
+                />
+
               </div>
 
               {/* {CredibilitySectionGrid(true)} */}
