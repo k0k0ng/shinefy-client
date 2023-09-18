@@ -1,6 +1,5 @@
 
 /* *** Home common components *** */
-
 .home-card-header-small {
   color: #F1F1F1;
   font-family: Karla;
@@ -306,11 +305,6 @@
 
 
 /* *** Limited Time Offer *** */
-/* .limited-time-offer-container {
-  background-color: #100826;
-  border: 1px solid #100826;
-} */
-
 .limited-time-offer-container {
   background-image: linear-gradient(#100826, #07061c);
 }

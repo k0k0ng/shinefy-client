@@ -166,10 +166,6 @@ code {
 
 
 
-
-
-
-
 /* === Tooltip === */
 .global-tooltip-cotainer {
   color: #F1F1F1;
@@ -192,10 +188,7 @@ code {
 
 
 
-
-
 /* === Forms === */
-
 .global-input-1 {
   color: #F1F1F1;
   border-radius: 4px;
@@ -214,7 +207,6 @@ code {
   border: 1px solid #141638 !important;
 }
   
-
 .global-promo-code-form {
   border-radius: 4px;
   overflow: hidden;
@@ -237,6 +229,7 @@ code {
   width: 220px;
 }
 
+
 /* === Buttons === */
 .global-primary-btn {
   color: #FFF;
@@ -251,7 +244,6 @@ code {
 .global-primary-btn:hover {
   background-color:#4D2FBB;
 }
-
 
 .global-outlined-btn-1 {
   color: #F1F1F1;
@@ -320,31 +312,12 @@ code {
 
 
 
-
-
 /* === SwiperJS for Pricing Card === */
 .swiper-slide {
   display: flex !important;
   flex-direction: row !important;
   justify-content: center !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -358,8 +331,6 @@ font-weight: 700;
 line-height: normal;
 letter-spacing: 2.255px;
 }
-
-
 
 
 @media screen and (min-width: 2400px) {
@@ -389,12 +360,6 @@ letter-spacing: 2.255px;
   .global-content-container-under-header {
     font-size: 14px;
   }
-}
-
-
-@media screen and (max-width: 768px) {
-
-
 }
 
 

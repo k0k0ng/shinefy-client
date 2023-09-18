@@ -70,10 +70,6 @@
     transition: color 0.25s ease-in-out;
   }
   
-  .switch-wrapper label:hover {
-    /* background: var(--lightgray); */
-  }
-  
   .switch-wrapper .highlighter {
     position: absolute;
     top: 0;

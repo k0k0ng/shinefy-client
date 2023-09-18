@@ -10,15 +10,12 @@ import "../../styles/pricing.css";
 import "../../styles/Homepage/PricingSection.css";
 import "@/styles/components.contacts.css";
 
-
-
 export default function Pricing() {
   const [selectedPricingPlan, setSelectedPricingPlan] = useState("monthly-pricing");
 
   const handlePricingPlanChange = (option) => {
     setSelectedPricingPlan(option);
   };
-
 
   return (
     <>

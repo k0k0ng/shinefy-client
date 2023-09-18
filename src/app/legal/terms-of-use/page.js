@@ -5,7 +5,6 @@ import ContactForm from "@/components/Contacts/ContactForm";
 import ContactInfo from "@/components/Contacts/ContactInfo";
 import LimitedTimeOffer from "@/components/CTA/LimitedTimeOffer";
 
-import "../../../styles/TermsOfUse.css";
 import "../../../styles/globals.css";
 
 const TermsOfUse = () => {
@@ -111,111 +110,6 @@ const TermsOfUse = () => {
       <LimitedTimeOffer />
 
       <FooterPage />
-
-      {/* Form */}
-      {/* <div className="backgroundCustom-3">
-        <div className="mx-auto p-6 rounded-lg contact-form">
-          <h2 className=" mb-4 contact-text">Contact Us</h2>
-          <p className="mb-4 get-text">Get in Touch with Us</p>
-          <p className="mb-4 concern-text">
-            Any concerns about our Terms of Use, please reach out to us.
-          </p>
-
-          <form className="space-y-4">
-            <div className="grid grid-cols-2 gap-4">
-              <div className="relative">
-                <input
-                  type="text"
-                  className="mt-1 block w-full border border-gray-300 rounded-md p-2 pl-10 focus:ring focus:ring-opacity-50"
-                />
-                <label className="block absolute top-2 left-2 text-sm ">
-                  Full Name
-                </label>
-              </div>
-              <div className="relative">
-                <input
-                  type="text"
-                  className="mt-1 block w-full border border-gray-300 rounded-md p-2 pl-10 focus:ring focus:ring-opacity-50"
-                />
-                <label className="block absolute top-2 left-2 text-sm">
-                  Phone
-                </label>
-              </div>
-            </div>
-            <div className="relative">
-              <input
-                type="email"
-                className="mt-1 block w-full border border-gray-300 rounded-md p-2 pl-10 focus:ring focus:ring-opacity-50"
-              />
-              <label className="block absolute top-2 left-2 text-sm">
-                Email Address
-              </label>
-            </div>
-            <div className="relative">
-              <textarea
-                className="mt-1 block w-full border border-gray-300 rounded-md p-2 pl-10 focus:ring focus:ring-opacity-50"
-                rows="4"
-              />
-              <label className="block absolute top-2 left-2 text-sm">
-                Message
-              </label>
-            </div>
-            <div className="text-right">
-              <button
-                type="submit"
-                className="text-white py-2 px-4 rounded-md submit-btn"
-              >
-                Send Message
-              </button>
-            </div>
-          </form>
-        </div>
-      </div> */}
-
-      {/* contact */}
-      {/* <div className="flex flex-col items-center contact-info">
-        <div className="flex flex-col-reverse items-center">
-          <div className="flex items-center mr-6">
-            <i className=" mr-2"></i>
-            <p className="text-gray-500  text-white">+(805) 453-3586</p>
-          </div>
-          <div className="flex items-center">
-            <i className="mr-2"></i>
-            <p className="text-white">support@shineranker.com</p>
-          </div>
-        </div>
-      </div> */}
-
-      {/*  */}
-      {/* <div className="flex flex-col backgroundCustom-4 items-center md:flex-row md:justify-between">
-        <div className="flex items-center">
-          <div className="flex">
-            <div className="items-left text-white">
-              <article>
-                <h2 className="limited-text">Limited-Time Offer</h2>
-                <h1 className="best-text mt-2">Best Shine Ranker Deal</h1>
-                <p className="flex-initial w-45 text-left mt-2 info-text break-after-column">
-                  Don’t miss this chance to get the discounted package
-                </p>
-                <p className="flex-initial w-45 text-left info-text">
-                  and start on your journey towards a growing income using AI.
-                </p>
-              </article>
-            </div>
-          </div>
-          <div className="flex flex-col items-center mt-4 md:ml-4 md:mt-0">
-            <button className="text-white rounded-md grab-text">
-              Grab this Deal!
-            </button>
-            <img
-              className="mt-4 ellipse hidden md:inline"
-              src={ellipse}
-              alt="Ellipse"
-            />
-          </div>
-        </div>
-      </div> */}
-
 
     </>
   );
