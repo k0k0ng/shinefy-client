@@ -178,7 +178,7 @@ export default function PricingSectionContent() {
           <div className="w-full md:w-[60%] lg:w-[65%] flex flex-col py-3 pl-3">
             <p className="mb-1 md:whitespace-nowrap pricing-plan-card-text-3">Create Content Uninterrupted</p>
             <p className="mb-4 pricing-plan-card-text-2">Go Big!</p>
-            <p className="mb-4 pricing-plan-card-text-1">$497</p>
+            <p className="mb-4 pricing-plan-card-text-1">$499</p>
             <p className="pricing-plan-card-text-3">Billed annually, 43% Savings!</p>
           </div>
           
