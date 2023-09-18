@@ -1,6 +1,7 @@
 
 import { useState } from 'react'
 
+import "../../styles/pricing.css";
 import "../../styles/Homepage/PricingSection.css";
 
 export default function PricingSection() {
@@ -169,7 +170,7 @@ export default function PricingSection() {
             <div className="w-full md:w-[60%] lg:w-[65%] flex flex-col py-3 pl-3">
               <p className="mb-1 pricing-plan-card-text-3">Shinefy Starter</p>
               <p className="mb-4 pricing-plan-card-text-2">Take it Slow</p>
-              <p className="mb-4 pricing-plan-card-text-1">$97</p>
+              <p className="mb-4 pricing-plan-card-text-1">$99</p>
               <p className="pricing-plan-card-text-3">Billed Monthly</p>
             </div>
 
@@ -202,7 +203,7 @@ export default function PricingSection() {
             
             <div className="w-full md:w-[40%] lg:w-[35%]">
               <a
-                href="https://chasereiner.thrivecart.com/shine-ranker-deal"
+                href="https://chasereiner.thrivecart.com/seo-pro-automated-pack/"
                 rel="noreferrer"
                 target="_blank"
                 className="w-full flex items-center justify-center whitespace-nowrap py-4 px-5 pricing-plan-card-btn"
