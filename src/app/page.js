@@ -7,8 +7,9 @@ import FooterPage from "@/components/Footer/Footer";
 import LimitedTimeOffer from "@/components/CTA/LimitedTimeOffer";
 
 import CreamOfTheCropSection from "@/components/HomepageSections/CreamOfTheCropSection";
-import PricingSection from "@/components/HomepageSections/PricingSection";
+import PricingSectionContent from "@/components/HomepageSections/PricingSectionContent";
 import TextfieldTooltip from "@/components/TextfieldTooltip";
+import SocialLinksButtons from "@/components/SocialLinksButtons";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -20,7 +21,7 @@ import { Autoplay } from 'swiper/modules';
 // CSS Imports
 import "../styles/home.css";
 import "../styles/hometextanimation.css";
-import SocialLinksButtons from "@/components/SocialLinksButtons";
+import "../styles/pricing.css";
 
 
 
@@ -312,8 +313,26 @@ export default function Home() {
       </section>
         
       
-      {/* Pricing Plan V2 */}
-      <PricingSection />
+      {/* Pricing Plan */}
+      <section>
+        <div className="px-[5%] md:px-[10%] lg:px-[20%] pricing-plan-header-custom-bg">
+          <div className="flex flex-col items-center pt-16 lg:pt-48 pb-14">
+            <h3 className="mb-6 global-header-text-1">Our Pricing Plan</h3>
+            <h2 className="max-w-[920px] mb-6 text-center pricing-plan-custom-header-1">
+              Get access to all features of these Powerful AI Tools and be
+              ready to skyrocket your online growth
+            </h2>
+            <p className="max-w-[410px] mb-5 text-center global-header-text-3">
+              Simplify your data collection process with our efficient and
+              user-friendly tool.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col md:flex-row justify-center items-center mx-[5%] lg:mx-[10%] xl:mx-[20%] py-[50px] gap-x-10 lg:gap-x-20">
+          <PricingSectionContent />
+        </div>
+      </section>
 
 
       {/* Cream of the Crop */}
