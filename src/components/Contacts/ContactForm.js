@@ -90,8 +90,7 @@ const ContactForm = () => {
             <button className="contact-form-success-close-btn" onClick={() => setContactSuccess(false)}>
                 <img
                     src="/images/global/close-icon.png"
-                    alt="Secure SSL Encryption badge"
-                    className="how-to-use-shine-ai-badge"
+                    alt="close icon"
                 />
             </button>
         </div>

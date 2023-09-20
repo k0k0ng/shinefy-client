@@ -1,13 +1,32 @@
-import {useState} from 'react'
-
+import {useState, useRef} from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
+
+import VideoPlayer from '../VideoPlayer/VideoPlayer';
+
+import "@/styles/Homepage/creamOfTheCropSection.css";
 
 export default function CreamOfTheCropSection() {
   const [selectedCreamOfCropCategory, setSelectedCreamOfCropCategory] = useState("General Purpose");
+  const [playCreamOfCropVideo, setPlayCreamOfCropVideo] = useState(false);
+
+  const videoURLToPlay = useRef("");
+  const videoPlayerModalRef = useRef();
 
   const handleChangeCreamOfCropCategory = (event) => {
     setSelectedCreamOfCropCategory(event.target.value);
   };
+
+  const showVideoModal = (url) => {
+    videoPlayerModalRef.current.showModal();
+    videoURLToPlay.current = url;
+    setPlayCreamOfCropVideo(true);
+  }
+
+  const hideVideoModal = () => {
+    videoPlayerModalRef.current.close();
+    setPlayCreamOfCropVideo(false);
+  }
+
 
   return (
     <section className="py-20 px-[10%] 2xl:px-[20%]">
@@ -107,6 +126,7 @@ export default function CreamOfTheCropSection() {
 
       </div>
 
+
       <Swiper
         pagination={{
           clickable: true,
@@ -134,149 +154,174 @@ export default function CreamOfTheCropSection() {
       >
         <SwiperSlide>
           <div className="flex flex-col items-center ">
-            <img
-              src="/images/home/CreamOfCrop/Top5hacksADHD.png"
-              alt="Top5hacksADHD Video thumbnail"
-              className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
-            />
-            <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
+            <button onClick={() => showVideoModal("https://vimeo.com/865649304?share=copy")} className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
+              <img
+                src="/images/home/CreamOfCrop/Top5hacksADHD.png"
+                alt="Top5hacksADHD Video thumbnail"
+                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+              />
+            
               Motivational
             </button>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="flex flex-col items-center ">
-            <img
-              src="/images/home/CreamOfCrop/Marie Curie.png"
-              alt="Marie Curie Video thumbnail"
-              className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
-            />
+          <div onClick={() => showVideoModal("https://vimeo.com/865973089?share=copy")} className="flex flex-col items-center ">
             <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
-              Information
+              <img
+                src="/images/home/CreamOfCrop/Marie Curie.png"
+                alt="Marie Curie Video thumbnail"
+                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+              />
+
+              Information 
             </button>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex flex-col items-center ">
-            <img
-              src="/images/home/CreamOfCrop/ShineRanker.png"
-              alt="ShineRanker Video thumbnail"
-              className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
-            />
             <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
+              <img
+                src="/images/home/CreamOfCrop/ShineRanker.png"
+                alt="ShineRanker Video thumbnail"
+                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+              />
+            
               Promotional
             </button>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex flex-col items-center ">
-            <img
-              src="/images/home/CreamOfCrop/Samuel.png"
-              alt="Samuel Video thumbnail"
-              className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
-            />
             <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
+              <img
+                src="/images/home/CreamOfCrop/Samuel.png"
+                alt="Samuel Video thumbnail"
+                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+              />
+            
               Storytelling
             </button>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex flex-col items-center ">
-            <img
-              src="/images/home/CreamOfCrop/Why Indonesians dont speak dutch.png"
-              alt="Why Indonesians dont speak dutch Video thumbnail"
-              className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
-            />
             <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
+              <img
+                src="/images/home/CreamOfCrop/Why Indonesians dont speak dutch.png"
+                alt="Why Indonesians dont speak dutch Video thumbnail"
+                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+              />
+            
               Trivia
             </button>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex flex-col items-center ">
-            <img
-              src="/images/home/CreamOfCrop/uranium.png"
-              alt="uranium Video thumbnail"
-              className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
-            />
             <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
+              <img
+                src="/images/home/CreamOfCrop/uranium.png"
+                alt="uranium Video thumbnail"
+                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+              />
+            
               Recent Viral
             </button>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex flex-col items-center ">
-            <img
-              src="/images/home/CreamOfCrop/Top5hacksADHD.png"
-              alt="Top5hacksADHD Video thumbnail"
-              className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
-            />
             <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
+              <img
+                src="/images/home/CreamOfCrop/Top5hacksADHD.png"
+                alt="Top5hacksADHD Video thumbnail"
+                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+              />
+            
               Motivational
             </button>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex flex-col items-center ">
-            <img
-              src="/images/home/CreamOfCrop/Marie Curie.png"
-              alt="Marie Curie Video thumbnail"
-              className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
-            />
             <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
+              <img
+                src="/images/home/CreamOfCrop/Marie Curie.png"
+                alt="Marie Curie Video thumbnail"
+                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+              />
+            
               Information
             </button>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex flex-col items-center ">
-            <img
-              src="/images/home/CreamOfCrop/ShineRanker.png"
-              alt="ShineRanker Video thumbnail"
-              className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
-            />
             <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
+              <img
+                src="/images/home/CreamOfCrop/ShineRanker.png"
+                alt="ShineRanker Video thumbnail"
+                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+              />
+            
               Promotional
             </button>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex flex-col items-center ">
-            <img
-              src="/images/home/CreamOfCrop/Samuel.png"
-              alt="Samuel Video thumbnail"
-              className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
-            />
             <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
+              <img
+                src="/images/home/CreamOfCrop/Samuel.png"
+                alt="Samuel Video thumbnail"
+                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+              />
+            
               Storytelling
             </button>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex flex-col items-center ">
-            <img
-              src="/images/home/CreamOfCrop/Why Indonesians dont speak dutch.png"
-              alt="Why Indonesians dont speak dutch Video thumbnail"
-              className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
-            />
             <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
+              <img
+                src="/images/home/CreamOfCrop/Why Indonesians dont speak dutch.png"
+                alt="Why Indonesians dont speak dutch Video thumbnail"
+                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+              />
+            
               Trivia
             </button>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex flex-col items-center ">
-            <img
-              src="/images/home/CreamOfCrop/uranium.png"
-              alt="uranium Video thumbnail"
-              className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
-            />
             <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
+              <img
+                src="/images/home/CreamOfCrop/uranium.png"
+                alt="uranium Video thumbnail"
+                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+              />
+            
               Recent Viral
             </button>
           </div>
         </SwiperSlide>
       </Swiper>
+
+
+      <dialog 
+        ref={videoPlayerModalRef} 
+        className={` ${playCreamOfCropVideo ? "" : "hidden"} flex items-center justify-center video-player-dialog`}
+      >
+        <VideoPlayer 
+          playVideo={playCreamOfCropVideo} 
+          hideVideoModal={hideVideoModal} 
+          videoURL = {videoURLToPlay.current}
+        />
+      </dialog> 
+
     </section>
   )
 }

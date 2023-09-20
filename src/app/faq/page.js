@@ -121,7 +121,7 @@ const FAQ = () => {
               </ul>
 
               <p className="max-w-[96%] global-header-text-3">
-                Read more about the features of Shine Ranker tool <a href="/about">here</a>.
+                Read more about the features of Shine Ranker tool <a href="/tools">here</a>.
               </p>
               
             </AccordionDetails>
@@ -190,7 +190,7 @@ const FAQ = () => {
               <hr className="ml-[1.75%] jus max-w-[95%]"/>
             <AccordionDetails className="faq-accordion-details">
               <p className="max-w-[96%] global-header-text-3">
-                Go to the top menu of this page and click <span className="global-text-to-light-green">Sign Up</span> to register for a free trial, or simple click <a href="/signup">this link</a>.
+                Go to the top menu of this page and click <span className="global-text-to-light-green">Sign Up</span> to register for a free trial, or simple click <a href="https://app.shineranker.com/signup_free/" rel="noreferrer" target="_blank">this link</a>.
               </p>
             </AccordionDetails>
           </Accordion>

@@ -1,6 +1,6 @@
 "use client";
 
-import { createRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import lottie from "lottie-web";
 
 import FooterPage from "@/components/Footer/Footer";
@@ -26,9 +26,9 @@ import "../styles/pricing.css";
 
 
 export default function Home() {
-  let animationContainer = createRef();
-  let ourToolsAnimationContainer = createRef();
-  let footerAnimationContainer = createRef();
+  let animationContainer = useRef();
+  let ourToolsAnimationContainer = useRef();
+  let footerAnimationContainer = useRef();
 
   useEffect(() => {
     const heroAnimation = lottie.loadAnimation({
@@ -478,8 +478,8 @@ export default function Home() {
                 alt="open book Icon"
                 className="self-center"
               />
-              <h4 className="max-w-[220px] mt-12 card-title">
-                Email and Chat Support
+              <h4 className="max-w-[360px] mt-12 card-title">
+                Access to All Shinefy Courses and Checklists
               </h4>
             </div>
 
@@ -658,7 +658,7 @@ export default function Home() {
             <input
               type="text"
               name="promo_code"
-              placeholder="enter your promo code here"
+              placeholder="enter your email here"
               className="min-h-[50px] min-w-[280px] lg:min-w-[320px]"
             />
             <a
