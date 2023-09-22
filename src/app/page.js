@@ -130,9 +130,9 @@ export default function Home() {
                 href="https://chasereiner.thrivecart.com/shine-ranker-deal"
                 rel="noreferrer"
                 target="_blank"
-                className="flex items-center justify-center py-4 px-5 home-primary-btn"
+                className="flex items-center justify-center py-4 px-20 home-primary-btn"
               >
-                Generate Your Videos
+                Get Started
               </a>
             </div>
           </header>
@@ -225,19 +225,24 @@ export default function Home() {
                 <h1 className="mb-5 text-center md:text-start global-header-text-2">
                   Start propelling your growth today.
                 </h1>
-                <p className="mb-5 text-center md:text-start home-card-header-content">
+                <p className="mb-12 text-center md:text-start home-card-header-content">
                   With our tools, you can witness rapid audience and numerical
                   growth in as little as 7 days.
                 </p>
-                <input
+                {/* <input
                   type="text"
                   name="user_email"
                   placeholder="Your Email"
                   className="mb-4 home-input-center-placeholder"
-                />
-                <button className="w-full mb-4 home-primary-btn">
+                /> */}
+                <a 
+                  href="https://chasereiner.thrivecart.com/shine-ranker-deal"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="w-full flex justify-center items-center mb-6 home-primary-btn"
+                >
                   Let&apos;s Get Started
-                </button>
+                </a>
                 <a href="/pricing" className="home-link">
                   Pricing Plan
                   <i className="fa-solid fa-chevron-right text-white ml-3 mt-1"></i>
@@ -336,7 +341,7 @@ export default function Home() {
 
 
       {/* Cream of the Crop */}
-      <CreamOfTheCropSection />
+      {/* <CreamOfTheCropSection /> */}
 
 
 
@@ -388,7 +393,8 @@ export default function Home() {
           <h3 className="mb-10 text-center font-bold text-[24px] global-text-to-light-blue">Try it yourself!</h3>
           <p className="mb-14 text-center global-header-text-3">Type your desired images for your upcoming videos.</p>
 
-          <TextfieldTooltip inputClassName="w-full h-[50px] mb-2 text-center stunning-images-input" />
+          {/* Temporarily hidden because it doesnt have functionality yet - JOHN 22/09/23 */}
+          {/* <TextfieldTooltip inputClassName="w-full h-[50px] mb-2 text-center stunning-images-input" /> */}
           
           <a 
             href="https://chasereiner.thrivecart.com/shine-ranker-deal"
@@ -653,8 +659,19 @@ export default function Home() {
           <p className="mb-7 global-header-text-3">
             A Limited-Time Offer
           </p>
+
+          <a
+            href="https://app.shineranker.com/signup_free/"
+            type="button"
+            rel="noreferrer"
+            target="_blank"
+            className="flex justify-center py-4 px-24 home-primary-btn"
+          >
+            Sign Up
+          </a>
           
-          <div className="flex flex-col md:flex-row subscribe-for-freebies-form">
+          {/* *** Temporarily hidden because inputfield doesnt have functionality yet - JOHN 22/09/23 */}
+          {/* <div className="flex flex-col md:flex-row subscribe-for-freebies-form">
             <input
               type="text"
               name="promo_code"
@@ -670,7 +687,8 @@ export default function Home() {
             >
               Sign Up
             </a>
-          </div>
+          </div> */}
+
         </div>
 
         <div className="absolute h-full w-full xl:w-[90%] 2xl:w-[70%] top-0 xl:mx-[5%] 2xl:mx-[15%] overflow-hidden z-10">

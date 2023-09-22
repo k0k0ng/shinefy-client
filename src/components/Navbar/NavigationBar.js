@@ -230,7 +230,8 @@ const NavigationBar = () => {
                   Pricing Plan
                 </a>
               </li>
-              <li className="hidden xl:flex">
+              {/* *** Temporarily hide links because it is not yet done - JOHN 22/09/23 */}
+              {/* <li className="hidden xl:flex">
                 <a
                   href="/blogs"
                   className="block py-2 pl-3 pr-4 text-white font-normal rounded md:p-0 mr-[44px] transition opacity-75 hover:opacity-100"
@@ -245,7 +246,7 @@ const NavigationBar = () => {
                 >
                   Book A Call
                 </a>
-              </li>
+              </li> */}
               <li className="hidden md:flex">
                 <a
                   href="https://app.shineranker.com/signup_free/"
@@ -392,8 +393,9 @@ const NavigationBar = () => {
                   Pricing Plan
                 </a>
               </ListItem>
-
-              <ListItem className="mobile-sub-menu-link">
+              
+              {/* *** Temporarily hide links because it is not yet done - JOHN 22/09/23 */}
+              {/* <ListItem className="mobile-sub-menu-link">
                 <a
                   href="/blogs"
                   className="mobile-accordion-link"
@@ -409,7 +411,7 @@ const NavigationBar = () => {
                 >
                   Book a Call
                 </a>
-              </ListItem>
+              </ListItem> */}
             </List>
             
             <div className="flex flex-col px-5 pb-8 gap-y-5">
