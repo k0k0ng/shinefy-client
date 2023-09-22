@@ -25,7 +25,7 @@ export default function BookACall() {
             Book a Call
           </h1>
           <p className="max-w-[650px] global-header-text-3">
-            We'll have a free 15-min discovery call to discuss which subscription fits best for your content, objectives and goals.
+            We&apos;ll have a free 15-min discovery call to discuss which subscription fits best for your content, objectives and goals.
           </p>
         </div>
       </header>
