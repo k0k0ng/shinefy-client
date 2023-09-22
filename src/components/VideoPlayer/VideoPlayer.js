@@ -21,10 +21,10 @@ export default function VideoPlayer({ playVideo, hideVideoModal, videoURL }) {
 
       <button onClick={hideVideoModal} className='absolute top-2 md:top-10 right-2 md:right-10 video-player-dialog-close-btn'>
         <img
-            src="/images/global/close-icon.png"
-            alt="close icon"
-            width={35}
-            height={35}
+          src="/images/global/close-icon.png"
+          alt="close icon"
+          width={35}
+          height={35}
         />
       </button>
     </>
