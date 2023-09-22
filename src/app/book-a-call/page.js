@@ -30,22 +30,26 @@ export default function BookACall() {
         </div>
       </header>
 
-      <section className='flex items-center px-[5%] xl:px-[18%] 2xl:px-[25%] py-40 bg-[#F1F1F1]'>
-        <div className='w-full min-h-[35rem] flex flex-col lg:flex-row items-start p-8 rounded-[10px] bg-[#FFF]'>
-          <div className='w-full h-full flex pr-6 mb-20 lg:mb-0 flex-col'>
-            <div className='min-h-[8rem]'>
-              <img
-                src="/images/BookACall/shinefy-robot-head.png"
-                alt="close icon"
-                width={100}
-                height={100}
-              />
-            </div>
-            
-            <div className='pl-10'>
-              <p className='text-[#100826] mb-4 book-a-call-custom-text-1'>
-                shine<span className='global-text-to-light-blue'>Ai</span>
-              </p>
+      <section className='flex items-center md:px-[5%] xl:px-[18%] 2xl:px-[25%] md:py-40 bg-[#F1F1F1]'>
+        <div className='w-full min-h-[35rem] flex flex-col lg:flex-row items-start pt-20 pb-32 px-4 md:p-8 rounded-[10px] bg-[#FFF]'>
+          
+          <div className='w-full h-full flex md:pr-6 mb-20 lg:mb-0 flex-col'>
+            <div className='md:pl-2 lg:pl-10'>
+              <div className='flex flex-row lg:flex-col items-center lg:items-start mb-4'>
+                <div className='lg:min-h-[8rem]'>
+                  <img
+                    src="/images/BookACall/shinefy-robot-head.png"
+                    alt="close icon"
+                    width={100}
+                    height={100}
+                  />
+                </div>
+
+                <p className='text-[#100826] lg:mb-4 ml-6 lg:ml-0 book-a-call-custom-text-1'>
+                  shine<span className='global-text-to-light-blue'>Ai</span>
+                </p>
+              </div>
+
               <hr className='border' />
               <p className='text-[#8844DA] mt-5 mb-10 book-a-call-custom-text-1'>
                 Discovery Call
@@ -83,17 +87,17 @@ export default function BookACall() {
             </div>
           </div>
 
-          <div className='hidden lg:block w-[1px] h-[28rem] my-auto bg-[red] border'></div>
+          <div className='hidden lg:block w-[1px] h-[28rem] my-auto border'></div>
 
-          <div className='lg:max-w-[470px] h-full flex flex-col items-center px-4 lg:pl-8 lg:pr-0'>
-            <div className='min-h-[6rem] lg:min-h-[8rem] w-full flex items-start justify-between'>
+          <div className='w-full lg:max-w-[470px] h-full flex flex-col items-center md:px-4 lg:pl-8 lg:pr-0'>
+            <div className='min-h-[6rem] lg:min-h-[8rem] w-full flex flex-wrap items-start justify-between'>
               <button onClick={() => setSelectedSubject("Features")} className={`${selectedSubject == "Features" ? "active-subject" : "unactive-subject"} px-4 py-3 rounded-xl`}>Features</button>
               <button onClick={() => setSelectedSubject("Services")} className={`${selectedSubject == "Services" ? "active-subject" : "unactive-subject"} px-4 py-3 rounded-xl`}>Services</button>
               <button onClick={() => setSelectedSubject("Blog")} className={`${selectedSubject == "Blog" ? "active-subject" : "unactive-subject"} px-4 py-3 rounded-xl`}>Blog</button>
               <button onClick={() => setSelectedSubject("Book a demo")} className={`${selectedSubject == "Book a demo" ? "active-subject" : "unactive-subject"} px-4 py-3 rounded-xl`}>Book a demo</button>
             </div>
 
-            <p className='w-full mb-8 text-[#0b3558] book-a-call-custom-text-1'>
+            <p className='w-full mb-8 mt-8 md:mt-0 text-[#0b3558] book-a-call-custom-text-1'>
               Select a Date &amp; Time
             </p>
 
@@ -108,7 +112,7 @@ export default function BookACall() {
                 className='self-center'
               />
 
-              <select defaultValue={"+00:00"} name="selectedTimeZone" id="selectedTimeZone" className="max-w-[380px] border-none timezone-select">
+              <select defaultValue={"+00:00"} name="selectedTimeZone" id="selectedTimeZone" className="w-full md:max-w-[380px] border-none timezone-select">
                 <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
                 <option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
                 <option value="-10:00">(GMT -10:00) Hawaii</option>

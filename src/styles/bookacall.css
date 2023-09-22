@@ -78,6 +78,8 @@
   /* background: #fff; */
   /* border-radius: 10px; */
   /* box-shadow: 0 15px 40px rgba(0,0,0,0.12); */
+
+  /* border: 1px solid red; */
 }
 .wrapper header{
   display: flex;
