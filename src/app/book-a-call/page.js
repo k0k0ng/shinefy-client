@@ -97,7 +97,7 @@ export default function BookACall() {
               <button onClick={() => setSelectedSubject("Book a demo")} className={`${selectedSubject == "Book a demo" ? "active-subject" : "unactive-subject"} px-4 py-3 rounded-xl`}>Book a demo</button>
             </div>
 
-            <p className='w-full mb-8 mt-8 md:mt-0 text-[#0b3558] book-a-call-custom-text-1'>
+            <p className='w-full text-[#0b3558] mb-8 mt-8 md:mt-0 book-a-call-custom-text-1'>
               Select a Date &amp; Time
             </p>
 
@@ -156,6 +156,7 @@ export default function BookACall() {
               </select>
             </div>
           </div>
+
         </div>
       </section>
 

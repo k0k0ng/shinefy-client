@@ -8,11 +8,7 @@
   background-color: #07061c;
   background-image: url("/images/global/background/book-a-call-custom-bg.png");
   box-shadow: inset 0px 100px 100px #07061c;
-
-  /* border: 1px solid red; */
 }
-
-
 
 .book-a-call-custom-text-1 {
   font-family: Montserrat;
@@ -37,14 +33,8 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%; /* 19.2px */
+  line-height: 120%;
 }
-
-.book-a-call-custom-text-4 {
-  
-}
-
-
 
 
 .active-subject {
@@ -58,33 +48,12 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.wrapper{
+.calendar-container{
   width: 100%;
-  /* width: 420px; */
-  /* background: #fff; */
-  /* border-radius: 10px; */
-  /* box-shadow: 0 15px 40px rgba(0,0,0,0.12); */
-
-  /* border: 1px solid red; */
 }
-.wrapper header{
+.calendar-container header{
   display: flex;
   align-items: center;
-  /* padding: 25px 30px 10px; */
   justify-content: space-between;
 }
 header .icons{
@@ -105,9 +74,6 @@ header .icons span:hover{
   color: #8844DA;
 }
 header .current-date{
-  /* font-size: 1.45rem;
-  font-weight: 500; */
-
   color: #0b3558;
   font-family: Montserrat;
   font-size: 20px;

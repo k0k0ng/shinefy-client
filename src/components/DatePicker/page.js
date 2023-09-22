@@ -72,7 +72,7 @@ export default function CustomDatePicker() {
   
   
   return (
-    <div className="wrapper">
+    <div className="calendar-container">
       <header className="mb-3">
         <p className="current-date">{months[currentMonth.current]}</p>
         <div className="icons">
