@@ -240,7 +240,7 @@ const NavigationBar = () => {
               </li>
               <li className="hidden xl:flex">
                 <a
-                  href="/"
+                  href="/book-a-call"
                   className="block py-2 pl-3 pr-4 text-white font-normal rounded md:p-0 mr-[44px] transition opacity-75 hover:opacity-100"
                 >
                   Book A Call
@@ -404,7 +404,7 @@ const NavigationBar = () => {
 
               <ListItem className="mobile-sub-menu-link">
                 <a
-                  href="/"
+                  href="/book-a-call"
                   className="mobile-accordion-link"
                 >
                   Book a Call

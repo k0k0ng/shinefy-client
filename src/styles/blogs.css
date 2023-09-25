@@ -1,0 +1,60 @@
+
+.blogs-card-title-text {
+  color: var(--Tiffany-Blue, #7BDCDE);
+  font-family: Montserrat;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 25.2px */
+}
+
+
+.blogs-card-content-text {
+  color: var(--Almost-White, #FFF);
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+}
+
+
+.blogs-card-created-date {
+  color: var(--Almost-White, #FFF);
+  text-align: right;
+  font-family: Karla;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 16.8px */
+}
+
+
+.blogs-card-read-more-btn {
+  color: var(--Blue-Violet, #8844DA);
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: color 0.3s;
+}
+
+.blogs-card-read-more-btn:hover {
+  color: #3a287c;
+}
+
+
+.grid-back-to-top-text {
+  color: rgba(255, 255, 255, 0.20);
+  font-family: Karla;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 16.8px */
+  transition: color 0.3s;
+}
+
+.grid-back-to-top-btn:hover .grid-back-to-top-text{
+  color: #8844DA;
+}

@@ -267,6 +267,7 @@ code {
   font-weight: 400;
   line-height: normal;
   border: 1px solid #F1F1F1;
+  transition: border 0.3s, color 0.3s;
 }
 .global-outlined-btn-2:hover {
   color: #4D2FBB;
@@ -282,6 +283,7 @@ code {
   line-height: normal;
   border: 1px solid #8844DA;
   background-color: #8844DA;
+  transition: border 0.3s, background-color 0.3s;
 }
 .global-outlined-btn-2.active-radio:hover {
   border: 1px solid #4D2FBB;

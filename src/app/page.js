@@ -247,19 +247,19 @@ export default function Home() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-5 md:gap-y-20 lg:gap-y-10 md:gap-x-12 px-5 md:px-0 lg:pt-24 pb-24 lg:pb-8 items-center">
               <div className="flex flex-col p-8 md:p-0 our-tools-grid-item">
-                  <img
-                    src="/svg/tools/globe.svg"
-                    alt="earth globe icon"
-                    width="40px"
-                    className="md:mb-5"
-                  />
-                  <h4 className="py-5 max-w-[180px] md:max-w-[120px] our-tools-right-content-title">
-                    Website Scraper Tool
-                  </h4>
-                  <p className="our-tools-right-content-text">
-                    Simplify your data collection process with our efficient and
-                    user-friendly tool.
-                  </p>
+                <img
+                  src="/svg/tools/globe.svg"
+                  alt="earth globe icon"
+                  width="40px"
+                  className="md:mb-5"
+                />
+                <h4 className="py-5 max-w-[180px] md:max-w-[120px] text-start our-tools-right-content-title">
+                  Website Scraper Tool
+                </h4>
+                <p className="our-tools-right-content-text">
+                  Simplify your data collection process with our efficient and
+                  user-friendly tool.
+                </p>
               </div>
               <div className="flex flex-col p-8 md:p-0 our-tools-grid-item">
                   <img
@@ -268,7 +268,7 @@ export default function Home() {
                     width="40px"
                     className="md:mb-5"
                   />
-                  <h4 className="py-5 max-w-[200px] md:max-w-[120px] our-tools-right-content-title">
+                  <h4 className="py-5 max-w-[200px] md:max-w-[120px] text-start our-tools-right-content-title">
                     Video Generation Tool
                   </h4>
                   <p className="our-tools-right-content-text">
@@ -283,7 +283,7 @@ export default function Home() {
                     width="40px"
                     className="md:mb-5"
                   />
-                  <h4 className="py-5 our-tools-right-content-title">
+                  <h4 className="py-5 text-start our-tools-right-content-title">
                     AI Text to Image Generation <br/>
                     Tool
                   </h4>
@@ -298,7 +298,7 @@ export default function Home() {
                     width="40px"
                     className="md:mb-5"
                   />
-                  <h4 className="py-5 our-tools-right-content-title">
+                  <h4 className="py-5 text-start our-tools-right-content-title">
                     AI Image to Image Generation <br/>
                     Tool
                   </h4>

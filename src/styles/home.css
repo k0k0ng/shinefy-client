@@ -211,7 +211,7 @@
 
 .our-tools-right-content-title {
   color: var(--Tiffany-Blue, #7BDCDE);
-  text-align: center;
+  /* text-align: center; */
   font-family: Montserrat;
   font-size: 32px;
   font-style: normal;
