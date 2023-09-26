@@ -188,6 +188,25 @@ export default function Blogs() {
         </div>
       </section>
 
+      <section className="flex flex-col items-center text-center py-28 px-[5%] xl:px-[18%] global-section-background-3">
+        <p className="mb-8 global-header-text-1">
+          One-Time Deal
+        </p>
+        <h3 className="max-w-[590px] mb-8 global-header-text-2">
+          Sign up today to get everything you need for content creation
+        </h3>
+        <form className="flex flex-col md:flex-row global-promo-code-form">
+          <a
+            href="https://chasereiner.thrivecart.com/shine-ranker-deal"
+            rel="noreferrer"
+            target="_blank"
+            className="min-w-[15rem] flex items-center justify-center py-4 px-5 global-primary-btn"
+          >
+            Start Here
+          </a>
+        </form>
+      </section>
+
       <ContactInfo />
     
       <FooterPage />
