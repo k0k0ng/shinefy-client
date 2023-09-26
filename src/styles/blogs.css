@@ -1,11 +1,67 @@
 
+
+
+.blogs-filter-input {
+  color: #F1F1F1;
+  border-radius: 4px;
+  font-family: Karla;
+  background: #18172f;
+  border: 1px solid #18172f;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.blogs-filter-custom-text-1 {
+  color: #4d2fbb;
+  font-family: Karla;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.blogs-filter-custom-text-2 {
+  color: #4d2fbb;
+  font-family: Karla;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.blogs-filter-active-btn {
+  color: #FFF;
+  font-family: Karla;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  background-color: #4d2fbb;
+  border: 1px solid #4d2fbb;
+}
+
+.blogs-filter-unactive-btn {
+  color: #403951;
+  font-family: Karla;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  border: 1px solid #403951;
+}
+.blogs-filter-unactive-btn:hover {
+  color: #4d2fbb;
+  border: 1px solid #4d2fbb;
+}
+
+
 .blogs-card-title-text {
   color: var(--Tiffany-Blue, #7BDCDE);
   font-family: Montserrat;
   font-size: 21px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%; /* 25.2px */
+  line-height: 120%;
 }
 
 
@@ -15,7 +71,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%; /* 19.2px */
+  line-height: 120%;
 }
 
 
@@ -26,7 +82,7 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%; /* 16.8px */
+  line-height: 120%;
 }
 
 
@@ -51,7 +107,7 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%; /* 16.8px */
+  line-height: 120%;
   transition: color 0.3s;
 }
 

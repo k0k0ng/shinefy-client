@@ -509,7 +509,7 @@ export default function Home() {
                 height="68px"
                 className="self-center mb-8"
               />
-              <p className="our-tools-right-content-title py-5 mb-2">
+              <p className="text-center our-tools-right-content-title py-5 mb-2">
                 28,853
               </p>
               <p className="whitespace-nowrap our-tools-right-content-text">
@@ -524,7 +524,7 @@ export default function Home() {
                 height="63px"
                 className="self-center mb-8"
               />
-              <p className="our-tools-right-content-title py-5 mb-2">
+              <p className="text-center our-tools-right-content-title py-5 mb-2">
                 103,041
               </p>
               <p className="our-tools-right-content-text">
@@ -539,7 +539,7 @@ export default function Home() {
                 height="57px"
                 className="self-center mb-8"
               />
-              <p className="our-tools-right-content-title py-5 mb-2">
+              <p className="text-center our-tools-right-content-title py-5 mb-2">
                 14,873
               </p>
               <p className="our-tools-right-content-text">
@@ -554,7 +554,7 @@ export default function Home() {
                 height="61px"
                 className="self-center mb-8"
               />
-              <p className="our-tools-right-content-title py-5 mb-2">
+              <p className="text-center our-tools-right-content-title py-5 mb-2">
                 28,853
               </p>
               <p className="our-tools-right-content-text">

@@ -6,9 +6,9 @@ import { styled } from '@mui/material/styles';
 import ContactInfo from "@/components/Contacts/ContactInfo";
 import FooterPage from "@/components/Footer/Footer";
 
+import BlogPostsFilter from "@/components/Dialog/BlogPostsFilter";
 import BlogCard from "./BlogCard";
 
-import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import Pagination from '@mui/material/Pagination';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
@@ -16,21 +16,6 @@ import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 import "@/styles/blogs.css"
 import "@/styles/components.contacts.css";
-
-
-
-const CustomTooltip = styled(({ className, ...props }) => (
-  <Tooltip {...props} classes={{ popper: className }} />
-))(({ theme }) => ({
-  [`& .${tooltipClasses.tooltip}`]: {
-    backgroundColor: "#100826",
-    color: '#F1F1F1',
-    maxWidth: 340,
-    fontSize: theme.typography.pxToRem(13),
-    padding: '20px 20px 20px 30px',
-  },
-}));
-
 
 const StyledPaginationComponent = styled(Pagination)(({ theme }) => ({
   '& ul > li:first-child > button': {
@@ -80,6 +65,8 @@ export default function Blogs() {
     })
   }
 
+  
+
   return (
     <>
       <header className="min-h-[48rem] pt-[16rem] lg:pt-[15.5rem] px-[5%] xl:px-[18%] global-header-section-bg">
@@ -96,8 +83,7 @@ export default function Blogs() {
         </div>
       </header>
 
-
-      <section className="px-[18%] mb-10">
+      <section className="px-[5%] lg:px-[10%] 2xl:px-[18%] mb-10">
         <div className="flex flex-col items-center mt-[-17rem]">
           <div className="max-w-[800px] flex flex-wrap justify-center gap-3 mb-10">
             <button 
@@ -159,7 +145,7 @@ export default function Blogs() {
           </div>
 
           <div className="w-full h-20 flex flex-row justify-between items-center mb-10">
-            <div className="flex flex-row gap-2">
+            <div className="flex flex-row gap-2 mr-5">
               <button className="text-white border border-2 transition duration-300 border-[#8844DA] hover:border-[#462eac] hover:bg-[#462eac] ">
                 <KeyboardArrowLeftIcon />
               </button>
@@ -168,60 +154,13 @@ export default function Blogs() {
               </button>
             </div>
 
-            <div className="flex flex-row gap-4">
-              <CustomTooltip
-                placement="top-start"
-                title={
-                  <>
-                    <p className="mb-5 global-text-to-light-blue">Our tools work best for video narration and promoting products</p>
-
-                    <ul className="mb-4 ml-2">
-                      <li className="global-tooltip-li-1">
-                        Short form videos from keywords
-                      </li>
-                      <li className="global-tooltip-li-1">
-                        Videos using your voice as narrator
-                      </li>
-                      <li className="global-tooltip-li-1">
-                        Educational videos using AI images
-                      </li>
-                      <li className="global-tooltip-li-1">
-                        Generate stories and videos using AI
-                      </li>
-                      <li className="global-tooltip-li-1">
-                        Motivational videos for viral content
-                      </li>
-                      <li className="global-tooltip-li-1">
-                        Product and Service reviews
-                      </li>
-                    </ul>
-
-                    <ul className="ml-2">
-                      <li className="global-tooltip-li-2">
-                        Music videos
-                      </li>
-                      <li className="global-tooltip-li-2">
-                        Long format videos
-                      </li>
-                    </ul>
-
-                  </>
-                }
-              >
-                <input type="text" className="w-full h-[40px] mb-2 text-center stunning-images-input" placeholder="type an idea here"/>
-              </CustomTooltip>
-
-              <button className="h-[40px]">
-                <img
-                  src="/svg/Blogs/filter.svg"
-                  alt="Filter Icon"
-                  className="self-center h-[40px] w-[40px]"
-                />
-              </button>
+            <div className="relative flex flex-row gap-4">
+              <input className="w-full md:min-w-[18rem] px-5 rounded blogs-filter-input" placeholder="filter"/>
+              <BlogPostsFilter selectedCategory={selectedCategory} />
             </div>
           </div>
 
-          <div className="w-full min-h-[50rem] mb-10 grid grid-cols-3 gap-y-10 gap-x-14">
+          <div className="w-full min-h-[50rem] mb-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-10 gap-x-8 lg:gap-x-14">
             <BlogCard handleChangeCategory={handleChangeCategory} selectedCategory={selectedCategory} />
             <BlogCard handleChangeCategory={handleChangeCategory} selectedCategory={selectedCategory} />
             <BlogCard handleChangeCategory={handleChangeCategory} selectedCategory={selectedCategory} />
@@ -235,7 +174,7 @@ export default function Blogs() {
             <BlogCard handleChangeCategory={handleChangeCategory} selectedCategory={selectedCategory} />
           </div>
 
-          <div className="w-full h-20 flex flex-row justify-between items-center mb-10">
+          <div className="w-full h-20 flex flex-col md:flex-row justify-between items-center gap-y-10 md:gap-y-0 mb-10">
             <div className="flex flex-row gap-2">
               <button onClick={scrollUp} className="text-white px-2 py-1 grid-back-to-top-btn">
                 <ArrowUpwardIcon style={{marginRight:"25px", color:"#8844DA"}} />

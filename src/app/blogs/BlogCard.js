@@ -12,7 +12,7 @@ export default function BlogCard({handleChangeCategory, selectedCategory}) {
           className="self-center h-[140px] w-[140px]"
         />
       </div>
-      <div className="flex flex-row items-center mb-6 px-6 justify-between">
+      <div className="flex flex-col lg:flex-row items-start lg:items-center mb-6 px-6 gap-y-5 lg:gap-y-0 justify-between">
         <button 
           value="Affiliate"
           onClick={handleChangeCategory}
