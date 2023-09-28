@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
-import {useEffect, createRef} from 'react';
-import { useRouter } from 'next/navigation';
+import { useEffect, createRef } from "react";
+import { useRouter } from "next/navigation";
 import lottie from "lottie-web";
 
-import Error from 'next/error'
+import Error from "next/error";
 
-import ErrorPagesFooter from '@/components/Footer/ErrorPagesFooter';
+import ErrorPagesFooter from "@/components/Footer/ErrorPagesFooter";
 
-import Custom403 from '@/components/ErrorPages/Custom403';
-import Custom500 from '@/components/ErrorPages/Custom500';
-import UnderMaintenance from '@/components/ErrorPages/UnderMaintenance';
+import Custom403 from "@/components/ErrorPages/Custom403";
+import Custom500 from "@/components/ErrorPages/Custom500";
+import UnderMaintenance from "@/components/ErrorPages/UnderMaintenance";
 
 import "../styles/home.css";
 
@@ -46,33 +46,32 @@ export default function NotFound() {
     return (
       <UnderMaintenance />
       // <Error statusCode={500} />
-    )
+    );
   }
 
   return (
-    <div className='h-[100vh] lg:h-[120vh]'>
-      <div className='h-[60%] lg:h-[55%] flex flex-row justify-center px-[5%] xl:px-[15%] 2xl:px-[20%] global-bg-to-linear-gradient-purple'>
-        <div className='w-full flex flex-col items-center justify-end mb-[-25px] 2xl:mr-[-5rem]'>
-          <h1 className='global-error-text-1'>404</h1>
-          <h2 className='mb-6 global-header-text-1'>Oh No! Page not found.</h2>
-          <p className='text-center global-header-text-3'>The page must&apos;ve gone to vacation.</p>
+    <div className="h-[100vh] lg:h-[120vh]">
+      <div className="global-bg-to-linear-gradient-purple flex h-[60%] flex-row justify-center px-[5%] lg:h-[55%] xl:px-[15%] 2xl:px-[20%]">
+        <div className="mb-[-25px] flex w-full flex-col items-center justify-end 2xl:mr-[-5rem]">
+          <h1 className="global-error-text-1">404</h1>
+          <h2 className="global-header-text-1 mb-6">Oh No! Page not found.</h2>
+          <p className="global-header-text-3 text-center">
+            The page must&apos;ve gone to vacation.
+          </p>
           <button
             onClick={() => router.back()}
-            className="text-center px-12 py-4 mt-5 home-primary-btn"
+            className="home-primary-btn mt-5 px-12 py-4 text-center"
           >
             Go Back
           </button>
         </div>
-        <div className='w-full hidden lg:flex flex-col items-center justify-end mb-[-12%]'>
-          <div
-              className="w-full"
-              ref={animationContainer}
-            />
+        <div className="mb-[-12%] hidden w-full flex-col items-center justify-end lg:flex">
+          <div className="w-full" ref={animationContainer} />
         </div>
       </div>
-      <div className='flex flex-row items-end h-[40%] lg:h-[50%] global-bg-to-dark-purple'>
+      <div className="global-bg-to-dark-purple flex h-[40%] flex-row items-end lg:h-[50%]">
         <ErrorPagesFooter />
       </div>
     </div>
-  )
+  );
 }

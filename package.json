@@ -35,5 +35,8 @@
   "engines": {
     "node": "v16.13.2",
     "npm": "8.5.5"
+  },
+  "devDependencies": {
+    "prettier-plugin-tailwindcss": "^0.5.4"
   }
 }

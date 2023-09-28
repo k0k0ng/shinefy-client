@@ -4,7 +4,7 @@ import FooterPage from "@/components/Footer/Footer";
 import FeaturesAndBenefits from "@/components/FeaturesAndBenefits";
 import ContactForm from "@/components/Contacts/ContactForm";
 import ContactInfo from "@/components/Contacts/ContactInfo";
-import LimitedTimeOffer from "@/components/CTA/LimitedTimeOffer";
+import LimitedTimeOffer from "@/components/LimitedTimeOffer/page";
 
 import "@/styles/components.contacts.css";
 

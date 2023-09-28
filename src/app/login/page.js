@@ -2,8 +2,8 @@ import "../../styles/login.css";
 
 const Login = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-4 login-container">
-      <div className="flex justify-center items-center gap-2">
+    <div className="login-container flex flex-col items-center justify-center gap-4">
+      <div className="flex items-center justify-center gap-2">
         <div>
           <img
             src="/images/global/shineranker-logo-colored.png"
@@ -19,9 +19,7 @@ const Login = () => {
       </div>
       <div className="signup-card">
         <form action="/login" method="post">
-          <h1 className="text-center signup-card-title mb-10">
-            Welcome Back!
-          </h1>
+          <h1 className="signup-card-title mb-10 text-center">Welcome Back!</h1>
 
           <div className="flex flex-col">
             <label for="email" className="signup-label mb-2">
@@ -52,7 +50,10 @@ const Login = () => {
           </div>
 
           <div>
-            <a href="/login" className="signup-account-link flex justify-center">
+            <a
+              href="/login"
+              className="signup-account-link flex justify-center"
+            >
               Forgot Password?
             </a>
           </div>

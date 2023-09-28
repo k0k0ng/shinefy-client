@@ -1,36 +1,18 @@
-
-
-
 .blogs-filter-input {
-  color: #F1F1F1;
+  color: #f1f1f1;
   border-radius: 4px;
   font-family: Karla;
   background: #18172f;
   border: 1px solid #18172f;
-  outline: none !important;
   box-shadow: none !important;
 }
 
-.blogs-filter-custom-text-1 {
-  color: #4d2fbb;
-  font-family: Karla;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%;
-}
-
-.blogs-filter-custom-text-2 {
-  color: #4d2fbb;
-  font-family: Karla;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%;
+.blogs-filter-input:focus {
+  outline: 1px solid #4d2fbb;
 }
 
 .blogs-filter-active-btn {
-  color: #FFF;
+  color: #fff;
   font-family: Karla;
   font-size: 14px;
   font-style: normal;
@@ -49,45 +31,14 @@
   line-height: 120%;
   border: 1px solid #403951;
 }
+
 .blogs-filter-unactive-btn:hover {
   color: #4d2fbb;
   border: 1px solid #4d2fbb;
 }
 
-
-.blogs-card-title-text {
-  color: var(--Tiffany-Blue, #7BDCDE);
-  font-family: Montserrat;
-  font-size: 21px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 120%;
-}
-
-
-.blogs-card-content-text {
-  color: var(--Almost-White, #FFF);
-  font-family: Karla;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%;
-}
-
-
-.blogs-card-created-date {
-  color: var(--Almost-White, #FFF);
-  text-align: right;
-  font-family: Karla;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%;
-}
-
-
 .blogs-card-read-more-btn {
-  color: var(--Blue-Violet, #8844DA);
+  color: var(--Blue-Violet, #8844da);
   font-family: Karla;
   font-size: 16px;
   font-style: normal;
@@ -100,9 +51,8 @@
   color: #3a287c;
 }
 
-
 .grid-back-to-top-text {
-  color: rgba(255, 255, 255, 0.20);
+  color: rgba(255, 255, 255, 0.2);
   font-family: Karla;
   font-size: 14px;
   font-style: normal;
@@ -111,6 +61,40 @@
   transition: color 0.3s;
 }
 
-.grid-back-to-top-btn:hover .grid-back-to-top-text{
-  color: #8844DA;
+.grid-back-to-top-btn:hover .grid-back-to-top-text {
+  color: #8844da;
+}
+
+.blog-input {
+  color: #f1f1f1;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.blog-input::placeholder {
+  color: rgba(241, 241, 241, 0.3);
+}
+
+.blog-limited-time-offer-card-bg {
+  background-image: url("/images/blogs/blog-card-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  /* background-attachment: fixed; */
+  flex-shrink: 0;
+}
+
+.blog-limited-time-offer-card-bg .custom-text-1 {
+  background-color: rgba(136, 68, 218, 0.3);
+}
+
+@media screen and (max-width: 425px) {
+  .blog-suggested-blog-container {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .blog-suggested-blog-container > div {
+    margin-bottom: 1.5rem;
+  }
 }

@@ -2,7 +2,7 @@ import "@/styles/components.cta.css";
 
 const LimitedTimeOffer = () => {
   return (
-    <div className="flex flex-col items-center">
+    <section className="flex flex-col items-center">
         <div className="flex flex-col lg:flex-row justify-between items-center py-36 md:py-28 lg:py-20 space-x-0 lg:space-x-28 xl:space-x-44">
             <div className="text-center lg:text-start mb-12 lg:mb-0 px-4 md:px-0">
                 <h2 className="mb-5 global-header-text-1">Limited-Time Offer</h2>
@@ -21,7 +21,7 @@ const LimitedTimeOffer = () => {
                 Grab this Deal!
             </a>
         </div>
-    </div>
+    </section>
   )
 }
 
