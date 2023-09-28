@@ -2,48 +2,47 @@
 
 import { useState, useEffect } from "react";
 
-import { styled } from '@mui/material/styles';
+import { styled } from "@mui/material/styles";
 
-import Box from '@mui/material/Box';
-import SwipeableDrawer from '@mui/material/SwipeableDrawer';
-import Button from '@mui/material/Button';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import Accordion from '@mui/material/Accordion';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import AccordionSummary from '@mui/material/AccordionSummary';
+import Box from "@mui/material/Box";
+import SwipeableDrawer from "@mui/material/SwipeableDrawer";
+import Button from "@mui/material/Button";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import Accordion from "@mui/material/Accordion";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import AccordionSummary from "@mui/material/AccordionSummary";
 
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
 
-import MenuIcon from '@mui/icons-material/Menu';
-import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import MenuIcon from "@mui/icons-material/Menu";
+import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
 import "../../styles/NavigationBar.css";
 
 const logo = "/images/global/ShineFy Logo.png";
 
 const CustomAccordionSummary = styled(AccordionSummary)(({ theme }) => ({
-  '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
-    transform: 'rotate(90deg)',
+  "& .MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
+    transform: "rotate(90deg)",
   },
-  '& .MuiAccordionSummary-expandIconWrapper': {
-    color: '#F1F1F1',
-    padding: '20px'
+  "& .MuiAccordionSummary-expandIconWrapper": {
+    color: "#F1F1F1",
+    padding: "20px",
   },
 }));
 
 const CustomButton = styled(Button)(({ theme }) => ({
-  '$hover': {
-  },
-  textTransform: 'none',
-  fontFamily: 'Karla',
-  fontSize: '16px',
-  fontWeight: '400',
-  padding: '0.25rem 2rem 0.25rem 0.5rem',
-  marginRight: '1rem',
-  color: '#F1F1F1',
+  $hover: {},
+  textTransform: "none",
+  fontFamily: "Karla",
+  fontSize: "16px",
+  fontWeight: "400",
+  padding: "0.25rem 2rem 0.25rem 0.5rem",
+  marginRight: "1rem",
+  color: "#F1F1F1",
 }));
 
 const NavigationBar = () => {
@@ -54,7 +53,6 @@ const NavigationBar = () => {
 
   const [openAboutSubMenu, setOpenAboutSubMenu] = useState(null);
 
-
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
@@ -64,7 +62,6 @@ const NavigationBar = () => {
     };
   }, []);
 
-
   const handleScroll = () => {
     if (window.scrollY > 0) {
       setIsSticky(true);
@@ -73,9 +70,11 @@ const NavigationBar = () => {
     }
   };
 
-
   const toggleDrawer = (open) => (event) => {
-    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
       return;
     }
 
@@ -91,7 +90,6 @@ const NavigationBar = () => {
     setOpenAboutSubMenu(null);
   };
 
-
   const handleExpandAbout = (panel) => (event, isExpanded) => {
     setExpandAbout(isExpanded ? panel : false);
   };
@@ -102,9 +100,13 @@ const NavigationBar = () => {
 
   return (
     <nav className={isSticky ? "sticky" : ""}>
-      <div className={`absolute w-full 2xl:w-[99vw] navContainer ${isSticky ? "changeNavColor" : ""}`} >
-        <div className="flex flex-row items-center justify-between mx-[5vw] lg:mx-[5%] xl:mx-[15%] 2xl:mx-[20%] py-4">
-          <a href="/" className="flex items-center navLogo">
+      <div
+        className={`navContainer absolute w-full 2xl:w-[99vw] ${
+          isSticky ? "changeNavColor" : ""
+        }`}
+      >
+        <div className="mx-[5vw] flex flex-row items-center justify-between py-4 lg:mx-[5%] xl:mx-[15%] 2xl:mx-[20%]">
+          <a href="/" className="navLogo flex items-center">
             <img
               src={logo}
               alt="Shine Ranker Logo"
@@ -116,20 +118,21 @@ const NavigationBar = () => {
 
           {/* Medium - Large screen links */}
           <div
-            className="w-full flex items-center justify-end navLinksCont"
+            className="navLinksCont flex w-full items-center justify-end"
             id="navbar-sticky"
           >
-            <ul className="flex flex-row justify-end items-center p-2 md:p-0 font-karla">
+            <ul className="flex flex-row items-center justify-end p-2 font-karla md:p-0">
               <li className="hidden xl:flex">
-
                 <CustomButton
                   id="basic-button"
-                  aria-controls={openDesktopAboutSubMenu ? 'basic-menu' : undefined}
+                  aria-controls={
+                    openDesktopAboutSubMenu ? "basic-menu" : undefined
+                  }
                   aria-haspopup="true"
-                  aria-expanded={openDesktopAboutSubMenu ? 'true' : undefined}
+                  aria-expanded={openDesktopAboutSubMenu ? "true" : undefined}
                   onClick={handleOpenDesktopAbout}
-                  style={{ 
-                    backgroundColor: 'transparent',
+                  style={{
+                    backgroundColor: "transparent",
                   }}
                   className="opacity-75 hover:opacity-100"
                 >
@@ -141,31 +144,31 @@ const NavigationBar = () => {
                   open={openDesktopAboutSubMenu}
                   onClose={handleCloseDesktopAbout}
                   MenuListProps={{
-                    'aria-labelledby': 'basic-button',
+                    "aria-labelledby": "basic-button",
                   }}
                   className="desktop-about-sub-menu"
                 >
-                  <MenuItem onClick={handleCloseDesktopAbout} className="desktop-about-sub-menu-items" >
-                    <a
-                      href="/about"
-                      className="sub-menu-link"
-                    >
+                  <MenuItem
+                    onClick={handleCloseDesktopAbout}
+                    className="desktop-about-sub-menu-items"
+                  >
+                    <a href="/about" className="sub-menu-link">
                       ShineAi
                     </a>
                   </MenuItem>
-                  <MenuItem onClick={handleCloseDesktopAbout} className="desktop-about-sub-menu-items" >
-                    <a
-                      href="/faq"
-                      className="sub-menu-link"
-                    >
+                  <MenuItem
+                    onClick={handleCloseDesktopAbout}
+                    className="desktop-about-sub-menu-items"
+                  >
+                    <a href="/faq" className="sub-menu-link">
                       FAQs
                     </a>
                   </MenuItem>
                   <MenuItem className="desktop-about-sub-menu-items">
-                    <Accordion 
-                      expanded={expandLegal === 'legals'} 
-                      onChange={handleExpandLegal('legals')}
-                      className="top-nav-accordion-link"  
+                    <Accordion
+                      expanded={expandLegal === "legals"}
+                      onChange={handleExpandLegal("legals")}
+                      className="top-nav-accordion-link"
                     >
                       <CustomAccordionSummary
                         expandIcon={<KeyboardArrowRightIcon />}
@@ -173,38 +176,51 @@ const NavigationBar = () => {
                         id="legals-bh-header"
                         className="sub-menu-link"
                       >
-                        <p className="top-nav-accordion">
-                          Legals
-                        </p>
+                        <p className="top-nav-accordion">Legals</p>
                       </CustomAccordionSummary>
                       <AccordionDetails className="top-nav-accordion-details">
                         <List className="">
-                          <ListItem className="h-14 py-1 px-0">
-                            <a href="/legal/terms-of-use" className="desktop-legals-sub-menu-accordion-link">
+                          <ListItem className="h-14 px-0 py-1">
+                            <a
+                              href="/legal/terms-of-use"
+                              className="desktop-legals-sub-menu-accordion-link"
+                            >
                               Term of Use
                             </a>
                           </ListItem>
 
-                          <ListItem className="h-14 py-1 px-0">
-                            <a href="/legal/refund" className="desktop-legals-sub-menu-accordion-link">
+                          <ListItem className="h-14 px-0 py-1">
+                            <a
+                              href="/legal/refund"
+                              className="desktop-legals-sub-menu-accordion-link"
+                            >
                               Refund and Cancelation
                             </a>
                           </ListItem>
 
-                          <ListItem className="h-14 py-1 px-0">
-                            <a href="/legal/earnings-disclaimer" className="desktop-legals-sub-menu-accordion-link">
+                          <ListItem className="h-14 px-0 py-1">
+                            <a
+                              href="/legal/earnings-disclaimer"
+                              className="desktop-legals-sub-menu-accordion-link"
+                            >
                               Earnings Disclaimer
                             </a>
                           </ListItem>
 
-                          <ListItem className="h-14 py-1 px-0">
-                            <a href="/legal/affiliate-promotions" className="desktop-legals-sub-menu-accordion-link">
+                          <ListItem className="h-14 px-0 py-1">
+                            <a
+                              href="/legal/affiliate-promotions"
+                              className="desktop-legals-sub-menu-accordion-link"
+                            >
                               Affiliations Promotions
                             </a>
                           </ListItem>
 
-                          <ListItem className="h-14 py-1 px-0">
-                            <a href="/legal/facebook-disclaimer" className="desktop-legals-sub-menu-accordion-link">
+                          <ListItem className="h-14 px-0 py-1">
+                            <a
+                              href="/legal/facebook-disclaimer"
+                              className="desktop-legals-sub-menu-accordion-link"
+                            >
                               Facebook Disclaimer
                             </a>
                           </ListItem>
@@ -217,7 +233,7 @@ const NavigationBar = () => {
               <li className="hidden xl:flex">
                 <a
                   href="/tools"
-                  className="block py-2 pl-3 pr-4 text-white font-normal rounded md:p-0 mr-[44px] transition opacity-75 hover:opacity-100"
+                  className="mr-[44px] block rounded py-2 pl-3 pr-4 font-normal text-white opacity-75 transition hover:opacity-100 md:p-0"
                 >
                   Tools
                 </a>
@@ -225,7 +241,7 @@ const NavigationBar = () => {
               <li className="hidden xl:flex">
                 <a
                   href="/pricing"
-                  className="block py-2 pl-3 pr-4 text-white font-normal rounded md:p-0 mr-[44px] transition opacity-75 hover:opacity-100"
+                  className="mr-[44px] block rounded py-2 pl-3 pr-4 font-normal text-white opacity-75 transition hover:opacity-100 md:p-0"
                 >
                   Pricing Plan
                 </a>
@@ -233,7 +249,7 @@ const NavigationBar = () => {
               <li className="hidden xl:flex">
                 <a
                   href="/blogs"
-                  className="block py-2 pl-3 pr-4 text-white font-normal rounded md:p-0 mr-[44px] transition opacity-75 hover:opacity-100"
+                  className="mr-[44px] block rounded py-2 pl-3 pr-4 font-normal text-white opacity-75 transition hover:opacity-100 md:p-0"
                 >
                   Blogs
                 </a>
@@ -241,7 +257,7 @@ const NavigationBar = () => {
               <li className="hidden xl:flex">
                 <a
                   href="/book-a-call"
-                  className="block py-2 pl-3 pr-4 text-white font-normal rounded md:p-0 mr-[44px] transition opacity-75 hover:opacity-100"
+                  className="mr-[44px] block rounded py-2 pl-3 pr-4 font-normal text-white opacity-75 transition hover:opacity-100 md:p-0"
                 >
                   Book A Call
                 </a>
@@ -252,7 +268,7 @@ const NavigationBar = () => {
                   type="button"
                   rel="noreferrer"
                   target="_blank"
-                  className="flex justify-center items-center font-karla text-white text-base font-normal bg-[#8844DA] hover:bg-[#4D2FBB] transition rounded mr-3 py-4 px-5"
+                  className="mr-3 flex items-center justify-center rounded bg-[#8844DA] px-5 py-4 font-karla text-base font-normal text-white transition hover:bg-[#4D2FBB]"
                 >
                   Sign up
                 </a>
@@ -263,7 +279,7 @@ const NavigationBar = () => {
                   type="button"
                   rel="noreferrer"
                   target="_blank"
-                  className="flex justify-center items-center font-karla text-white text-base font-normal border rounded py-4 px-5 "
+                  className="flex items-center justify-center rounded border px-5 py-4 font-karla text-base font-normal text-white "
                 >
                   Log in
                 </a>
@@ -276,7 +292,6 @@ const NavigationBar = () => {
               </li>
             </ul>
           </div>
-        
         </div>
 
         {/* Nav links for mobile */}
@@ -286,19 +301,18 @@ const NavigationBar = () => {
           variant="persistent"
           onClose={toggleDrawer(false)}
           onOpen={toggleDrawer(true)}
-          className="flex 2xl:hidden swipeable-drawer"
+          className="swipeable-drawer flex 2xl:hidden"
         >
           <Box
             role="presentation"
-            className="h-full flex flex-col justify-between font-karla pt-5 drawer-container"
+            className="drawer-container flex h-full flex-col justify-between pt-5 font-karla"
           >
             <List>
-          
               <ListItem className="min-h-14 py-1">
-                <Accordion 
-                  expanded={expandAbout === 'about'} 
-                  onChange={handleExpandAbout('about')}
-                  className="top-nav-accordion-link"  
+                <Accordion
+                  expanded={expandAbout === "about"}
+                  onChange={handleExpandAbout("about")}
+                  className="top-nav-accordion-link"
                 >
                   <CustomAccordionSummary
                     expandIcon={<KeyboardArrowRightIcon />}
@@ -306,9 +320,7 @@ const NavigationBar = () => {
                     id="about-bh-header"
                     className="sub-menu-link"
                   >
-                    <p className="top-nav-accordion">
-                      About
-                    </p>
+                    <p className="top-nav-accordion">About</p>
                   </CustomAccordionSummary>
                   <AccordionDetails className="top-nav-accordion-details">
                     <List className="">
@@ -325,49 +337,64 @@ const NavigationBar = () => {
                       </ListItem>
 
                       <ListItem className="mobile-accordion-link-container">
-                        <Accordion 
-                          expanded={expandLegal === 'legals'} 
-                          onChange={handleExpandLegal('legals')}
-                          className="top-nav-accordion-link"  
+                        <Accordion
+                          expanded={expandLegal === "legals"}
+                          onChange={handleExpandLegal("legals")}
+                          className="top-nav-accordion-link"
                         >
                           <CustomAccordionSummary
-                            expandIcon={<KeyboardArrowRightIcon className="text-white"/>}
+                            expandIcon={
+                              <KeyboardArrowRightIcon className="text-white" />
+                            }
                             aria-controls="legals-bh-content"
                             id="legals-bh-header"
                             className="mobile-legals-accordion-link"
                           >
-                            <p className="top-nav-accordion">
-                              Legals
-                            </p>
+                            <p className="top-nav-accordion">Legals</p>
                           </CustomAccordionSummary>
                           <AccordionDetails className="top-nav-accordion-details">
                             <List className="">
                               <ListItem className="mobile-accordion-link-container">
-                                <a href="/legal/terms-of-use" className="mobile-accordion-link">
+                                <a
+                                  href="/legal/terms-of-use"
+                                  className="mobile-accordion-link"
+                                >
                                   Term of Use
                                 </a>
                               </ListItem>
 
                               <ListItem className="mobile-accordion-link-container">
-                                <a href="/legal/refund" className="mobile-accordion-link">
+                                <a
+                                  href="/legal/refund"
+                                  className="mobile-accordion-link"
+                                >
                                   Refund and Cancelation
                                 </a>
                               </ListItem>
 
                               <ListItem className="mobile-accordion-link-container">
-                                <a href="/legal/earnings-disclaimer" className="mobile-accordion-link">
+                                <a
+                                  href="/legal/earnings-disclaimer"
+                                  className="mobile-accordion-link"
+                                >
                                   Earnings Disclaimer
                                 </a>
                               </ListItem>
 
                               <ListItem className="mobile-accordion-link-container">
-                                <a href="/legal/affiliate-promotions" className="mobile-accordion-link">
+                                <a
+                                  href="/legal/affiliate-promotions"
+                                  className="mobile-accordion-link"
+                                >
                                   Affiliations Promotions
                                 </a>
                               </ListItem>
 
                               <ListItem className="mobile-accordion-link-container">
-                                <a href="/legal/facebook-disclaimer" className="mobile-accordion-link">
+                                <a
+                                  href="/legal/facebook-disclaimer"
+                                  className="mobile-accordion-link"
+                                >
                                   Facebook Disclaimer
                                 </a>
                               </ListItem>
@@ -375,7 +402,6 @@ const NavigationBar = () => {
                           </AccordionDetails>
                         </Accordion>
                       </ListItem>
-
                     </List>
                   </AccordionDetails>
                 </Accordion>
@@ -394,55 +420,51 @@ const NavigationBar = () => {
               </ListItem>
 
               <ListItem className="mobile-sub-menu-link">
-                <a
-                  href="/blogs"
-                  className="mobile-accordion-link"
-                >
+                <a href="/blogs" className="mobile-accordion-link">
                   Blogs
                 </a>
               </ListItem>
 
               <ListItem className="mobile-sub-menu-link">
-                <a
-                  href="/book-a-call"
-                  className="mobile-accordion-link"
-                >
+                <a href="/book-a-call" className="mobile-accordion-link">
                   Book a Call
                 </a>
               </ListItem>
             </List>
-            
-            <div className="flex flex-col px-5 pb-8 gap-y-5">
-                <div className="flex md:hidden h-14 p-0 rounded border">
-                  <a 
-                    href="https://app.shineranker.com/signup_free/"
-                    rel="noreferrer"
-                    target="_blank"
-                    className="mobile-accordion-link"
-                  >
-                    Sign up
-                  </a>
-                </div>
-                <div className="flex md:hidden h-14 p-0 rounded border">
-                  <a 
-                    href="https://app.shineranker.com/"
-                    rel="noreferrer"
-                    target="_blank" 
-                    className="mobile-accordion-link"
-                  >
-                    Log in
-                  </a>
-                </div>
 
-                <div onClick={toggleDrawer(false)} className="flex flex-row items-center justify-center mt-2 h-14">
-                  <button className="rounded-full p-2 pl-2.5 border border-2">
-                    <KeyboardDoubleArrowRightIcon />
-                  </button>
-                </div>
+            <div className="flex flex-col gap-y-5 px-5 pb-8">
+              <div className="flex h-14 rounded border p-0 md:hidden">
+                <a
+                  href="https://app.shineranker.com/signup_free/"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="mobile-accordion-link"
+                >
+                  Sign up
+                </a>
+              </div>
+              <div className="flex h-14 rounded border p-0 md:hidden">
+                <a
+                  href="https://app.shineranker.com/"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="mobile-accordion-link"
+                >
+                  Log in
+                </a>
+              </div>
+
+              <div
+                onClick={toggleDrawer(false)}
+                className="mt-2 flex h-14 flex-row items-center justify-center"
+              >
+                <button className="rounded-full border-2 p-2 pl-2.5">
+                  <KeyboardDoubleArrowRightIcon />
+                </button>
+              </div>
             </div>
           </Box>
         </SwipeableDrawer>
-        
       </div>
     </nav>
   );

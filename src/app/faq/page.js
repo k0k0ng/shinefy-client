@@ -7,6 +7,8 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 
+import HelpIcon from "@mui/icons-material/Help";
+
 import "../../styles/faq.css";
 import "@/styles/components.contacts.css";
 
@@ -19,11 +21,11 @@ const FAQ = () => {
           Frequently Asked Questions
         </h1>
         <p className="global-header-text-3 md:text-center">
-          Last Updated 29 July, 2023
+          Last updated 14 September, 2023
         </p>
       </header>
 
-      <section className="global-section-container-under-header mb-12 px-[5%] md:mb-0 xl:px-[18%]">
+      <section className="global-section-container-under-header mb-12 px-[5%] xl:px-[18%]">
         <div className="global-content-container-under-header mb-14">
           <a href="/">Home</a>
           <span> {`>`} </span>
@@ -58,20 +60,18 @@ const FAQ = () => {
               id="panel1a-header"
               className="question"
             >
-              <p>What is Shine Ranker?</p>
+              <p>What is Shinefy</p>
             </AccordionSummary>
             <hr className="jus ml-[1.75%] max-w-[95%]" />
             <AccordionDetails className="faq-accordion-details">
               <p className="global-header-text-3 max-w-[96%]">
-                Shine Ranker is an AI-driven tool designed to boost SEO efforts,
-                aiding businessesm, marketers, and website owners in improving
-                online presense and rankings. With a comprehensive range of
-                features, it caters to various SEO aspects, including keyword
-                research, competitor analysis, content enhancement, backlink
-                tracking, rank monitoring, and site audits.
+                Shinefy is an AI and SEO tool designed to create viral content,
+                improve online presence and optimize pages to generate leads and
+                traffic. It’s aimed to serve businesses, marketers, content
+                creators, website owners and aspirants.
                 <br />
                 <br />
-                See full details about Shine Ranker <a href="/about">here</a>.
+                See full details about Shinefy <a href="/about">here</a>.
               </p>
             </AccordionDetails>
           </Accordion>
@@ -87,7 +87,7 @@ const FAQ = () => {
               id="panel1a-header"
               className="question"
             >
-              <p>What are the features of shineAi Tools?</p>
+              <p>What are the features of Shinefy Tools?</p>
             </AccordionSummary>
             <hr className="jus ml-[1.75%] max-w-[95%]" />
             <AccordionDetails className="faq-accordion-details">
@@ -95,36 +95,33 @@ const FAQ = () => {
                 <li className="mb-6">
                   <p className="global-header-text-3 max-w-[96%]">
                     <span className="font-bold text-violet-500">
-                      Traffic Checker:{" "}
+                      AI Video Generating tools:{" "}
                     </span>
-                    Get insights into your website&apos;s traffic and understand
-                    where your visitors are coming from.
+                    for your content creation needs
                   </p>
                 </li>
 
                 <li className="mb-6">
                   <p className="global-header-text-3 max-w-[96%]">
                     <span className="font-bold text-violet-500">
-                      SEO Audit:{" "}
+                      SEO Tools:{" "}
                     </span>
-                    With just a click, receive a detailed analysis of your
-                    website&apos;s SEO health, highlight areas of improvement.
+                    for your websites optimization and conversion
                   </p>
                 </li>
 
                 <li className="mb-6">
                   <p className="global-header-text-3 max-w-[96%]">
                     <span className="font-bold text-violet-500">
-                      Keyword Research Tools:{" "}
+                      VIP Group:{" "}
                     </span>
-                    Dive into high-traffic, low-compertition keywords that can
-                    elevate your website&apos;s search engine ranking.
+                    for your passive income through affiliate marketing
                   </p>
                 </li>
               </ul>
 
               <p className="global-header-text-3 max-w-[96%]">
-                Read more about the features of Shine Ranker tool{" "}
+                Read more about the features of Shinefy tool{" "}
                 <a href="/tools">here</a>.
               </p>
             </AccordionDetails>
@@ -141,17 +138,18 @@ const FAQ = () => {
               id="panel1a-header"
               className="question"
             >
-              <p>How much does shineAi cost?</p>
+              <p>How much does Shinefy cost?</p>
             </AccordionSummary>
             <hr className="jus ml-[1.75%] max-w-[95%]" />
             <AccordionDetails className="faq-accordion-details">
-              <p className="global-header-text-3 max-w-[96%]">
-                Most affordable plan is $59 per month with access to all
-                features and tools within 30 days. Plan is auto-renewed until
-                subscription is canceled by the user. User can switch from
+              <p className="global-header-text-3 max-w-[1020px]">
+                Starter plan costs $97 monthly and Annual Shinefy Pass is $497 a
+                year with 43% discount. All plans come with unlimited access to
+                all features and tools. The plan is auto renewed until the
+                subscription is canceled by the user. Users can switch from
                 initial paid subscription to another subscription, but will
-                forfeit the former&apos;s inclusions. See full details of
-                Pricing Plan <a href="/pricing">here</a>.
+                forfeit the former’s inclusions. See full details of Pricing
+                Plan <a href="/pricing">here</a>.
               </p>
             </AccordionDetails>
           </Accordion>
@@ -167,18 +165,13 @@ const FAQ = () => {
               id="panel1a-header"
               className="question"
             >
-              <p>What are the benefits of shineAi</p>
+              <p>What are the benefits of Shinefy?</p>
             </AccordionSummary>
             <hr className="jus ml-[1.75%] max-w-[95%]" />
             <AccordionDetails className="faq-accordion-details">
               <p className="global-header-text-3 max-w-[96%]">
-                Comprehensive SEO Tool, AI Driven Data, User-friendly interface,
-                Time saving and Scalable solutions.
-                <br />
-                <br />
-                Shine Ranker&apos;s AI-driven data provides users with accurate
-                and up-to-date information, ensuring they make well-informed SEO
-                strategy decisions
+                It gives - comprehensive AI and SEO tool, AI Driven Service,
+                User-friendly interface. Time Saving and Scalable solution.
               </p>
             </AccordionDetails>
           </Accordion>
@@ -194,14 +187,14 @@ const FAQ = () => {
               id="panel1a-header"
               className="question"
             >
-              <p>How to create a shine Ai account?</p>
+              <p>How to create a Shinefy account?</p>
             </AccordionSummary>
             <hr className="jus ml-[1.75%] max-w-[95%]" />
             <AccordionDetails className="faq-accordion-details">
               <p className="global-header-text-3 max-w-[96%]">
-                Go to the top menu of this page and click{" "}
-                <span className="global-text-to-light-green">Sign Up</span> to
-                register for a free trial, or simple click{" "}
+                Just go to the top menu of this page and click{" "}
+                <span className="text-[#8844DA]">sign up</span> to register, or
+                simple click{" "}
                 <a
                   href="https://app.shineranker.com/signup_free/"
                   rel="noreferrer"
@@ -225,15 +218,14 @@ const FAQ = () => {
               id="panel1a-header"
               className="question"
             >
-              <p>How to use shineAi?</p>
+              <p>How to use Shinefy?</p>
             </AccordionSummary>
             <hr className="jus ml-[1.75%] max-w-[95%]" />
             <AccordionDetails className="faq-accordion-details">
               <p className="global-header-text-3 max-w-[96%]">
-                After creating an account. Log in using your registered email
-                and password. Familiarize yourself with the dashboard. On the
-                left panel, Go to AI Tools, to see all featured tools to create
-                your AI content.
+                After creating an account, login using your registered email and
+                password. Get familiar with the dashboard. On the left panel,
+                click and see all features tools to create your awesome content.
               </p>
             </AccordionDetails>
           </Accordion>
@@ -249,20 +241,30 @@ const FAQ = () => {
               id="panel1a-header"
               className="question"
             >
-              <p>Is there a free trial for shineAi?</p>
+              <p>Is there a free trial for Shinefy?</p>
             </AccordionSummary>
             <hr className="jus ml-[1.75%] max-w-[95%]" />
             <AccordionDetails className="faq-accordion-details">
               <p className="global-header-text-3 max-w-[96%]">
-                Yes, Shine Ranker offers a free plan with limited access to its
-                features, which is ideal for testing the new tool before
-                committing to a paid plan.
+                Shinefy offers promos from time to time with limited access to
+                its features, which is ideal for testing the new tool before
+                committing to a paid plan. Follow us on our social media
+                channels to get the latest updates on promos.
               </p>
             </AccordionDetails>
           </Accordion>
         </div>
+      </section>
 
-        <div className="flex flex-col gap-10 pt-14 md:flex-row md:items-center md:justify-evenly">
+      <div className="flex flex-col items-center  justify-center gap-x-5 bg-[#100826] px-[5%] py-20 lg:flex-row xl:px-[20%]">
+        <HelpIcon sx={{ color: "#8844DA", width: "40px", height: "40px" }} />
+        <p className="mt-6 text-center font-montserrat text-[32px] font-bold text-white lg:mt-0 lg:text-start">
+          Have more questions? Contact our Customer Support!
+        </p>
+      </div>
+
+      <section className="bg-[#0D0D0D] px-[5%] py-20 xl:px-[20%]">
+        <div className="flex flex-col gap-10   md:flex-row md:items-center md:justify-between">
           <div>
             <h2 className="global-header-text-1">shineAI</h2>
             <h2 className="global-header-text-2 my-2 whitespace-nowrap pt-2">
@@ -278,7 +280,7 @@ const FAQ = () => {
         </div>
       </section>
 
-      <ContactForm />
+      {/* <ContactForm /> */}
 
       <ContactInfo />
 

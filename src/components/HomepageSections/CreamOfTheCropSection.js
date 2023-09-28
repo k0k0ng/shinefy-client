@@ -1,12 +1,13 @@
-import {useState, useRef} from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { useState, useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import VideoPlayer from '../VideoPlayer/VideoPlayer';
+import VideoPlayer from "../VideoPlayer/VideoPlayer";
 
 import "@/styles/Homepage/creamOfTheCropSection.css";
 
 export default function CreamOfTheCropSection() {
-  const [selectedCreamOfCropCategory, setSelectedCreamOfCropCategory] = useState("General Purpose");
+  const [selectedCreamOfCropCategory, setSelectedCreamOfCropCategory] =
+    useState("General Purpose");
   const [playCreamOfCropVideo, setPlayCreamOfCropVideo] = useState(false);
 
   const videoURLToPlay = useRef("");
@@ -20,22 +21,28 @@ export default function CreamOfTheCropSection() {
     videoPlayerModalRef.current.showModal();
     videoURLToPlay.current = url;
     setPlayCreamOfCropVideo(true);
-  }
+  };
 
   const hideVideoModal = () => {
     videoPlayerModalRef.current.close();
     setPlayCreamOfCropVideo(false);
-  }
-
+  };
 
   return (
-    <section className="py-20 px-[10%] 2xl:px-[20%]">
-      <h4 className="mb-6 text-center global-header-text-1">The Cream of the Crop</h4>
-      <h3 className="mb-6 text-center global-header-text-2">Captivating Videos & Pictography</h3>
-      <p className="mb-12 text-center global-header-text-3">Our tools create seamless videos and timings that binds your content and make it viral on any platform.</p>
-      
-      <div className="max-w-[700px] flex flex-row flex-wrap justify-center gap-3 mx-auto mb-12">
+    <section className="px-[10%] py-20 2xl:px-[20%]">
+      <header className="flex flex-col items-center">
+        <h4 className="global-header-text-1 mb-6 text-center">Your Go-To</h4>
+        <h3 className="global-header-text-2 mb-6 text-center">
+          Done-In-A-Day Videos & Content
+        </h3>
+        <p className="global-header-text-3 mb-12 max-w-[600px] text-center">
+          This is a never seen before AI tool for content creators, by content
+          creators. But most of all, this is a tool for EVERY looking-to-scale
+          aspirants who wants to scale their content the fast and easy way.
+        </p>
+      </header>
 
+      <div className="mx-auto mb-12 flex max-w-[700px] flex-row flex-wrap justify-center gap-3">
         {/* Temporarily hidden because these categories are not yet available - JOHN 18/09/23 */}
         {/* <button 
           value="Motivational"
@@ -108,24 +115,29 @@ export default function CreamOfTheCropSection() {
             Informational
         </button> */}
 
-        <button 
+        <button
           value="General Purpose"
-          onClick={handleChangeCreamOfCropCategory}        
-          className={`whitespace-nowrap p-4 text-white rounded global-outlined-btn-2 ${selectedCreamOfCropCategory=="General Purpose" ? "active-radio" : ""}`} 
+          onClick={handleChangeCreamOfCropCategory}
+          className={`global-outlined-btn-2 whitespace-nowrap rounded p-4 text-white ${
+            selectedCreamOfCropCategory == "General Purpose"
+              ? "active-radio"
+              : ""
+          }`}
         >
           General Purpose
         </button>
-        <button 
+        <button
           value="Video Enahncer"
-          onClick={handleChangeCreamOfCropCategory}        
-          className={`whitespace-nowrap p-4 text-white rounded global-outlined-btn-2 ${selectedCreamOfCropCategory=="Video Enahncer" ? "active-radio" : ""}`} 
+          onClick={handleChangeCreamOfCropCategory}
+          className={`global-outlined-btn-2 whitespace-nowrap rounded p-4 text-white ${
+            selectedCreamOfCropCategory == "Video Enahncer"
+              ? "active-radio"
+              : ""
+          }`}
         >
           Video Enahncer
         </button>
-        
-
       </div>
-
 
       <Swiper
         pagination={{
@@ -154,174 +166,172 @@ export default function CreamOfTheCropSection() {
       >
         <SwiperSlide>
           <div className="flex flex-col items-center ">
-            <button onClick={() => showVideoModal("https://vimeo.com/865649304?share=copy")} className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
+            <button
+              onClick={() =>
+                showVideoModal("https://vimeo.com/865649304?share=copy")
+              }
+              className="cream-of-crop-custom-text rounded px-8 py-2 text-white"
+            >
               <img
                 src="/images/home/CreamOfCrop/Top5hacksADHD.png"
                 alt="Top5hacksADHD Video thumbnail"
-                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+                className="mb-4 min-h-[300px] min-w-[15rem] rounded md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px]"
               />
-            
               Motivational
             </button>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div onClick={() => showVideoModal("https://vimeo.com/865973089?share=copy")} className="flex flex-col items-center ">
-            <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
+          <div
+            onClick={() =>
+              showVideoModal("https://vimeo.com/865973089?share=copy")
+            }
+            className="flex flex-col items-center "
+          >
+            <button className="cream-of-crop-custom-text rounded px-8 py-2 text-white">
               <img
                 src="/images/home/CreamOfCrop/Marie Curie.png"
                 alt="Marie Curie Video thumbnail"
-                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+                className="mb-4 min-h-[300px] min-w-[15rem] rounded md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px]"
               />
-
-              Information 
-            </button>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex flex-col items-center ">
-            <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
-              <img
-                src="/images/home/CreamOfCrop/ShineRanker.png"
-                alt="ShineRanker Video thumbnail"
-                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
-              />
-            
-              Promotional
-            </button>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex flex-col items-center ">
-            <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
-              <img
-                src="/images/home/CreamOfCrop/Samuel.png"
-                alt="Samuel Video thumbnail"
-                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
-              />
-            
-              Storytelling
-            </button>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex flex-col items-center ">
-            <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
-              <img
-                src="/images/home/CreamOfCrop/Why Indonesians dont speak dutch.png"
-                alt="Why Indonesians dont speak dutch Video thumbnail"
-                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
-              />
-            
-              Trivia
-            </button>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex flex-col items-center ">
-            <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
-              <img
-                src="/images/home/CreamOfCrop/uranium.png"
-                alt="uranium Video thumbnail"
-                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
-              />
-            
-              Recent Viral
-            </button>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex flex-col items-center ">
-            <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
-              <img
-                src="/images/home/CreamOfCrop/Top5hacksADHD.png"
-                alt="Top5hacksADHD Video thumbnail"
-                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
-              />
-            
-              Motivational
-            </button>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex flex-col items-center ">
-            <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
-              <img
-                src="/images/home/CreamOfCrop/Marie Curie.png"
-                alt="Marie Curie Video thumbnail"
-                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
-              />
-            
               Information
             </button>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex flex-col items-center ">
-            <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
+            <button className="cream-of-crop-custom-text rounded px-8 py-2 text-white">
               <img
                 src="/images/home/CreamOfCrop/ShineRanker.png"
                 alt="ShineRanker Video thumbnail"
-                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+                className="mb-4 min-h-[300px] min-w-[15rem] rounded md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px]"
               />
-            
               Promotional
             </button>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex flex-col items-center ">
-            <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
+            <button className="cream-of-crop-custom-text rounded px-8 py-2 text-white">
               <img
                 src="/images/home/CreamOfCrop/Samuel.png"
                 alt="Samuel Video thumbnail"
-                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+                className="mb-4 min-h-[300px] min-w-[15rem] rounded md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px]"
               />
-            
               Storytelling
             </button>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex flex-col items-center ">
-            <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
+            <button className="cream-of-crop-custom-text rounded px-8 py-2 text-white">
               <img
                 src="/images/home/CreamOfCrop/Why Indonesians dont speak dutch.png"
                 alt="Why Indonesians dont speak dutch Video thumbnail"
-                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+                className="mb-4 min-h-[300px] min-w-[15rem] rounded md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px]"
               />
-            
               Trivia
             </button>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="flex flex-col items-center ">
-            <button className="py-2 px-8 rounded text-white cream-of-crop-custom-text">
+            <button className="cream-of-crop-custom-text rounded px-8 py-2 text-white">
               <img
                 src="/images/home/CreamOfCrop/uranium.png"
                 alt="uranium Video thumbnail"
-                className="min-h-[300px] min-w-[15rem] md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px] mb-4 rounded"
+                className="mb-4 min-h-[300px] min-w-[15rem] rounded md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px]"
               />
-            
+              Recent Viral
+            </button>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="flex flex-col items-center ">
+            <button className="cream-of-crop-custom-text rounded px-8 py-2 text-white">
+              <img
+                src="/images/home/CreamOfCrop/Top5hacksADHD.png"
+                alt="Top5hacksADHD Video thumbnail"
+                className="mb-4 min-h-[300px] min-w-[15rem] rounded md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px]"
+              />
+              Motivational
+            </button>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="flex flex-col items-center ">
+            <button className="cream-of-crop-custom-text rounded px-8 py-2 text-white">
+              <img
+                src="/images/home/CreamOfCrop/Marie Curie.png"
+                alt="Marie Curie Video thumbnail"
+                className="mb-4 min-h-[300px] min-w-[15rem] rounded md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px]"
+              />
+              Information
+            </button>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="flex flex-col items-center ">
+            <button className="cream-of-crop-custom-text rounded px-8 py-2 text-white">
+              <img
+                src="/images/home/CreamOfCrop/ShineRanker.png"
+                alt="ShineRanker Video thumbnail"
+                className="mb-4 min-h-[300px] min-w-[15rem] rounded md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px]"
+              />
+              Promotional
+            </button>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="flex flex-col items-center ">
+            <button className="cream-of-crop-custom-text rounded px-8 py-2 text-white">
+              <img
+                src="/images/home/CreamOfCrop/Samuel.png"
+                alt="Samuel Video thumbnail"
+                className="mb-4 min-h-[300px] min-w-[15rem] rounded md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px]"
+              />
+              Storytelling
+            </button>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="flex flex-col items-center ">
+            <button className="cream-of-crop-custom-text rounded px-8 py-2 text-white">
+              <img
+                src="/images/home/CreamOfCrop/Why Indonesians dont speak dutch.png"
+                alt="Why Indonesians dont speak dutch Video thumbnail"
+                className="mb-4 min-h-[300px] min-w-[15rem] rounded md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px]"
+              />
+              Trivia
+            </button>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="flex flex-col items-center ">
+            <button className="cream-of-crop-custom-text rounded px-8 py-2 text-white">
+              <img
+                src="/images/home/CreamOfCrop/uranium.png"
+                alt="uranium Video thumbnail"
+                className="mb-4 min-h-[300px] min-w-[15rem] rounded md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px]"
+              />
               Recent Viral
             </button>
           </div>
         </SwiperSlide>
       </Swiper>
 
-
-      <dialog 
-        ref={videoPlayerModalRef} 
-        className={` ${playCreamOfCropVideo ? "" : "hidden"} flex items-center justify-center video-player-dialog`}
+      <dialog
+        ref={videoPlayerModalRef}
+        className={` ${
+          playCreamOfCropVideo ? "" : "hidden"
+        } video-player-dialog flex items-center justify-center`}
       >
-        <VideoPlayer 
-          playVideo={playCreamOfCropVideo} 
-          hideVideoModal={hideVideoModal} 
-          videoURL = {videoURLToPlay.current}
+        <VideoPlayer
+          playVideo={playCreamOfCropVideo}
+          hideVideoModal={hideVideoModal}
+          videoURL={videoURLToPlay.current}
         />
-      </dialog> 
-
+      </dialog>
     </section>
-  )
+  );
 }

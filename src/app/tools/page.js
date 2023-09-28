@@ -122,7 +122,7 @@ export default function Tools() {
             </div>
           </div>
 
-          <div className="flex w-full flex-col flex-col-reverse items-center justify-evenly gap-20 lg:flex-row">
+          <div className="flex w-full flex-col-reverse items-center justify-evenly gap-20 lg:flex-row">
             <div className="flex flex-row gap-x-2">
               <div className="flex flex-row justify-center gap-2">
                 <img
@@ -201,7 +201,7 @@ export default function Tools() {
             </div>
           </div>
 
-          <div className="flex w-full flex-col flex-col-reverse items-center justify-evenly gap-20 lg:flex-row lg:gap-10">
+          <div className="flex w-full flex-col-reverse items-center justify-evenly gap-20 lg:flex-row lg:gap-10">
             <div className="flex justify-center">
               <img
                 src="/images/tools/spider-man.jpg"

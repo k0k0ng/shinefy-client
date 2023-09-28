@@ -100,8 +100,9 @@ export default function Home() {
             <h1 className="hero-header-text">Powered by AI Videos</h1>
 
             <p className="hero-header-content mb-8 mt-5 max-w-[620px] lg:mb-14">
-              shineAi is a collection of powerful AI tools that generate AI
-              videos for passive income in just one click. Powered by
+              <strong>Shinefy</strong> is a complete collection of powerful AI
+              tools that lets you generate binge-worthy AI videos that drive
+              income with just one click! Powered by
               <object
                 data="/svg/home/openai-logo.svg"
                 type="image/svg+xml"
@@ -141,14 +142,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How to use Shine Ranker App */}
+      {/* Powerful AI Tool */}
       <section className="how-to-use-shine-ai-section px-[5%] pb-16 pt-14 xl:px-[18%] ">
-        <div className="mt-[-9rem] flex flex-col items-center gap-5">
-          <h3 className="global-header-text-1 mb-2 w-full md:text-center">
-            How To Use shineAi App
+        <div className="mt-[-11rem] flex flex-col items-center gap-5">
+          <h3 className="global-header-text-1 mb-3 w-full md:text-center">
+            A Powerful AI Tool
           </h3>
-          <h2 className="global-header-text-2 mb-2 max-w-[516px] md:text-center">
-            Watch this video and Start making money online
+          <h2 className="global-header-text-2 mb-3 md:text-center">
+            That’s All About Your Online Growth
           </h2>
           <p className="global-header-text-3 max-w-[516px] md:text-center">
             Watch the free training video and start earning money today even if
@@ -197,19 +198,19 @@ export default function Home() {
       </section>
 
       {/* Our Tools */}
-      <section className="">
+      <section>
         <div className="our-tools-container pb-0 pt-10 md:pb-10 lg:pb-0 xl:pt-20">
           <div className="mb-14 flex flex-col items-center px-5 md:px-0 xl:mb-20">
             <h3 className="global-header-text-1 mb-5 w-full md:text-center">
-              Our Powerful Tools
+              A Powerful AI Tool
             </h3>
             <h2 className="global-header-text-2 mb-5 md:text-center">
-              Boost Your Online Growth
+              The best of Shinefy tools
             </h2>
-            <p className="global-header-text-3 max-w-[516px] md:text-center">
-              These tools are fool-proof easy-to-use and navigate that even
-              first time users can start creating tons of video content and earn
-              in a matter of minutes.
+            <p className="global-header-text-3 max-w-[720px] md:text-center">
+              Our fool-proof AI tools are easy to navigate, empowering even
+              first-time users with human-like AI that generates money-making
+              video contents and features, making your life easier.
             </p>
           </div>
 
@@ -234,7 +235,7 @@ export default function Home() {
                   type="text"
                   name="user_email"
                   placeholder="Your Email"
-                  className="home-input-center-placeholder mb-4"
+                  className="home-input-center-placeholder mb-4 text-center"
                 />
                 <button className="home-primary-btn mb-4 w-full">
                   Let&apos;s Get Started
@@ -258,8 +259,9 @@ export default function Home() {
                   Website Scraper Tool
                 </h4>
                 <p className="our-tools-right-content-text">
-                  Simplify your data collection process with our efficient and
-                  user-friendly tool.
+                  Extract data from any websites from user-provided keywords. It
+                  gives over 200 results and allows you to download data as
+                  spreadsheet files in just mere seconds!
                 </p>
               </div>
               <div className="our-tools-grid-item flex flex-col p-8 md:p-0">
@@ -273,8 +275,8 @@ export default function Home() {
                   Video Generation Tool
                 </h4>
                 <p className="our-tools-right-content-text">
-                  Experience effortless video creation with our powerful video
-                  generation automation tool.
+                  Easily generate precise videos from a single prompt ready for
+                  launch. Cap it off with animations, audio, captions, and more!
                 </p>
               </div>
               <div className="our-tools-grid-item flex flex-col p-8 md:p-0">
@@ -317,14 +319,13 @@ export default function Home() {
       <section>
         <div className="pricing-plan-header-custom-bg px-[5%] md:px-[10%] lg:px-[20%]">
           <div className="flex flex-col items-center pb-14 pt-16 lg:pt-48">
-            <h3 className="global-header-text-1 mb-6">Our Pricing Plan</h3>
+            <h3 className="global-header-text-1 mb-6">Best Offers</h3>
             <h2 className="pricing-plan-custom-header-1 mb-6 max-w-[920px] text-center">
-              Get access to all features of these Powerful AI Tools and be ready
-              to skyrocket your online growth
+              Let’s Talk Best Pricing Plan
             </h2>
-            <p className="global-header-text-3 mb-5 max-w-[410px] text-center">
-              Simplify your data collection process with our efficient and
-              user-friendly tool.
+            <p className="global-header-text-3 mb-5 max-w-[480px] text-center">
+              Get access to all features of our Powerful AI Tool and be ready to
+              Skyrocket your Online Growth
             </p>
           </div>
         </div>
@@ -412,14 +413,14 @@ export default function Home() {
         <div className="pb-24 pt-36">
           <div className="flex flex-col items-center">
             <h3 className="global-header-text-1 mb-5 w-full md:text-center">
-              Amazing Features
+              Shinefy Features
             </h3>
             <h2 className="global-header-text-2 mb-5 max-w-[516px] md:text-center">
-              Some of the Best Perks only here at Shine Ranker
+              The Best Perks made for you
             </h2>
-            <p className="global-header-text-3 w-full md:max-w-[516px] md:text-center">
-              To get your content creation and channel growing, we have created
-              these pillars for you!
+            <p className="global-header-text-3 w-full md:max-w-[720px] md:text-center">
+              To take the easy way for your content creation and lock in your
+              channel growth, these pillars are created just for you!t
             </p>
           </div>
 
@@ -431,7 +432,7 @@ export default function Home() {
                 className="self-center"
               />
               <h4 className="card-title mt-12 max-w-[220px]">
-                Access to all Shine Features
+                Access to all Shinefy Features
               </h4>
             </div>
 
@@ -463,7 +464,7 @@ export default function Home() {
                 alt="recycle Icon"
                 className="self-center"
               />
-              <h4 className="card-title mt-12 max-w-[220px]">
+              <h4 className="card-title mt-12 max-w-[210px]">
                 Exclusive Shinefy Updates
               </h4>
             </div>
@@ -716,9 +717,9 @@ export default function Home() {
       {/* *** Testimonials *** */}
       <section className="testimonial-section my-28 px-[10%] xl:px-[19%]">
         <div className="mb-10 flex flex-col items-center">
-          <h4 className="global-header-text-1 mb-5">Testimonials</h4>
+          <h4 className="global-header-text-1 mb-5">Content Creator Reviews</h4>
           <h3 className="global-header-text-2 mb-5 max-w-[220px] text-center md:max-w-[520px]">
-            Hear it from Our Users
+            Hear it from our Users
           </h3>
         </div>
 
