@@ -37,9 +37,15 @@ const EarningsDisclaimer = () => {
                 Earnings Disclaimer
               </a>
             </div>
-            <div className="mb-16">
+            <div className="mb-28">
               <h2 className="legal-title-text mb-8">Earnings Disclaimer</h2>
-              <p className="legal-content-text">
+              <p className="legal-content-text mb-12 max-w-[53rem]">
+                Please carefully review our earnings disclaimer before using our
+                website, tools, participating in any of our courses, or
+                subscribing to our newsletter.
+              </p>
+              <h3 className="legal-title-text-2 mb-8">Refund Requests</h3>
+              <p className="legal-content-text-2">
                 By accessing and using{" "}
                 <a
                   href="https://shineranker.com/"
@@ -47,22 +53,22 @@ const EarningsDisclaimer = () => {
                   target="_blank"
                 >
                   {" "}
-                  Shine Ranker
+                  Shinefy
                 </a>{" "}
-                (https://www.shineranker.com/) and the information provided
-                therein, you acknowledge and agree to this Earnings Disclaimer.
+                and the information provided therein, you acknowledge and agree
+                to this Earnings Disclaimer.
                 <br />
                 <br />
-                Transparency and honesty are fundamental principles at Shine
-                Ranker. As such, we want to disclose that certain products and
-                links on this site may earn us affiliate commissions for
-                purchases made through them.
+                Transparency and honesty are fundamental principles at Shinefy.
+                As such, we want to disclose that certain products and links on
+                this site may earn us affiliate commissions for purchases made
+                through them.
                 <br />
                 <br />
                 While we strive to educate and inspire individuals about
                 utilizing artificial intelligence (AI) content to create
                 websites and generate income, it is essential to recognize that
-                any earnings and income representations made by Shine Ranker,
+                any earnings and income representations made by Shinefy,
                 including its officers, directors, employees, and affiliates,
                 are aspirational statements regarding potential earnings.
                 <br />
@@ -106,11 +112,11 @@ const EarningsDisclaimer = () => {
               </p>
             </div>
 
-            <div className="mb-12 flex flex-row justify-center md:mb-0">
+            <div className="mb-12 flex flex-row justify-center">
               <p className="global-bg-to-dark-purple global-header-text-3 max-w-[720px] px-8 py-5 text-center md:px-20 md:py-8">
                 Once you cancel and/or request for a refund, all access to
-                courses, classes, tools, and/or any bundle linked to your Shine
-                Ranker subscription will be disabled.
+                courses, classes, tools, and/or any bundle linked to your
+                Shinefy subscription will be disabled.
               </p>
             </div>
           </div>

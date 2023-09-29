@@ -23,7 +23,7 @@ const TermsOfUse = () => {
       </header>
 
       {/* Contents */}
-      <div className="px-[5%] xl:px-[18%]">
+      <section className="px-[5%] xl:px-[18%]">
         <div className="mt-[-9rem] flex">
           <div className="flex flex-col justify-center">
             <div className="legal-categories mb-10 inline">
@@ -42,7 +42,7 @@ const TermsOfUse = () => {
             <div className="mb-12">
               <h2 className="legal-title-text mb-8">Introduction</h2>
               <p className="legal-content-text">
-                Welcome to Shine Ranker, LLC, located at
+                Welcome to Shinefy, LLC, located at
                 <a
                   href="https://shineranker.com/"
                   rel="noreferrer"
@@ -55,13 +55,13 @@ const TermsOfUse = () => {
                 website. By accessing this website, it is assumed that you fully
                 accept and agree to abide by all the terms and conditions stated
                 on this page. If you do not agree with any of these terms and
-                conditions, please refrain from using Shine Ranker’s website.
+                conditions, please refrain from using Shinefy’s website.
               </p>
             </div>
             <div className="mb-12">
               <h5 className="legal-title-text-2 mb-8">Indemnification</h5>
               <p className="legal-content-text-2">
-                You agree to indemnify Shine Ranker, LLC to the fullest extent
+                You agree to indemnify Shinefy, LLC to the fullest extent
                 possible from any and all liabilities, costs, demands, causes of
                 action, damages, and expenses (including reasonable
                 attorney&apos;s fees) resulting from your breach of any
@@ -81,9 +81,9 @@ const TermsOfUse = () => {
             <div className="mb-12">
               <h2 className="legal-title-text-2 mb-8">Variation of Terms</h2>
               <p className="legal-content-text-2">
-                Shine Ranker, LLC reserves the right to revise these Terms at
-                any time as it deems fit. It is your responsibility to review
-                these Terms regularly to ensure you understand all conditions
+                Shinefy, LLC reserves the right to revise these Terms at any
+                time as it deems fit. It is your responsibility to review these
+                Terms regularly to ensure you understand all conditions
                 governing the use of this website.
               </p>
             </div>
@@ -102,7 +102,7 @@ const TermsOfUse = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <ContactForm />
 

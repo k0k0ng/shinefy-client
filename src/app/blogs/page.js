@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { styled } from "@mui/material/styles";
 
+import OneTimeDeal from "@/components/OneTimeDeal/page";
 import ContactInfo from "@/components/Contacts/ContactInfo";
 import FooterPage from "@/components/Footer/Footer";
 
@@ -244,22 +245,7 @@ export default function Blogs() {
         </div>
       </section>
 
-      <section className="global-section-background-3 flex flex-col items-center px-[5%] py-28 text-center xl:px-[18%]">
-        <p className="global-header-text-1 mb-8">One-Time Deal</p>
-        <h3 className="global-header-text-2 mb-8 max-w-[590px]">
-          Sign up today to get everything you need for content creation
-        </h3>
-        <form className="global-promo-code-form flex flex-col md:flex-row">
-          <a
-            href="https://chasereiner.thrivecart.com/shine-ranker-deal"
-            rel="noreferrer"
-            target="_blank"
-            className="global-primary-btn flex min-w-[15rem] items-center justify-center px-5 py-4"
-          >
-            Start Here
-          </a>
-        </form>
-      </section>
+      <OneTimeDeal />
 
       <ContactInfo />
 

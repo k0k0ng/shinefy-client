@@ -29,14 +29,12 @@ export default function Tools() {
     <>
       <header className="global-header-section-bg min-h-[48rem] px-[5%] pt-[16rem] lg:pt-[15.5rem] xl:px-[18%]">
         <div className="flex flex-col md:items-center">
-          <h1 className="global-header-text-1 mb-6 md:text-center">
-            shineAi.tools
-          </h1>
+          <h1 className="global-header-text-1 mb-6 md:text-center">Shinefy</h1>
           <h3 className="global-header-text-2 mb-6 md:text-center">
-            Powerful AI Tools
+            Your Staple Shinefy Product -
           </h3>
           <p className="global-header-text-3 md:text-center">
-            Last Updated 25 July, 2023
+            Last updated 14 September, 2023
           </p>
         </div>
       </header>
@@ -53,18 +51,23 @@ export default function Tools() {
         <div className="mt-16 flex flex-col items-center justify-evenly md:flex-row">
           <div className="w-full max-w-[750px]">
             <h2 className="tools-small-text-1 mb-6">
-              Our Shiny Products are promising
+              Your Staple Shinefy Product -
             </h2>
             <h1 className="global-header-text-2 mb-6">
-              App tools like never before!
+              An ultimate platform to channel your creativity!
             </h1>
             <p className="global-header-text-3 max-w-[720px]">
-              Experience the future of content creation with AI-powered tools
-              that automate video production, allowing you to generate engaging
-              videos and start earning revenue in as little as 7 days. Embrace
-              the efficiency and profitability of this revolutionary technology,
-              as it empowers you to focus on content strategy while the AI
-              handles the rest.
+              Ready to experience the future of content creation? What if
+              creating viral content was astonishingly easy? With Shinefy, you
+              can get the future AI solution that generates engaging viral
+              videos and tons of bucks in just a few clicks - no professional
+              skills required. There's simply quite nothing like this
+              revolutionary technology that lets you sit and collect passively.
+              <br />
+              <br />
+              Shinefy is a powerful all-in-one tool that makes generation of
+              viral videos astonishingly easy so you can sit and collect
+              passively!
             </p>
           </div>
           <div>
@@ -75,19 +78,19 @@ export default function Tools() {
 
       <section className="global-bg-to-purple flex w-full items-center justify-center px-[5%] xl:px-[18%]">
         <div className="flex w-full flex-col items-center py-20 text-center">
-          <h2 className="global-header-text-1 mb-6">Shine Ranker Tools</h2>
-          <h1 className="global-header-text-2 mb-6">
-            App Tools Like Never Before!
-          </h1>
-          <p className="global-header-text-3 max-w-[68rem]">
-            Introducing the revolutionary one-click app that revolutionizes
-            video content creation: With four powerful tools at your disposal,
-            extracting data from websites, automating video creation using
-            collected data, captivating audiences with keyword-driven videos,
-            and crafting personalized storytelling through image and voice
-            matching has never been easier. Say goodbye to time-consuming
-            editing and hello to instant, engaging video content with just a
-            single click.
+          <h3 className="global-header-text-1 mb-6">
+            The best of Shinefy tools
+          </h3>
+          <h2 className="global-header-text-2 mb-6">
+            We say, you can have it all
+          </h2>
+          <p className="global-header-text-3 max-w-[64rem]">
+            Make most out of your content creation with these powerful tools
+            that lets you save time and energy. Tools that extracts data from
+            websites, automate video creation, crafts traffic-driven campaigns,
+            captivates audiences with customized videos and a bunch more. Say
+            goodbye to time-consuming tools and hello to instant productivity -
+            all made easier.
           </p>
         </div>
       </section>
@@ -104,13 +107,11 @@ export default function Tools() {
                   className="mb-6"
                 />
               </div>
-              <h1 className="global-header-text-2 mb-6">
-                Website Scraper Tool
-              </h1>
-              <p className="tools-small-text-1 max-w-[38rem]">
-                Our Web Scraper Tool extracts data from websites based on
-                user-provided keywords. It provides up to 200 results and allows
-                you to download data as spreadsheet files.
+              <h1 className="global-header-text-2 mb-6">Website Scraper</h1>
+              <p className="tools-small-text-1 max-w-[27rem]">
+                Extract data from any websites from user-provided keywords. It
+                gives over 200 results and allows you to download data as
+                spreadsheet file in just mere seconds!
               </p>
             </div>
             <div className="flex justify-center">
@@ -147,10 +148,9 @@ export default function Tools() {
                 />
               </div>
               <h1 className="global-header-text-2 mb-6">Video Generation</h1>
-              <p className="tools-small-text-1 max-w-[38rem]">
-                Our Video Generation Tool automates the process of creating
-                videos from data extracted by our web scraper. It seamlessly
-                adds captions, audio, and combines them.
+              <p className="tools-small-text-1 max-w-[27rem]">
+                Easily generate precise videos from a single prompt ready for
+                launch. Cap it off with animations, audio, captions and more!
               </p>
             </div>
           </div>
@@ -165,11 +165,11 @@ export default function Tools() {
                   className="mb-6"
                 />
               </div>
-              <h1 className="global-header-text-2 mb-6">AI Text to Image</h1>
-              <p className="tools-small-text-1 max-w-[38rem]">
-                Our AI Text to Image Tool empowers you to effortlessly create 5
-                unique videos. Seamlessly merge them into captivating content,
-                maximizing impact and enhancing storytelling.
+              <h1 className="global-header-text-2 mb-6">Viral Topic Finder</h1>
+              <p className="tools-small-text-1 max-w-[28rem]">
+                Stay on top, bring more leads, drive traffic and take your first
+                spot on search engines with a click - using this cutting-edge
+                keywords finder!
               </p>
             </div>
             <div className="flex w-[90%] flex-row justify-evenly gap-2 lg:w-auto lg:justify-start">
@@ -218,11 +218,11 @@ export default function Tools() {
                   className="mb-6"
                 />
               </div>
-              <h1 className="global-header-text-2 mb-6">AI Image to Image</h1>
-              <p className="tools-small-text-1 max-w-[38rem]">
-                Our AI Image to Image Tool automates the process of creating
-                videos of you. It seamlessly combines your image, voice and the
-                script that your want it to be said in the video.
+              <h1 className="global-header-text-2 mb-6">AI Chat</h1>
+              <p className="tools-small-text-1 max-w-[28rem]">
+                Take it easy as your AI companion tackles any tasks and complex
+                conversations generating you trending contents with a human
+                touch at the drop of a hat!
               </p>
             </div>
           </div>
@@ -240,24 +240,23 @@ export default function Tools() {
           </p>
         </div>
 
-        <div className="relative grid grid-cols-6 justify-center gap-4 2xl:px-36">
+        <div className="relative grid grid-cols-6 justify-center gap-8 2xl:px-32">
           <div className="tools-grid-card col-span-6 col-start-1 flex flex-col rounded px-6 pb-28 pt-12 md:col-span-3 lg:col-span-2">
             <h3 className="tools-header-small-text-2 h-36">
               Comprehensive SEO Tool
             </h3>
             <p className="tools-small-text-1">
-              shineAi offers a wide range of features that cater to various
-              aspects of the SEO tool, making it a one-stop solution for website
-              owners and digital marketers.
+              <strong>Shinefy</strong> offers a wide range of AI and SEO
+              features that takes content creation further, making it a
+              one-stop-shop solution for website owners and digital marketers.
             </p>
           </div>
 
           <div className="tools-grid-card col-span-6 flex flex-col rounded px-6 pb-28 pt-12 md:col-span-3 lg:col-span-2 lg:col-start-3">
             <h3 className="tools-header-small-text-2 h-36">AI-Driven Data</h3>
             <p className="tools-small-text-1">
-              shineAi AI-driven data provides users with accurate and up-to-date
-              information, ensuring they make well-informed SEO strategy
-              decisions.
+              <strong>Shinefy</strong>’s AI-driven service provides users with
+              accurate and latest tools, while ensuring top-notch performance.
             </p>
           </div>
 
@@ -266,9 +265,9 @@ export default function Tools() {
               User-friendly Interface
             </h3>
             <p className="tools-small-text-1">
-              The platform’s intuitive design and user-friendly interface make
-              navigating and utilizing the available features easy for users of
-              all experience levels.
+              The platform’s intuitive design and user-friendly interface makes
+              navigating and utilizing the available features - easy for users
+              of all experience levels.
             </p>
           </div>
 
@@ -276,8 +275,8 @@ export default function Tools() {
             <h3 className="tools-header-small-text-2 h-36">Time Saving</h3>
             <p className="tools-small-text-1">
               Users can save time, create content, and streamline their workflow
-              with all the essential SEO tools and features integrated into one
-              platform.
+              with all the essential AI and SEO tools and features packed into
+              one platform.
             </p>
           </div>
 
@@ -286,9 +285,9 @@ export default function Tools() {
               Scalable Solutions
             </h3>
             <p className="tools-small-text-1">
-              shineAi is suitable for businesses of all sizes, from small
-              startups to large enterprises, making it a scalable solution that
-              can grow with the user’s needs.
+              <strong>Shinefy</strong> is suitable for business of all sizes,
+              from small startups to large enterprises, making it a scalable
+              solution that can grow with the user’s needs.
             </p>
           </div>
         </div>

@@ -119,9 +119,7 @@ const AffiliatePromotions = () => {
                 <br />
                 <br />
                 12. You may not give cash rebates as it may increase refund
-                rates.
-                <br />
-                Cash rebates of any kind are not permitted.
+                rates. Cash rebates of any kind are not permitted.
               </p>
             </div>
           </div>
