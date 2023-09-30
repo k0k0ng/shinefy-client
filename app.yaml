@@ -1,6 +1,0 @@
-runtime: nodejs14
-automatic_scaling:
-  target_cpu_utilization: 65
-instance_class: F2
-env_variables:
-  NODE_ENV: "production"
