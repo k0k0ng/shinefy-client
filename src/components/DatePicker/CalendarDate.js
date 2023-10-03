@@ -1,15 +1,34 @@
-import React, { useState } from 'react'
+import { useRef, useEffect } from "react";
 
-export default function CalendarDate({dateText, cssClasses}) {
-  const [itemClassName, setItemClassName] = useState(false);
+export default function CalendarDate({
+  dateText,
+  isSelected,
+  fullDateValue,
+  cssClasses,
+  handleSelectDate,
+}) {
+  const dateValue = useRef(fullDateValue);
+
+  useEffect(() => {
+    dateValue.current = fullDateValue;
+  });
 
   const dateClicked = () => {
-    setItemClassName(prev => !prev);
-  }
+    if (!isSelected) {
+      handleSelectDate(dateValue.current);
+    } else {
+      handleSelectDate("");
+    }
+  };
 
   return (
-    <li onClick={dateClicked} className={`flex items-center justify-center ${cssClasses} ${itemClassName ? "dateClicked" : ""}`}>
-      <p className='flex items-center justify-center'>{dateText}</p>
+    <li
+      onClick={dateClicked}
+      className={`flex items-center justify-center ${cssClasses} ${
+        isSelected ? "dateClicked" : ""
+      }`}
+    >
+      <p className="flex items-center justify-center">{dateText}</p>
     </li>
-  )
+  );
 }

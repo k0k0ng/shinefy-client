@@ -1,23 +1,22 @@
 "use client";
 
 import { useRef, useEffect } from "react";
-import lottie from "lottie-web";
-
-import FooterPage from "@/components/Footer/Footer";
-import LimitedTimeOffer from "@/components/LimitedTimeOffer/page";
 
 import CreamOfTheCropSection from "@/components/HomepageSections/CreamOfTheCropSection";
+import FooterPage from "@/components/Footer/Footer";
+import LimitedTimeOffer from "@/components/LimitedTimeOffer/page";
 import PricingSectionContent from "@/components/HomepageSections/PricingSectionContent";
-import TextfieldTooltip from "@/components/TextfieldTooltip";
 import SocialLinksButtons from "@/components/SocialLinksButtons";
+import TextfieldTooltip from "@/components/TextfieldTooltip";
 
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Autoplay } from "swiper/modules";
 
-// CSS Imports
+import lottie from "lottie-web";
+
 import "../styles/home.css";
 import "../styles/hometextanimation.css";
 import "../styles/pricing.css";
@@ -502,8 +501,6 @@ export default function Home() {
       {/* *** Credibility *** */}
       <section>
         <div className="mt-0 flex flex-col-reverse justify-end gap-x-4 gap-y-12 overflow-hidden py-28 lg:my-14 lg:flex-row lg:gap-x-10 xl:gap-x-16">
-          {/* {CredibilitySectionGrid(false)} */}
-
           <div className="grid grid-cols-1 items-center gap-6 px-16 md:grid-cols-2 lg:mr-[-2rem] lg:pl-6 lg:pr-0">
             <div className="credibility-grid-card flex flex-col rounded px-8 pb-6 pt-8 text-center">
               <img
@@ -634,8 +631,6 @@ export default function Home() {
                   className="absolute bottom-[-7rem] left-[30rem]"
                 />
               </div>
-
-              {/* {CredibilitySectionGrid(true)} */}
             </div>
           </div>
         </div>
@@ -1009,9 +1004,6 @@ export default function Home() {
                   >
                     Create an account
                   </a>
-                  {/* <button type="button" onClick={handleLogin} className="px-4 whitespace-nowrap home-outlined-btn">
-                    Log in
-                  </button> */}
                   <a
                     href="https://app.shineranker.com/"
                     rel="noreferrer"
