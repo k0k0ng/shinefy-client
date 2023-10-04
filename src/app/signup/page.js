@@ -1,4 +1,4 @@
-import "../../styles/signup.css";
+import "./Signup.css";
 
 const Signup = () => {
   return (
@@ -24,7 +24,7 @@ const Signup = () => {
           </h1>
 
           <div className="flex flex-col">
-            <label for="email" className="signup-label mb-2">
+            <label htmlFor="email" className="signup-label mb-2">
               Email
             </label>
             <input
@@ -38,7 +38,7 @@ const Signup = () => {
           </div>
 
           <div className="flex flex-col">
-            <label for="firstname" className="signup-label mb-2">
+            <label htmlFor="firstname" className="signup-label mb-2">
               First Name
             </label>
             <input
@@ -52,7 +52,7 @@ const Signup = () => {
           </div>
 
           <div className="flex flex-col">
-            <label for="password" className="signup-label mb-2">
+            <label htmlFor="password" className="signup-label mb-2">
               Password
             </label>
             <input
@@ -66,7 +66,7 @@ const Signup = () => {
           </div>
 
           <div className="flex flex-col">
-            <label for="confirm-password" className="signup-label mb-2">
+            <label htmlFor="confirm-password" className="signup-label mb-2">
               Confirm Password
             </label>
             <input

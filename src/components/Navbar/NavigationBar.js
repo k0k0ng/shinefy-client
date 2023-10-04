@@ -3,24 +3,22 @@
 import { useState, useEffect } from "react";
 
 import { styled } from "@mui/material/styles";
-
-import Box from "@mui/material/Box";
-import SwipeableDrawer from "@mui/material/SwipeableDrawer";
-import Button from "@mui/material/Button";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
-
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 
-import MenuIcon from "@mui/icons-material/Menu";
-import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import MenuIcon from "@mui/icons-material/Menu";
 
-import "../../styles/NavigationBar.css";
+import "./NavigationBar.css";
 
 const logo = "/images/global/ShineFy Logo.png";
 
@@ -47,16 +45,14 @@ const CustomButton = styled(Button)(({ theme }) => ({
 
 const NavigationBar = () => {
   const [isSticky, setIsSticky] = useState(false);
-  const [openDrawer, setOpenDrawer] = useState(false);
-  const [expandAbout, setExpandAbout] = useState(false);
-  const [expandLegal, setExpandLegal] = useState(false);
-
-  const [openAboutSubMenu, setOpenAboutSubMenu] = useState(null);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isAboutExpanded, setIsAboutExpanded] = useState(false);
+  const [isLegalExpanded, setIsLegalExpanded] = useState(false);
+  const [isDesktopAboutExpanded, setIsDesktopAboutExpanded] = useState(null);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -70,7 +66,7 @@ const NavigationBar = () => {
     }
   };
 
-  const toggleDrawer = (open) => (event) => {
+  const toggleDrawerNavigation = (open) => (event) => {
     if (
       event.type === "keydown" &&
       (event.key === "Tab" || event.key === "Shift")
@@ -78,24 +74,24 @@ const NavigationBar = () => {
       return;
     }
 
-    setOpenDrawer(open);
+    setIsDrawerOpen(open);
   };
 
-  const openDesktopAboutSubMenu = Boolean(openAboutSubMenu);
+  const openDesktopAboutSubMenu = Boolean(isDesktopAboutExpanded);
 
   const handleOpenDesktopAbout = (event) => {
-    setOpenAboutSubMenu(event.currentTarget);
+    setIsDesktopAboutExpanded(event.currentTarget);
   };
   const handleCloseDesktopAbout = () => {
-    setOpenAboutSubMenu(null);
+    setIsDesktopAboutExpanded(null);
   };
 
-  const handleExpandAbout = (panel) => (event, isExpanded) => {
-    setExpandAbout(isExpanded ? panel : false);
+  const handleExpandAbout = (panel) => (isExpanded) => {
+    setIsAboutExpanded(isExpanded ? panel : false);
   };
 
-  const handleExpandLegal = (panel) => (event, isExpanded) => {
-    setExpandLegal(isExpanded ? panel : false);
+  const handleExpandLegal = (panel) => (isExpanded) => {
+    setIsLegalExpanded(isExpanded ? panel : false);
   };
 
   return (
@@ -140,7 +136,7 @@ const NavigationBar = () => {
                 </CustomButton>
                 <Menu
                   id="basic-menu"
-                  anchorEl={openAboutSubMenu}
+                  anchorEl={isDesktopAboutExpanded}
                   open={openDesktopAboutSubMenu}
                   onClose={handleCloseDesktopAbout}
                   MenuListProps={{
@@ -166,7 +162,7 @@ const NavigationBar = () => {
                   </MenuItem>
                   <MenuItem className="desktop-about-sub-menu-items">
                     <Accordion
-                      expanded={expandLegal === "legals"}
+                      expanded={isLegalExpanded === "legals"}
                       onChange={handleExpandLegal("legals")}
                       className="top-nav-accordion-link"
                     >
@@ -286,7 +282,7 @@ const NavigationBar = () => {
               </li>
 
               <li className="flex xl:hidden">
-                <Button onClick={toggleDrawer(true)}>
+                <Button onClick={toggleDrawerNavigation(true)}>
                   <MenuIcon className="text-white" />
                 </Button>
               </li>
@@ -297,10 +293,10 @@ const NavigationBar = () => {
         {/* Nav links for mobile */}
         <SwipeableDrawer
           anchor={"right"}
-          open={openDrawer}
+          open={isDrawerOpen}
           variant="persistent"
-          onClose={toggleDrawer(false)}
-          onOpen={toggleDrawer(true)}
+          onClose={toggleDrawerNavigation(false)}
+          onOpen={toggleDrawerNavigation(true)}
           className="swipeable-drawer flex 2xl:hidden"
         >
           <Box
@@ -310,7 +306,7 @@ const NavigationBar = () => {
             <List>
               <ListItem className="min-h-14 py-1">
                 <Accordion
-                  expanded={expandAbout === "about"}
+                  expanded={isAboutExpanded === "about"}
                   onChange={handleExpandAbout("about")}
                   className="top-nav-accordion-link"
                 >
@@ -338,7 +334,7 @@ const NavigationBar = () => {
 
                       <ListItem className="mobile-accordion-link-container">
                         <Accordion
-                          expanded={expandLegal === "legals"}
+                          expanded={isLegalExpanded === "legals"}
                           onChange={handleExpandLegal("legals")}
                           className="top-nav-accordion-link"
                         >
@@ -455,7 +451,7 @@ const NavigationBar = () => {
               </div>
 
               <div
-                onClick={toggleDrawer(false)}
+                onClick={toggleDrawerNavigation(false)}
                 className="mt-2 flex h-14 flex-row items-center justify-center"
               >
                 <button className="rounded-full border-2 p-2 pl-2.5">

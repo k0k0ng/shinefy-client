@@ -1,11 +1,10 @@
-import PricingSectionContent from "@/components/HomepageSections/PricingSectionContent";
-import OneTimeDeal from "@/components/OneTimeDeal/page";
 import ContactInfo from "@/components/Contacts/ContactInfo";
-import LimitedTimeOffer from "@/components/LimitedTimeOffer/page";
 import FooterPage from "@/components/Footer/Footer";
+import LimitedTimeOffer from "@/components/LimitedTimeOffer/page";
+import OneTimeDeal from "@/components/OneTimeDeal/page";
+import PricingPlanSection from "@/app/pricing/components/PricingPlanSection";
 
-import "../../styles/pricing.css";
-import "@/styles/components.contacts.css";
+import "./Pricing.css";
 
 export default function Pricing() {
   return (
@@ -61,7 +60,7 @@ export default function Pricing() {
 
       <section className="px-[5%] py-12 xl:px-[20%]">
         <div className="flex flex-col items-center justify-center gap-x-10 pb-[50px] md:flex-row lg:gap-x-20">
-          <PricingSectionContent />
+          <PricingPlanSection />
         </div>
       </section>
 

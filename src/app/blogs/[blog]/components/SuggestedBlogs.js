@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function SuggestedBlogs() {
   return (
     <div className="blog-suggested-blog-container flex flex-row gap-x-3 px-3 font-karla">

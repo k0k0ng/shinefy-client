@@ -12,7 +12,7 @@ import Custom403 from "@/components/ErrorPages/Custom403";
 import Custom500 from "@/components/ErrorPages/Custom500";
 import UnderMaintenance from "@/components/ErrorPages/UnderMaintenance";
 
-import "../styles/home.css";
+import "./home/styles/Home.css";
 
 export async function getServerSideProps() {
   // Simulate a 500 internal server error

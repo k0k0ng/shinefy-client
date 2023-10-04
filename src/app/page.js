@@ -2,12 +2,12 @@
 
 import { useRef, useEffect } from "react";
 
-import CreamOfTheCropSection from "@/components/HomepageSections/CreamOfTheCropSection";
+import CreamOfTheCropSection from "@/app/home/components/CreamOfTheCropSection";
 import FooterPage from "@/components/Footer/Footer";
 import LimitedTimeOffer from "@/components/LimitedTimeOffer/page";
-import PricingSectionContent from "@/components/HomepageSections/PricingSectionContent";
-import SocialLinksButtons from "@/components/SocialLinksButtons";
-import TextfieldTooltip from "@/components/TextfieldTooltip";
+import PricingPlanSection from "@/app/pricing/components/PricingPlanSection";
+import SocialLinksButtons from "@/components/SocialLinks/SocialLinksButtons";
+import TextfieldTooltip from "@/app/home/components/TextfieldTooltip";
 
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -17,9 +17,9 @@ import "swiper/css/navigation";
 
 import lottie from "lottie-web";
 
-import "../styles/home.css";
-import "../styles/hometextanimation.css";
-import "../styles/pricing.css";
+import "./home/styles/Home.css";
+import "./home/styles/HomeTextAnimation.css";
+import "./pricing/Pricing.css";
 
 export default function Home() {
   let animationContainer = useRef();
@@ -118,7 +118,13 @@ export default function Home() {
 
             <div className="flex flex-col md:flex-row">
               {/* Temporarily hidden because don't have functionality yet - JOHN 18/09/23 */}
-              {/* <TextfieldTooltip inputClassName="h-14 w-full md:w-[65%] 2xl:w-[55%] text-center mb-2 md:mb-0 md:mr-[-2rem] pl-4 pr-[3rem] global-input-1" /> */}
+              {/* <TextfieldTooltip>
+                <input
+                  type="text"
+                  className="global-input-1 mb-2 h-14 w-full pl-4 pr-[3rem] text-center md:mb-0 md:mr-[-2rem] md:w-[65%] 2xl:w-[55%]"
+                  placeholder="type an idea here"
+                />
+              </TextfieldTooltip> */}
 
               <a
                 href="https://chasereiner.thrivecart.com/shine-ranker-deal"
@@ -330,7 +336,7 @@ export default function Home() {
         </div>
 
         <div className="mx-[5%] flex flex-col items-center justify-center gap-x-10 py-[50px] md:flex-row lg:mx-[10%] lg:gap-x-20 xl:mx-[20%]">
-          <PricingSectionContent />
+          <PricingPlanSection />
         </div>
       </section>
 
@@ -394,7 +400,13 @@ export default function Home() {
             Type your desired images for your upcoming videos.
           </p>
 
-          <TextfieldTooltip inputClassName="w-full h-[50px] mb-2 text-center stunning-images-input" />
+          <TextfieldTooltip>
+            <input
+              type="text"
+              className="stunning-images-input mb-2 h-[50px] w-full text-center"
+              placeholder="type an idea here"
+            />
+          </TextfieldTooltip>
 
           <a
             href="https://chasereiner.thrivecart.com/shine-ranker-deal"

@@ -1,12 +1,11 @@
-import SocialLinksButtons from "@/components/SocialLinksButtons";
+import BlogLimitedTimeOffer from "./components/BlogLimitedTimeOffer";
 import ContactInfo from "@/components/Contacts/ContactInfo";
-import LimitedTimeOffer from "@/components/LimitedTimeOffer/page";
 import FooterPage from "@/components/Footer/Footer";
+import LimitedTimeOffer from "@/components/LimitedTimeOffer/page";
+import SocialLinksButtons from "@/components/SocialLinks/SocialLinksButtons";
+import SuggestedBlogs from "./components/SuggestedBlogs";
 
-import BlogLimitedTimeOffer from "./BlogLimitedTimeOffer";
-import SuggestedBlogs from "./SuggestedBlogs";
-
-import "@/styles/blogs.css";
+import "../Blogs.css";
 
 export default function SingleBlog() {
   return (

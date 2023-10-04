@@ -1,22 +1,20 @@
 "use client";
 
 import { useState } from "react";
-import { styled } from "@mui/material/styles";
 
-import OneTimeDeal from "@/components/OneTimeDeal/page";
+import BlogCard from "./components/BlogCard";
+import BlogPostsFilter from "./components/BlogPostsFilter";
 import ContactInfo from "@/components/Contacts/ContactInfo";
 import FooterPage from "@/components/Footer/Footer";
+import OneTimeDeal from "@/components/OneTimeDeal/page";
 
-import BlogPostsFilter from "./BlogPostsFilter";
-import BlogCard from "./BlogCard";
-
-import Pagination from "@mui/material/Pagination";
+import { styled } from "@mui/material/styles";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import Pagination from "@mui/material/Pagination";
 
-import "@/styles/blogs.css";
-import "@/styles/components.contacts.css";
+import "./Blogs.css";
 
 const StyledPaginationComponent = styled(Pagination)(({ theme }) => ({
   "& ul > li:first-child > button": {

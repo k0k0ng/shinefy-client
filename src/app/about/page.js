@@ -1,18 +1,12 @@
-import FooterPage from "@/components/Footer/Footer";
-
-import FeaturesAndBenefits from "@/components/FeaturesAndBenefits";
 import ContactForm from "@/components/Contacts/ContactForm";
 import ContactInfo from "@/components/Contacts/ContactInfo";
+import FeaturesAndBenefits from "@/app/about/components/FeaturesAndBenefits";
+import FooterPage from "@/components/Footer/Footer";
 import LimitedTimeOffer from "@/components/LimitedTimeOffer/page";
 
-import "@/styles/components.contacts.css";
-
 export default function About() {
-  const youtubeVideoId = "PL3PXYFdlsU&t=2s";
-
   return (
     <>
-      {/* header */}
       <header className="global-header-section-bg min-h-[48rem] px-[5%] pt-[16rem] lg:pt-[15.5rem] xl:px-[18%]">
         <div className="flex flex-col md:items-center">
           <h1 className="global-header-text-1 mb-6 md:text-center">About Us</h1>
@@ -48,9 +42,9 @@ export default function About() {
             </div>
           </div>
 
-          <div className="border">
+          <div>
             <a
-              href={`https://www.youtube.com/watch?v=${youtubeVideoId}`}
+              href="https://www.youtube.com/watch?v=PL3PXYFdlsU"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -60,20 +54,11 @@ export default function About() {
                 width="540px"
                 className="mx-auto max-w-full"
               />
-
-              {/* <img
-                src="/images/about/playbutton.png"
-                alt="Play Button"
-                width={100}
-                height={100}
-                className="mx-auto max-w-full h-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/4 play-button-image"
-              /> */}
             </a>
           </div>
         </div>
       </section>
 
-      {/* Features & Benefits */}
       <FeaturesAndBenefits />
 
       <ContactForm />

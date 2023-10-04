@@ -1,8 +1,8 @@
-import "../styles/globals.css";
-import "../styles/legalpages.css";
-import { Inter } from "next/font/google";
 import NavigationBar from "../components/Navbar/NavigationBar";
-import BackToTopButton from "@/components/BackToTopButton";
+
+import { Inter } from "next/font/google";
+
+import "../styles/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,7 +37,6 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <NavigationBar />
         {children}
-        {/* <BackToTopButton /> */}
       </body>
     </html>
   );

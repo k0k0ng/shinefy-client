@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function BlogLimitedTimeOffer() {
   return (
     <div className="flex flex-col items-center justify-between lg:flex-row">

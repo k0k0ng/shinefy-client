@@ -1,27 +1,27 @@
-
-import { styled } from '@mui/material/styles';
-import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
+import { styled } from "@mui/material/styles";
+import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 
 const CustomTooltip = styled(({ className, ...props }) => (
   <Tooltip {...props} classes={{ popper: className }} />
 ))(({ theme }) => ({
   [`& .${tooltipClasses.tooltip}`]: {
     backgroundColor: "rgba(20, 22, 56, 0.95)",
-    color: '#F1F1F1',
+    color: "#F1F1F1",
     maxWidth: 340,
     fontSize: theme.typography.pxToRem(13),
-    padding: '20px 20px 20px 30px',
+    padding: "20px 20px 20px 30px",
   },
 }));
 
-
-export default function TextfieldTooltip({inputClassName}) {
+export default function TextfieldTooltip({ children }) {
   return (
     <CustomTooltip
       placement="top-start"
       title={
         <>
-          <p className="mb-5 global-text-to-light-blue">Our tools work best for video narration and promoting products</p>
+          <p className="global-text-to-light-blue mb-5">
+            Our tools work best for video narration and promoting products
+          </p>
 
           <ul className="mb-4 ml-2">
             <li className="global-tooltip-li-1">
@@ -39,24 +39,17 @@ export default function TextfieldTooltip({inputClassName}) {
             <li className="global-tooltip-li-1">
               Motivational videos for viral content
             </li>
-            <li className="global-tooltip-li-1">
-              Product and Service reviews
-            </li>
+            <li className="global-tooltip-li-1">Product and Service reviews</li>
           </ul>
 
           <ul className="ml-2">
-            <li className="global-tooltip-li-2">
-              Music videos
-            </li>
-            <li className="global-tooltip-li-2">
-              Long format videos
-            </li>
+            <li className="global-tooltip-li-2">Music videos</li>
+            <li className="global-tooltip-li-2">Long format videos</li>
           </ul>
-
         </>
       }
     >
-      <input type="text" className={inputClassName} placeholder="type an idea here"/>
+      {children}
     </CustomTooltip>
-  )
+  );
 }
