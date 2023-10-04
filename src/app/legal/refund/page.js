@@ -1,17 +1,14 @@
-"use client";
-
-import React, { useState } from "react";
-
-import FooterPage from "@/components/Footer/Footer";
 import ContactForm from "@/components/Contacts/ContactForm";
 import ContactInfo from "@/components/Contacts/ContactInfo";
+import FooterPage from "@/components/Footer/Footer";
 import LimitedTimeOffer from "@/components/LimitedTimeOffer/page";
 
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 
-import "../../../styles/faq.css";
+import "../LegalPages.css";
+import "@/app/faq/FAQ.css";
 
 const Refund = () => {
   return (

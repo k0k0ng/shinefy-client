@@ -1,16 +1,17 @@
-const key = "/images/features/key.png";
-const chat = "/images/features/chat.png";
-const support = "/images/features/support.png";
-const updates = "/images/features/updates.png";
-const vip = "/images/features/vip.png";
-const checklist = "/images/features/checklist.png";
+import "./FeaturesAndBenefits.css";
 
-import "../styles/FeaturesAndBenefits.css";
+const cardsIcon = [
+  "/images/features/key.png",
+  "/images/features/chat.png",
+  "/images/features/support.png",
+  "/images/features/updates.png",
+  "/images/features/vip.png",
+  "/images/features/checklist.png",
+];
 
 const FeaturesAndBenefits = () => {
   return (
     <>
-      {/* Features & Benefits */}
       <div className="global-section-background-2 px-[5%] py-14 xl:px-[18%]">
         <div className="relative mb-10 flex w-full flex-col items-center justify-center text-center">
           <h3 className="global-header-text-1 mb-6">
@@ -24,10 +25,9 @@ const FeaturesAndBenefits = () => {
         </div>
 
         <div className="relative grid grid-cols-1 gap-y-8 py-4 md:grid-cols-2 md:gap-6 lg:px-32 xl:grid-cols-3 xl:px-4 2xl:px-48">
-          {/* First Row */}
           <div className="feature-grid-cards flex flex-col items-center px-4 pb-10 pt-6 text-center md:items-start md:text-start">
             <img
-              src={key}
+              src={cardsIcon[0]}
               alt="Key Icon"
               width="40px"
               height="40px"
@@ -44,7 +44,7 @@ const FeaturesAndBenefits = () => {
 
           <div className="feature-grid-cards flex flex-col items-center px-4 pb-10 pt-6 text-center md:items-start md:text-start">
             <img
-              src={chat}
+              src={cardsIcon[1]}
               alt="Video Thumbnail"
               width="40px"
               height="40px"
@@ -62,7 +62,7 @@ const FeaturesAndBenefits = () => {
 
           <div className="feature-grid-cards flex flex-col items-center px-4 pb-10 pt-6 text-center md:items-start md:text-start">
             <img
-              src={support}
+              src={cardsIcon[2]}
               alt="Support Icon"
               width="40px"
               height="40px"
@@ -76,10 +76,9 @@ const FeaturesAndBenefits = () => {
             </p>
           </div>
 
-          {/* Second Row */}
           <div className="feature-grid-cards flex flex-col items-center px-4 pb-10 pt-6 text-center md:items-start md:text-start">
             <img
-              src={updates}
+              src={cardsIcon[3]}
               alt="Updates Icon"
               width="40px"
               height="40px"
@@ -98,7 +97,7 @@ const FeaturesAndBenefits = () => {
 
           <div className="feature-grid-cards flex flex-col items-center px-4 pb-10 pt-6 text-center md:items-start md:text-start">
             <img
-              src={vip}
+              src={cardsIcon[4]}
               alt="VIP Icon"
               width="40px"
               height="40px"
@@ -116,7 +115,7 @@ const FeaturesAndBenefits = () => {
 
           <div className="feature-grid-cards flex flex-col items-center px-4 pb-10 pt-6 text-center md:items-start md:text-start">
             <img
-              src={checklist}
+              src={cardsIcon[5]}
               alt="Checklist Icon"
               width="40px"
               height="40px"

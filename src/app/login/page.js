@@ -1,4 +1,4 @@
-import "../../styles/login.css";
+import "./Login.css";
 
 const Login = () => {
   return (
@@ -22,7 +22,7 @@ const Login = () => {
           <h1 className="signup-card-title mb-10 text-center">Welcome Back!</h1>
 
           <div className="flex flex-col">
-            <label for="email" className="signup-label mb-2">
+            <label htmlFor="email" className="signup-label mb-2">
               Email:
             </label>
             <input
@@ -36,7 +36,7 @@ const Login = () => {
           </div>
 
           <div className="flex flex-col">
-            <label for="password" className="signup-label mb-2">
+            <label htmlFor="password" className="signup-label mb-2">
               Password:
             </label>
             <input

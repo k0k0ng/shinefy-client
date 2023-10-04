@@ -1,14 +1,14 @@
 "use client";
 
 import React, { createRef, useEffect } from "react";
-import lottie from "lottie-web";
 
-import FooterPage from "@/components/Footer/Footer";
 import ContactInfo from "@/components/Contacts/ContactInfo";
+import FooterPage from "@/components/Footer/Footer";
 import LimitedTimeOffer from "@/components/LimitedTimeOffer/page";
 
-import "../../styles/tools.css";
-import "@/styles/components.contacts.css";
+import lottie from "lottie-web";
+
+import "./Tools.css";
 
 export default function Tools() {
   let animationContainer = createRef();

@@ -2,14 +2,12 @@
 
 import { useState } from "react";
 
+import ContactInfo from "@/components/Contacts/ContactInfo";
+import CustomDatePicker from "@/components/DatePicker/page";
 import FooterPage from "@/components/Footer/Footer";
 import LimitedTimeOffer from "@/components/LimitedTimeOffer/page";
-import ContactInfo from "@/components/Contacts/ContactInfo";
 
-import CustomDatePicker from "@/components/DatePicker/page";
-
-import "@/styles/bookacall.css";
-import "@/styles/components.contacts.css";
+import "./BookACall.css";
 
 export default function BookACall() {
   const [selectedSubject, setSelectedSubject] = useState("Book a demo");

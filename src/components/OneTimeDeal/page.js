@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function OneTimeDeal() {
   return (
     <section className="global-section-background-3 flex flex-col items-center px-[5%] py-28 text-center xl:px-[18%]">

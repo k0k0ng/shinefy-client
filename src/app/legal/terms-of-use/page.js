@@ -1,11 +1,9 @@
-import React from "react";
-
-import FooterPage from "@/components/Footer/Footer";
 import ContactForm from "@/components/Contacts/ContactForm";
 import ContactInfo from "@/components/Contacts/ContactInfo";
+import FooterPage from "@/components/Footer/Footer";
 import LimitedTimeOffer from "@/components/LimitedTimeOffer/page";
 
-import "../../../styles/globals.css";
+import "../LegalPages.css";
 
 const TermsOfUse = () => {
   return (

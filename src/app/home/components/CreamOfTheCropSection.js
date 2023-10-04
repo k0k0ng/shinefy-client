@@ -1,9 +1,10 @@
 import { useState, useRef } from "react";
+
+import VideoPlayer from "@/components/VideoPlayer/VideoPlayer";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import VideoPlayer from "../VideoPlayer/VideoPlayer";
-
-import "@/styles/Homepage/creamOfTheCropSection.css";
+import "../styles/CreamOfTheCropSection.css";
 
 export default function CreamOfTheCropSection() {
   const [selectedCreamOfCropCategory, setSelectedCreamOfCropCategory] =

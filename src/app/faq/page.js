@@ -1,6 +1,5 @@
-import FooterPage from "@/components/Footer/Footer";
-import ContactForm from "@/components/Contacts/ContactForm";
 import ContactInfo from "@/components/Contacts/ContactInfo";
+import FooterPage from "@/components/Footer/Footer";
 import LimitedTimeOffer from "@/components/LimitedTimeOffer/page";
 
 import Accordion from "@mui/material/Accordion";
@@ -9,8 +8,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 
 import HelpIcon from "@mui/icons-material/Help";
 
-import "../../styles/faq.css";
-import "@/styles/components.contacts.css";
+import "./FAQ.css";
 
 const FAQ = () => {
   return (
@@ -279,8 +277,6 @@ const FAQ = () => {
           </p>
         </div>
       </section>
-
-      {/* <ContactForm /> */}
 
       <ContactInfo />
 
