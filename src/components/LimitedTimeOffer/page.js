@@ -9,10 +9,9 @@ const LimitedTimeOffer = () => {
           <h1 className="global-header-text-2 mb-5 px-10 md:mb-2.5  md:px-0">
             Best Shinefy tools
           </h1>
-          <p className="global-header-text-3 mb-2.5">
-            Don’t miss this chance to get the discounted package
-            <br className="hidden md:block" />
-            and start on your journey towards a growing income using AI.
+          <p className="global-header-text-3 mb-2.5 max-w-[700px]">
+            Don’t miss this chance to get the discounted package and start on
+            your journey towards a growing income using AI.
           </p>
         </div>
         <a

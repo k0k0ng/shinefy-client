@@ -61,7 +61,8 @@ export default function About() {
 
       <FeaturesAndBenefits />
 
-      <ContactForm />
+      {/* *** Temporarily returns empty div for partial deployment - JOHN 22/09/23 *** */}
+      {/* <ContactForm /> */}
 
       <ContactInfo />
 

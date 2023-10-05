@@ -19,7 +19,7 @@ export default function BookACall() {
           <h2 className="global-header-text-1 mb-6">Let’s have a chat</h2>
           <h1 className="global-header-text-2 mb-6">Book a Call</h1>
           <p className="global-header-text-3 max-w-[650px]">
-            We'll have a free 15-min discovery call to discuss which
+            We&apos;ll have a free 15-min discovery call to discuss which
             subscription fits best for your content, objectives and goals.
           </p>
         </div>

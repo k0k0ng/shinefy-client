@@ -117,7 +117,7 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col md:flex-row">
-              {/* Temporarily hidden because don't have functionality yet - JOHN 18/09/23 */}
+              {/* Temporarily hidden because don't have functionality yet - JOHN 06/10/23 */}
               {/* <TextfieldTooltip>
                 <input
                   type="text"
@@ -130,9 +130,9 @@ export default function Home() {
                 href="https://chasereiner.thrivecart.com/shine-ranker-deal"
                 rel="noreferrer"
                 target="_blank"
-                className="global-primary-btn flex items-center justify-center px-5 py-4"
+                className="global-primary-btn flex items-center justify-center px-20 py-4"
               >
-                Generate Your Videos
+                Get Started
               </a>
             </div>
           </header>
@@ -236,15 +236,21 @@ export default function Home() {
                   With our tools, you can witness rapid audience and numerical
                   growth in as little as 7 days.
                 </p>
-                <input
+                {/* Temporarily hidden because don't have functionality yet - JOHN 06/10/23 */}
+                {/* <input
                   type="text"
                   name="user_email"
                   placeholder="Your Email"
                   className="home-input-center-placeholder mb-4 text-center"
-                />
-                <button className="global-primary-btn mb-4 w-full">
+                /> */}
+                <a
+                  href="https://chasereiner.thrivecart.com/shine-ranker-deal"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="global-primary-btn mb-6 flex w-full items-center justify-center"
+                >
                   Let&apos;s Get Started
-                </button>
+                </a>
                 <a href="/pricing" className="home-link">
                   Pricing Plan
                   <i className="fa-solid fa-chevron-right ml-3 mt-1 text-white"></i>
@@ -341,7 +347,8 @@ export default function Home() {
       </section>
 
       {/* Cream of the Crop */}
-      <CreamOfTheCropSection />
+      {/* Temporarily hidden because it is not finish yet - JOHN 06/10/23 */}
+      {/* <CreamOfTheCropSection /> */}
 
       {/* Stunning Image Outputs */}
       <section className="flex flex-col gap-x-20 px-[10%] py-20 lg:flex-row xl:gap-x-28 xl:px-[20%]">
@@ -400,13 +407,14 @@ export default function Home() {
             Type your desired images for your upcoming videos.
           </p>
 
-          <TextfieldTooltip>
+          {/* Temporarily hidden because it doesnt have functionality yet - JOHN 06/10/23 */}
+          {/* <TextfieldTooltip>
             <input
               type="text"
               className="stunning-images-input mb-2 h-[50px] w-full text-center"
               placeholder="type an idea here"
             />
-          </TextfieldTooltip>
+          </TextfieldTooltip> */}
 
           <a
             href="https://chasereiner.thrivecart.com/shine-ranker-deal"
@@ -423,13 +431,13 @@ export default function Home() {
       <section className="px-[5%] md:px-[10%] 2xl:px-[20%]">
         <div className="pb-24 pt-36">
           <div className="flex flex-col items-center">
-            <h3 className="global-header-text-1 mb-5 w-full md:text-center">
+            <h3 className="global-header-text-1 mb-5 w-full text-center md:text-center">
               Shinefy Features
             </h3>
-            <h2 className="global-header-text-2 mb-5 max-w-[516px] md:text-center">
+            <h2 className="global-header-text-2 mb-5 max-w-[516px] text-center md:text-center">
               The Best Perks made for you
             </h2>
-            <p className="global-header-text-3 w-full md:max-w-[720px] md:text-center">
+            <p className="global-header-text-3 w-full text-center md:max-w-[720px] md:text-center">
               To take the easy way for your content creation and lock in your
               channel growth, these pillars are created just for you!t
             </p>
@@ -657,9 +665,21 @@ export default function Home() {
           <h3 className="global-header-text-2 mb-8 max-w-[546px] text-center">
             Get the latest updates on the use of AI Tools in business
           </h3>
+
           <p className="global-header-text-3 mb-7">A Limited-Time Offer</p>
 
-          <div className="subscribe-for-freebies-form flex flex-col md:flex-row">
+          <a
+            href="https://app.shineranker.com/signup_free/"
+            type="button"
+            rel="noreferrer"
+            target="_blank"
+            className="global-primary-btn flex justify-center px-24 py-4"
+          >
+            Sign Up
+          </a>
+
+          {/* *** Temporarily hidden because inputfield doesnt have functionality yet - JOHN 06/10/23 */}
+          {/* <div className="flex flex-col md:flex-row subscribe-for-freebies-form">
             <input
               type="text"
               name="promo_code"
@@ -675,7 +695,7 @@ export default function Home() {
             >
               Sign Up
             </a>
-          </div>
+          </div> */}
         </div>
 
         <div className="absolute top-0 z-10 h-full w-full overflow-hidden xl:mx-[5%] xl:w-[90%] 2xl:mx-[15%] 2xl:w-[70%]">
