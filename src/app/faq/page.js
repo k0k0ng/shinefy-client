@@ -47,7 +47,7 @@ const FAQ = () => {
 
         {/* First Column */}
         <div className="mt-8 flex flex-col md:mt-14 lg:p-8">
-          <Accordion className="faq-accordion">
+          <Accordion className="mui-accordion">
             <AccordionSummary
               expandIcon={
                 <div className="expand-icon-container">
@@ -61,7 +61,7 @@ const FAQ = () => {
               <p>What is Shinefy</p>
             </AccordionSummary>
             <hr className="jus ml-[1.75%] max-w-[95%]" />
-            <AccordionDetails className="faq-accordion-details">
+            <AccordionDetails className="mui-accordion-details">
               <p className="global-header-text-3 max-w-[96%]">
                 Shinefy is an AI and SEO tool designed to create viral content,
                 improve online presence and optimize pages to generate leads and
@@ -74,7 +74,7 @@ const FAQ = () => {
             </AccordionDetails>
           </Accordion>
 
-          <Accordion className="faq-accordion">
+          <Accordion className="mui-accordion">
             <AccordionSummary
               expandIcon={
                 <div className="expand-icon-container">
@@ -88,8 +88,8 @@ const FAQ = () => {
               <p>What are the features of Shinefy Tools?</p>
             </AccordionSummary>
             <hr className="jus ml-[1.75%] max-w-[95%]" />
-            <AccordionDetails className="faq-accordion-details">
-              <ul className="faq-ul mb-6 ml-7 max-w-[96%]">
+            <AccordionDetails className="mui-accordion-details">
+              <ul className="mui-accordion-ul mb-6 ml-7 max-w-[96%]">
                 <li className="mb-6">
                   <p className="global-header-text-3 max-w-[96%]">
                     <span className="font-bold text-violet-500">
@@ -125,7 +125,7 @@ const FAQ = () => {
             </AccordionDetails>
           </Accordion>
 
-          <Accordion className="faq-accordion">
+          <Accordion className="mui-accordion">
             <AccordionSummary
               expandIcon={
                 <div className="expand-icon-container">
@@ -139,7 +139,7 @@ const FAQ = () => {
               <p>How much does Shinefy cost?</p>
             </AccordionSummary>
             <hr className="jus ml-[1.75%] max-w-[95%]" />
-            <AccordionDetails className="faq-accordion-details">
+            <AccordionDetails className="mui-accordion-details">
               <p className="global-header-text-3 max-w-[1020px]">
                 Starter plan costs $97 monthly and Annual Shinefy Pass is $497 a
                 year with 43% discount. All plans come with unlimited access to
@@ -152,7 +152,7 @@ const FAQ = () => {
             </AccordionDetails>
           </Accordion>
 
-          <Accordion className="faq-accordion">
+          <Accordion className="mui-accordion">
             <AccordionSummary
               expandIcon={
                 <div className="expand-icon-container">
@@ -166,7 +166,7 @@ const FAQ = () => {
               <p>What are the benefits of Shinefy?</p>
             </AccordionSummary>
             <hr className="jus ml-[1.75%] max-w-[95%]" />
-            <AccordionDetails className="faq-accordion-details">
+            <AccordionDetails className="mui-accordion-details">
               <p className="global-header-text-3 max-w-[96%]">
                 It gives - comprehensive AI and SEO tool, AI Driven Service,
                 User-friendly interface. Time Saving and Scalable solution.
@@ -174,7 +174,7 @@ const FAQ = () => {
             </AccordionDetails>
           </Accordion>
 
-          <Accordion className="faq-accordion">
+          <Accordion className="mui-accordion">
             <AccordionSummary
               expandIcon={
                 <div className="expand-icon-container">
@@ -188,7 +188,7 @@ const FAQ = () => {
               <p>How to create a Shinefy account?</p>
             </AccordionSummary>
             <hr className="jus ml-[1.75%] max-w-[95%]" />
-            <AccordionDetails className="faq-accordion-details">
+            <AccordionDetails className="mui-accordion-details">
               <p className="global-header-text-3 max-w-[96%]">
                 Just go to the top menu of this page and click{" "}
                 <span className="text-[#8844DA]">sign up</span> to register, or
@@ -205,7 +205,7 @@ const FAQ = () => {
             </AccordionDetails>
           </Accordion>
 
-          <Accordion className="faq-accordion">
+          <Accordion className="mui-accordion">
             <AccordionSummary
               expandIcon={
                 <div className="expand-icon-container">
@@ -219,7 +219,7 @@ const FAQ = () => {
               <p>How to use Shinefy?</p>
             </AccordionSummary>
             <hr className="jus ml-[1.75%] max-w-[95%]" />
-            <AccordionDetails className="faq-accordion-details">
+            <AccordionDetails className="mui-accordion-details">
               <p className="global-header-text-3 max-w-[96%]">
                 After creating an account, login using your registered email and
                 password. Get familiar with the dashboard. On the left panel,
@@ -228,7 +228,7 @@ const FAQ = () => {
             </AccordionDetails>
           </Accordion>
 
-          <Accordion className="faq-accordion">
+          <Accordion className="mui-accordion">
             <AccordionSummary
               expandIcon={
                 <div className="expand-icon-container">
@@ -242,7 +242,7 @@ const FAQ = () => {
               <p>Is there a free trial for Shinefy?</p>
             </AccordionSummary>
             <hr className="jus ml-[1.75%] max-w-[95%]" />
-            <AccordionDetails className="faq-accordion-details">
+            <AccordionDetails className="mui-accordion-details">
               <p className="global-header-text-3 max-w-[96%]">
                 Shinefy offers promos from time to time with limited access to
                 its features, which is ideal for testing the new tool before

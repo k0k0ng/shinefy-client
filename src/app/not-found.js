@@ -1,18 +1,16 @@
 "use client";
 
 import { useEffect, createRef } from "react";
-import { useRouter } from "next/navigation";
-import lottie from "lottie-web";
-
-import Error from "next/error";
-
-import ErrorPagesFooter from "@/components/Footer/ErrorPagesFooter";
 
 import Custom403 from "@/components/ErrorPages/Custom403";
 import Custom500 from "@/components/ErrorPages/Custom500";
+import ErrorPagesFooter from "@/components/Footer/ErrorPagesFooter";
 import UnderMaintenance from "@/components/ErrorPages/UnderMaintenance";
 
-import "./home/styles/Home.css";
+import { useRouter } from "next/navigation";
+import Error from "next/error";
+
+import lottie from "lottie-web";
 
 export async function getServerSideProps() {
   // Simulate a 500 internal server error
@@ -41,10 +39,10 @@ export default function NotFound() {
     return () => anim.destroy();
   }, [animationContainer]);
 
-  // Only used for checking Custom Error page component
+  // Only used for checking other custom error page component
   if (false) {
     return (
-      <UnderMaintenance />
+      <Custom403 />
       // <Error statusCode={500} />
     );
   }
@@ -60,7 +58,7 @@ export default function NotFound() {
           </p>
           <button
             onClick={() => router.back()}
-            className="home-primary-btn mt-5 px-12 py-4 text-center"
+            className="global-primary-btn mt-5 px-12 py-4 text-center"
           >
             Go Back
           </button>

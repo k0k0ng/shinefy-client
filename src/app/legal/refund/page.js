@@ -8,7 +8,6 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 
 import "../LegalPages.css";
-import "@/app/faq/FAQ.css";
 
 const Refund = () => {
   return (
@@ -61,7 +60,7 @@ const Refund = () => {
               <h5 className="legal-title-text-2 mb-20">Cancelation Requests</h5>
 
               <div className="mb-16">
-                <Accordion className="faq-accordion">
+                <Accordion className="mui-accordion">
                   <AccordionSummary
                     expandIcon={
                       <div className="expand-icon-container">
@@ -77,7 +76,7 @@ const Refund = () => {
                     </p>
                   </AccordionSummary>
                   <hr className="jus ml-[1.75%] max-w-[95%]" />
-                  <AccordionDetails className="faq-accordion-details">
+                  <AccordionDetails className="mui-accordion-details">
                     <p className="global-header-text-3 max-w-[96%]">
                       Log in to your Shinefy accounts and click on Settings,
                       then click on the &quot;cancel subscription&quot; button.
@@ -85,7 +84,7 @@ const Refund = () => {
                   </AccordionDetails>
                 </Accordion>
 
-                <Accordion className="faq-accordion">
+                <Accordion className="mui-accordion">
                   <AccordionSummary
                     expandIcon={
                       <div className="expand-icon-container">
@@ -99,7 +98,7 @@ const Refund = () => {
                     <p>Cancel Subscription purchased on ThriveCart pages</p>
                   </AccordionSummary>
                   <hr className="jus ml-[1.75%] max-w-[95%]" />
-                  <AccordionDetails className="faq-accordion-details">
+                  <AccordionDetails className="mui-accordion-details">
                     <p className="global-header-text-3 max-w-[96%]">
                       Log in to your Shinefy accounts and click on Settings,
                       then click on the &quot;cancel subscription&quot; button.
@@ -107,7 +106,7 @@ const Refund = () => {
                   </AccordionDetails>
                 </Accordion>
 
-                <Accordion className="faq-accordion">
+                <Accordion className="mui-accordion">
                   <AccordionSummary
                     expandIcon={
                       <div className="expand-icon-container">
@@ -121,7 +120,7 @@ const Refund = () => {
                     <p>Cancel via Shinefy support</p>
                   </AccordionSummary>
                   <hr className="jus ml-[1.75%] max-w-[95%]" />
-                  <AccordionDetails className="faq-accordion-details">
+                  <AccordionDetails className="mui-accordion-details">
                     <p className="global-header-text-3 max-w-[96%]">
                       Click on the chatbot on the right hand corner, and follow
                       the steps provided. You may also contact us via
