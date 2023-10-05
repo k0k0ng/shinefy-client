@@ -130,7 +130,7 @@ export default function Home() {
                 href="https://chasereiner.thrivecart.com/shine-ranker-deal"
                 rel="noreferrer"
                 target="_blank"
-                className="home-primary-btn flex items-center justify-center px-5 py-4"
+                className="global-primary-btn flex items-center justify-center px-5 py-4"
               >
                 Generate Your Videos
               </a>
@@ -242,7 +242,7 @@ export default function Home() {
                   placeholder="Your Email"
                   className="home-input-center-placeholder mb-4 text-center"
                 />
-                <button className="home-primary-btn mb-4 w-full">
+                <button className="global-primary-btn mb-4 w-full">
                   Let&apos;s Get Started
                 </button>
                 <a href="/pricing" className="home-link">
@@ -588,7 +588,7 @@ export default function Home() {
                   href="https://chasereiner.thrivecart.com/shine-ranker-deal"
                   rel="noreferrer"
                   target="_blank"
-                  className="home-primary-btn mb-2 flex w-10/12 items-center justify-center px-5 py-4 md:w-6/12 lg:w-auto"
+                  className="global-primary-btn mb-2 flex w-10/12 items-center justify-center px-5 py-4 md:w-6/12 lg:w-auto"
                 >
                   Start Creating Today
                 </a>
@@ -596,7 +596,7 @@ export default function Home() {
 
               <div className="absolute left-0 top-0 z-10 h-full w-full ">
                 <img
-                  src="/images/home/Planets/Pink Moon.png"
+                  src="/images/home/Planets/pink-moon.png"
                   alt="Shine Ai Training Video thumbnail"
                   width="136px"
                   height="138px"
@@ -604,7 +604,7 @@ export default function Home() {
                 />
 
                 <img
-                  src="/images/home/Planets/Chrome Moon 2.png"
+                  src="/images/home/Planets/chrome-moon-2.png"
                   alt="Shine Ai Training Video thumbnail"
                   // width="136px"
                   // height="138px"
@@ -612,7 +612,7 @@ export default function Home() {
                 />
 
                 <img
-                  src="/images/home/Planets/Purple Saturn 2.png"
+                  src="/images/home/Planets/purple-saturn-2.png"
                   alt="Shine Ai Training Video thumbnail"
                   // width="334px"
                   // height="218px"
@@ -620,7 +620,7 @@ export default function Home() {
                 />
 
                 <img
-                  src="/images/home/Planets/Purple Drwaf Planet.png"
+                  src="/images/home/Planets/purple-drwaf-planet.png"
                   alt="Shine Ai Training Video thumbnail"
                   width="65px"
                   height="65px"
@@ -628,7 +628,7 @@ export default function Home() {
                 />
 
                 <img
-                  src="/images/home/Planets/Purple Moon 2.png"
+                  src="/images/home/Planets/purple-moon-2.png"
                   alt="Shine Ai Training Video thumbnail"
                   // width="334px"
                   // height="218px"
@@ -636,7 +636,7 @@ export default function Home() {
                 />
 
                 <img
-                  src="/images/home/Planets/Purple Drwaf Planet.png"
+                  src="/images/home/Planets/purple-drwaf-planet.png"
                   alt="Shine Ai Training Video thumbnail"
                   width="65px"
                   height="65px"
@@ -671,7 +671,7 @@ export default function Home() {
               type="button"
               rel="noreferrer"
               target="_blank"
-              className="home-primary-btn flex justify-center px-5 py-4"
+              className="global-primary-btn flex justify-center px-5 py-4"
             >
               Sign Up
             </a>
@@ -680,7 +680,7 @@ export default function Home() {
 
         <div className="absolute top-0 z-10 h-full w-full overflow-hidden xl:mx-[5%] xl:w-[90%] 2xl:mx-[15%] 2xl:w-[70%]">
           <img
-            src="/images/home/Planets/Purple Saturn.png"
+            src="/images/home/Planets/purple-saturn-1.png"
             alt="Shine Ai Training Video thumbnail"
             // width="334px"
             // height="218px"
@@ -688,7 +688,7 @@ export default function Home() {
           />
 
           <img
-            src="/images/home/Planets/Purple Drwaf Planet.png"
+            src="/images/home/Planets/purple-drwaf-planet.png"
             alt="Shine Ai Training Video thumbnail"
             // width="18px"
             // height="18px"
@@ -696,7 +696,7 @@ export default function Home() {
           />
 
           <img
-            src="/images/home/Planets/Pink Moon.png"
+            src="/images/home/Planets/pink-moon.png"
             alt="Shine Ai Training Video thumbnail"
             // width="334px"
             // height="218px"
@@ -704,7 +704,7 @@ export default function Home() {
           />
 
           <img
-            src="/images/home/Planets/Chrome Moon.png"
+            src="/images/home/Planets/chrome-moon-1.png"
             alt="Shine Ai Training Video thumbnail"
             // width="334px"
             // height="218px"
@@ -712,7 +712,7 @@ export default function Home() {
           />
 
           <img
-            src="/images/home/Planets/Purple Moon.png"
+            src="/images/home/Planets/purple-moon-1.png"
             alt="Shine Ai Training Video thumbnail"
             // width="334px"
             // height="218px"
@@ -766,7 +766,7 @@ export default function Home() {
             <SwiperSlide>
               <div className="testimonial-card flex w-[80%] flex-col px-10 pb-12 text-center md:w-[60%] lg:w-auto">
                 <img
-                  src="/images/home/TestimonialHeads/Testimonial Head 1.png"
+                  src="/images/home/TestimonialHeads/testimonial-head-1.png"
                   alt="tetimonial 1 profile"
                   height="150"
                   className="testimonial-card-profile-img"
@@ -790,7 +790,7 @@ export default function Home() {
             <SwiperSlide>
               <div className="testimonial-card flex w-[80%] flex-col px-10 pb-12 text-center md:w-[60%] lg:w-auto">
                 <img
-                  src="/images/home/TestimonialHeads/Testimonial Head 2.png"
+                  src="/images/home/TestimonialHeads/testimonial-head-2.png"
                   alt="tetimonial 2 profile"
                   height="150"
                   className="testimonial-card-profile-img"
@@ -813,7 +813,7 @@ export default function Home() {
             <SwiperSlide>
               <div className="testimonial-card flex w-[80%] flex-col px-10 pb-12 text-center md:w-[60%] lg:w-auto">
                 <img
-                  src="/images/home/TestimonialHeads/Testimonial Head 3.png"
+                  src="/images/home/TestimonialHeads/testimonial-head-3.png"
                   alt="tetimonial 3 profile"
                   height="150"
                   className="testimonial-card-profile-img"
@@ -837,7 +837,7 @@ export default function Home() {
             <SwiperSlide>
               <div className="testimonial-card flex w-[80%] flex-col px-10 pb-12 text-center md:w-[60%] lg:w-auto">
                 <img
-                  src="/images/home/TestimonialHeads/Testimonial Head 4.png"
+                  src="/images/home/TestimonialHeads/testimonial-head-4.png"
                   alt="tetimonial 4 profile"
                   height="150"
                   className="testimonial-card-profile-img"
@@ -860,7 +860,7 @@ export default function Home() {
             <SwiperSlide>
               <div className="testimonial-card flex w-[80%] flex-col px-10 pb-12 text-center md:w-[60%] lg:w-auto">
                 <img
-                  src="/images/home/TestimonialHeads/Testimonial Head 5.png"
+                  src="/images/home/TestimonialHeads/testimonial-head-5.png"
                   alt="tetimonial 5 profile"
                   height="150"
                   className="testimonial-card-profile-img"
@@ -883,7 +883,7 @@ export default function Home() {
             <SwiperSlide>
               <div className="testimonial-card flex w-[80%] flex-col px-10 pb-12 text-center md:w-[60%] lg:w-auto">
                 <img
-                  src="/images/home/TestimonialHeads/Testimonial Head 6.png"
+                  src="/images/home/TestimonialHeads/testimonial-head-6.png"
                   alt="tetimonial 6 profile"
                   height="150"
                   className="testimonial-card-profile-img"
@@ -906,7 +906,7 @@ export default function Home() {
             <SwiperSlide>
               <div className="testimonial-card flex w-[80%] flex-col px-10 pb-12 text-center md:w-[60%] lg:w-auto">
                 <img
-                  src="/images/home/TestimonialHeads/Testimonial Head 7.png"
+                  src="/images/home/TestimonialHeads/testimonial-head-7.png"
                   alt="tetimonial 7 profile"
                   height="150"
                   className="testimonial-card-profile-img"
@@ -929,7 +929,7 @@ export default function Home() {
             <SwiperSlide>
               <div className="testimonial-card flex w-[80%] flex-col px-10 pb-12 text-center md:w-[60%] lg:w-auto">
                 <img
-                  src="/images/home/TestimonialHeads/Testimonial Head 8.png"
+                  src="/images/home/TestimonialHeads/testimonial-head-8.png"
                   alt="tetimonial 8 profile"
                   height="150"
                   className="testimonial-card-profile-img"
@@ -958,7 +958,7 @@ export default function Home() {
       </section>
 
       {/* *** Social links section *** */}
-      <section className="social-links-container z-20 px-[5%] xl:px-[18%]">
+      <section className="z-20 bg-gradient-to-b from-[#07061c] to-[#100826] px-[5%] xl:px-[18%]">
         <div className="grid grid-cols-1 space-x-0 py-12 lg:grid-cols-2 lg:space-x-28 lg:py-24 xl:space-x-6">
           <div className="mb-12 px-4 text-center md:px-0 lg:mb-0 lg:text-start">
             <h2 className="global-header-text-1 mb-5">
@@ -1012,7 +1012,7 @@ export default function Home() {
                     href="https://app.shineranker.com/signup_free/"
                     rel="noreferrer"
                     target="_blank"
-                    className="home-primary-btn w-full py-3 text-center"
+                    className="global-primary-btn w-full py-3 text-center"
                   >
                     Create an account
                   </a>

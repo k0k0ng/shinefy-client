@@ -1,4 +1,4 @@
-import "@/app/home/styles/Home.css";
+import "./SocialLinks.css";
 
 export default function SocialLinksButtons() {
   return (

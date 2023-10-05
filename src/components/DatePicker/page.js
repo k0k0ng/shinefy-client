@@ -7,6 +7,8 @@ import CalendarDate from "./CalendarDate";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
+import "./DatePicker.css";
+
 export default function CustomDatePicker() {
   const [refresherState, setRefresherState] = useState(false);
   const [selectedDateValue, setSelectedDateValue] = useState("");

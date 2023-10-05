@@ -1,11 +1,10 @@
 "use client";
 
 import { useEffect, createRef } from "react";
-import lottie from "lottie-web";
 
 import ErrorPagesFooter from "@/components/Footer/ErrorPagesFooter";
 
-import "@/app/home/styles/Home.css";
+import lottie from "lottie-web";
 
 export default function Custom403() {
   let animationContainer = createRef();

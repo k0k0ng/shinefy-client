@@ -11,14 +11,12 @@ export default function SingleBlog() {
   return (
     <>
       <section className="global-header-section-bg px-[5%] pt-[16rem] lg:pt-[11rem] xl:px-[10%] 2xl:px-[20%]">
-        <div className="legal-categories mb-10">
+        <div className="mb-10 font-karla text-[16px] italic leading-[120%] text-[#ECECEC]">
           <a href="/">Home</a>
           <span> {`>`} </span>
-          <a href="/">Blogs</a>
+          <a href="/blogs">Blogs</a>
           <span> {`>`} </span>
-          <a href="#" className="legal-category-current">
-            Article Title here
-          </a>
+          <span className="text-[#AEAEAE]">Article Title here</span>
         </div>
 
         <div className="mb-10 flex w-full flex-col gap-x-10 lg:flex-row">

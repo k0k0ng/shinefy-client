@@ -174,7 +174,7 @@ export default function CreamOfTheCropSection() {
               className="cream-of-crop-custom-text rounded px-8 py-2 text-white"
             >
               <img
-                src="/images/home/CreamOfCrop/Top5hacksADHD.png"
+                src="/images/home/CreamOfCrop/top-5-hacks-ADHD-video-thumbnail.png"
                 alt="Top5hacksADHD Video thumbnail"
                 className="mb-4 min-h-[300px] min-w-[15rem] rounded md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px]"
               />
@@ -191,7 +191,7 @@ export default function CreamOfTheCropSection() {
           >
             <button className="cream-of-crop-custom-text rounded px-8 py-2 text-white">
               <img
-                src="/images/home/CreamOfCrop/Marie Curie.png"
+                src="/images/home/CreamOfCrop/marie-curie-video-thumbnail.png"
                 alt="Marie Curie Video thumbnail"
                 className="mb-4 min-h-[300px] min-w-[15rem] rounded md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px]"
               />
@@ -203,7 +203,7 @@ export default function CreamOfTheCropSection() {
           <div className="flex flex-col items-center ">
             <button className="cream-of-crop-custom-text rounded px-8 py-2 text-white">
               <img
-                src="/images/home/CreamOfCrop/ShineRanker.png"
+                src="/images/home/CreamOfCrop/shine-ranker-video-thumbnail.png"
                 alt="ShineRanker Video thumbnail"
                 className="mb-4 min-h-[300px] min-w-[15rem] rounded md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px]"
               />
@@ -215,7 +215,7 @@ export default function CreamOfTheCropSection() {
           <div className="flex flex-col items-center ">
             <button className="cream-of-crop-custom-text rounded px-8 py-2 text-white">
               <img
-                src="/images/home/CreamOfCrop/Samuel.png"
+                src="/images/home/CreamOfCrop/samuel-video-thumbnail.png"
                 alt="Samuel Video thumbnail"
                 className="mb-4 min-h-[300px] min-w-[15rem] rounded md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px]"
               />
@@ -227,7 +227,7 @@ export default function CreamOfTheCropSection() {
           <div className="flex flex-col items-center ">
             <button className="cream-of-crop-custom-text rounded px-8 py-2 text-white">
               <img
-                src="/images/home/CreamOfCrop/Why Indonesians dont speak dutch.png"
+                src="/images/home/CreamOfCrop/why-indonesians-dont-speak-dutch-video-thumbnail.png"
                 alt="Why Indonesians dont speak dutch Video thumbnail"
                 className="mb-4 min-h-[300px] min-w-[15rem] rounded md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px]"
               />
@@ -239,7 +239,7 @@ export default function CreamOfTheCropSection() {
           <div className="flex flex-col items-center ">
             <button className="cream-of-crop-custom-text rounded px-8 py-2 text-white">
               <img
-                src="/images/home/CreamOfCrop/uranium.png"
+                src="/images/home/CreamOfCrop/uranium-video-thumbnail.png"
                 alt="uranium Video thumbnail"
                 className="mb-4 min-h-[300px] min-w-[15rem] rounded md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px]"
               />
@@ -251,7 +251,7 @@ export default function CreamOfTheCropSection() {
           <div className="flex flex-col items-center ">
             <button className="cream-of-crop-custom-text rounded px-8 py-2 text-white">
               <img
-                src="/images/home/CreamOfCrop/Top5hacksADHD.png"
+                src="/images/home/CreamOfCrop/top-5-hacks-ADHD-video-thumbnail.png"
                 alt="Top5hacksADHD Video thumbnail"
                 className="mb-4 min-h-[300px] min-w-[15rem] rounded md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px]"
               />
@@ -263,7 +263,7 @@ export default function CreamOfTheCropSection() {
           <div className="flex flex-col items-center ">
             <button className="cream-of-crop-custom-text rounded px-8 py-2 text-white">
               <img
-                src="/images/home/CreamOfCrop/Marie Curie.png"
+                src="/images/home/CreamOfCrop/marie-curie-video-thumbnail.png"
                 alt="Marie Curie Video thumbnail"
                 className="mb-4 min-h-[300px] min-w-[15rem] rounded md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px]"
               />
@@ -275,7 +275,7 @@ export default function CreamOfTheCropSection() {
           <div className="flex flex-col items-center ">
             <button className="cream-of-crop-custom-text rounded px-8 py-2 text-white">
               <img
-                src="/images/home/CreamOfCrop/ShineRanker.png"
+                src="/images/home/CreamOfCrop/shine-ranker-video-thumbnail.png"
                 alt="ShineRanker Video thumbnail"
                 className="mb-4 min-h-[300px] min-w-[15rem] rounded md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px]"
               />
@@ -287,7 +287,7 @@ export default function CreamOfTheCropSection() {
           <div className="flex flex-col items-center ">
             <button className="cream-of-crop-custom-text rounded px-8 py-2 text-white">
               <img
-                src="/images/home/CreamOfCrop/Samuel.png"
+                src="/images/home/CreamOfCrop/samuel-video-thumbnail.png"
                 alt="Samuel Video thumbnail"
                 className="mb-4 min-h-[300px] min-w-[15rem] rounded md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px]"
               />
@@ -299,7 +299,7 @@ export default function CreamOfTheCropSection() {
           <div className="flex flex-col items-center ">
             <button className="cream-of-crop-custom-text rounded px-8 py-2 text-white">
               <img
-                src="/images/home/CreamOfCrop/Why Indonesians dont speak dutch.png"
+                src="/images/home/CreamOfCrop/why-indonesians-dont-speak-dutch-video-thumbnail.png"
                 alt="Why Indonesians dont speak dutch Video thumbnail"
                 className="mb-4 min-h-[300px] min-w-[15rem] rounded md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px]"
               />
@@ -311,7 +311,7 @@ export default function CreamOfTheCropSection() {
           <div className="flex flex-col items-center ">
             <button className="cream-of-crop-custom-text rounded px-8 py-2 text-white">
               <img
-                src="/images/home/CreamOfCrop/uranium.png"
+                src="/images/home/CreamOfCrop/uranium-video-thumbnail.png"
                 alt="uranium Video thumbnail"
                 className="mb-4 min-h-[300px] min-w-[15rem] rounded md:min-w-[205px] lg:min-w-[190px] xl:min-w-[180px] 2xl:min-w-[180px]"
               />

@@ -10,7 +10,7 @@ export default function OneTimeDeal() {
           href="https://app.shineranker.com/signup_free/"
           rel="noreferrer"
           target="_blank"
-          className="home-primary-btn flex items-center justify-center px-20"
+          className="global-primary-btn flex items-center justify-center px-20"
         >
           Start Here
         </a>

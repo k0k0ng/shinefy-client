@@ -1,7 +1,5 @@
 import ErrorPagesFooter from "@/components/Footer/ErrorPagesFooter";
 
-import "@/app/home/styles/Home.css";
-
 export default function UnderMaintenance() {
   return (
     <div className="h-[100vh] lg:h-[120vh]">
@@ -25,15 +23,15 @@ export default function UnderMaintenance() {
         <div className="flex h-full w-[70%] flex-row items-end 2xl:w-[65%]">
           <img
             src="/images/ErrorPage/electrical-cord-icon.png"
-            alt="earth globe icon"
+            alt="electrical cord vector image"
             // width="170px"
-            className="mb-10"
+            className="mb-10 ml-[-5px]"
           />
         </div>
         <div className="2lx:w-[35%] flex h-full w-[30%] flex-row items-end pb-[8rem]">
           <img
             src="/svg/ErrorPage/electrical-inlit-icon.svg"
-            alt="earth globe icon"
+            alt="electrical inlit vector image"
             // width="170px"
             className="2xl:max-w-auto max-w-[110px] md:mb-5 lg:ml-16 xl:max-w-[150px] 2xl:ml-0 "
           />
