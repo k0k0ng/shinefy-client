@@ -160,7 +160,10 @@ const FooterPage = () => {
               </li>
 
               <li className="">
-                <a href="/book-a-call" className="footer-links-text">
+                <a
+                  href="/https://discord.gg/BnfsXW2Jma"
+                  className="footer-links-text"
+                >
                   Contact Us
                 </a>
               </li>

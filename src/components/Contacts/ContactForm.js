@@ -19,6 +19,11 @@ const ContactForm = () => {
     setMessageValue("");
   };
 
+  // *** Temporarily returns empty div for partial deployment - JOHN 22/09/23 ***
+  if (true) {
+    return <div className="mt-32"></div>;
+  }
+
   return (
     <section className="flex flex-col items-center md:my-20 md:p-2.5">
       <div className="contact-form-container z-20 p-6 py-24 md:mx-auto md:p-16 xl:p-24">
